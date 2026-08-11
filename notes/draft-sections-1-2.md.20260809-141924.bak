@@ -1,0 +1,218 @@
+# Draft — §1 Introduction and §2 Methods (draft 1, 2026-08-05)
+
+Budget: **§1 ≈ 0.60 page** (rebalanced 2026-08-06, trimmed to it 2026-08-07), §2 ≈ 1.25
+pages. Configuration numbers read from the `model_config` / `train_config` stored in the
+checkpoints themselves, cross-checked against the weights by `scripts/param_counts.py` —
+not from the design docs, and not from `reopen/model.py`, since what shipped in the
+checkpoint is what ran (deviations noted inline).
+
+---
+
+# §1 Introduction
+
+A critical period is a window during which experience shapes a system, after which the same
+experience has much less effect. Whether anything like it exists in language models is
+usually asked of models whose training history cannot be inspected: a released checkpoint
+has already seen whatever the web contained, in whatever order, so the timing of any
+particular skill's arrival is unknown and unmanipulable. Fine-tuning such a model tells us
+what it can still learn, not what it could have learned had the material arrived earlier.
+
+We take the other route. Every model here is trained from random initialization on a fixed
+~10M-word corpus, with a target skill injected into the training stream on a schedule we
+control. Conditions differ in *when* the skill arrives and in nothing else — total skill
+tokens are held constant — so a difference in final performance is a timing effect, not a
+dose effect. This costs us scale, the largest model being 60.3M parameters, and buys the one
+thing a pretrained checkpoint cannot provide: knowing when the model first saw arithmetic.
+
+Within that design we find, first, that **delaying arithmetic exposure to the midpoint of
+training leaves a deficit that the remaining half of training does not close**, at both
+confirmatory sizes and at every seed. Second, that **long-distance *wh*-licensing shows no
+such deficit** under five distinct probes — inverting our pre-registered prediction that
+syntax, the more structurally scaffolded skill, would be the more fragile one. We state that
+dissociation in absolute terms rather than as differential susceptibility; §3.3 gives the
+measurement reason. Third, that **the deficit is reopenable**: restoring the learning-rate
+schedule at the point of delayed exposure recovers the endpoint to within 90 % of an
+early-exposure anchor at both sizes, and to nearly the same absolute level at each. Fourth,
+that **concentrated re-exposure does not reproduce this** — extra skill density on top of a
+restored schedule adds nothing, while a restored schedule without it recovers the skill.
+What closes the window at this onset is therefore largely the optimizer's decayed
+learning-rate schedule rather than representations hardened against revision.
+
+Two things follow for how we report. A delayed model's endpoint is strongly seed-dependent
+while its early-exposure anchor is not, so we report absolute endpoints beside their nulls
+rather than recovery as a percentage of a gap whose denominator moves. And because several
+results here are nulls, we read non-significance off the minimum detectable effect rather
+than the *p*-value — two structurally identical size comparisons in this paper carry
+opposite evidential weight for that reason (§3.1, §5.3).
+
+We registered three predictions before running these experiments: that syntax would show the
+stronger critical period, that embedding reset would be the most effective intervention, and
+that a reset-driven recovery would build new circuitry rather than repair the original. §7.2
+states what happened to each. A reader holding the pre-registration will find all three
+answered there, including the one that could not be tested.
+
+---
+
+# §2 Methods
+
+## 2.1 Models and corpus
+
+All models are decoder-only transformers trained from random initialization; **no pretrained
+checkpoint is used anywhere in this work, including for baselines.** This is the design
+constraint that makes the rest of the paper meaningful — a model that has already passed
+through an uncontrolled pretraining history cannot be asked when it first met a skill.
+
+The base corpus is the BabyLM "strict-small" collection (~10M words), tokenized with a
+byte-pair encoder trained on that corpus, vocabulary 16,384. Three configurations are used:
+
+| tag | layers | heads | width | total params | non-embedding params |
+|:--|--:|--:|--:|--:|--:|
+| 11M | 4 | 8 | 256 | 11.54M | 3.15M |
+| 23M | 6 | 8 | 384 | 23.20M | 10.62M |
+| 60M | 8 | 10 | 640 | 60.30M | 39.33M |
+
+Both columns are given because untied embeddings make them tell different stories. At
+vocabulary 16,384 the input embedding and output projection are 4.19M parameters each at the
+smallest size — **72.7 % of that model, against 34.8 % at the largest** — so the three
+configurations span 5.2× in total parameters but 12.5× in the parameters that do computation.
+Size comparisons in this paper are stated in total parameters, which is the axis our
+pre-registered analyses used; readers translating our scale results into non-embedding terms
+should note that the effective range is wider than the labels suggest, and that the smallest
+model is unusually embedding-dominated (§2.5).
+
+Context length is 512 tokens. Positional information is rotary (θ = 10,000); normalization is
+pre-norm; activations are GELU. **Input embeddings and the output projection are untied** —
+a deliberate choice, since one of our interventions resets the embedding layer and tied
+weights would confound an input-representation reset with a change to the prediction head.
+Attention is `F.scaled_dot_product_attention`, which dispatches to FlashAttention-2 kernels
+on our GPU. Training uses bf16 autocast, micro-batches of 8 × 512 tokens with 4 gradient
+accumulation steps, AdamW (β = 0.9/0.95, weight decay 0.1, gradient clipping 1.0), a peak
+learning rate of 6e-4 with 300 warmup steps and cosine decay to 0.1 × peak. `torch.compile`
+is available in the trainer but was **disabled for the runs reported here**. Every run
+reported here is 5,000 optimizer steps over 81.92M tokens. Checkpoint spacing varies by run
+family (100 steps for the 23M arithmetic runs, 1,250 at 11M and 60M, 2,500 for the size
+sweep); it sets how finely a trajectory can be re-read afterwards and nothing else, since
+delay and intervention triggers fire on exact step count.
+
+## 2.2 Delay schedule and exposure matching
+
+A run's data stream is a mixture of the base corpus and a skill stream. The skill stream has
+an **onset step** and a **density**, both fixed before training starts, and set so that total
+skill tokens are constant across delay conditions: a delay-0 run spreads its skill exposure
+across all 5,000 steps, while a delay-50 run delivers the same token count at higher density
+from step 2,500 onward. Onsets are specified as fractions of total steps and converted to
+exact step numbers before the run begins, so triggers fire on step count and never on
+wall-clock time.
+
+Each run is identified by a `run_id` encoding skill, delay, exposure fraction, size and seed;
+checkpoints store optimizer state and a metadata dictionary alongside weights. **A `run_id`
+is the identity of a trained model, not a label for a configuration** — where two runs share
+a configuration but were trained separately, we treat them as different models and never
+average or interchange their numbers.
+
+## 2.3 Measures
+
+Three measurements recur, and each is fixed once here:
+
+- **Arithmetic**: teacher-forced exact match at step 5,000 on 500 held-out problems.
+- **Syntax**: a continuation-scored licensing interaction on *wh*-extraction minimal pairs.
+- **General capability**: held-out validation perplexity, always reported as a three-number
+  decomposition (early anchor, delayed null, treated arm) rather than as a single delta.
+
+The syntax metric requires a word of justification, because the obvious one fails. Raw
+BLiMP-style *wh*-vs-*that* pairs differ by a single word, so their score is dominated by the
+unigram frequency prior for "that": an untrained-for-syntax model scores 0.000 on one
+paradigm and 1.000 on its complement while knowing nothing about gap licensing. Taking the
+interaction of the with-gap and no-gap conditions cancels that main effect — a purely
+frequency-driven model lands at exactly 0.500 — so only genuine gap-licensing knowledge moves
+the score. All syntax numbers in this paper are that interaction, and 0.500 is its floor.
+
+## 2.4 Eval-set hygiene
+
+Exactly one arithmetic problem set is held out of training. An earlier version of our circuit
+analysis generated its evaluation items per-run, and those draws overlapped the training
+problems by 17–19 % in four of six cases; all affected results were re-scored on the held-out
+set, and the correction changed a conclusion (§5.2). On identical items our two evaluation
+harnesses agree to ~0.005, so accuracies from different harnesses are comparable to about
+0.01 and no finer. We report this rather than only the corrected numbers, because the
+released logs contain both generations.
+
+## 2.5 The smallest size is excluded by a pre-registered floor
+
+Our pre-registration required an early-exposure anchor to reach 0.60 before a delay
+comparison at that size could be interpreted. The 11M anchor reaches 0.538 and has not
+plateaued, so its delay comparison is between two under-trained models and is **excluded by
+the pre-registered floor as a capacity/budget boundary**. Its numbers are reported in §3.1
+because they are nominally significant and a reader recomputing them will find them; they do
+not support a claim in either direction about a critical period at that scale.
+
+## 2.6 Analysis designs that were planned and not run
+
+We pre-registered three analyses: a mixed-effects model of final accuracy on delay × size, a
+factorial model of recovery percentage on intervention × skill × delay, and a model of
+circuit overlap on intervention × skill. None is estimable on the design that survived. After
+the floor exclusion the first has twelve observations with one per seed × cell and no
+within-cell replication for a random effect. The second has a banned denominator — recovery
+percentage divides by the seed-variable null — and two of its three factors are constants.
+The third has both factors constant. We replaced them with per-seed paired tests, an
+absolute-endpoint gate, and a rank correlation with exact permutation *p*, respectively, and
+say so here rather than presenting the replacements as the original plan.
+
+## 2.7 Multiplicity
+
+Confirmatory tests are Holm-corrected within a declared family and reported both uncorrected
+and adjusted: the Detect family (paired deficit at two sizes), the Reopen family (lift over
+the matched null at two sizes), and the agreement-slope family. Gates whose thresholds were
+fixed in advance are decision rules, not tests, and carry no *p*. Exploratory analyses are
+flagged in-text and never carry a headline.
+
+---
+
+### §1–§2 audit
+
+| passage | status | note |
+|:--|:--|:--|
+| §1 result summary | claims 1, 11b, 4, 7 | abstract anchors, stated at abstract strength; no numbers beyond what §3–§4 support |
+| §1 "absolute endpoints, not percent-of-gap" | reporting rule | motivated before it is used, so §4 need not defend it |
+| §1 "read nulls off the MDE" | reporting rule | forward-references both halves of the §5.5 paired-null dependency |
+| §1 three predictions | §11 obligation | named as predictions only; outcomes deferred to §7.2 — the draft's aggregate "one inverted, one not borne out, one untestable" was **removed 2026-08-07**, since the outline bars outcomes from §1. #1's inversion stays in the results sentence, where 11b requires it |
+| §1 length | 0.60-page budget | trimmed 2026-08-07 to 495 words ≈ 0.62 page; the cuts were compression only, no finding dropped |
+| §2 length | 1.25-page budget | measures **1.41** (`logs/length_audit.md`); 2.3–2.6 are the named compression targets and have not been touched |
+| §2.1 no pretrained checkpoints | design constraint | stated as load-bearing, not as a detail |
+| §2.1 `torch.compile` disabled | fidelity | design docs list it as planned; the runs did not use it — code wins |
+| §2.3 licensing-interaction calibration | methods result | the 0.000/1.000 illustration kept; it is why 0.500 is the floor |
+| §2.4 contamination | correction record | reported, with the ~0.005 harness floor |
+| §2.5 floor exclusion | NOT-A-CLAIM | required wording used verbatim |
+| §2.6 retired designs | methods sentence | what was planned, why not run, what replaced it |
+
+## Resolved — parameter counts verified 2026-08-06, re-verified 2026-08-07
+
+Recomputed directly from the step-5000 `state_dict` of one delay-0 seed-1 run per size —
+now by a checked-in script, `scripts/param_counts.py`, writing `logs/param_counts.md`, so
+the numbers are reproducible rather than asserted. It sums every tensor in the saved
+state dict and splits out `wte.weight` + `lm_head.weight`, and it asserts that the
+`model_config` stored beside the weights agrees with the weights (layers, width, vocab).
+It does.
+
+**The design-document labels are exact**: 11,536,640 / 23,204,736 / 60,304,000, i.e.
+11.54M / 23.20M / 60.30M against the claimed ~11.5 / 23.2 / 60.3, with non-embedding
+3,148,032 / 10,621,824 / 39,332,480 and embedding-and-head shares 72.7 % / 54.2 % / 34.8 %.
+Spans are 5.23× total and 12.49× non-embedding, which round to the 5.2× and 12.5× in §2.1.
+No number in the paper changes, and the abstract's "11M–60M" range stands.
+
+**One §2.1 sentence did change.** The same checkpoints carry `train_config`, and it
+contradicted the draft's "checkpointing every 100 steps": that interval holds for the 23M
+arithmetic runs, but 11M and 60M ran at 1,250 and the size sweep at 2,500. Corrected in
+place, with the reason it does not matter (triggers fire on step count, not on checkpoint
+boundaries) stated rather than left implicit. Head counts, which tensor shapes cannot
+recover, are confirmed 8 / 8 / 10 from the stored config. Also noted for the record: one
+run in `checkpoints/` — a 10,000-step syntax training-length check — is not 5,000 steps and
+is not reported in the paper, so §2.1 now says "every run reported here".
+
+What the check *did* surface is the embedding share, now stated in §2.1: the smallest model
+is 72.7 % embedding-and-head, the largest 34.8 %, so non-embedding capacity spans 12.5×
+where total parameters span 5.2×. This is a consequence of the untied-embeddings decision
+(taken for intervention cleanliness, §2.1) interacting with a fixed 16,384 vocabulary across
+all three sizes. It does not alter any computed slope — those use total parameters, as
+pre-registered — but it is a real caveat on reading our size axis, and it independently
+supports the §2.5 floor exclusion: at 11M only 3.15M parameters are doing computation.
