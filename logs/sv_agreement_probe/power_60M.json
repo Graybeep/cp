@@ -1,0 +1,45 @@
+{
+ "realized_sds": {
+  "arith": {
+   "11M": 0.10580298121193626,
+   "23M": 0.03636476087276437,
+   "60M": 0.08150920193450555
+  },
+  "syntax": {
+   "11M": 0.07057724915173506,
+   "23M": 0.0813996670576818,
+   "60M": 0.05583836906773807
+  }
+ },
+ "power_60M_contrast": {
+  "delta_0.133": {
+   "n_arith=3": 0.4174,
+   "n_arith=4": 0.62675,
+   "n_arith=6": 0.8828,
+   "n_arith=8": 0.9666,
+   "n_arith=10": 0.9911,
+   "n_arith=12": 0.99745
+  },
+  "delta_0.1": {
+   "n_arith=3": 0.3038,
+   "n_arith=4": 0.42645,
+   "n_arith=6": 0.66175,
+   "n_arith=8": 0.8211,
+   "n_arith=10": 0.90175,
+   "n_arith=12": 0.94875
+  }
+ },
+ "power_interaction": {
+  "n_arith_per_size=3": 0.505,
+  "n_arith_per_size=4": 0.5685,
+  "n_arith_per_size=6": 0.6705,
+  "n_arith_per_size=8": 0.7675
+ },
+ "runs_required": {
+  "60M_only_to_n6": 3,
+  "60M_only_to_n8": 5,
+  "all_sizes_to_n4": 3,
+  "all_sizes_to_n6": 9,
+  "note": "arith d0 runs at 11M/23M/60M already exist at seeds 1-3"
+ }
+}

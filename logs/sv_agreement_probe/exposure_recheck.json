@@ -1,0 +1,371 @@
+{
+ "params": {
+  "11M": 11536640,
+  "23M": 23204736,
+  "60M": 60304000
+ },
+ "ledger": {
+  "11M": {
+   "syntax": {
+    "english_tokens": 81920000,
+    "total_tokens": 81920000,
+    "n_runs_checked": 3,
+    "all_identical": true
+   },
+   "arith": {
+    "english_tokens": 65536000,
+    "total_tokens": 81920000,
+    "n_runs_checked": 3,
+    "all_identical": true
+   }
+  },
+  "23M": {
+   "syntax": {
+    "english_tokens": 81920000,
+    "total_tokens": 81920000,
+    "n_runs_checked": 3,
+    "all_identical": true
+   },
+   "arith": {
+    "english_tokens": 65536000,
+    "total_tokens": 81920000,
+    "n_runs_checked": 3,
+    "all_identical": true
+   }
+  },
+  "60M": {
+   "syntax": {
+    "english_tokens": 81920000,
+    "total_tokens": 81920000,
+    "n_runs_checked": 3,
+    "all_identical": true
+   },
+   "arith": {
+    "english_tokens": 65536000,
+    "total_tokens": 81920000,
+    "n_runs_checked": 3,
+    "all_identical": true
+   }
+  }
+ },
+ "english_tokens": {
+  "syntax_mixture": 81920000,
+  "arith_mixture": 65536000,
+  "ratio_arith_over_syntax": 0.8,
+  "within_mixture_variance_across_sizes": 0.0,
+  "constant_across_sizes": true
+ },
+ "prong_A_nearest_syntax_size_by_english_tokens": {
+  "arith_60M_english": 65536000,
+  "distance_to_syntax": {
+   "11M": 16384000,
+   "23M": 16384000,
+   "60M": 16384000
+  },
+  "unique_nearest": false,
+  "verdict": "DEGENERATE - equidistant from all three syntax sizes"
+ },
+ "prong_A_variant_tokens_per_param": {
+  "tokens_per_param": {
+   "11M": {
+    "syntax": 7.10085432153556,
+    "arith": 5.680683457228448
+   },
+   "23M": {
+    "syntax": 3.530313811801177,
+    "arith": 2.824251049440942
+   },
+   "60M": {
+    "syntax": 1.358450517378615,
+    "arith": 1.086760413902892
+   }
+  },
+  "arith_60M_tpp": 1.086760413902892,
+  "distance_to_syntax_tpp": {
+   "11M": 6.0140939076326685,
+   "23M": 2.443553397898285,
+   "60M": 0.2716901034757231
+  },
+  "nearest_syntax_size": "60M",
+  "exact_equivalent_syntax_params": 75380000.0,
+  "equivalent_size_relative_to_60M": 1.25
+ },
+ "prong_B_interval": {
+  "arith_60M": 0.33375000000000005,
+  "syntax_23M": 0.31416666666666665,
+  "syntax_60M": 0.20072916666666665,
+  "interval": [
+   0.20072916666666665,
+   0.31416666666666665
+  ],
+  "inside": false,
+  "excess_above_interval_top": 0.019583333333333397
+ },
+ "syntax_scale_line": {
+  "slope_per_decade": -0.3160866152439903,
+  "intercept": 2.6547451820424532,
+  "se": 0.028073356063082186,
+  "t": -11.259309878510015,
+  "p": 2.28955140019168e-17,
+  "n": 72
+ },
+ "per_size": {
+  "11M": {
+   "arith_obs": 0.4479166666666667,
+   "arith_sd": 0.10580298121193626,
+   "syntax_obs": 0.4296875,
+   "syntax_sd": 0.07057724915173506,
+   "observed_diff_arith_minus_syntax": 0.018229166666666685,
+   "H_exposure_pred_arith": 0.3918844686565772,
+   "H_exposure_residual": 0.05603219801008946,
+   "H_param_pred_arith": 0.4225164266515451,
+   "H_param_residual": 0.02540024001512159
+  },
+  "23M": {
+   "arith_obs": 0.2604166666666667,
+   "arith_sd": 0.03636476087276437,
+   "syntax_obs": 0.31416666666666665,
+   "syntax_sd": 0.0813996670576818,
+   "observed_diff_arith_minus_syntax": -0.053749999999999964,
+   "H_exposure_pred_arith": 0.2959530371752388,
+   "H_exposure_residual": -0.03553637050857211,
+   "H_param_pred_arith": 0.32658499517020667,
+   "H_param_residual": -0.06616832850353999
+  },
+  "60M": {
+   "arith_obs": 0.33375000000000005,
+   "arith_sd": 0.08150920193450555,
+   "syntax_obs": 0.20072916666666665,
+   "syntax_sd": 0.05583836906773807,
+   "observed_diff_arith_minus_syntax": 0.1330208333333334,
+   "H_exposure_pred_arith": 0.16484995351661658,
+   "H_exposure_residual": 0.16890004648338347,
+   "H_param_pred_arith": 0.195481911511584,
+   "H_param_residual": 0.13826808848841604
+  }
+ },
+ "H_exposure": {
+  "english_ratio": 0.8,
+  "predicted_uniform_offset": -0.030631957994967624,
+  "observed_mean_offset": 0.032500000000000036,
+  "predicts_interaction": 0.0,
+  "rmse_H_exposure": 0.1047690580035497,
+  "rmse_H_param": 0.08970597190083206
+ },
+ "offset_test": {
+  "observed_offset": 0.03250000000000002,
+  "se": 0.03838545694805719,
+  "H_exposure_predicted": -0.030631957994967624,
+  "t_vs_prediction": 1.644684289688076,
+  "p_vs_prediction": 0.10400864445682591,
+  "sign_matches_prediction": false
+ },
+ "H_exposure_variants": {
+  "all_natural_language|tokens_per_param": {
+   "english_ratio": 0.8,
+   "effective_param_multiplier": 1.25,
+   "predicted_uniform_offset": 0.030631957994967613,
+   "arith_60M_maps_to_syntax_params": 75380000.0,
+   "that_is_near_syntax_23M": false
+  },
+  "all_natural_language|effective_size": {
+   "english_ratio": 0.8,
+   "effective_param_multiplier": 0.8,
+   "predicted_uniform_offset": -0.030631957994967624,
+   "arith_60M_maps_to_syntax_params": 48243200.0,
+   "that_is_near_syntax_23M": false
+  },
+  "base_corpus_only|tokens_per_param": {
+   "english_ratio": 0.8888888888888888,
+   "effective_param_multiplier": 1.125,
+   "predicted_uniform_offset": 0.016168627681584995,
+   "arith_60M_maps_to_syntax_params": 67842000.0,
+   "that_is_near_syntax_23M": false
+  },
+  "base_corpus_only|effective_size": {
+   "english_ratio": 0.8888888888888888,
+   "effective_param_multiplier": 0.8888888888888888,
+   "predicted_uniform_offset": -0.016168627681584988,
+   "arith_60M_maps_to_syntax_params": 53603555.55555555,
+   "that_is_near_syntax_23M": false
+  }
+ },
+ "max_offset_exposure_can_produce": 0.030631957994967624,
+ "english_ratio_required_for_60M_divergence": {
+  "required_multiplier_vs_syntax": 0.3794576795781388,
+  "actual_multiplier": 0.8,
+  "note": "under the effective_size reading; the tokens_per_param reading needs 1/need"
+ },
+ "english_val_ppl": {
+  "11M": {
+   "syntax": {
+    "mean": 57.06559418689915,
+    "n": 3,
+    "vals": [
+     57.14876435061908,
+     56.92179464578756,
+     57.1262235642908
+    ]
+   },
+   "arith": {
+    "mean": 59.74938142976708,
+    "n": 3,
+    "vals": [
+     59.839703613130446,
+     59.84928058826064,
+     59.55916008791013
+    ]
+   }
+  },
+  "23M": {
+   "syntax": {
+    "mean": 46.821241572628,
+    "n": 3,
+    "vals": [
+     46.257313899777394,
+     46.674151996421294,
+     47.532258821685296
+    ]
+   },
+   "arith": {
+    "mean": 48.550104887445066,
+    "n": 3,
+    "vals": [
+     48.18966569582435,
+     47.00971857631637,
+     50.45093039019448
+    ]
+   }
+  },
+  "60M": {
+   "syntax": {
+    "mean": 41.596826103000275,
+    "n": 3,
+    "vals": [
+     41.705527275808684,
+     41.272874842758824,
+     41.812076190433324
+    ]
+   },
+   "arith": {
+    "mean": 41.48048165496211,
+    "n": 3,
+    "vals": [
+     41.220808051469845,
+     41.605444771107585,
+     41.61519214230891
+    ]
+   }
+  }
+ },
+ "ppl_check": {
+  "arith_60M": 41.48048165496211,
+  "syntax_23M": 46.821241572628,
+  "syntax_60M": 41.596826103000275,
+  "arith_60M_beats_syntax_23M": true,
+  "arith_60M_vs_syntax_60M": -0.1163444480381628
+ },
+ "ppl_ranking_best_first": [
+  [
+   "60M-arith",
+   41.48048165496211
+  ],
+  [
+   "60M-syntax",
+   41.596826103000275
+  ],
+  [
+   "23M-syntax",
+   46.821241572628
+  ],
+  [
+   "23M-arith",
+   48.550104887445066
+  ],
+  [
+   "11M-syntax",
+   57.06559418689915
+  ],
+  [
+   "11M-arith",
+   59.74938142976708
+  ]
+ ],
+ "cell_level_correlations": {
+  "n_cells": 6,
+  "r_attraction_vs_log_english_ppl": 0.82085845867796,
+  "p": 0.04526306017207048,
+  "r_attraction_vs_log_params": -0.768118880087419,
+  "p_params": 0.07441928964334299
+ },
+ "per_size_divergence": {
+  "11M": {
+   "diff": 0.018229166666666685,
+   "t": 0.2904526874664231,
+   "df": 2.2280746185522653,
+   "p": 0.7963072438618638,
+   "n_arith": 3,
+   "n_syntax": 24
+  },
+  "23M": {
+   "diff": -0.053749999999999964,
+   "t": -2.007501305555766,
+   "df": 5.115323292173507,
+   "p": 0.09968503542253584,
+   "n_arith": 3,
+   "n_syntax": 24
+  },
+  "60M": {
+   "diff": 0.1330208333333334,
+   "t": 2.7472288657236303,
+   "df": 2.2408629344021174,
+   "p": 0.09797469430820528,
+   "n_arith": 3,
+   "n_syntax": 24
+  }
+ },
+ "english_penalty_by_size": {
+  "11M": {
+   "arith_ppl": 59.74938142976708,
+   "syntax_ppl": 57.06559418689915,
+   "penalty": 2.683787242867929,
+   "penalty_pct": 4.702986591321712,
+   "t": 22.469999098869835,
+   "df": 3.7295203872671037,
+   "p": 4.0510639296818645e-05
+  },
+  "23M": {
+   "arith_ppl": 48.550104887445066,
+   "syntax_ppl": 46.821241572628,
+   "penalty": 1.728863314817069,
+   "penalty_pct": 3.6924764417776004,
+   "t": 1.6050894562802294,
+   "df": 2.542430949103673,
+   "p": 0.22275061973660104
+  },
+  "60M": {
+   "arith_ppl": 41.48048165496211,
+   "syntax_ppl": 41.596826103000275,
+   "penalty": -0.1163444480381628,
+   "penalty_pct": -0.2796954934736503,
+   "t": -0.554350159373621,
+   "df": 3.7919835308715806,
+   "p": 0.6103976709550524
+  }
+ },
+ "penalty_vs_divergence": {
+  "penalties": {
+   "11M": 2.683787242867929,
+   "23M": 1.728863314817069,
+   "60M": -0.1163444480381628
+  },
+  "divergences": {
+   "11M": 0.018229166666666685,
+   "23M": -0.053749999999999964,
+   "60M": 0.1330208333333334
+  },
+  "r": -0.7424503964335475,
+  "H_exposure_requires": "positive r (bigger English penalty -> bigger divergence)",
+  "penalty_shrinks_with_size": true
+ }
+}

@@ -1,0 +1,312 @@
+{
+  "control_unigram": {
+    "distractor_agreement_relational_noun": {
+      "raw": 0.47126436781609193,
+      "interaction": 0.4670983086680761,
+      "acc_sg": 0.10465116279069768,
+      "acc_pl": 0.8295454545454546
+    },
+    "distractor_agreement_relative_clause": {
+      "raw": 0.5274725274725275,
+      "interaction": 0.5095893195988073,
+      "acc_sg": 0.12211981566820276,
+      "acc_pl": 0.8970588235294118
+    },
+    "regular_plural_subject_verb_agreement_1": {
+      "raw": 0.411371237458194,
+      "interaction": 0.5452688159666671,
+      "acc_sg": 0.18241042345276873,
+      "acc_pl": 0.9081272084805654
+    },
+    "regular_plural_subject_verb_agreement_2": {
+      "raw": 0.4718232044198895,
+      "interaction": 0.5029695528722872,
+      "acc_sg": 0.0944558521560575,
+      "acc_pl": 0.9114832535885168
+    },
+    "irregular_plural_subject_verb_agreement_1": {
+      "raw": 0.5186972255729795,
+      "interaction": 0.5239324848329587,
+      "acc_sg": 0.23459715639810427,
+      "acc_pl": 0.8132678132678133
+    },
+    "irregular_plural_subject_verb_agreement_2": {
+      "raw": NaN,
+      "interaction": NaN,
+      "acc_sg": NaN,
+      "acc_pl": NaN
+    }
+  },
+  "models": {
+    "arith_delay0_exp20_size23M_seed1": {
+      "distractor_agreement_relational_noun": {
+        "raw": 0.4367816091954023,
+        "interaction": 0.43697145877378435,
+        "acc_sg": 0.45348837209302323,
+        "acc_pl": 0.42045454545454547
+      },
+      "distractor_agreement_relative_clause": {
+        "raw": 0.3021978021978022,
+        "interaction": 0.2961846028734074,
+        "acc_sg": 0.16589861751152074,
+        "acc_pl": 0.4264705882352941
+      },
+      "regular_plural_subject_verb_agreement_1": {
+        "raw": 0.68561872909699,
+        "interaction": 0.7332126702040722,
+        "acc_sg": 0.6042345276872965,
+        "acc_pl": 0.8621908127208481
+      },
+      "regular_plural_subject_verb_agreement_2": {
+        "raw": 0.7546961325966851,
+        "interaction": 0.7651253156224517,
+        "acc_sg": 0.6283367556468172,
+        "acc_pl": 0.9019138755980861
+      },
+      "irregular_plural_subject_verb_agreement_1": {
+        "raw": 0.7104945717732207,
+        "interaction": 0.7112730998986923,
+        "acc_sg": 0.6682464454976303,
+        "acc_pl": 0.7542997542997543
+      },
+      "irregular_plural_subject_verb_agreement_2": {
+        "raw": NaN,
+        "interaction": NaN,
+        "acc_sg": NaN,
+        "acc_pl": NaN
+      },
+      "_attractor_mean": 0.36657803082359586,
+      "_no_attractor_mean": 0.736537028575072
+    },
+    "arith_delay0_exp20_size23M_seed2": {
+      "distractor_agreement_relational_noun": {
+        "raw": 0.3873563218390805,
+        "interaction": 0.3877642706131078,
+        "acc_sg": 0.4232558139534884,
+        "acc_pl": 0.3522727272727273
+      },
+      "distractor_agreement_relative_clause": {
+        "raw": 0.33076923076923076,
+        "interaction": 0.326036866359447,
+        "acc_sg": 0.22350230414746544,
+        "acc_pl": 0.42857142857142855
+      },
+      "regular_plural_subject_verb_agreement_1": {
+        "raw": 0.7235228539576366,
+        "interaction": 0.7551852533925714,
+        "acc_sg": 0.6693811074918566,
+        "acc_pl": 0.8409893992932862
+      },
+      "regular_plural_subject_verb_agreement_2": {
+        "raw": 0.7082872928176795,
+        "interaction": 0.7159029503944667,
+        "acc_sg": 0.6160164271047228,
+        "acc_pl": 0.8157894736842105
+      },
+      "irregular_plural_subject_verb_agreement_1": {
+        "raw": 0.7141133896260555,
+        "interaction": 0.7140852614786264,
+        "acc_sg": 0.7156398104265402,
+        "acc_pl": 0.7125307125307125
+      },
+      "irregular_plural_subject_verb_agreement_2": {
+        "raw": NaN,
+        "interaction": NaN,
+        "acc_sg": NaN,
+        "acc_pl": NaN
+      },
+      "_attractor_mean": 0.3569005684862774,
+      "_no_attractor_mean": 0.7283911550885548
+    },
+    "arith_delay0_exp20_size23M_seed3": {
+      "distractor_agreement_relational_noun": {
+        "raw": 0.5298850574712644,
+        "interaction": 0.5307346723044397,
+        "acc_sg": 0.6046511627906976,
+        "acc_pl": 0.45681818181818185
+      },
+      "distractor_agreement_relative_clause": {
+        "raw": 0.4043956043956044,
+        "interaction": 0.3986513960422879,
+        "acc_sg": 0.27419354838709675,
+        "acc_pl": 0.523109243697479
+      },
+      "regular_plural_subject_verb_agreement_1": {
+        "raw": 0.725752508361204,
+        "interaction": 0.7711007009587827,
+        "acc_sg": 0.6482084690553745,
+        "acc_pl": 0.8939929328621908
+      },
+      "regular_plural_subject_verb_agreement_2": {
+        "raw": 0.7381215469613259,
+        "interaction": 0.7451489934468428,
+        "acc_sg": 0.6529774127310062,
+        "acc_pl": 0.8373205741626795
+      },
+      "irregular_plural_subject_verb_agreement_1": {
+        "raw": 0.7454764776839565,
+        "interaction": 0.7465066315777216,
+        "acc_sg": 0.6895734597156398,
+        "acc_pl": 0.8034398034398035
+      },
+      "irregular_plural_subject_verb_agreement_2": {
+        "raw": NaN,
+        "interaction": NaN,
+        "acc_sg": NaN,
+        "acc_pl": NaN
+      },
+      "_attractor_mean": 0.46469303417336383,
+      "_no_attractor_mean": 0.7542521086611158
+    },
+    "syntax_delay0_exp10_size23M_seed1": {
+      "distractor_agreement_relational_noun": {
+        "raw": 0.42758620689655175,
+        "interaction": 0.4289112050739958,
+        "acc_sg": 0.5441860465116279,
+        "acc_pl": 0.31363636363636366
+      },
+      "distractor_agreement_relative_clause": {
+        "raw": 0.33296703296703295,
+        "interaction": 0.3277310924369748,
+        "acc_sg": 0.21428571428571427,
+        "acc_pl": 0.4411764705882353
+      },
+      "regular_plural_subject_verb_agreement_1": {
+        "raw": 0.68561872909699,
+        "interaction": 0.7198783393377148,
+        "acc_sg": 0.6270358306188925,
+        "acc_pl": 0.8127208480565371
+      },
+      "regular_plural_subject_verb_agreement_2": {
+        "raw": 0.7116022099447514,
+        "interaction": 0.7189830325299902,
+        "acc_sg": 0.62217659137577,
+        "acc_pl": 0.8157894736842105
+      },
+      "irregular_plural_subject_verb_agreement_1": {
+        "raw": 0.6755126658624849,
+        "interaction": 0.6773932484832959,
+        "acc_sg": 0.5734597156398105,
+        "acc_pl": 0.7813267813267813
+      },
+      "irregular_plural_subject_verb_agreement_2": {
+        "raw": NaN,
+        "interaction": NaN,
+        "acc_sg": NaN,
+        "acc_pl": NaN
+      },
+      "_attractor_mean": 0.3783211487554853,
+      "_no_attractor_mean": 0.705418206783667
+    },
+    "syntax_delay0_exp10_size23M_seed2": {
+      "distractor_agreement_relational_noun": {
+        "raw": 0.37701149425287356,
+        "interaction": 0.3776427061310782,
+        "acc_sg": 0.4325581395348837,
+        "acc_pl": 0.32272727272727275
+      },
+      "distractor_agreement_relative_clause": {
+        "raw": 0.3208791208791209,
+        "interaction": 0.316278124152887,
+        "acc_sg": 0.21658986175115208,
+        "acc_pl": 0.41596638655462187
+      },
+      "regular_plural_subject_verb_agreement_1": {
+        "raw": 0.6900780379041248,
+        "interaction": 0.7345650947848206,
+        "acc_sg": 0.6140065146579805,
+        "acc_pl": 0.8551236749116607
+      },
+      "regular_plural_subject_verb_agreement_2": {
+        "raw": 0.7149171270718232,
+        "interaction": 0.7264695479598754,
+        "acc_sg": 0.5749486652977412,
+        "acc_pl": 0.8779904306220095
+      },
+      "irregular_plural_subject_verb_agreement_1": {
+        "raw": 0.7273823884197829,
+        "interaction": 0.7285594513082665,
+        "acc_sg": 0.6635071090047393,
+        "acc_pl": 0.7936117936117936
+      },
+      "irregular_plural_subject_verb_agreement_2": {
+        "raw": NaN,
+        "interaction": NaN,
+        "acc_sg": NaN,
+        "acc_pl": NaN
+      },
+      "_attractor_mean": 0.3469604151419826,
+      "_no_attractor_mean": 0.7298646980176541
+    },
+    "syntax_delay0_exp10_size23M_seed3": {
+      "distractor_agreement_relational_noun": {
+        "raw": 0.4011494252873563,
+        "interaction": 0.40079281183932347,
+        "acc_sg": 0.3697674418604651,
+        "acc_pl": 0.4318181818181818
+      },
+      "distractor_agreement_relative_clause": {
+        "raw": 0.3813186813186813,
+        "interaction": 0.37374627270262945,
+        "acc_sg": 0.20967741935483872,
+        "acc_pl": 0.5378151260504201
+      },
+      "regular_plural_subject_verb_agreement_1": {
+        "raw": 0.6655518394648829,
+        "interaction": 0.7033154544722091,
+        "acc_sg": 0.6009771986970684,
+        "acc_pl": 0.8056537102473498
+      },
+      "regular_plural_subject_verb_agreement_2": {
+        "raw": 0.6839779005524862,
+        "interaction": 0.6958578544550662,
+        "acc_sg": 0.5400410677618069,
+        "acc_pl": 0.8516746411483254
+      },
+      "irregular_plural_subject_verb_agreement_1": {
+        "raw": 0.6984318455971049,
+        "interaction": 0.6982020797186674,
+        "acc_sg": 0.7109004739336493,
+        "acc_pl": 0.6855036855036855
+      },
+      "irregular_plural_subject_verb_agreement_2": {
+        "raw": NaN,
+        "interaction": NaN,
+        "acc_sg": NaN,
+        "acc_pl": NaN
+      },
+      "_attractor_mean": 0.38726954227097643,
+      "_no_attractor_mean": 0.6991251295486475
+    }
+  },
+  "summary": {
+    "_attractor_mean": {
+      "mean": 0.38345378994194695,
+      "sd": 0.04233757195320102,
+      "lo": 0.3469604151419826,
+      "hi": 0.46469303417336383,
+      "n": 6
+    },
+    "_no_attractor_mean": {
+      "mean": 0.7255980544457853,
+      "sd": 0.020370388512849304,
+      "lo": 0.6991251295486475,
+      "hi": 0.7542521086611158,
+      "n": 6
+    },
+    "control": {
+      "attractor": 0.4883438141334417,
+      "no_attractor": 0.524056951223971
+    }
+  },
+  "paradigm_notes": {
+    "_1_variants": "verb form varies (has/have); balancing cancels verb-form frequency",
+    "_2_variants": "SUBJECT NOUN varies (students/student); balancing cancels noun-number frequency",
+    "irregular_plural_subject_verb_agreement_2": "dropped: irregular noun plurals (women/woman) not handled by the -s classifier; irregular_1 already covers irregular agreement"
+  },
+  "reference_points": {
+    "wh_local_licensing_interaction": 0.604,
+    "wh_long_distance_licensing_interaction": 0.534,
+    "chance": 0.5
+  }
+}

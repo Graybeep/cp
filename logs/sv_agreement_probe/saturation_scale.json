@@ -1,0 +1,3178 @@
+{
+  "scale": {
+    "11M": [
+      {
+        "run": "syntax_delay0_exp10_size11M_seed1_szsweep",
+        "seed": 1,
+        "attractor": 0.3142521234777755,
+        "no_attractor": 0.7029796745809985,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.332183908045977,
+            "interaction": 0.33208245243128964,
+            "acc_sg": 0.32325581395348835,
+            "acc_pl": 0.3409090909090909
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3032967032967033,
+            "interaction": 0.2964217945242613,
+            "acc_sg": 0.14746543778801843,
+            "acc_pl": 0.44537815126050423
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7034559643255296,
+            "interaction": 0.7386223685270658,
+            "acc_sg": 0.6433224755700325,
+            "acc_pl": 0.833922261484099
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6629834254143646,
+            "interaction": 0.6770285804112671,
+            "acc_sg": 0.4928131416837782,
+            "acc_pl": 0.861244019138756
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6936067551266586,
+            "interaction": 0.6932880748046625,
+            "acc_sg": 0.7109004739336493,
+            "acc_pl": 0.6756756756756757
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed2_szsweep",
+        "seed": 2,
+        "attractor": 0.3364791267049001,
+        "no_attractor": 0.7146826895516637,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.37471264367816093,
+            "interaction": 0.37375792811839326,
+            "acc_sg": 0.29069767441860467,
+            "acc_pl": 0.45681818181818185
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.30439560439560437,
+            "interaction": 0.2992003252914069,
+            "acc_sg": 0.18663594470046083,
+            "acc_pl": 0.4117647058823529
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6956521739130435,
+            "interaction": 0.7386367560226057,
+            "acc_sg": 0.6221498371335505,
+            "acc_pl": 0.8551236749116607
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7060773480662983,
+            "interaction": 0.7177475609875912,
+            "acc_sg": 0.5646817248459959,
+            "acc_pl": 0.8708133971291866
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6863691194209891,
+            "interaction": 0.6876637516447943,
+            "acc_sg": 0.6161137440758294,
+            "acc_pl": 0.7592137592137592
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed3_szsweep",
+        "seed": 3,
+        "attractor": 0.3477721177811641,
+        "no_attractor": 0.6937837258549692,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.367816091954023,
+            "interaction": 0.3682875264270613,
+            "acc_sg": 0.40930232558139534,
+            "acc_pl": 0.32727272727272727
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.33406593406593404,
+            "interaction": 0.327256709135267,
+            "acc_sg": 0.17972350230414746,
+            "acc_pl": 0.47478991596638653
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6811594202898551,
+            "interaction": 0.7318602456233239,
+            "acc_sg": 0.5944625407166124,
+            "acc_pl": 0.8692579505300353
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6430939226519337,
+            "interaction": 0.656514349154574,
+            "acc_sg": 0.4804928131416838,
+            "acc_pl": 0.8325358851674641
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6924004825090471,
+            "interaction": 0.6929765827870094,
+            "acc_sg": 0.6611374407582938,
+            "acc_pl": 0.7248157248157249
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed4_szsweep",
+        "seed": 4,
+        "attractor": 0.3462442052453526,
+        "no_attractor": 0.69939688705604,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3758620689655172,
+            "interaction": 0.37563424947145874,
+            "acc_sg": 0.3558139534883721,
+            "acc_pl": 0.39545454545454545
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3230769230769231,
+            "interaction": 0.3168541610192464,
+            "acc_sg": 0.18202764976958524,
+            "acc_pl": 0.45168067226890757
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6889632107023411,
+            "interaction": 0.7251786926946052,
+            "acc_sg": 0.6270358306188925,
+            "acc_pl": 0.823321554770318
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6662983425414365,
+            "interaction": 0.6784138805104978,
+            "acc_sg": 0.5195071868583162,
+            "acc_pl": 0.8373205741626795
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6936067551266586,
+            "interaction": 0.6945980879630169,
+            "acc_sg": 0.6398104265402843,
+            "acc_pl": 0.7493857493857494
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed5_szsweep",
+        "seed": 5,
+        "attractor": 0.2716121460177878,
+        "no_attractor": 0.7030846501182421,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.27011494252873564,
+            "interaction": 0.2702167019027484,
+            "acc_sg": 0.27906976744186046,
+            "acc_pl": 0.26136363636363635
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.27912087912087913,
+            "interaction": 0.2730075901328273,
+            "acc_sg": 0.14055299539170507,
+            "acc_pl": 0.4054621848739496
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6755852842809364,
+            "interaction": 0.7230263233618397,
+            "acc_sg": 0.5944625407166124,
+            "acc_pl": 0.8515901060070671
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6640883977900552,
+            "interaction": 0.6787331872709588,
+            "acc_sg": 0.486652977412731,
+            "acc_pl": 0.8708133971291866
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7056694813027744,
+            "interaction": 0.7074944397219278,
+            "acc_sg": 0.6066350710900474,
+            "acc_pl": 0.8083538083538083
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed6_szsweep",
+        "seed": 6,
+        "attractor": 0.35343262023489064,
+        "no_attractor": 0.6890224194311353,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.39195402298850573,
+            "interaction": 0.39156976744186045,
+            "acc_sg": 0.3581395348837209,
+            "acc_pl": 0.425
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.321978021978022,
+            "interaction": 0.3152954730279208,
+            "acc_sg": 0.17050691244239632,
+            "acc_pl": 0.46008403361344535
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6521739130434783,
+            "interaction": 0.7173547726200205,
+            "acc_sg": 0.5407166123778502,
+            "acc_pl": 0.8939929328621908
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6574585635359116,
+            "interaction": 0.6747762396470923,
+            "acc_sg": 0.44763860369609854,
+            "acc_pl": 0.9019138755980861
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6731001206272618,
+            "interaction": 0.6749362460262934,
+            "acc_sg": 0.5734597156398105,
+            "acc_pl": 0.7764127764127764
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed7_szsweep",
+        "seed": 7,
+        "attractor": 0.3092860065665767,
+        "no_attractor": 0.71108700020734,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3195402298850575,
+            "interaction": 0.3196088794926004,
+            "acc_sg": 0.32558139534883723,
+            "acc_pl": 0.31363636363636366
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3065934065934066,
+            "interaction": 0.298963133640553,
+            "acc_sg": 0.1336405529953917,
+            "acc_pl": 0.4642857142857143
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6488294314381271,
+            "interaction": 0.6939578273730735,
+            "acc_sg": 0.5716612377850163,
+            "acc_pl": 0.8162544169611308
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6850828729281768,
+            "interaction": 0.6982403741292751,
+            "acc_sg": 0.5256673511293635,
+            "acc_pl": 0.8708133971291866
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7394451145958987,
+            "interaction": 0.7410627991196712,
+            "acc_sg": 0.6516587677725119,
+            "acc_pl": 0.8304668304668305
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed8_szsweep",
+        "seed": 8,
+        "attractor": 0.3217398863657855,
+        "no_attractor": 0.7080815942721861,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.34597701149425286,
+            "interaction": 0.34529598308668075,
+            "acc_sg": 0.28604651162790695,
+            "acc_pl": 0.40454545454545454
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.30439560439560437,
+            "interaction": 0.29818378964489023,
+            "acc_sg": 0.16359447004608296,
+            "acc_pl": 0.4327731092436975
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6488294314381271,
+            "interaction": 0.6977676361920329,
+            "acc_sg": 0.5651465798045603,
+            "acc_pl": 0.8303886925795053
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7104972375690608,
+            "interaction": 0.7176173820775571,
+            "acc_sg": 0.6242299794661191,
+            "acc_pl": 0.8110047846889952
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7080820265379976,
+            "interaction": 0.7088597645469683,
+            "acc_sg": 0.6658767772511849,
+            "acc_pl": 0.7518427518427518
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed9_szsweep",
+        "seed": 9,
+        "attractor": 0.28491769499861597,
+        "no_attractor": 0.7143970778161037,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.28735632183908044,
+            "interaction": 0.28686575052854124,
+            "acc_sg": 0.2441860465116279,
+            "acc_pl": 0.32954545454545453
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.289010989010989,
+            "interaction": 0.2829696394686907,
+            "acc_sg": 0.15207373271889402,
+            "acc_pl": 0.41386554621848737
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6688963210702341,
+            "interaction": 0.7200452342859773,
+            "acc_sg": 0.5814332247557004,
+            "acc_pl": 0.8586572438162544
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6740331491712708,
+            "interaction": 0.6845838696049438,
+            "acc_sg": 0.5462012320328542,
+            "acc_pl": 0.8229665071770335
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7370325693606755,
+            "interaction": 0.7385621295573902,
+            "acc_sg": 0.6540284360189573,
+            "acc_pl": 0.8230958230958231
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed10_szsweep",
+        "seed": 10,
+        "attractor": 0.3509423084858304,
+        "no_attractor": 0.7090764531812267,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3632183908045977,
+            "interaction": 0.36286997885835093,
+            "acc_sg": 0.3325581395348837,
+            "acc_pl": 0.3931818181818182
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.34285714285714286,
+            "interaction": 0.33901463811330984,
+            "acc_sg": 0.2557603686635945,
+            "acc_pl": 0.4222689075630252
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6811594202898551,
+            "interaction": 0.726145532394885,
+            "acc_sg": 0.6042345276872965,
+            "acc_pl": 0.8480565371024735
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6795580110497238,
+            "interaction": 0.6944627295324366,
+            "acc_sg": 0.4989733059548255,
+            "acc_pl": 0.8899521531100478
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7056694813027744,
+            "interaction": 0.7066210976163583,
+            "acc_sg": 0.6540284360189573,
+            "acc_pl": 0.7592137592137592
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed11_szsweep",
+        "seed": 11,
+        "attractor": 0.296431737804581,
+        "no_attractor": 0.6862059367106471,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.29195402298850576,
+            "interaction": 0.29159619450317126,
+            "acc_sg": 0.26046511627906976,
+            "acc_pl": 0.32272727272727275
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3087912087912088,
+            "interaction": 0.30126728110599077,
+            "acc_sg": 0.1382488479262673,
+            "acc_pl": 0.4642857142857143
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6688963210702341,
+            "interaction": 0.7048059990101403,
+            "acc_sg": 0.6074918566775245,
+            "acc_pl": 0.8021201413427562
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6486187845303868,
+            "interaction": 0.6623257321949638,
+            "acc_sg": 0.48254620123203285,
+            "acc_pl": 0.8421052631578947
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6911942098914354,
+            "interaction": 0.6914860789268372,
+            "acc_sg": 0.6753554502369669,
+            "acc_pl": 0.7076167076167076
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed12_szsweep",
+        "seed": 12,
+        "attractor": 0.3241144427149568,
+        "no_attractor": 0.6807722264658009,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.34022988505747126,
+            "interaction": 0.3403541226215645,
+            "acc_sg": 0.3511627906976744,
+            "acc_pl": 0.32954545454545453
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3120879120879121,
+            "interaction": 0.30787476280834913,
+            "acc_sg": 0.21658986175115208,
+            "acc_pl": 0.39915966386554624
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6900780379041248,
+            "interaction": 0.7336126425800809,
+            "acc_sg": 0.6156351791530945,
+            "acc_pl": 0.8515901060070671
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6464088397790055,
+            "interaction": 0.6629839953626834,
+            "acc_sg": 0.4455852156057495,
+            "acc_pl": 0.8803827751196173
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6453558504221955,
+            "interaction": 0.6457200414546387,
+            "acc_sg": 0.6255924170616114,
+            "acc_pl": 0.6658476658476659
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed13_szsweep",
+        "seed": 13,
+        "attractor": 0.32667565764626794,
+        "no_attractor": 0.7107654709195069,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3425287356321839,
+            "interaction": 0.34249471458773784,
+            "acc_sg": 0.3395348837209302,
+            "acc_pl": 0.34545454545454546
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.31648351648351647,
+            "interaction": 0.31085660070479804,
+            "acc_sg": 0.1889400921658986,
+            "acc_pl": 0.4327731092436975
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6878483835005574,
+            "interaction": 0.7386511435181455,
+            "acc_sg": 0.6009771986970684,
+            "acc_pl": 0.8763250883392226
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6685082872928176,
+            "interaction": 0.6799588339899589,
+            "acc_sg": 0.5297741273100616,
+            "acc_pl": 0.8301435406698564
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7129071170084439,
+            "interaction": 0.7136864352504163,
+            "acc_sg": 0.6706161137440758,
+            "acc_pl": 0.7567567567567568
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed14_szsweep",
+        "seed": 14,
+        "attractor": 0.3126053214029252,
+        "no_attractor": 0.6900312784666774,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3333333333333333,
+            "interaction": 0.33234672304439744,
+            "acc_sg": 0.24651162790697675,
+            "acc_pl": 0.41818181818181815
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3,
+            "interaction": 0.292863919761453,
+            "acc_sg": 0.1382488479262673,
+            "acc_pl": 0.4474789915966387
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6655518394648829,
+            "interaction": 0.7166497853385665,
+            "acc_sg": 0.5781758957654723,
+            "acc_pl": 0.8551236749116607
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6552486187845303,
+            "interaction": 0.6705196349095625,
+            "acc_sg": 0.4702258726899384,
+            "acc_pl": 0.8708133971291866
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6815440289505428,
+            "interaction": 0.6829244151519034,
+            "acc_sg": 0.6066350710900474,
+            "acc_pl": 0.7592137592137592
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed15_szsweep",
+        "seed": 15,
+        "attractor": 0.299989619731136,
+        "no_attractor": 0.6867250375492403,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.30344827586206896,
+            "interaction": 0.30396405919661734,
+            "acc_sg": 0.3488372093023256,
+            "acc_pl": 0.2590909090909091
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3032967032967033,
+            "interaction": 0.29601518026565465,
+            "acc_sg": 0.1382488479262673,
+            "acc_pl": 0.453781512605042
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.673355629877369,
+            "interaction": 0.709968232409848,
+            "acc_sg": 0.6107491856677525,
+            "acc_pl": 0.8091872791519434
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6552486187845303,
+            "interaction": 0.6666216362260888,
+            "acc_sg": 0.5174537987679672,
+            "acc_pl": 0.8157894736842105
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6827503015681544,
+            "interaction": 0.6835852440117842,
+            "acc_sg": 0.6374407582938388,
+            "acc_pl": 0.7297297297297297
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed16_szsweep",
+        "seed": 16,
+        "attractor": 0.33999311635586515,
+        "no_attractor": 0.7211405402757984,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3586206896551724,
+            "interaction": 0.35821881606765327,
+            "acc_sg": 0.32325581395348835,
+            "acc_pl": 0.3931818181818182
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3274725274725275,
+            "interaction": 0.321767416644077,
+            "acc_sg": 0.19815668202764977,
+            "acc_pl": 0.44537815126050423
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7112597547380156,
+            "interaction": 0.7576570251263222,
+            "acc_sg": 0.6319218241042345,
+            "acc_pl": 0.8833922261484098
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6895027624309392,
+            "interaction": 0.7035334977353782,
+            "acc_sg": 0.5195071868583162,
+            "acc_pl": 0.8875598086124402
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7008443908323281,
+            "interaction": 0.7022310979656952,
+            "acc_sg": 0.6255924170616114,
+            "acc_pl": 0.7788697788697788
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed17_szsweep",
+        "seed": 17,
+        "attractor": 0.3607436391660941,
+        "no_attractor": 0.6855254340040858,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3896551724137931,
+            "interaction": 0.38982558139534884,
+            "acc_sg": 0.4046511627906977,
+            "acc_pl": 0.375
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3384615384615385,
+            "interaction": 0.3316616969368393,
+            "acc_sg": 0.18433179723502305,
+            "acc_pl": 0.4789915966386555
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6622073578595318,
+            "interaction": 0.7027773621390178,
+            "acc_sg": 0.5928338762214984,
+            "acc_pl": 0.8127208480565371
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6718232044198895,
+            "interaction": 0.6833778725327413,
+            "acc_sg": 0.5318275154004107,
+            "acc_pl": 0.8349282296650717
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.669481302774427,
+            "interaction": 0.6704210673404987,
+            "acc_sg": 0.6184834123222749,
+            "acc_pl": 0.7223587223587223
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed18_szsweep",
+        "seed": 18,
+        "attractor": 0.2795497635390513,
+        "no_attractor": 0.700538064228347,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3114942528735632,
+            "interaction": 0.31086152219873153,
+            "acc_sg": 0.2558139534883721,
+            "acc_pl": 0.3659090909090909
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.25384615384615383,
+            "interaction": 0.24823800487937112,
+            "acc_sg": 0.12672811059907835,
+            "acc_pl": 0.3697478991596639
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6755852842809364,
+            "interaction": 0.7192165145428805,
+            "acc_sg": 0.6009771986970684,
+            "acc_pl": 0.8374558303886925
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.656353591160221,
+            "interaction": 0.6747664148236935,
+            "acc_sg": 0.433264887063655,
+            "acc_pl": 0.916267942583732
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.706875753920386,
+            "interaction": 0.7076312633184672,
+            "acc_sg": 0.6658767772511849,
+            "acc_pl": 0.7493857493857494
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed19_szsweep",
+        "seed": 19,
+        "attractor": 0.30458782452488603,
+        "no_attractor": 0.7038137581624927,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.32068965517241377,
+            "interaction": 0.3213266384778013,
+            "acc_sg": 0.3767441860465116,
+            "acc_pl": 0.26590909090909093
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.2923076923076923,
+            "interaction": 0.28784901057197076,
+            "acc_sg": 0.1912442396313364,
+            "acc_pl": 0.38445378151260506
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6889632107023411,
+            "interaction": 0.7413703801751821,
+            "acc_sg": 0.5993485342019544,
+            "acc_pl": 0.8833922261484098
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6828729281767956,
+            "interaction": 0.7012713321478047,
+            "acc_sg": 0.459958932238193,
+            "acc_pl": 0.9425837320574163
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6682750301568154,
+            "interaction": 0.6687995621644911,
+            "acc_sg": 0.6398104265402843,
+            "acc_pl": 0.6977886977886978
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed20_szsweep",
+        "seed": 20,
+        "attractor": 0.3258006167412747,
+        "no_attractor": 0.7144436092841193,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3137931034482759,
+            "interaction": 0.31387420718816067,
+            "acc_sg": 0.3209302325581395,
+            "acc_pl": 0.3068181818181818
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.34725274725274724,
+            "interaction": 0.33772702629438867,
+            "acc_sg": 0.1313364055299539,
+            "acc_pl": 0.5441176470588235
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6945373467112598,
+            "interaction": 0.7368699715703089,
+            "acc_sg": 0.6221498371335505,
+            "acc_pl": 0.8515901060070671
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6817679558011049,
+            "interaction": 0.6954992484010101,
+            "acc_sg": 0.5154004106776181,
+            "acc_pl": 0.8755980861244019
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7092882991556092,
+            "interaction": 0.7109616078810392,
+            "acc_sg": 0.6184834123222749,
+            "acc_pl": 0.8034398034398035
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed21_szsweep",
+        "seed": 21,
+        "attractor": 0.3292928286024906,
+        "no_attractor": 0.6889589101878811,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3252873563218391,
+            "interaction": 0.3250264270613108,
+            "acc_sg": 0.3023255813953488,
+            "acc_pl": 0.3477272727272727
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.34065934065934067,
+            "interaction": 0.3335592301436704,
+            "acc_sg": 0.17972350230414746,
+            "acc_pl": 0.48739495798319327
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6432552954292085,
+            "interaction": 0.707982758025345,
+            "acc_sg": 0.5325732899022801,
+            "acc_pl": 0.8833922261484098
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6629834254143646,
+            "interaction": 0.6771980586148965,
+            "acc_sg": 0.49075975359342916,
+            "acc_pl": 0.8636363636363636
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6803377563329313,
+            "interaction": 0.6816959139234021,
+            "acc_sg": 0.6066350710900474,
+            "acc_pl": 0.7567567567567568
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed22_szsweep",
+        "seed": 22,
+        "attractor": 0.3765905809913135,
+        "no_attractor": 0.7048354668276945,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4367816091954023,
+            "interaction": 0.4367336152219873,
+            "acc_sg": 0.4325581395348837,
+            "acc_pl": 0.4409090909090909
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3230769230769231,
+            "interaction": 0.31644754676063974,
+            "acc_sg": 0.1728110599078341,
+            "acc_pl": 0.46008403361344535
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.68561872909699,
+            "interaction": 0.7370224790230315,
+            "acc_sg": 0.5977198697068404,
+            "acc_pl": 0.8763250883392226
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6541436464088398,
+            "interaction": 0.6691539844571294,
+            "acc_sg": 0.4722792607802875,
+            "acc_pl": 0.8660287081339713
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.706875753920386,
+            "interaction": 0.7083299370029228,
+            "acc_sg": 0.6279620853080569,
+            "acc_pl": 0.7886977886977887
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed23_szsweep",
+        "seed": 23,
+        "attractor": 0.29741693922334667,
+        "no_attractor": 0.6985330295598305,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.32068965517241377,
+            "interaction": 0.31955602536997885,
+            "acc_sg": 0.22093023255813954,
+            "acc_pl": 0.41818181818181815
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.2835164835164835,
+            "interaction": 0.27527785307671454,
+            "acc_sg": 0.0967741935483871,
+            "acc_pl": 0.453781512605042
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6421404682274248,
+            "interaction": 0.6985963559351296,
+            "acc_sg": 0.5456026058631922,
+            "acc_pl": 0.8515901060070671
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6917127071823205,
+            "interaction": 0.7023667999567708,
+            "acc_sg": 0.5626283367556468,
+            "acc_pl": 0.8421052631578947
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6924004825090471,
+            "interaction": 0.6946359327875915,
+            "acc_sg": 0.5710900473933649,
+            "acc_pl": 0.8181818181818182
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size11M_seed24_szsweep",
+        "seed": 24,
+        "attractor": 0.3903198620033159,
+        "no_attractor": 0.712631872934839,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4436781609195402,
+            "interaction": 0.44389534883720927,
+            "acc_sg": 0.4627906976744186,
+            "acc_pl": 0.425
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.34175824175824177,
+            "interaction": 0.3367443751694226,
+            "acc_sg": 0.22811059907834103,
+            "acc_pl": 0.44537815126050423
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7123745819397993,
+            "interaction": 0.7479943831217413,
+            "acc_sg": 0.6514657980456026,
+            "acc_pl": 0.8445229681978799
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6961325966850829,
+            "interaction": 0.7071514889519861,
+            "acc_sg": 0.5626283367556468,
+            "acc_pl": 0.8516746411483254
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6815440289505428,
+            "interaction": 0.6827497467307895,
+            "acc_sg": 0.6161137440758294,
+            "acc_pl": 0.7493857493857494
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      }
+    ],
+    "23M": [
+      {
+        "run": "syntax_delay0_exp10_size23M_seed1_szsweep",
+        "seed": 1,
+        "attractor": 0.3755203494819465,
+        "no_attractor": 0.704839446758147,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.41954022988505746,
+            "interaction": 0.42090380549682876,
+            "acc_sg": 0.5395348837209303,
+            "acc_pl": 0.30227272727272725
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.33516483516483514,
+            "interaction": 0.33013689346706426,
+            "acc_sg": 0.22119815668202766,
+            "acc_pl": 0.43907563025210083
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6900780379041248,
+            "interaction": 0.7240881205326826,
+            "acc_sg": 0.6319218241042345,
+            "acc_pl": 0.8162544169611308
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7060773480662983,
+            "interaction": 0.7145274751186348,
+            "acc_sg": 0.6036960985626283,
+            "acc_pl": 0.8253588516746412
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6743063932448733,
+            "interaction": 0.6759027446231238,
+            "acc_sg": 0.5876777251184834,
+            "acc_pl": 0.7641277641277642
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed2_szsweep",
+        "seed": 2,
+        "attractor": 0.35590785946104553,
+        "no_attractor": 0.7245906728172674,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.39770114942528734,
+            "interaction": 0.39828224101479914,
+            "acc_sg": 0.44883720930232557,
+            "acc_pl": 0.3477272727272727
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.31758241758241756,
+            "interaction": 0.31353347790729197,
+            "acc_sg": 0.22580645161290322,
+            "acc_pl": 0.4012605042016807
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6767001114827201,
+            "interaction": 0.7238406556093968,
+            "acc_sg": 0.5960912052117264,
+            "acc_pl": 0.8515901060070671
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7038674033149172,
+            "interaction": 0.7151857382863542,
+            "acc_sg": 0.5667351129363449,
+            "acc_pl": 0.8636363636363636
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7334137515078407,
+            "interaction": 0.7347456245560511,
+            "acc_sg": 0.6611374407582938,
+            "acc_pl": 0.8083538083538083
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed3_szsweep",
+        "seed": 3,
+        "attractor": 0.4050591453249103,
+        "no_attractor": 0.6896462445821885,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4218390804597701,
+            "interaction": 0.4215644820295983,
+            "acc_sg": 0.39767441860465114,
+            "acc_pl": 0.44545454545454544
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3967032967032967,
+            "interaction": 0.38855380862022226,
+            "acc_sg": 0.2119815668202765,
+            "acc_pl": 0.5651260504201681
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6610925306577481,
+            "interaction": 0.6991056732772414,
+            "acc_sg": 0.5960912052117264,
+            "acc_pl": 0.8021201413427562
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6651933701657459,
+            "interaction": 0.6763703172435476,
+            "acc_sg": 0.5297741273100616,
+            "acc_pl": 0.8229665071770335
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6936067551266586,
+            "interaction": 0.6934627432257764,
+            "acc_sg": 0.7014218009478673,
+            "acc_pl": 0.6855036855036855
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed4_szsweep",
+        "seed": 4,
+        "attractor": 0.3753163904517,
+        "no_attractor": 0.7068636053287246,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4206896551724138,
+            "interaction": 0.4204281183932347,
+            "acc_sg": 0.39767441860465114,
+            "acc_pl": 0.4431818181818182
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3373626373626374,
+            "interaction": 0.33020466251016534,
+            "acc_sg": 0.17511520737327188,
+            "acc_pl": 0.4852941176470588
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7023411371237458,
+            "interaction": 0.7578095325790449,
+            "acc_sg": 0.6074918566775245,
+            "acc_pl": 0.9081272084805654
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.661878453038674,
+            "interaction": 0.6761713645697218,
+            "acc_sg": 0.4887063655030801,
+            "acc_pl": 0.8636363636363636
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6851628468033776,
+            "interaction": 0.6866099188374071,
+            "acc_sg": 0.6066350710900474,
+            "acc_pl": 0.7665847665847666
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed5_szsweep",
+        "seed": 5,
+        "attractor": 0.3131350625567011,
+        "no_attractor": 0.7164591578909588,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.3425287356321839,
+            "interaction": 0.3425211416490486,
+            "acc_sg": 0.34186046511627904,
+            "acc_pl": 0.3431818181818182
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.2879120879120879,
+            "interaction": 0.2837489834643535,
+            "acc_sg": 0.1935483870967742,
+            "acc_pl": 0.3739495798319328
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6923076923076923,
+            "interaction": 0.7314314982562355,
+            "acc_sg": 0.6254071661237784,
+            "acc_pl": 0.8374558303886925
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6861878453038674,
+            "interaction": 0.7007923720071132,
+            "acc_sg": 0.5092402464065708,
+            "acc_pl": 0.8923444976076556
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7165259348612787,
+            "interaction": 0.7171536034095276,
+            "acc_sg": 0.6824644549763034,
+            "acc_pl": 0.7518427518427518
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed6_szsweep",
+        "seed": 6,
+        "attractor": 0.3987833450914295,
+        "no_attractor": 0.7062677578652871,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.42873563218390803,
+            "interaction": 0.42869978858350954,
+            "acc_sg": 0.4255813953488372,
+            "acc_pl": 0.4318181818181818
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3747252747252747,
+            "interaction": 0.36886690159934943,
+            "acc_sg": 0.24193548387096775,
+            "acc_pl": 0.4957983193277311
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7079152731326644,
+            "interaction": 0.7380698886983346,
+            "acc_sg": 0.6563517915309446,
+            "acc_pl": 0.8197879858657244
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6861878453038674,
+            "interaction": 0.6985891553599324,
+            "acc_sg": 0.5359342915811088,
+            "acc_pl": 0.861244019138756
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6827503015681544,
+            "interaction": 0.6821442295375945,
+            "acc_sg": 0.7156398104265402,
+            "acc_pl": 0.6486486486486487
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed7_szsweep",
+        "seed": 7,
+        "attractor": 0.40266740672945167,
+        "no_attractor": 0.7118108951643589,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4482758620689655,
+            "interaction": 0.4496828752642706,
+            "acc_sg": 0.5720930232558139,
+            "acc_pl": 0.32727272727272727
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.36153846153846153,
+            "interaction": 0.3556519381946327,
+            "acc_sg": 0.22811059907834103,
+            "acc_pl": 0.4831932773109244
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6911928651059086,
+            "interaction": 0.7268073571897192,
+            "acc_sg": 0.6302931596091205,
+            "acc_pl": 0.823321554770318
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6740331491712708,
+            "interaction": 0.6908545631392276,
+            "acc_sg": 0.4702258726899384,
+            "acc_pl": 0.9114832535885168
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7177322074788902,
+            "interaction": 0.7177707651641301,
+            "acc_sg": 0.7156398104265402,
+            "acc_pl": 0.7199017199017199
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed8_szsweep",
+        "seed": 8,
+        "attractor": 0.3755134651214369,
+        "no_attractor": 0.6935475526543703,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4103448275862069,
+            "interaction": 0.4103858350951374,
+            "acc_sg": 0.413953488372093,
+            "acc_pl": 0.4068181818181818
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.34615384615384615,
+            "interaction": 0.3406410951477365,
+            "acc_sg": 0.22119815668202766,
+            "acc_pl": 0.46008403361344535
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6622073578595318,
+            "interaction": 0.721826406233814,
+            "acc_sg": 0.5602605863192183,
+            "acc_pl": 0.8833922261484098
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6740331491712708,
+            "interaction": 0.6847533478085732,
+            "acc_sg": 0.5441478439425051,
+            "acc_pl": 0.8253588516746412
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6731001206272618,
+            "interaction": 0.6740629039207238,
+            "acc_sg": 0.6208530805687204,
+            "acc_pl": 0.7272727272727273
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed9_szsweep",
+        "seed": 9,
+        "attractor": 0.3814638629099597,
+        "no_attractor": 0.7029146423295373,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4241379310344828,
+            "interaction": 0.42404862579281183,
+            "acc_sg": 0.41627906976744183,
+            "acc_pl": 0.4318181818181818
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.34505494505494505,
+            "interaction": 0.33887910002710764,
+            "acc_sg": 0.20506912442396313,
+            "acc_pl": 0.4726890756302521
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7123745819397993,
+            "interaction": 0.7565664529643996,
+            "acc_sg": 0.6368078175895765,
+            "acc_pl": 0.8763250883392226
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6574585635359116,
+            "interaction": 0.672234066592653,
+            "acc_sg": 0.4784394250513347,
+            "acc_pl": 0.8660287081339713
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6791314837153196,
+            "interaction": 0.6799434074315591,
+            "acc_sg": 0.6350710900473934,
+            "acc_pl": 0.7248157248157249
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed10_szsweep",
+        "seed": 10,
+        "attractor": 0.3512064179146391,
+        "no_attractor": 0.7135220327425396,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.39655172413793105,
+            "interaction": 0.39762156448202957,
+            "acc_sg": 0.4906976744186046,
+            "acc_pl": 0.30454545454545456
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.310989010989011,
+            "interaction": 0.3047912713472486,
+            "acc_sg": 0.17050691244239632,
+            "acc_pl": 0.43907563025210083
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6989966555183946,
+            "interaction": 0.7401273005605368,
+            "acc_sg": 0.6286644951140065,
+            "acc_pl": 0.8515901060070671
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7093922651933702,
+            "interaction": 0.721505555937632,
+            "acc_sg": 0.5626283367556468,
+            "acc_pl": 0.8803827751196173
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6779252110977081,
+            "interaction": 0.6789332417294502,
+            "acc_sg": 0.6232227488151659,
+            "acc_pl": 0.7346437346437347
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed11_szsweep",
+        "seed": 11,
+        "attractor": 0.406353505393155,
+        "no_attractor": 0.7089094145745256,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4459770114942529,
+            "interaction": 0.44709302325581396,
+            "acc_sg": 0.5441860465116279,
+            "acc_pl": 0.35
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.37142857142857144,
+            "interaction": 0.36561398753049607,
+            "acc_sg": 0.23963133640552994,
+            "acc_pl": 0.49159663865546216
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7012263099219621,
+            "interaction": 0.7246118253703342,
+            "acc_sg": 0.6612377850162866,
+            "acc_pl": 0.7879858657243817
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7060773480662983,
+            "interaction": 0.7155443443404105,
+            "acc_sg": 0.5913757700205339,
+            "acc_pl": 0.8397129186602871
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6863691194209891,
+            "interaction": 0.6865720740128323,
+            "acc_sg": 0.6753554502369669,
+            "acc_pl": 0.6977886977886978
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed12_szsweep",
+        "seed": 12,
+        "attractor": 0.40302209098875175,
+        "no_attractor": 0.7232406772429499,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.41954022988505746,
+            "interaction": 0.42003171247357296,
+            "acc_sg": 0.4627906976744186,
+            "acc_pl": 0.37727272727272726
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3901098901098901,
+            "interaction": 0.3860124695039306,
+            "acc_sg": 0.29723502304147464,
+            "acc_pl": 0.47478991596638653
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7157190635451505,
+            "interaction": 0.746627571045453,
+            "acc_sg": 0.6628664495114006,
+            "acc_pl": 0.8303886925795053
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6928176795580111,
+            "interaction": 0.7057661888527553,
+            "acc_sg": 0.5359342915811088,
+            "acc_pl": 0.8755980861244019
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7165259348612787,
+            "interaction": 0.7173282718306415,
+            "acc_sg": 0.6729857819905213,
+            "acc_pl": 0.7616707616707616
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed13_szsweep",
+        "seed": 13,
+        "attractor": 0.370685311224674,
+        "no_attractor": 0.6920501464702734,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.39770114942528734,
+            "interaction": 0.39693446088794926,
+            "acc_sg": 0.3302325581395349,
+            "acc_pl": 0.4636363636363636
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3505494505494505,
+            "interaction": 0.3444361615613988,
+            "acc_sg": 0.2119815668202765,
+            "acc_pl": 0.47689075630252103
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.633221850613155,
+            "interaction": 0.6835096281120153,
+            "acc_sg": 0.5472312703583062,
+            "acc_pl": 0.8197879858657244
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6917127071823205,
+            "interaction": 0.7067732332511323,
+            "acc_sg": 0.5092402464065708,
+            "acc_pl": 0.9043062200956937
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6851628468033776,
+            "interaction": 0.6858675780476728,
+            "acc_sg": 0.6469194312796208,
+            "acc_pl": 0.7248157248157249
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed14_szsweep",
+        "seed": 14,
+        "attractor": 0.367614761071857,
+        "no_attractor": 0.724534495572862,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4264367816091954,
+            "interaction": 0.42698202959830867,
+            "acc_sg": 0.4744186046511628,
+            "acc_pl": 0.3795454545454545
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3142857142857143,
+            "interaction": 0.3082474925454053,
+            "acc_sg": 0.1774193548387097,
+            "acc_pl": 0.43907563025210083
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7079152731326644,
+            "interaction": 0.7418796975172938,
+            "acc_sg": 0.6498371335504886,
+            "acc_pl": 0.833922261484099
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7149171270718232,
+            "interaction": 0.729181199217944,
+            "acc_sg": 0.5420944558521561,
+            "acc_pl": 0.916267942583732
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7020506634499397,
+            "interaction": 0.7025425899833483,
+            "acc_sg": 0.6753554502369669,
+            "acc_pl": 0.7297297297297297
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed15_szsweep",
+        "seed": 15,
+        "attractor": 0.37608118487796127,
+        "no_attractor": 0.7058104144048153,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.42528735632183906,
+            "interaction": 0.4262949260042283,
+            "acc_sg": 0.513953488372093,
+            "acc_pl": 0.3386363636363636
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.33186813186813185,
+            "interaction": 0.32586744375169424,
+            "acc_sg": 0.195852534562212,
+            "acc_pl": 0.45588235294117646
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7090301003344481,
+            "interaction": 0.7436464819695905,
+            "acc_sg": 0.6498371335504886,
+            "acc_pl": 0.8374558303886925
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6883977900552486,
+            "interaction": 0.7019983690793159,
+            "acc_sg": 0.5236139630390144,
+            "acc_pl": 0.8803827751196173
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6718938480096501,
+            "interaction": 0.6717863921655391,
+            "acc_sg": 0.6777251184834123,
+            "acc_pl": 0.6658476658476659
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed16_szsweep",
+        "seed": 16,
+        "attractor": 0.3979423678016525,
+        "no_attractor": 0.6873137943570842,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4574712643678161,
+            "interaction": 0.45927589852008455,
+            "acc_sg": 0.6162790697674418,
+            "acc_pl": 0.30227272727272725
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.34065934065934067,
+            "interaction": 0.33660883708322037,
+            "acc_sg": 0.2488479262672811,
+            "acc_pl": 0.42436974789915966
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.673355629877369,
+            "interaction": 0.6966339015434905,
+            "acc_sg": 0.6335504885993485,
+            "acc_pl": 0.7597173144876325
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6895027624309392,
+            "interaction": 0.7001439336627924,
+            "acc_sg": 0.5605749486652978,
+            "acc_pl": 0.8397129186602871
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6658624849215923,
+            "interaction": 0.6651635478649697,
+            "acc_sg": 0.7037914691943128,
+            "acc_pl": 0.6265356265356266
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed17_szsweep",
+        "seed": 17,
+        "attractor": 0.3502716994183611,
+        "no_attractor": 0.7428113720317869,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4011494252873563,
+            "interaction": 0.40100422832980975,
+            "acc_sg": 0.3883720930232558,
+            "acc_pl": 0.41363636363636364
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3054945054945055,
+            "interaction": 0.2995391705069124,
+            "acc_sg": 0.17050691244239632,
+            "acc_pl": 0.42857142857142855
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6989966555183946,
+            "interaction": 0.7591763446553332,
+            "acc_sg": 0.5960912052117264,
+            "acc_pl": 0.9222614840989399
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7414364640883978,
+            "interaction": 0.7514491614513229,
+            "acc_sg": 0.6201232032854209,
+            "acc_pl": 0.8827751196172249
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7165259348612787,
+            "interaction": 0.7178086099887048,
+            "acc_sg": 0.6469194312796208,
+            "acc_pl": 0.7886977886977887
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed18_szsweep",
+        "seed": 18,
+        "attractor": 0.40520130987674347,
+        "no_attractor": 0.7074731782592142,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4862068965517241,
+            "interaction": 0.48683932346723047,
+            "acc_sg": 0.541860465116279,
+            "acc_pl": 0.4318181818181818
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.32967032967032966,
+            "interaction": 0.32356329628625646,
+            "acc_sg": 0.1912442396313364,
+            "acc_pl": 0.45588235294117646
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6978818283166109,
+            "interaction": 0.7335982550845409,
+            "acc_sg": 0.6368078175895765,
+            "acc_pl": 0.8303886925795053
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6917127071823205,
+            "interaction": 0.7044005384003222,
+            "acc_sg": 0.5379876796714579,
+            "acc_pl": 0.8708133971291866
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6839565741857659,
+            "interaction": 0.6844207412927792,
+            "acc_sg": 0.6587677725118484,
+            "acc_pl": 0.7100737100737101
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed19_szsweep",
+        "seed": 19,
+        "attractor": 0.3872998950654394,
+        "no_attractor": 0.7348647348890779,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.42873563218390803,
+            "interaction": 0.4284355179704017,
+            "acc_sg": 0.40232558139534885,
+            "acc_pl": 0.45454545454545453
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.35384615384615387,
+            "interaction": 0.34616427216047707,
+            "acc_sg": 0.17972350230414746,
+            "acc_pl": 0.5126050420168067
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.693422519509476,
+            "interaction": 0.7408179003464509,
+            "acc_sg": 0.6123778501628665,
+            "acc_pl": 0.8692579505300353
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7635359116022099,
+            "interaction": 0.7731693897802188,
+            "acc_sg": 0.6468172484599589,
+            "acc_pl": 0.8995215311004785
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6899879372738239,
+            "interaction": 0.6906069145405638,
+            "acc_sg": 0.6563981042654028,
+            "acc_pl": 0.7248157248157249
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed20_szsweep",
+        "seed": 20,
+        "attractor": 0.3916893088818423,
+        "no_attractor": 0.6918411326065379,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4160919540229885,
+            "interaction": 0.41569767441860467,
+            "acc_sg": 0.3813953488372093,
+            "acc_pl": 0.45
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.37252747252747254,
+            "interaction": 0.36768094334507995,
+            "acc_sg": 0.2626728110599078,
+            "acc_pl": 0.4726890756302521
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6365663322185061,
+            "interaction": 0.6802379116262474,
+            "acc_sg": 0.5618892508143323,
+            "acc_pl": 0.7985865724381626
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.687292817679558,
+            "interaction": 0.7004632404232534,
+            "acc_sg": 0.5277207392197125,
+            "acc_pl": 0.8732057416267942
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6948130277442702,
+            "interaction": 0.6948222457701131,
+            "acc_sg": 0.6943127962085308,
+            "acc_pl": 0.6953316953316954
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed21_szsweep",
+        "seed": 21,
+        "attractor": 0.37988753419256266,
+        "no_attractor": 0.6869646992041331,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4057471264367816,
+            "interaction": 0.4056818181818182,
+            "acc_sg": 0.4,
+            "acc_pl": 0.4113636363636364
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.36043956043956044,
+            "interaction": 0.3540932502033071,
+            "acc_sg": 0.21658986175115208,
+            "acc_pl": 0.49159663865546216
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6321070234113713,
+            "interaction": 0.6750756782265397,
+            "acc_sg": 0.5586319218241043,
+            "acc_pl": 0.7915194346289752
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.661878453038674,
+            "interaction": 0.6726123222935068,
+            "acc_sg": 0.5318275154004107,
+            "acc_pl": 0.8133971291866029
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7129071170084439,
+            "interaction": 0.713206097092353,
+            "acc_sg": 0.6966824644549763,
+            "acc_pl": 0.7297297297297297
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed22_szsweep",
+        "seed": 22,
+        "attractor": 0.39685771567032324,
+        "no_attractor": 0.6973878744767913,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4218390804597701,
+            "interaction": 0.4219344608879493,
+            "acc_sg": 0.43023255813953487,
+            "acc_pl": 0.41363636363636364
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3802197802197802,
+            "interaction": 0.3717809704526972,
+            "acc_sg": 0.1889400921658986,
+            "acc_pl": 0.5546218487394958
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6755852842809364,
+            "interaction": 0.7296934887950185,
+            "acc_sg": 0.5830618892508144,
+            "acc_pl": 0.8763250883392226
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6685082872928176,
+            "interaction": 0.6769082263246318,
+            "acc_sg": 0.5667351129363449,
+            "acc_pl": 0.7870813397129187
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6851628468033776,
+            "interaction": 0.6855619083107234,
+            "acc_sg": 0.6635071090047393,
+            "acc_pl": 0.7076167076167076
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed23_szsweep",
+        "seed": 23,
+        "attractor": 0.33094851730503294,
+        "no_attractor": 0.7243630863936638,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.35402298850574715,
+            "interaction": 0.3545983086680761,
+            "acc_sg": 0.4046511627906977,
+            "acc_pl": 0.30454545454545456
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3131868131868132,
+            "interaction": 0.3072987259419897,
+            "acc_sg": 0.17972350230414746,
+            "acc_pl": 0.43487394957983194
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7391304347826086,
+            "interaction": 0.7713481658820686,
+            "acc_sg": 0.6840390879478827,
+            "acc_pl": 0.8586572438162544
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6906077348066298,
+            "interaction": 0.7047296699841821,
+            "acc_sg": 0.5195071868583162,
+            "acc_pl": 0.8899521531100478
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6960193003618818,
+            "interaction": 0.6970114233147409,
+            "acc_sg": 0.6421800947867299,
+            "acc_pl": 0.7518427518427518
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size23M_seed24_szsweep",
+        "seed": 24,
+        "attractor": 0.3755045032744053,
+        "no_attractor": 0.7356744815745261,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.43908045977011495,
+            "interaction": 0.4381871035940803,
+            "acc_sg": 0.36046511627906974,
+            "acc_pl": 0.5159090909090909
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.31758241758241756,
+            "interaction": 0.3128219029547303,
+            "acc_sg": 0.20967741935483872,
+            "acc_pl": 0.41596638655462187
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7146042363433668,
+            "interaction": 0.7581951174595136,
+            "acc_sg": 0.6400651465798045,
+            "acc_pl": 0.8763250883392226
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7270718232044199,
+            "interaction": 0.7374242260495367,
+            "acc_sg": 0.6016427104722792,
+            "acc_pl": 0.8732057416267942
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7104945717732207,
+            "interaction": 0.7114041012145278,
+            "acc_sg": 0.6611374407582938,
+            "acc_pl": 0.7616707616707616
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      }
+    ],
+    "60M": [
+      {
+        "run": "syntax_delay0_exp10_size60M_seed1_szsweep",
+        "seed": 1,
+        "attractor": 0.4300124126237824,
+        "no_attractor": 0.71788714419479,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.47701149425287354,
+            "interaction": 0.4772991543340381,
+            "acc_sg": 0.5023255813953489,
+            "acc_pl": 0.45227272727272727
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.389010989010989,
+            "interaction": 0.3827256709135267,
+            "acc_sg": 0.2465437788018433,
+            "acc_pl": 0.5189075630252101
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6833890746934225,
+            "interaction": 0.7211070314568202,
+            "acc_sg": 0.6188925081433225,
+            "acc_pl": 0.823321554770318
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7381215469613259,
+            "interaction": 0.7476911665012821,
+            "acc_sg": 0.62217659137577,
+            "acc_pl": 0.8732057416267942
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6851628468033776,
+            "interaction": 0.6848632346262677,
+            "acc_sg": 0.7014218009478673,
+            "acc_pl": 0.6683046683046683
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed2_szsweep",
+        "seed": 2,
+        "attractor": 0.41593705101218004,
+        "no_attractor": 0.7243866248703089,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4793103448275862,
+            "interaction": 0.47859408033826634,
+            "acc_sg": 0.41627906976744183,
+            "acc_pl": 0.5409090909090909
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.36043956043956044,
+            "interaction": 0.3532800216860938,
+            "acc_sg": 0.19815668202764977,
+            "acc_pl": 0.5084033613445378
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.68561872909699,
+            "interaction": 0.7284504091803732,
+            "acc_sg": 0.6123778501628665,
+            "acc_pl": 0.8445229681978799
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7425414364640884,
+            "interaction": 0.7523063772928682,
+            "acc_sg": 0.6242299794661191,
+            "acc_pl": 0.8803827751196173
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6911942098914354,
+            "interaction": 0.6924030881376853,
+            "acc_sg": 0.6255924170616114,
+            "acc_pl": 0.7592137592137592
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed3_szsweep",
+        "seed": 3,
+        "attractor": 0.42690145893998327,
+        "no_attractor": 0.704106406157691,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5022988505747127,
+            "interaction": 0.5025898520084566,
+            "acc_sg": 0.5279069767441861,
+            "acc_pl": 0.4772727272727273
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.35604395604395606,
+            "interaction": 0.3512130658715099,
+            "acc_sg": 0.2465437788018433,
+            "acc_pl": 0.45588235294117646
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6421404682274248,
+            "interaction": 0.6919291905019509,
+            "acc_sg": 0.5570032573289903,
+            "acc_pl": 0.8268551236749117
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7381215469613259,
+            "interaction": 0.744132124225067,
+            "acc_sg": 0.6652977412731006,
+            "acc_pl": 0.8229665071770335
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6755126658624849,
+            "interaction": 0.6762579037460554,
+            "acc_sg": 0.6350710900473934,
+            "acc_pl": 0.7174447174447175
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed4_szsweep",
+        "seed": 4,
+        "attractor": 0.4197025741347484,
+        "no_attractor": 0.683152836337265,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4735632183908046,
+            "interaction": 0.4735200845665962,
+            "acc_sg": 0.4697674418604651,
+            "acc_pl": 0.4772727272727273
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.37032967032967035,
+            "interaction": 0.3658850637029005,
+            "acc_sg": 0.2695852534562212,
+            "acc_pl": 0.46218487394957986
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6499442586399108,
+            "interaction": 0.7004868728490694,
+            "acc_sg": 0.5635179153094463,
+            "acc_pl": 0.8374558303886925
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6696132596685083,
+            "interaction": 0.6767485729444014,
+            "acc_sg": 0.5831622176591376,
+            "acc_pl": 0.7703349282296651
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6718938480096501,
+            "interaction": 0.6722230632183239,
+            "acc_sg": 0.6540284360189573,
+            "acc_pl": 0.6904176904176904
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed5_szsweep",
+        "seed": 5,
+        "attractor": 0.4586847640577066,
+        "no_attractor": 0.7272042131303037,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5413793103448276,
+            "interaction": 0.540776955602537,
+            "acc_sg": 0.4883720930232558,
+            "acc_pl": 0.5931818181818181
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3813186813186813,
+            "interaction": 0.37659257251287614,
+            "acc_sg": 0.27419354838709675,
+            "acc_pl": 0.4789915966386555
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6923076923076923,
+            "interaction": 0.7247643328230569,
+            "acc_sg": 0.6368078175895765,
+            "acc_pl": 0.8127208480565371
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7767955801104972,
+            "interaction": 0.7839644144896496,
+            "acc_sg": 0.6899383983572895,
+            "acc_pl": 0.8779904306220095
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6731001206272618,
+            "interaction": 0.6728838920782049,
+            "acc_sg": 0.6848341232227488,
+            "acc_pl": 0.6609336609336609
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed6_szsweep",
+        "seed": 6,
+        "attractor": 0.45263302432751046,
+        "no_attractor": 0.6927849462316598,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5022988505747127,
+            "interaction": 0.5026162790697675,
+            "acc_sg": 0.5302325581395348,
+            "acc_pl": 0.475
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.4054945054945055,
+            "interaction": 0.40264976958525345,
+            "acc_sg": 0.34101382488479265,
+            "acc_pl": 0.4642857142857143
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6677814938684504,
+            "interaction": 0.695419596919925,
+            "acc_sg": 0.6205211726384365,
+            "acc_pl": 0.7703180212014135
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6828729281767956,
+            "interaction": 0.6973733334643311,
+            "acc_sg": 0.5071868583162218,
+            "acc_pl": 0.8875598086124402
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6851628468033776,
+            "interaction": 0.6855619083107234,
+            "acc_sg": 0.6635071090047393,
+            "acc_pl": 0.7076167076167076
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed7_szsweep",
+        "seed": 7,
+        "attractor": 0.45116021533076167,
+        "no_attractor": 0.7257240682689208,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5183908045977011,
+            "interaction": 0.5185782241014799,
+            "acc_sg": 0.5348837209302325,
+            "acc_pl": 0.5022727272727273
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.389010989010989,
+            "interaction": 0.3837422065600434,
+            "acc_sg": 0.2695852534562212,
+            "acc_pl": 0.49789915966386555
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6722408026755853,
+            "interaction": 0.7082014479575511,
+            "acc_sg": 0.6107491856677525,
+            "acc_pl": 0.8056537102473498
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7348066298342542,
+            "interaction": 0.7480006484383444,
+            "acc_sg": 0.5749486652977412,
+            "acc_pl": 0.9210526315789473
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7201447527141134,
+            "interaction": 0.7209701084108667,
+            "acc_sg": 0.6753554502369669,
+            "acc_pl": 0.7665847665847666
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed8_szsweep",
+        "seed": 8,
+        "attractor": 0.48219033129176103,
+        "no_attractor": 0.7117721198806016,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5873563218390805,
+            "interaction": 0.5868393234672304,
+            "acc_sg": 0.541860465116279,
+            "acc_pl": 0.6318181818181818
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3824175824175824,
+            "interaction": 0.3775413391162917,
+            "acc_sg": 0.271889400921659,
+            "acc_pl": 0.4831932773109244
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6588628762541806,
+            "interaction": 0.6946196521679078,
+            "acc_sg": 0.5977198697068404,
+            "acc_pl": 0.7915194346289752
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7281767955801105,
+            "interaction": 0.7369256162620477,
+            "acc_sg": 0.62217659137577,
+            "acc_pl": 0.8516746411483254
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7032569360675512,
+            "interaction": 0.7037710912118496,
+            "acc_sg": 0.6753554502369669,
+            "acc_pl": 0.7321867321867321
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed9_szsweep",
+        "seed": 9,
+        "attractor": 0.4572436403122935,
+        "no_attractor": 0.6985389222112266,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5091954022988506,
+            "interaction": 0.5098044397463002,
+            "acc_sg": 0.5627906976744186,
+            "acc_pl": 0.45681818181818185
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.4087912087912088,
+            "interaction": 0.4046828408782868,
+            "acc_sg": 0.315668202764977,
+            "acc_pl": 0.49369747899159666
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.673355629877369,
+            "interaction": 0.7128255890240675,
+            "acc_sg": 0.6058631921824105,
+            "acc_pl": 0.8197879858657244
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6917127071823205,
+            "interaction": 0.7025362781604001,
+            "acc_sg": 0.5605749486652978,
+            "acc_pl": 0.8444976076555024
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6803377563329313,
+            "interaction": 0.6802548994492122,
+            "acc_sg": 0.6848341232227488,
+            "acc_pl": 0.6756756756756757
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed10_szsweep",
+        "seed": 10,
+        "attractor": 0.43400127629309926,
+        "no_attractor": 0.7193677776749189,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4954022988505747,
+            "interaction": 0.49645877378435516,
+            "acc_sg": 0.5883720930232558,
+            "acc_pl": 0.40454545454545454
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3758241758241758,
+            "interaction": 0.3715437788018433,
+            "acc_sg": 0.27880184331797236,
+            "acc_pl": 0.4642857142857143
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.68561872909699,
+            "interaction": 0.7179734349282352,
+            "acc_sg": 0.6302931596091205,
+            "acc_pl": 0.8056537102473498
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7281767955801105,
+            "interaction": 0.7418404841672971,
+            "acc_sg": 0.5626283367556468,
+            "acc_pl": 0.9210526315789473
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6984318455971049,
+            "interaction": 0.6982894139292244,
+            "acc_sg": 0.7061611374407583,
+            "acc_pl": 0.6904176904176904
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed11_szsweep",
+        "seed": 11,
+        "attractor": 0.5164038371605888,
+        "no_attractor": 0.6923320764149228,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.6252873563218391,
+            "interaction": 0.6249735729386892,
+            "acc_sg": 0.5976744186046512,
+            "acc_pl": 0.6522727272727272
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.41208791208791207,
+            "interaction": 0.4078341013824885,
+            "acc_sg": 0.315668202764977,
+            "acc_pl": 0.5
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6599777034559643,
+            "interaction": 0.6992437932344241,
+            "acc_sg": 0.5928338762214984,
+            "acc_pl": 0.8056537102473498
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6817679558011049,
+            "interaction": 0.6997362034917423,
+            "acc_sg": 0.46406570841889117,
+            "acc_pl": 0.9354066985645934
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6779252110977081,
+            "interaction": 0.6780162325186021,
+            "acc_sg": 0.6729857819905213,
+            "acc_pl": 0.683046683046683
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed12_szsweep",
+        "seed": 12,
+        "attractor": 0.4785630362422538,
+        "no_attractor": 0.7076870248843186,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5482758620689655,
+            "interaction": 0.5485465116279069,
+            "acc_sg": 0.5720930232558139,
+            "acc_pl": 0.525
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.41318681318681316,
+            "interaction": 0.4085795608566007,
+            "acc_sg": 0.3087557603686636,
+            "acc_pl": 0.5084033613445378
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7212931995540691,
+            "interaction": 0.7535565888974574,
+            "acc_sg": 0.6661237785016286,
+            "acc_pl": 0.8409893992932862
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.6751381215469613,
+            "interaction": 0.6918812571844022,
+            "acc_sg": 0.4722792607802875,
+            "acc_pl": 0.9114832535885168
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6779252110977081,
+            "interaction": 0.6776232285710959,
+            "acc_sg": 0.6943127962085308,
+            "acc_pl": 0.6609336609336609
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed13_szsweep",
+        "seed": 13,
+        "attractor": 0.43445592705472014,
+        "no_attractor": 0.7039212180369819,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4908045977011494,
+            "interaction": 0.49167547568710357,
+            "acc_sg": 0.5674418604651162,
+            "acc_pl": 0.4159090909090909
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3824175824175824,
+            "interaction": 0.3772363784223367,
+            "acc_sg": 0.26497695852534564,
+            "acc_pl": 0.4894957983193277
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6744704570791528,
+            "interaction": 0.7088776602479254,
+            "acc_sg": 0.6156351791530945,
+            "acc_pl": 0.8021201413427562
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7160220994475138,
+            "interaction": 0.7273267638014207,
+            "acc_sg": 0.5790554414784395,
+            "acc_pl": 0.8755980861244019
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6755126658624849,
+            "interaction": 0.6755592300615997,
+            "acc_sg": 0.6729857819905213,
+            "acc_pl": 0.6781326781326781
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed14_szsweep",
+        "seed": 14,
+        "attractor": 0.4877807149934924,
+        "no_attractor": 0.7261854498526943,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5528735632183908,
+            "interaction": 0.5534619450317124,
+            "acc_sg": 0.6046511627906976,
+            "acc_pl": 0.5022727272727273
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.4230769230769231,
+            "interaction": 0.4220994849552724,
+            "acc_sg": 0.4009216589861751,
+            "acc_pl": 0.4432773109243697
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7201783723522854,
+            "interaction": 0.7508373522404208,
+            "acc_sg": 0.6677524429967426,
+            "acc_pl": 0.833922261484099
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7248618784530386,
+            "interaction": 0.7346929251446705,
+            "acc_sg": 0.6057494866529775,
+            "acc_pl": 0.8636363636363636
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6936067551266586,
+            "interaction": 0.6930260721729916,
+            "acc_sg": 0.7251184834123223,
+            "acc_pl": 0.6609336609336609
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed15_szsweep",
+        "seed": 15,
+        "attractor": 0.4244534276235216,
+        "no_attractor": 0.7047265490300699,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4689655172413793,
+            "interaction": 0.4690274841437632,
+            "acc_sg": 0.4744186046511628,
+            "acc_pl": 0.4636363636363636
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.38571428571428573,
+            "interaction": 0.37987937110328,
+            "acc_sg": 0.2534562211981567,
+            "acc_pl": 0.5063025210084033
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6488294314381271,
+            "interaction": 0.6911004707588541,
+            "acc_sg": 0.5765472312703583,
+            "acc_pl": 0.8056537102473498
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7082872928176795,
+            "interaction": 0.7187840798561647,
+            "acc_sg": 0.5811088295687885,
+            "acc_pl": 0.8564593301435407
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7032569360675512,
+            "interaction": 0.7042950964751913,
+            "acc_sg": 0.6469194312796208,
+            "acc_pl": 0.7616707616707616
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed16_szsweep",
+        "seed": 16,
+        "attractor": 0.4540290952703798,
+        "no_attractor": 0.7018042008580648,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5022988505747127,
+            "interaction": 0.5020877378435518,
+            "acc_sg": 0.48372093023255813,
+            "acc_pl": 0.5204545454545455
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.41098901098901097,
+            "interaction": 0.4059704526972079,
+            "acc_sg": 0.29723502304147464,
+            "acc_pl": 0.5147058823529411
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6677814938684504,
+            "interaction": 0.7097063799910222,
+            "acc_sg": 0.5960912052117264,
+            "acc_pl": 0.823321554770318
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7027624309392265,
+            "interaction": 0.717209651906507,
+            "acc_sg": 0.5277207392197125,
+            "acc_pl": 0.9066985645933014
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6779252110977081,
+            "interaction": 0.6784965706766655,
+            "acc_sg": 0.6469194312796208,
+            "acc_pl": 0.7100737100737101
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed17_szsweep",
+        "seed": 17,
+        "attractor": 0.4147003626861643,
+        "no_attractor": 0.7198499164387527,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4586206896551724,
+            "interaction": 0.4580602536997886,
+            "acc_sg": 0.40930232558139534,
+            "acc_pl": 0.5068181818181818
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3791208791208791,
+            "interaction": 0.37134047167254,
+            "acc_sg": 0.20276497695852536,
+            "acc_pl": 0.5399159663865546
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7012263099219621,
+            "interaction": 0.7331838952129925,
+            "acc_sg": 0.6465798045602605,
+            "acc_pl": 0.8197879858657244
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7160220994475138,
+            "interaction": 0.7285131112268257,
+            "acc_sg": 0.5646817248459959,
+            "acc_pl": 0.8923444976076556
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6984318455971049,
+            "interaction": 0.6978527428764396,
+            "acc_sg": 0.7298578199052133,
+            "acc_pl": 0.6658476658476659
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed18_szsweep",
+        "seed": 18,
+        "attractor": 0.4532968744000362,
+        "no_attractor": 0.7258491096465076,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.48160919540229885,
+            "interaction": 0.4829016913319239,
+            "acc_sg": 0.5953488372093023,
+            "acc_pl": 0.3704545454545455
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.42857142857142855,
+            "interaction": 0.42369205746814853,
+            "acc_sg": 0.31797235023041476,
+            "acc_pl": 0.5294117647058824
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6967670011148273,
+            "interaction": 0.7365937316559432,
+            "acc_sg": 0.6286644951140065,
+            "acc_pl": 0.8445229681978799
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7314917127071823,
+            "interaction": 0.7440731752846743,
+            "acc_sg": 0.5790554414784395,
+            "acc_pl": 0.9090909090909091
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6960193003618818,
+            "interaction": 0.6968804219989054,
+            "acc_sg": 0.6492890995260664,
+            "acc_pl": 0.7444717444717445
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed19_szsweep",
+        "seed": 19,
+        "attractor": 0.3940795323448891,
+        "no_attractor": 0.7029326105575932,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.45977011494252873,
+            "interaction": 0.45927589852008455,
+            "acc_sg": 0.41627906976744183,
+            "acc_pl": 0.5022727272727273
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.33406593406593404,
+            "interaction": 0.3288831661696937,
+            "acc_sg": 0.21658986175115208,
+            "acc_pl": 0.4411764705882353
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6220735785953178,
+            "interaction": 0.6553648093369091,
+            "acc_sg": 0.5651465798045603,
+            "acc_pl": 0.7455830388692579
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7348066298342542,
+            "interaction": 0.7407130856822849,
+            "acc_sg": 0.6632443531827515,
+            "acc_pl": 0.8181818181818182
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7117008443908324,
+            "interaction": 0.7127199366535859,
+            "acc_sg": 0.6563981042654028,
+            "acc_pl": 0.769041769041769
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed20_szsweep",
+        "seed": 20,
+        "attractor": 0.46946026398692875,
+        "no_attractor": 0.7001658936495158,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5494252873563218,
+            "interaction": 0.5491807610993658,
+            "acc_sg": 0.5279069767441861,
+            "acc_pl": 0.5704545454545454
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.3956043956043956,
+            "interaction": 0.38973976687449174,
+            "acc_sg": 0.2626728110599078,
+            "acc_pl": 0.5168067226890757
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6655518394648829,
+            "interaction": 0.7080777154959081,
+            "acc_sg": 0.5928338762214984,
+            "acc_pl": 0.823321554770318
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7049723756906078,
+            "interaction": 0.7151955631097531,
+            "acc_sg": 0.5811088295687885,
+            "acc_pl": 0.8492822966507177
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6767189384800965,
+            "interaction": 0.6772244023428857,
+            "acc_sg": 0.6492890995260664,
+            "acc_pl": 0.7051597051597052
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed21_szsweep",
+        "seed": 21,
+        "attractor": 0.44003787186292376,
+        "no_attractor": 0.7396257541968908,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5137931034482759,
+            "interaction": 0.5139534883720931,
+            "acc_sg": 0.5279069767441861,
+            "acc_pl": 0.5
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.37142857142857144,
+            "interaction": 0.3661222553537544,
+            "acc_sg": 0.2511520737327189,
+            "acc_pl": 0.4810924369747899
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.7235228539576366,
+            "interaction": 0.7513754445736122,
+            "acc_sg": 0.6758957654723127,
+            "acc_pl": 0.8268551236749117
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7392265193370166,
+            "interaction": 0.7510905553972668,
+            "acc_sg": 0.5954825462012321,
+            "acc_pl": 0.9066985645933014
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7165259348612787,
+            "interaction": 0.7164112626197934,
+            "acc_sg": 0.7227488151658767,
+            "acc_pl": 0.7100737100737101
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed22_szsweep",
+        "seed": 22,
+        "attractor": 0.4407533653848909,
+        "no_attractor": 0.7137455559283312,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5287356321839081,
+            "interaction": 0.5291754756871035,
+            "acc_sg": 0.5674418604651162,
+            "acc_pl": 0.4909090909090909
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.35604395604395606,
+            "interaction": 0.35233125508267826,
+            "acc_sg": 0.271889400921659,
+            "acc_pl": 0.4327731092436975
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6978818283166109,
+            "interaction": 0.7450276815414187,
+            "acc_sg": 0.6172638436482085,
+            "acc_pl": 0.872791519434629
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.687292817679558,
+            "interaction": 0.6928367212599353,
+            "acc_sg": 0.6201232032854209,
+            "acc_pl": 0.7655502392344498
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7020506634499397,
+            "interaction": 0.7033722649836394,
+            "acc_sg": 0.6303317535545023,
+            "acc_pl": 0.7764127764127764
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed23_szsweep",
+        "seed": 23,
+        "attractor": 0.39578077173036574,
+        "no_attractor": 0.725662572770127,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.4425287356321839,
+            "interaction": 0.4424154334038055,
+            "acc_sg": 0.4325581395348837,
+            "acc_pl": 0.45227272727272727
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.35494505494505496,
+            "interaction": 0.349146110056926,
+            "acc_sg": 0.22350230414746544,
+            "acc_pl": 0.47478991596638653
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6900780379041248,
+            "interaction": 0.7355175469895605,
+            "acc_sg": 0.6123778501628665,
+            "acc_pl": 0.8586572438162544
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7281767955801105,
+            "interaction": 0.7398067457237456,
+            "acc_sg": 0.5872689938398358,
+            "acc_pl": 0.8923444976076556
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.7008443908323281,
+            "interaction": 0.7016634255970748,
+            "acc_sg": 0.6563981042654028,
+            "acc_pl": 0.7469287469287469
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      },
+      {
+        "run": "syntax_delay0_exp10_size60M_seed24_szsweep",
+        "seed": 24,
+        "attractor": 0.46603353235176637,
+        "no_attractor": 0.7268844887322133,
+        "per_paradigm": {
+          "distractor_agreement_relational_noun": {
+            "raw": 0.5241379310344828,
+            "interaction": 0.5239957716701903,
+            "acc_sg": 0.5116279069767442,
+            "acc_pl": 0.5363636363636364
+          },
+          "distractor_agreement_relative_clause": {
+            "raw": 0.41318681318681316,
+            "interaction": 0.4080712930333424,
+            "acc_sg": 0.29723502304147464,
+            "acc_pl": 0.5189075630252101
+          },
+          "regular_plural_subject_verb_agreement_1": {
+            "raw": 0.6700111482720178,
+            "interaction": 0.7189546621240548,
+            "acc_sg": 0.5863192182410424,
+            "acc_pl": 0.8515901060070671
+          },
+          "regular_plural_subject_verb_agreement_2": {
+            "raw": 0.7624309392265194,
+            "interaction": 0.7745153905858542,
+            "acc_sg": 0.6160164271047228,
+            "acc_pl": 0.9330143540669856
+          },
+          "irregular_plural_subject_verb_agreement_1": {
+            "raw": 0.6863691194209891,
+            "interaction": 0.687183413486731,
+            "acc_sg": 0.6421800947867299,
+            "acc_pl": 0.7321867321867321
+          },
+          "irregular_plural_subject_verb_agreement_2": {
+            "raw": NaN,
+            "interaction": NaN,
+            "acc_sg": NaN,
+            "acc_pl": NaN
+          }
+        }
+      }
+    ]
+  }
+}

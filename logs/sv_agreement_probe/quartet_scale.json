@@ -1,0 +1,5798 @@
+{
+  "control_unigram": {
+    "cells": {
+      "bare_sg": 0.7075,
+      "bare_pl": 0.2925,
+      "sg_match": 0.7075,
+      "sg_mismatch": 0.7075,
+      "pl_match": 0.2925,
+      "pl_mismatch": 0.2925
+    },
+    "attraction_sg": 0.0,
+    "complexity_sg": 0.0,
+    "attraction_pl": 0.0,
+    "complexity_pl": 0.0,
+    "attraction": 0.0,
+    "complexity": 0.0,
+    "balanced_bare": 0.5,
+    "balanced_match": 0.5,
+    "balanced_mismatch": 0.5
+  },
+  "models": {
+    "syntax_delay0_exp10_size11M_seed1_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.92,
+          "sg_match": 0.895,
+          "sg_mismatch": 0.54,
+          "pl_match": 0.7425,
+          "pl_mismatch": 0.1825
+        },
+        "attraction_sg": 0.355,
+        "complexity_sg": 0.10499999999999998,
+        "attraction_pl": 0.56,
+        "complexity_pl": 0.1775,
+        "attraction": 0.4575,
+        "complexity": 0.14125,
+        "balanced_bare": 0.96,
+        "balanced_match": 0.8187500000000001,
+        "balanced_mismatch": 0.36125
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9106382978723404,
+            "sg_match": 0.9574468085106383,
+            "sg_mismatch": 0.49361702127659574,
+            "pl_match": 0.8127659574468085,
+            "pl_mismatch": 0.10638297872340426
+          },
+          "attraction_sg": 0.4638297872340426,
+          "complexity_sg": 0.04255319148936165,
+          "attraction_pl": 0.7063829787234042,
+          "complexity_pl": 0.09787234042553195,
+          "attraction": 0.5851063829787234,
+          "complexity": 0.0702127659574468,
+          "balanced_bare": 0.9553191489361702,
+          "balanced_match": 0.8851063829787233,
+          "balanced_mismatch": 0.3
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9333333333333333,
+            "sg_match": 0.806060606060606,
+            "sg_mismatch": 0.6060606060606061,
+            "pl_match": 0.6424242424242425,
+            "pl_mismatch": 0.2909090909090909
+          },
+          "attraction_sg": 0.19999999999999996,
+          "complexity_sg": 0.19393939393939397,
+          "attraction_pl": 0.35151515151515156,
+          "complexity_pl": 0.2909090909090909,
+          "attraction": 0.27575757575757576,
+          "complexity": 0.24242424242424243,
+          "balanced_bare": 0.9666666666666667,
+          "balanced_match": 0.7242424242424242,
+          "balanced_mismatch": 0.4484848484848485
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed2_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9375,
+          "sg_match": 0.8275,
+          "sg_mismatch": 0.225,
+          "pl_match": 0.9075,
+          "pl_mismatch": 0.3825
+        },
+        "attraction_sg": 0.6025,
+        "complexity_sg": 0.1725,
+        "attraction_pl": 0.5249999999999999,
+        "complexity_pl": 0.030000000000000027,
+        "attraction": 0.56375,
+        "complexity": 0.10125,
+        "balanced_bare": 0.96875,
+        "balanced_match": 0.8674999999999999,
+        "balanced_mismatch": 0.30375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9234042553191489,
+            "sg_match": 0.8808510638297873,
+            "sg_mismatch": 0.10212765957446808,
+            "pl_match": 0.9531914893617022,
+            "pl_mismatch": 0.3276595744680851
+          },
+          "attraction_sg": 0.7787234042553192,
+          "complexity_sg": 0.11914893617021272,
+          "attraction_pl": 0.6255319148936171,
+          "complexity_pl": -0.029787234042553234,
+          "attraction": 0.7021276595744681,
+          "complexity": 0.04468085106382974,
+          "balanced_bare": 0.9617021276595745,
+          "balanced_match": 0.9170212765957447,
+          "balanced_mismatch": 0.21489361702127657
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9575757575757575,
+            "sg_match": 0.7515151515151515,
+            "sg_mismatch": 0.4,
+            "pl_match": 0.8424242424242424,
+            "pl_mismatch": 0.46060606060606063
+          },
+          "attraction_sg": 0.35151515151515145,
+          "complexity_sg": 0.24848484848484853,
+          "attraction_pl": 0.3818181818181818,
+          "complexity_pl": 0.11515151515151512,
+          "attraction": 0.3666666666666666,
+          "complexity": 0.18181818181818182,
+          "balanced_bare": 0.9787878787878788,
+          "balanced_match": 0.7969696969696969,
+          "balanced_mismatch": 0.4303030303030303
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed3_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.905,
+          "sg_match": 0.9675,
+          "sg_mismatch": 0.5775,
+          "pl_match": 0.71,
+          "pl_mismatch": 0.1125
+        },
+        "attraction_sg": 0.39,
+        "complexity_sg": 0.03249999999999997,
+        "attraction_pl": 0.5974999999999999,
+        "complexity_pl": 0.19500000000000006,
+        "attraction": 0.49374999999999997,
+        "complexity": 0.11375000000000002,
+        "balanced_bare": 0.9525,
+        "balanced_match": 0.83875,
+        "balanced_mismatch": 0.34500000000000003
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8893617021276595,
+            "sg_match": 0.9787234042553191,
+            "sg_mismatch": 0.5531914893617021,
+            "pl_match": 0.7404255319148936,
+            "pl_mismatch": 0.12340425531914893
+          },
+          "attraction_sg": 0.42553191489361697,
+          "complexity_sg": 0.021276595744680882,
+          "attraction_pl": 0.6170212765957447,
+          "complexity_pl": 0.14893617021276595,
+          "attraction": 0.5212765957446808,
+          "complexity": 0.08510638297872342,
+          "balanced_bare": 0.9446808510638298,
+          "balanced_match": 0.8595744680851063,
+          "balanced_mismatch": 0.3382978723404255
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9272727272727272,
+            "sg_match": 0.9515151515151515,
+            "sg_mismatch": 0.6121212121212121,
+            "pl_match": 0.6666666666666666,
+            "pl_mismatch": 0.09696969696969697
+          },
+          "attraction_sg": 0.33939393939393947,
+          "complexity_sg": 0.048484848484848464,
+          "attraction_pl": 0.5696969696969697,
+          "complexity_pl": 0.2606060606060606,
+          "attraction": 0.4545454545454546,
+          "complexity": 0.15454545454545454,
+          "balanced_bare": 0.9636363636363636,
+          "balanced_match": 0.8090909090909091,
+          "balanced_mismatch": 0.3545454545454545
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed4_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9425,
+          "sg_match": 0.915,
+          "sg_mismatch": 0.58,
+          "pl_match": 0.785,
+          "pl_mismatch": 0.2725
+        },
+        "attraction_sg": 0.3350000000000001,
+        "complexity_sg": 0.08499999999999996,
+        "attraction_pl": 0.5125,
+        "complexity_pl": 0.15749999999999997,
+        "attraction": 0.42375,
+        "complexity": 0.12124999999999997,
+        "balanced_bare": 0.97125,
+        "balanced_match": 0.8500000000000001,
+        "balanced_mismatch": 0.42625
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9234042553191489,
+            "sg_match": 0.9914893617021276,
+            "sg_mismatch": 0.5787234042553191,
+            "pl_match": 0.7872340425531915,
+            "pl_mismatch": 0.1276595744680851
+          },
+          "attraction_sg": 0.41276595744680855,
+          "complexity_sg": 0.008510638297872353,
+          "attraction_pl": 0.6595744680851064,
+          "complexity_pl": 0.13617021276595742,
+          "attraction": 0.5361702127659576,
+          "complexity": 0.07234042553191489,
+          "balanced_bare": 0.9617021276595745,
+          "balanced_match": 0.8893617021276596,
+          "balanced_mismatch": 0.3531914893617021
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9696969696969697,
+            "sg_match": 0.806060606060606,
+            "sg_mismatch": 0.5818181818181818,
+            "pl_match": 0.7818181818181819,
+            "pl_mismatch": 0.47878787878787876
+          },
+          "attraction_sg": 0.22424242424242424,
+          "complexity_sg": 0.19393939393939397,
+          "attraction_pl": 0.3030303030303031,
+          "complexity_pl": 0.18787878787878787,
+          "attraction": 0.26363636363636367,
+          "complexity": 0.19090909090909092,
+          "balanced_bare": 0.9848484848484849,
+          "balanced_match": 0.793939393939394,
+          "balanced_mismatch": 0.5303030303030303
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed5_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.945,
+          "sg_match": 0.88,
+          "sg_mismatch": 0.5575,
+          "pl_match": 0.6825,
+          "pl_mismatch": 0.16
+        },
+        "attraction_sg": 0.3225,
+        "complexity_sg": 0.12,
+        "attraction_pl": 0.5225,
+        "complexity_pl": 0.26249999999999996,
+        "attraction": 0.4225,
+        "complexity": 0.19124999999999998,
+        "balanced_bare": 0.9724999999999999,
+        "balanced_match": 0.78125,
+        "balanced_mismatch": 0.35875
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9404255319148936,
+            "sg_match": 0.9702127659574468,
+            "sg_mismatch": 0.5404255319148936,
+            "pl_match": 0.7276595744680852,
+            "pl_mismatch": 0.05531914893617021
+          },
+          "attraction_sg": 0.42978723404255315,
+          "complexity_sg": 0.029787234042553234,
+          "attraction_pl": 0.672340425531915,
+          "complexity_pl": 0.21276595744680848,
+          "attraction": 0.5510638297872341,
+          "complexity": 0.12127659574468086,
+          "balanced_bare": 0.9702127659574469,
+          "balanced_match": 0.848936170212766,
+          "balanced_mismatch": 0.2978723404255319
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9515151515151515,
+            "sg_match": 0.7515151515151515,
+            "sg_mismatch": 0.5818181818181818,
+            "pl_match": 0.6181818181818182,
+            "pl_mismatch": 0.3090909090909091
+          },
+          "attraction_sg": 0.16969696969696968,
+          "complexity_sg": 0.24848484848484853,
+          "attraction_pl": 0.3090909090909091,
+          "complexity_pl": 0.33333333333333337,
+          "attraction": 0.23939393939393938,
+          "complexity": 0.29090909090909095,
+          "balanced_bare": 0.9757575757575758,
+          "balanced_match": 0.6848484848484848,
+          "balanced_mismatch": 0.44545454545454544
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed6_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9825,
+          "sg_match": 0.93,
+          "sg_mismatch": 0.65,
+          "pl_match": 0.805,
+          "pl_mismatch": 0.3625
+        },
+        "attraction_sg": 0.28,
+        "complexity_sg": 0.06999999999999995,
+        "attraction_pl": 0.44250000000000006,
+        "complexity_pl": 0.1775,
+        "attraction": 0.36125000000000007,
+        "complexity": 0.12374999999999997,
+        "balanced_bare": 0.99125,
+        "balanced_match": 0.8675,
+        "balanced_mismatch": 0.50625
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9787234042553191,
+            "sg_match": 0.948936170212766,
+            "sg_mismatch": 0.676595744680851,
+            "pl_match": 0.9106382978723404,
+            "pl_mismatch": 0.4127659574468085
+          },
+          "attraction_sg": 0.27234042553191495,
+          "complexity_sg": 0.051063829787234005,
+          "attraction_pl": 0.4978723404255319,
+          "complexity_pl": 0.06808510638297871,
+          "attraction": 0.38510638297872346,
+          "complexity": 0.05957446808510636,
+          "balanced_bare": 0.9893617021276595,
+          "balanced_match": 0.9297872340425533,
+          "balanced_mismatch": 0.5446808510638298
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9878787878787879,
+            "sg_match": 0.9030303030303031,
+            "sg_mismatch": 0.6121212121212121,
+            "pl_match": 0.6545454545454545,
+            "pl_mismatch": 0.2909090909090909
+          },
+          "attraction_sg": 0.290909090909091,
+          "complexity_sg": 0.09696969696969693,
+          "attraction_pl": 0.36363636363636365,
+          "complexity_pl": 0.33333333333333337,
+          "attraction": 0.3272727272727273,
+          "complexity": 0.21515151515151515,
+          "balanced_bare": 0.9939393939393939,
+          "balanced_match": 0.7787878787878788,
+          "balanced_mismatch": 0.4515151515151515
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed7_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9675,
+          "sg_match": 0.94,
+          "sg_mismatch": 0.6375,
+          "pl_match": 0.6875,
+          "pl_mismatch": 0.135
+        },
+        "attraction_sg": 0.3025,
+        "complexity_sg": 0.06000000000000005,
+        "attraction_pl": 0.5525,
+        "complexity_pl": 0.28,
+        "attraction": 0.4275,
+        "complexity": 0.17000000000000004,
+        "balanced_bare": 0.98375,
+        "balanced_match": 0.81375,
+        "balanced_mismatch": 0.38625
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9574468085106383,
+            "sg_match": 0.948936170212766,
+            "sg_mismatch": 0.6382978723404256,
+            "pl_match": 0.7106382978723405,
+            "pl_mismatch": 0.10638297872340426
+          },
+          "attraction_sg": 0.31063829787234043,
+          "complexity_sg": 0.051063829787234005,
+          "attraction_pl": 0.6042553191489362,
+          "complexity_pl": 0.2468085106382979,
+          "attraction": 0.4574468085106383,
+          "complexity": 0.14893617021276595,
+          "balanced_bare": 0.9787234042553192,
+          "balanced_match": 0.8297872340425532,
+          "balanced_mismatch": 0.37234042553191493
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9818181818181818,
+            "sg_match": 0.9272727272727272,
+            "sg_mismatch": 0.6363636363636364,
+            "pl_match": 0.6545454545454545,
+            "pl_mismatch": 0.17575757575757575
+          },
+          "attraction_sg": 0.2909090909090909,
+          "complexity_sg": 0.07272727272727275,
+          "attraction_pl": 0.47878787878787876,
+          "complexity_pl": 0.32727272727272727,
+          "attraction": 0.38484848484848483,
+          "complexity": 0.2,
+          "balanced_bare": 0.990909090909091,
+          "balanced_match": 0.7909090909090909,
+          "balanced_mismatch": 0.40606060606060607
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed8_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9425,
+          "sg_match": 0.86,
+          "sg_mismatch": 0.57,
+          "pl_match": 0.7475,
+          "pl_mismatch": 0.2675
+        },
+        "attraction_sg": 0.29000000000000004,
+        "complexity_sg": 0.14,
+        "attraction_pl": 0.48000000000000004,
+        "complexity_pl": 0.19499999999999995,
+        "attraction": 0.385,
+        "complexity": 0.16749999999999998,
+        "balanced_bare": 0.97125,
+        "balanced_match": 0.80375,
+        "balanced_mismatch": 0.41874999999999996
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9319148936170213,
+            "sg_match": 0.902127659574468,
+            "sg_mismatch": 0.5234042553191489,
+            "pl_match": 0.8340425531914893,
+            "pl_mismatch": 0.23829787234042554
+          },
+          "attraction_sg": 0.37872340425531914,
+          "complexity_sg": 0.09787234042553195,
+          "attraction_pl": 0.5957446808510638,
+          "complexity_pl": 0.09787234042553195,
+          "attraction": 0.48723404255319147,
+          "complexity": 0.09787234042553195,
+          "balanced_bare": 0.9659574468085106,
+          "balanced_match": 0.8680851063829786,
+          "balanced_mismatch": 0.38085106382978723
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9575757575757575,
+            "sg_match": 0.8,
+            "sg_mismatch": 0.6363636363636364,
+            "pl_match": 0.6242424242424243,
+            "pl_mismatch": 0.3090909090909091
+          },
+          "attraction_sg": 0.1636363636363637,
+          "complexity_sg": 0.19999999999999996,
+          "attraction_pl": 0.3151515151515152,
+          "complexity_pl": 0.33333333333333326,
+          "attraction": 0.23939393939393944,
+          "complexity": 0.2666666666666666,
+          "balanced_bare": 0.9787878787878788,
+          "balanced_match": 0.7121212121212122,
+          "balanced_mismatch": 0.4727272727272727
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed9_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9925,
+          "bare_pl": 0.9725,
+          "sg_match": 0.8775,
+          "sg_mismatch": 0.3275,
+          "pl_match": 0.835,
+          "pl_mismatch": 0.3
+        },
+        "attraction_sg": 0.5499999999999999,
+        "complexity_sg": 0.1150000000000001,
+        "attraction_pl": 0.5349999999999999,
+        "complexity_pl": 0.13750000000000007,
+        "attraction": 0.5425,
+        "complexity": 0.12625000000000008,
+        "balanced_bare": 0.9825,
+        "balanced_match": 0.85625,
+        "balanced_mismatch": 0.31375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9872340425531915,
+            "bare_pl": 0.9659574468085106,
+            "sg_match": 0.9319148936170213,
+            "sg_mismatch": 0.2723404255319149,
+            "pl_match": 0.8851063829787233,
+            "pl_mismatch": 0.24680851063829787
+          },
+          "attraction_sg": 0.6595744680851063,
+          "complexity_sg": 0.05531914893617018,
+          "attraction_pl": 0.6382978723404255,
+          "complexity_pl": 0.08085106382978724,
+          "attraction": 0.6489361702127658,
+          "complexity": 0.06808510638297871,
+          "balanced_bare": 0.9765957446808511,
+          "balanced_match": 0.9085106382978723,
+          "balanced_mismatch": 0.25957446808510637
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9818181818181818,
+            "sg_match": 0.8,
+            "sg_mismatch": 0.40606060606060607,
+            "pl_match": 0.7636363636363637,
+            "pl_mismatch": 0.37575757575757573
+          },
+          "attraction_sg": 0.393939393939394,
+          "complexity_sg": 0.19999999999999996,
+          "attraction_pl": 0.38787878787878793,
+          "complexity_pl": 0.21818181818181814,
+          "attraction": 0.390909090909091,
+          "complexity": 0.20909090909090905,
+          "balanced_bare": 0.990909090909091,
+          "balanced_match": 0.7818181818181819,
+          "balanced_mismatch": 0.3909090909090909
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed10_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.945,
+          "sg_match": 0.94,
+          "sg_mismatch": 0.6525,
+          "pl_match": 0.6025,
+          "pl_mismatch": 0.1875
+        },
+        "attraction_sg": 0.2875,
+        "complexity_sg": 0.06000000000000005,
+        "attraction_pl": 0.41500000000000004,
+        "complexity_pl": 0.3424999999999999,
+        "attraction": 0.35125,
+        "complexity": 0.20124999999999998,
+        "balanced_bare": 0.9724999999999999,
+        "balanced_match": 0.77125,
+        "balanced_mismatch": 0.42
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9361702127659575,
+            "sg_match": 0.9702127659574468,
+            "sg_mismatch": 0.5234042553191489,
+            "pl_match": 0.7574468085106383,
+            "pl_mismatch": 0.16595744680851063
+          },
+          "attraction_sg": 0.44680851063829785,
+          "complexity_sg": 0.029787234042553234,
+          "attraction_pl": 0.5914893617021276,
+          "complexity_pl": 0.17872340425531918,
+          "attraction": 0.5191489361702127,
+          "complexity": 0.10425531914893621,
+          "balanced_bare": 0.9680851063829787,
+          "balanced_match": 0.8638297872340426,
+          "balanced_mismatch": 0.3446808510638298
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9575757575757575,
+            "sg_match": 0.896969696969697,
+            "sg_mismatch": 0.8363636363636363,
+            "pl_match": 0.38181818181818183,
+            "pl_mismatch": 0.21818181818181817
+          },
+          "attraction_sg": 0.06060606060606066,
+          "complexity_sg": 0.10303030303030303,
+          "attraction_pl": 0.16363636363636366,
+          "complexity_pl": 0.5757575757575757,
+          "attraction": 0.11212121212121216,
+          "complexity": 0.33939393939393936,
+          "balanced_bare": 0.9787878787878788,
+          "balanced_match": 0.6393939393939394,
+          "balanced_mismatch": 0.5272727272727272
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed11_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9075,
+          "sg_match": 0.8875,
+          "sg_mismatch": 0.47,
+          "pl_match": 0.8075,
+          "pl_mismatch": 0.3
+        },
+        "attraction_sg": 0.4175,
+        "complexity_sg": 0.11250000000000004,
+        "attraction_pl": 0.5075000000000001,
+        "complexity_pl": 0.09999999999999998,
+        "attraction": 0.4625,
+        "complexity": 0.10625000000000001,
+        "balanced_bare": 0.95375,
+        "balanced_match": 0.8474999999999999,
+        "balanced_mismatch": 0.385
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8978723404255319,
+            "sg_match": 0.9361702127659575,
+            "sg_mismatch": 0.3702127659574468,
+            "pl_match": 0.8808510638297873,
+            "pl_mismatch": 0.251063829787234
+          },
+          "attraction_sg": 0.5659574468085107,
+          "complexity_sg": 0.06382978723404253,
+          "attraction_pl": 0.6297872340425532,
+          "complexity_pl": 0.017021276595744594,
+          "attraction": 0.597872340425532,
+          "complexity": 0.040425531914893564,
+          "balanced_bare": 0.9489361702127659,
+          "balanced_match": 0.9085106382978724,
+          "balanced_mismatch": 0.31063829787234043
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9212121212121213,
+            "sg_match": 0.8181818181818182,
+            "sg_mismatch": 0.6121212121212121,
+            "pl_match": 0.703030303030303,
+            "pl_mismatch": 0.3696969696969697
+          },
+          "attraction_sg": 0.20606060606060617,
+          "complexity_sg": 0.18181818181818177,
+          "attraction_pl": 0.3333333333333333,
+          "complexity_pl": 0.21818181818181825,
+          "attraction": 0.26969696969696977,
+          "complexity": 0.2,
+          "balanced_bare": 0.9606060606060607,
+          "balanced_match": 0.7606060606060606,
+          "balanced_mismatch": 0.49090909090909085
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed12_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9775,
+          "bare_pl": 0.965,
+          "sg_match": 0.895,
+          "sg_mismatch": 0.5175,
+          "pl_match": 0.8225,
+          "pl_mismatch": 0.2975
+        },
+        "attraction_sg": 0.37750000000000006,
+        "complexity_sg": 0.08250000000000002,
+        "attraction_pl": 0.525,
+        "complexity_pl": 0.14249999999999996,
+        "attraction": 0.45125000000000004,
+        "complexity": 0.11249999999999999,
+        "balanced_bare": 0.97125,
+        "balanced_match": 0.85875,
+        "balanced_mismatch": 0.4075
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9829787234042553,
+            "bare_pl": 0.9574468085106383,
+            "sg_match": 0.9276595744680851,
+            "sg_mismatch": 0.5191489361702127,
+            "pl_match": 0.7957446808510639,
+            "pl_mismatch": 0.3148936170212766
+          },
+          "attraction_sg": 0.4085106382978724,
+          "complexity_sg": 0.05531914893617018,
+          "attraction_pl": 0.48085106382978726,
+          "complexity_pl": 0.16170212765957448,
+          "attraction": 0.4446808510638298,
+          "complexity": 0.10851063829787233,
+          "balanced_bare": 0.9702127659574469,
+          "balanced_match": 0.8617021276595744,
+          "balanced_mismatch": 0.41702127659574467
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9696969696969697,
+            "bare_pl": 0.9757575757575757,
+            "sg_match": 0.8484848484848485,
+            "sg_mismatch": 0.5151515151515151,
+            "pl_match": 0.8606060606060606,
+            "pl_mismatch": 0.2727272727272727
+          },
+          "attraction_sg": 0.33333333333333337,
+          "complexity_sg": 0.12121212121212122,
+          "attraction_pl": 0.5878787878787879,
+          "complexity_pl": 0.11515151515151512,
+          "attraction": 0.46060606060606063,
+          "complexity": 0.11818181818181817,
+          "balanced_bare": 0.9727272727272727,
+          "balanced_match": 0.8545454545454545,
+          "balanced_mismatch": 0.3939393939393939
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed13_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9575,
+          "sg_match": 0.865,
+          "sg_mismatch": 0.4425,
+          "pl_match": 0.91,
+          "pl_mismatch": 0.3575
+        },
+        "attraction_sg": 0.4225,
+        "complexity_sg": 0.135,
+        "attraction_pl": 0.5525,
+        "complexity_pl": 0.04749999999999999,
+        "attraction": 0.4875,
+        "complexity": 0.09125,
+        "balanced_bare": 0.97875,
+        "balanced_match": 0.8875,
+        "balanced_mismatch": 0.4
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9531914893617022,
+            "sg_match": 0.9276595744680851,
+            "sg_mismatch": 0.3659574468085106,
+            "pl_match": 0.9531914893617022,
+            "pl_mismatch": 0.2680851063829787
+          },
+          "attraction_sg": 0.5617021276595745,
+          "complexity_sg": 0.07234042553191489,
+          "attraction_pl": 0.6851063829787234,
+          "complexity_pl": 0.0,
+          "attraction": 0.623404255319149,
+          "complexity": 0.036170212765957444,
+          "balanced_bare": 0.9765957446808511,
+          "balanced_match": 0.9404255319148936,
+          "balanced_mismatch": 0.31702127659574464
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9636363636363636,
+            "sg_match": 0.7757575757575758,
+            "sg_mismatch": 0.5515151515151515,
+            "pl_match": 0.8484848484848485,
+            "pl_mismatch": 0.48484848484848486
+          },
+          "attraction_sg": 0.22424242424242424,
+          "complexity_sg": 0.22424242424242424,
+          "attraction_pl": 0.36363636363636365,
+          "complexity_pl": 0.11515151515151512,
+          "attraction": 0.29393939393939394,
+          "complexity": 0.16969696969696968,
+          "balanced_bare": 0.9818181818181818,
+          "balanced_match": 0.8121212121212121,
+          "balanced_mismatch": 0.5181818181818182
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed14_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.965,
+          "bare_pl": 0.975,
+          "sg_match": 0.905,
+          "sg_mismatch": 0.505,
+          "pl_match": 0.7375,
+          "pl_mismatch": 0.2425
+        },
+        "attraction_sg": 0.4,
+        "complexity_sg": 0.05999999999999994,
+        "attraction_pl": 0.49500000000000005,
+        "complexity_pl": 0.23749999999999993,
+        "attraction": 0.4475,
+        "complexity": 0.14874999999999994,
+        "balanced_bare": 0.97,
+        "balanced_match": 0.82125,
+        "balanced_mismatch": 0.37375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9744680851063829,
+            "bare_pl": 0.9744680851063829,
+            "sg_match": 0.9446808510638298,
+            "sg_mismatch": 0.39148936170212767,
+            "pl_match": 0.8170212765957446,
+            "pl_mismatch": 0.19574468085106383
+          },
+          "attraction_sg": 0.5531914893617021,
+          "complexity_sg": 0.029787234042553123,
+          "attraction_pl": 0.6212765957446809,
+          "complexity_pl": 0.1574468085106383,
+          "attraction": 0.5872340425531914,
+          "complexity": 0.09361702127659571,
+          "balanced_bare": 0.9744680851063829,
+          "balanced_match": 0.8808510638297873,
+          "balanced_mismatch": 0.2936170212765957
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9515151515151515,
+            "bare_pl": 0.9757575757575757,
+            "sg_match": 0.8484848484848485,
+            "sg_mismatch": 0.6666666666666666,
+            "pl_match": 0.6242424242424243,
+            "pl_mismatch": 0.3090909090909091
+          },
+          "attraction_sg": 0.18181818181818188,
+          "complexity_sg": 0.10303030303030303,
+          "attraction_pl": 0.3151515151515152,
+          "complexity_pl": 0.35151515151515145,
+          "attraction": 0.24848484848484853,
+          "complexity": 0.22727272727272724,
+          "balanced_bare": 0.9636363636363636,
+          "balanced_match": 0.7363636363636363,
+          "balanced_mismatch": 0.48787878787878786
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed15_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.81,
+          "sg_match": 0.8875,
+          "sg_mismatch": 0.6025,
+          "pl_match": 0.7025,
+          "pl_mismatch": 0.26
+        },
+        "attraction_sg": 0.2849999999999999,
+        "complexity_sg": 0.11250000000000004,
+        "attraction_pl": 0.4425,
+        "complexity_pl": 0.10750000000000004,
+        "attraction": 0.36374999999999996,
+        "complexity": 0.11000000000000004,
+        "balanced_bare": 0.905,
+        "balanced_match": 0.7949999999999999,
+        "balanced_mismatch": 0.43125
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8127659574468085,
+            "sg_match": 0.9531914893617022,
+            "sg_mismatch": 0.5446808510638298,
+            "pl_match": 0.8297872340425532,
+            "pl_mismatch": 0.23404255319148937
+          },
+          "attraction_sg": 0.4085106382978724,
+          "complexity_sg": 0.04680851063829783,
+          "attraction_pl": 0.5957446808510638,
+          "complexity_pl": -0.017021276595744705,
+          "attraction": 0.5021276595744681,
+          "complexity": 0.014893617021276562,
+          "balanced_bare": 0.9063829787234042,
+          "balanced_match": 0.8914893617021277,
+          "balanced_mismatch": 0.3893617021276596
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.806060606060606,
+            "sg_match": 0.793939393939394,
+            "sg_mismatch": 0.6848484848484848,
+            "pl_match": 0.5212121212121212,
+            "pl_mismatch": 0.296969696969697
+          },
+          "attraction_sg": 0.10909090909090913,
+          "complexity_sg": 0.20606060606060606,
+          "attraction_pl": 0.22424242424242424,
+          "complexity_pl": 0.2848484848484848,
+          "attraction": 0.16666666666666669,
+          "complexity": 0.24545454545454543,
+          "balanced_bare": 0.9030303030303031,
+          "balanced_match": 0.6575757575757576,
+          "balanced_mismatch": 0.4909090909090909
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed16_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9925,
+          "bare_pl": 0.985,
+          "sg_match": 0.8875,
+          "sg_mismatch": 0.5475,
+          "pl_match": 0.8325,
+          "pl_mismatch": 0.38
+        },
+        "attraction_sg": 0.33999999999999997,
+        "complexity_sg": 0.1050000000000001,
+        "attraction_pl": 0.4525,
+        "complexity_pl": 0.15249999999999997,
+        "attraction": 0.39625,
+        "complexity": 0.12875000000000003,
+        "balanced_bare": 0.98875,
+        "balanced_match": 0.86,
+        "balanced_mismatch": 0.46375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9787234042553191,
+            "sg_match": 0.9234042553191489,
+            "sg_mismatch": 0.5234042553191489,
+            "pl_match": 0.8170212765957446,
+            "pl_mismatch": 0.3446808510638298
+          },
+          "attraction_sg": 0.4,
+          "complexity_sg": 0.07659574468085106,
+          "attraction_pl": 0.47234042553191485,
+          "complexity_pl": 0.16170212765957448,
+          "attraction": 0.43617021276595747,
+          "complexity": 0.11914893617021277,
+          "balanced_bare": 0.9893617021276595,
+          "balanced_match": 0.8702127659574468,
+          "balanced_mismatch": 0.4340425531914893
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9818181818181818,
+            "bare_pl": 0.9939393939393939,
+            "sg_match": 0.8363636363636363,
+            "sg_mismatch": 0.5818181818181818,
+            "pl_match": 0.8545454545454545,
+            "pl_mismatch": 0.4303030303030303
+          },
+          "attraction_sg": 0.2545454545454545,
+          "complexity_sg": 0.1454545454545455,
+          "attraction_pl": 0.4242424242424242,
+          "complexity_pl": 0.1393939393939394,
+          "attraction": 0.33939393939393936,
+          "complexity": 0.14242424242424245,
+          "balanced_bare": 0.9878787878787878,
+          "balanced_match": 0.8454545454545455,
+          "balanced_mismatch": 0.5060606060606061
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed17_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9025,
+          "sg_match": 0.9175,
+          "sg_mismatch": 0.6625,
+          "pl_match": 0.61,
+          "pl_mismatch": 0.2125
+        },
+        "attraction_sg": 0.255,
+        "complexity_sg": 0.08250000000000002,
+        "attraction_pl": 0.39749999999999996,
+        "complexity_pl": 0.2925,
+        "attraction": 0.32625,
+        "complexity": 0.1875,
+        "balanced_bare": 0.9512499999999999,
+        "balanced_match": 0.7637499999999999,
+        "balanced_mismatch": 0.4375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8936170212765957,
+            "sg_match": 0.9361702127659575,
+            "sg_mismatch": 0.7489361702127659,
+            "pl_match": 0.5574468085106383,
+            "pl_mismatch": 0.09361702127659574
+          },
+          "attraction_sg": 0.18723404255319154,
+          "complexity_sg": 0.06382978723404253,
+          "attraction_pl": 0.46382978723404256,
+          "complexity_pl": 0.3361702127659574,
+          "attraction": 0.32553191489361705,
+          "complexity": 0.19999999999999996,
+          "balanced_bare": 0.9468085106382979,
+          "balanced_match": 0.7468085106382979,
+          "balanced_mismatch": 0.42127659574468085
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9151515151515152,
+            "sg_match": 0.8909090909090909,
+            "sg_mismatch": 0.5393939393939394,
+            "pl_match": 0.6848484848484848,
+            "pl_mismatch": 0.38181818181818183
+          },
+          "attraction_sg": 0.35151515151515145,
+          "complexity_sg": 0.10909090909090913,
+          "attraction_pl": 0.303030303030303,
+          "complexity_pl": 0.23030303030303034,
+          "attraction": 0.3272727272727272,
+          "complexity": 0.16969696969696973,
+          "balanced_bare": 0.9575757575757575,
+          "balanced_match": 0.7878787878787878,
+          "balanced_mismatch": 0.46060606060606063
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed18_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.99,
+          "sg_match": 0.85,
+          "sg_mismatch": 0.315,
+          "pl_match": 0.9575,
+          "pl_mismatch": 0.39
+        },
+        "attraction_sg": 0.5349999999999999,
+        "complexity_sg": 0.15000000000000002,
+        "attraction_pl": 0.5675,
+        "complexity_pl": 0.03249999999999997,
+        "attraction": 0.55125,
+        "complexity": 0.09125,
+        "balanced_bare": 0.995,
+        "balanced_match": 0.90375,
+        "balanced_mismatch": 0.35250000000000004
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9914893617021276,
+            "sg_match": 0.9702127659574468,
+            "sg_mismatch": 0.40425531914893614,
+            "pl_match": 0.9276595744680851,
+            "pl_mismatch": 0.2297872340425532
+          },
+          "attraction_sg": 0.5659574468085107,
+          "complexity_sg": 0.029787234042553234,
+          "attraction_pl": 0.6978723404255319,
+          "complexity_pl": 0.06382978723404253,
+          "attraction": 0.6319148936170214,
+          "complexity": 0.046808510638297884,
+          "balanced_bare": 0.9957446808510638,
+          "balanced_match": 0.9489361702127659,
+          "balanced_mismatch": 0.31702127659574464
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9878787878787879,
+            "sg_match": 0.6787878787878788,
+            "sg_mismatch": 0.18787878787878787,
+            "pl_match": 1.0,
+            "pl_mismatch": 0.6181818181818182
+          },
+          "attraction_sg": 0.49090909090909096,
+          "complexity_sg": 0.32121212121212117,
+          "attraction_pl": 0.38181818181818183,
+          "complexity_pl": -0.012121212121212088,
+          "attraction": 0.4363636363636364,
+          "complexity": 0.15454545454545454,
+          "balanced_bare": 0.9939393939393939,
+          "balanced_match": 0.8393939393939394,
+          "balanced_mismatch": 0.403030303030303
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed19_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9775,
+          "bare_pl": 0.9725,
+          "sg_match": 0.94,
+          "sg_mismatch": 0.71,
+          "pl_match": 0.515,
+          "pl_mismatch": 0.115
+        },
+        "attraction_sg": 0.22999999999999998,
+        "complexity_sg": 0.03750000000000009,
+        "attraction_pl": 0.4,
+        "complexity_pl": 0.4575,
+        "attraction": 0.315,
+        "complexity": 0.24750000000000005,
+        "balanced_bare": 0.9750000000000001,
+        "balanced_match": 0.7275,
+        "balanced_mismatch": 0.4125
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9829787234042553,
+            "bare_pl": 0.9659574468085106,
+            "sg_match": 0.9659574468085106,
+            "sg_mismatch": 0.6510638297872341,
+            "pl_match": 0.6297872340425532,
+            "pl_mismatch": 0.11063829787234042
+          },
+          "attraction_sg": 0.3148936170212765,
+          "complexity_sg": 0.017021276595744705,
+          "attraction_pl": 0.5191489361702128,
+          "complexity_pl": 0.3361702127659574,
+          "attraction": 0.41702127659574467,
+          "complexity": 0.17659574468085104,
+          "balanced_bare": 0.9744680851063829,
+          "balanced_match": 0.7978723404255319,
+          "balanced_mismatch": 0.3808510638297873
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9696969696969697,
+            "bare_pl": 0.9818181818181818,
+            "sg_match": 0.9030303030303031,
+            "sg_mismatch": 0.793939393939394,
+            "pl_match": 0.3515151515151515,
+            "pl_mismatch": 0.12121212121212122
+          },
+          "attraction_sg": 0.10909090909090913,
+          "complexity_sg": 0.06666666666666665,
+          "attraction_pl": 0.2303030303030303,
+          "complexity_pl": 0.6303030303030304,
+          "attraction": 0.1696969696969697,
+          "complexity": 0.3484848484848485,
+          "balanced_bare": 0.9757575757575758,
+          "balanced_match": 0.6272727272727273,
+          "balanced_mismatch": 0.4575757575757576
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed20_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.8825,
+          "sg_match": 0.9375,
+          "sg_mismatch": 0.55,
+          "pl_match": 0.795,
+          "pl_mismatch": 0.225
+        },
+        "attraction_sg": 0.38749999999999996,
+        "complexity_sg": 0.0625,
+        "attraction_pl": 0.5700000000000001,
+        "complexity_pl": 0.08749999999999991,
+        "attraction": 0.47875,
+        "complexity": 0.07499999999999996,
+        "balanced_bare": 0.9412499999999999,
+        "balanced_match": 0.86625,
+        "balanced_mismatch": 0.3875
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8765957446808511,
+            "sg_match": 0.9914893617021276,
+            "sg_mismatch": 0.5617021276595745,
+            "pl_match": 0.7872340425531915,
+            "pl_mismatch": 0.09787234042553192
+          },
+          "attraction_sg": 0.42978723404255315,
+          "complexity_sg": 0.008510638297872353,
+          "attraction_pl": 0.6893617021276596,
+          "complexity_pl": 0.08936170212765959,
+          "attraction": 0.5595744680851064,
+          "complexity": 0.04893617021276597,
+          "balanced_bare": 0.9382978723404256,
+          "balanced_match": 0.8893617021276596,
+          "balanced_mismatch": 0.3297872340425532
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8909090909090909,
+            "sg_match": 0.8606060606060606,
+            "sg_mismatch": 0.5333333333333333,
+            "pl_match": 0.806060606060606,
+            "pl_mismatch": 0.40606060606060607
+          },
+          "attraction_sg": 0.32727272727272727,
+          "complexity_sg": 0.1393939393939394,
+          "attraction_pl": 0.39999999999999997,
+          "complexity_pl": 0.08484848484848484,
+          "attraction": 0.36363636363636365,
+          "complexity": 0.11212121212121212,
+          "balanced_bare": 0.9454545454545454,
+          "balanced_match": 0.8333333333333333,
+          "balanced_mismatch": 0.4696969696969697
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed21_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9475,
+          "sg_match": 0.83,
+          "sg_mismatch": 0.485,
+          "pl_match": 0.7925,
+          "pl_mismatch": 0.4025
+        },
+        "attraction_sg": 0.345,
+        "complexity_sg": 0.17000000000000004,
+        "attraction_pl": 0.38999999999999996,
+        "complexity_pl": 0.15500000000000003,
+        "attraction": 0.36749999999999994,
+        "complexity": 0.16250000000000003,
+        "balanced_bare": 0.97375,
+        "balanced_match": 0.81125,
+        "balanced_mismatch": 0.44375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9404255319148936,
+            "sg_match": 0.9234042553191489,
+            "sg_mismatch": 0.5191489361702127,
+            "pl_match": 0.723404255319149,
+            "pl_mismatch": 0.225531914893617
+          },
+          "attraction_sg": 0.4042553191489362,
+          "complexity_sg": 0.07659574468085106,
+          "attraction_pl": 0.49787234042553197,
+          "complexity_pl": 0.21702127659574466,
+          "attraction": 0.4510638297872341,
+          "complexity": 0.14680851063829786,
+          "balanced_bare": 0.9702127659574469,
+          "balanced_match": 0.823404255319149,
+          "balanced_mismatch": 0.3723404255319149
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9575757575757575,
+            "sg_match": 0.696969696969697,
+            "sg_mismatch": 0.43636363636363634,
+            "pl_match": 0.8909090909090909,
+            "pl_mismatch": 0.6545454545454545
+          },
+          "attraction_sg": 0.2606060606060607,
+          "complexity_sg": 0.303030303030303,
+          "attraction_pl": 0.23636363636363633,
+          "complexity_pl": 0.06666666666666665,
+          "attraction": 0.2484848484848485,
+          "complexity": 0.18484848484848482,
+          "balanced_bare": 0.9787878787878788,
+          "balanced_match": 0.793939393939394,
+          "balanced_mismatch": 0.5454545454545454
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed22_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.99,
+          "bare_pl": 0.96,
+          "sg_match": 0.8425,
+          "sg_mismatch": 0.5375,
+          "pl_match": 0.8725,
+          "pl_mismatch": 0.5125
+        },
+        "attraction_sg": 0.30500000000000005,
+        "complexity_sg": 0.14749999999999996,
+        "attraction_pl": 0.3600000000000001,
+        "complexity_pl": 0.08749999999999991,
+        "attraction": 0.3325000000000001,
+        "complexity": 0.11749999999999994,
+        "balanced_bare": 0.975,
+        "balanced_match": 0.8575,
+        "balanced_mismatch": 0.5249999999999999
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9872340425531915,
+            "bare_pl": 0.9446808510638298,
+            "sg_match": 0.902127659574468,
+            "sg_mismatch": 0.6340425531914894,
+            "pl_match": 0.8340425531914893,
+            "pl_mismatch": 0.3829787234042553
+          },
+          "attraction_sg": 0.26808510638297867,
+          "complexity_sg": 0.08510638297872342,
+          "attraction_pl": 0.451063829787234,
+          "complexity_pl": 0.11063829787234047,
+          "attraction": 0.35957446808510635,
+          "complexity": 0.09787234042553195,
+          "balanced_bare": 0.9659574468085106,
+          "balanced_match": 0.8680851063829786,
+          "balanced_mismatch": 0.5085106382978724
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9939393939393939,
+            "bare_pl": 0.9818181818181818,
+            "sg_match": 0.7575757575757576,
+            "sg_mismatch": 0.4,
+            "pl_match": 0.9272727272727272,
+            "pl_mismatch": 0.696969696969697
+          },
+          "attraction_sg": 0.35757575757575755,
+          "complexity_sg": 0.23636363636363633,
+          "attraction_pl": 0.23030303030303023,
+          "complexity_pl": 0.054545454545454564,
+          "attraction": 0.2939393939393939,
+          "complexity": 0.14545454545454545,
+          "balanced_bare": 0.9878787878787878,
+          "balanced_match": 0.8424242424242424,
+          "balanced_mismatch": 0.5484848484848486
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed23_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.955,
+          "bare_pl": 0.9575,
+          "sg_match": 0.8725,
+          "sg_mismatch": 0.5625,
+          "pl_match": 0.825,
+          "pl_mismatch": 0.2425
+        },
+        "attraction_sg": 0.31000000000000005,
+        "complexity_sg": 0.0824999999999999,
+        "attraction_pl": 0.5825,
+        "complexity_pl": 0.13250000000000006,
+        "attraction": 0.44625000000000004,
+        "complexity": 0.10749999999999998,
+        "balanced_bare": 0.95625,
+        "balanced_match": 0.84875,
+        "balanced_mismatch": 0.40249999999999997
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9617021276595744,
+            "bare_pl": 0.9574468085106383,
+            "sg_match": 0.902127659574468,
+            "sg_mismatch": 0.574468085106383,
+            "pl_match": 0.9276595744680851,
+            "pl_mismatch": 0.23404255319148937
+          },
+          "attraction_sg": 0.327659574468085,
+          "complexity_sg": 0.05957446808510636,
+          "attraction_pl": 0.6936170212765957,
+          "complexity_pl": 0.029787234042553234,
+          "attraction": 0.5106382978723404,
+          "complexity": 0.044680851063829796,
+          "balanced_bare": 0.9595744680851064,
+          "balanced_match": 0.9148936170212766,
+          "balanced_mismatch": 0.4042553191489362
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9454545454545454,
+            "bare_pl": 0.9575757575757575,
+            "sg_match": 0.8303030303030303,
+            "sg_mismatch": 0.5454545454545454,
+            "pl_match": 0.6787878787878788,
+            "pl_mismatch": 0.2545454545454545
+          },
+          "attraction_sg": 0.2848484848484849,
+          "complexity_sg": 0.11515151515151512,
+          "attraction_pl": 0.4242424242424243,
+          "complexity_pl": 0.2787878787878787,
+          "attraction": 0.3545454545454546,
+          "complexity": 0.1969696969696969,
+          "balanced_bare": 0.9515151515151514,
+          "balanced_match": 0.7545454545454546,
+          "balanced_mismatch": 0.39999999999999997
+        }
+      }
+    },
+    "syntax_delay0_exp10_size11M_seed24_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9825,
+          "sg_match": 0.95,
+          "sg_mismatch": 0.635,
+          "pl_match": 0.88,
+          "pl_mismatch": 0.28
+        },
+        "attraction_sg": 0.31499999999999995,
+        "complexity_sg": 0.050000000000000044,
+        "attraction_pl": 0.6,
+        "complexity_pl": 0.10250000000000004,
+        "attraction": 0.45749999999999996,
+        "complexity": 0.07625000000000004,
+        "balanced_bare": 0.99125,
+        "balanced_match": 0.915,
+        "balanced_mismatch": 0.4575
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9787234042553191,
+            "sg_match": 0.9872340425531915,
+            "sg_mismatch": 0.8212765957446808,
+            "pl_match": 0.9234042553191489,
+            "pl_mismatch": 0.32340425531914896
+          },
+          "attraction_sg": 0.16595744680851066,
+          "complexity_sg": 0.012765957446808529,
+          "attraction_pl": 0.6,
+          "complexity_pl": 0.05531914893617018,
+          "attraction": 0.3829787234042553,
+          "complexity": 0.034042553191489355,
+          "balanced_bare": 0.9893617021276595,
+          "balanced_match": 0.9553191489361702,
+          "balanced_mismatch": 0.5723404255319149
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9878787878787879,
+            "sg_match": 0.896969696969697,
+            "sg_mismatch": 0.3696969696969697,
+            "pl_match": 0.8181818181818182,
+            "pl_mismatch": 0.21818181818181817
+          },
+          "attraction_sg": 0.5272727272727273,
+          "complexity_sg": 0.10303030303030303,
+          "attraction_pl": 0.6000000000000001,
+          "complexity_pl": 0.16969696969696968,
+          "attraction": 0.5636363636363637,
+          "complexity": 0.13636363636363635,
+          "balanced_bare": 0.9939393939393939,
+          "balanced_match": 0.8575757575757577,
+          "balanced_mismatch": 0.29393939393939394
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed1_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 1.0,
+          "sg_match": 0.855,
+          "sg_mismatch": 0.64,
+          "pl_match": 0.685,
+          "pl_mismatch": 0.39
+        },
+        "attraction_sg": 0.21499999999999997,
+        "complexity_sg": 0.14500000000000002,
+        "attraction_pl": 0.29500000000000004,
+        "complexity_pl": 0.31499999999999995,
+        "attraction": 0.255,
+        "complexity": 0.22999999999999998,
+        "balanced_bare": 1.0,
+        "balanced_match": 0.77,
+        "balanced_mismatch": 0.515
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 1.0,
+            "sg_match": 0.8808510638297873,
+            "sg_mismatch": 0.7404255319148936,
+            "pl_match": 0.6468085106382979,
+            "pl_mismatch": 0.40425531914893614
+          },
+          "attraction_sg": 0.1404255319148937,
+          "complexity_sg": 0.11914893617021272,
+          "attraction_pl": 0.24255319148936177,
+          "complexity_pl": 0.3531914893617021,
+          "attraction": 0.19148936170212774,
+          "complexity": 0.2361702127659574,
+          "balanced_bare": 1.0,
+          "balanced_match": 0.7638297872340426,
+          "balanced_mismatch": 0.5723404255319149
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 1.0,
+            "sg_match": 0.8181818181818182,
+            "sg_mismatch": 0.49696969696969695,
+            "pl_match": 0.7393939393939394,
+            "pl_mismatch": 0.3696969696969697
+          },
+          "attraction_sg": 0.3212121212121213,
+          "complexity_sg": 0.18181818181818177,
+          "attraction_pl": 0.3696969696969697,
+          "complexity_pl": 0.2606060606060606,
+          "attraction": 0.34545454545454546,
+          "complexity": 0.2212121212121212,
+          "balanced_bare": 1.0,
+          "balanced_match": 0.7787878787878788,
+          "balanced_mismatch": 0.43333333333333335
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed2_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9175,
+          "bare_pl": 0.9375,
+          "sg_match": 0.855,
+          "sg_mismatch": 0.475,
+          "pl_match": 0.8275,
+          "pl_mismatch": 0.305
+        },
+        "attraction_sg": 0.38,
+        "complexity_sg": 0.0625,
+        "attraction_pl": 0.5225,
+        "complexity_pl": 0.10999999999999999,
+        "attraction": 0.45125,
+        "complexity": 0.08625,
+        "balanced_bare": 0.9275,
+        "balanced_match": 0.84125,
+        "balanced_mismatch": 0.39
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9446808510638298,
+            "bare_pl": 0.948936170212766,
+            "sg_match": 0.9276595744680851,
+            "sg_mismatch": 0.4,
+            "pl_match": 0.851063829787234,
+            "pl_mismatch": 0.17446808510638298
+          },
+          "attraction_sg": 0.5276595744680851,
+          "complexity_sg": 0.017021276595744705,
+          "attraction_pl": 0.676595744680851,
+          "complexity_pl": 0.09787234042553195,
+          "attraction": 0.602127659574468,
+          "complexity": 0.057446808510638325,
+          "balanced_bare": 0.946808510638298,
+          "balanced_match": 0.8893617021276596,
+          "balanced_mismatch": 0.2872340425531915
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.8787878787878788,
+            "bare_pl": 0.9212121212121213,
+            "sg_match": 0.7515151515151515,
+            "sg_mismatch": 0.5818181818181818,
+            "pl_match": 0.793939393939394,
+            "pl_mismatch": 0.4909090909090909
+          },
+          "attraction_sg": 0.16969696969696968,
+          "complexity_sg": 0.12727272727272732,
+          "attraction_pl": 0.30303030303030304,
+          "complexity_pl": 0.12727272727272732,
+          "attraction": 0.23636363636363636,
+          "complexity": 0.12727272727272732,
+          "balanced_bare": 0.9,
+          "balanced_match": 0.7727272727272727,
+          "balanced_mismatch": 0.5363636363636364
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed3_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9725,
+          "bare_pl": 0.985,
+          "sg_match": 0.9225,
+          "sg_mismatch": 0.6075,
+          "pl_match": 0.87,
+          "pl_mismatch": 0.425
+        },
+        "attraction_sg": 0.31499999999999995,
+        "complexity_sg": 0.050000000000000044,
+        "attraction_pl": 0.445,
+        "complexity_pl": 0.11499999999999999,
+        "attraction": 0.38,
+        "complexity": 0.08250000000000002,
+        "balanced_bare": 0.97875,
+        "balanced_match": 0.89625,
+        "balanced_mismatch": 0.51625
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9787234042553191,
+            "bare_pl": 0.9872340425531915,
+            "sg_match": 0.9914893617021276,
+            "sg_mismatch": 0.6936170212765957,
+            "pl_match": 0.902127659574468,
+            "pl_mismatch": 0.2723404255319149
+          },
+          "attraction_sg": 0.2978723404255319,
+          "complexity_sg": -0.012765957446808529,
+          "attraction_pl": 0.6297872340425532,
+          "complexity_pl": 0.08510638297872342,
+          "attraction": 0.46382978723404256,
+          "complexity": 0.036170212765957444,
+          "balanced_bare": 0.9829787234042553,
+          "balanced_match": 0.9468085106382979,
+          "balanced_mismatch": 0.4829787234042553
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9636363636363636,
+            "bare_pl": 0.9818181818181818,
+            "sg_match": 0.8242424242424242,
+            "sg_mismatch": 0.48484848484848486,
+            "pl_match": 0.8242424242424242,
+            "pl_mismatch": 0.6424242424242425
+          },
+          "attraction_sg": 0.33939393939393936,
+          "complexity_sg": 0.1393939393939394,
+          "attraction_pl": 0.18181818181818177,
+          "complexity_pl": 0.1575757575757576,
+          "attraction": 0.26060606060606056,
+          "complexity": 0.1484848484848485,
+          "balanced_bare": 0.9727272727272727,
+          "balanced_match": 0.8242424242424242,
+          "balanced_mismatch": 0.5636363636363637
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed4_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9775,
+          "bare_pl": 0.96,
+          "sg_match": 0.8875,
+          "sg_mismatch": 0.55,
+          "pl_match": 0.905,
+          "pl_mismatch": 0.5275
+        },
+        "attraction_sg": 0.3374999999999999,
+        "complexity_sg": 0.09000000000000008,
+        "attraction_pl": 0.37750000000000006,
+        "complexity_pl": 0.05499999999999994,
+        "attraction": 0.3575,
+        "complexity": 0.07250000000000001,
+        "balanced_bare": 0.96875,
+        "balanced_match": 0.89625,
+        "balanced_mismatch": 0.5387500000000001
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9702127659574468,
+            "bare_pl": 0.9446808510638298,
+            "sg_match": 0.9446808510638298,
+            "sg_mismatch": 0.7148936170212766,
+            "pl_match": 0.8595744680851064,
+            "pl_mismatch": 0.4127659574468085
+          },
+          "attraction_sg": 0.2297872340425532,
+          "complexity_sg": 0.025531914893616947,
+          "attraction_pl": 0.4468085106382979,
+          "complexity_pl": 0.08510638297872342,
+          "attraction": 0.3382978723404255,
+          "complexity": 0.05531914893617018,
+          "balanced_bare": 0.9574468085106382,
+          "balanced_match": 0.902127659574468,
+          "balanced_mismatch": 0.5638297872340425
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9878787878787879,
+            "bare_pl": 0.9818181818181818,
+            "sg_match": 0.806060606060606,
+            "sg_mismatch": 0.3151515151515151,
+            "pl_match": 0.9696969696969697,
+            "pl_mismatch": 0.6909090909090909
+          },
+          "attraction_sg": 0.4909090909090909,
+          "complexity_sg": 0.18181818181818188,
+          "attraction_pl": 0.2787878787878788,
+          "complexity_pl": 0.012121212121212088,
+          "attraction": 0.3848484848484849,
+          "complexity": 0.09696969696969698,
+          "balanced_bare": 0.9848484848484849,
+          "balanced_match": 0.8878787878787879,
+          "balanced_mismatch": 0.503030303030303
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed5_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9825,
+          "sg_match": 0.8675,
+          "sg_mismatch": 0.55,
+          "pl_match": 0.8325,
+          "pl_mismatch": 0.405
+        },
+        "attraction_sg": 0.3175,
+        "complexity_sg": 0.13249999999999995,
+        "attraction_pl": 0.4275,
+        "complexity_pl": 0.15000000000000002,
+        "attraction": 0.3725,
+        "complexity": 0.14125,
+        "balanced_bare": 0.99125,
+        "balanced_match": 0.8500000000000001,
+        "balanced_mismatch": 0.47750000000000004
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9787234042553191,
+            "sg_match": 0.9234042553191489,
+            "sg_mismatch": 0.548936170212766,
+            "pl_match": 0.825531914893617,
+            "pl_mismatch": 0.2680851063829787
+          },
+          "attraction_sg": 0.37446808510638296,
+          "complexity_sg": 0.07659574468085106,
+          "attraction_pl": 0.5574468085106383,
+          "complexity_pl": 0.15319148936170213,
+          "attraction": 0.46595744680851064,
+          "complexity": 0.1148936170212766,
+          "balanced_bare": 0.9893617021276595,
+          "balanced_match": 0.874468085106383,
+          "balanced_mismatch": 0.4085106382978724
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9878787878787879,
+            "sg_match": 0.7878787878787878,
+            "sg_mismatch": 0.5515151515151515,
+            "pl_match": 0.8424242424242424,
+            "pl_mismatch": 0.6
+          },
+          "attraction_sg": 0.23636363636363633,
+          "complexity_sg": 0.21212121212121215,
+          "attraction_pl": 0.24242424242424243,
+          "complexity_pl": 0.1454545454545455,
+          "attraction": 0.23939393939393938,
+          "complexity": 0.17878787878787883,
+          "balanced_bare": 0.9939393939393939,
+          "balanced_match": 0.8151515151515152,
+          "balanced_mismatch": 0.5757575757575757
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed6_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9225,
+          "sg_match": 0.935,
+          "sg_mismatch": 0.685,
+          "pl_match": 0.725,
+          "pl_mismatch": 0.365
+        },
+        "attraction_sg": 0.25,
+        "complexity_sg": 0.06499999999999995,
+        "attraction_pl": 0.36,
+        "complexity_pl": 0.1975,
+        "attraction": 0.305,
+        "complexity": 0.13124999999999998,
+        "balanced_bare": 0.9612499999999999,
+        "balanced_match": 0.8300000000000001,
+        "balanced_mismatch": 0.525
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.902127659574468,
+            "sg_match": 0.948936170212766,
+            "sg_mismatch": 0.676595744680851,
+            "pl_match": 0.8085106382978723,
+            "pl_mismatch": 0.4085106382978723
+          },
+          "attraction_sg": 0.27234042553191495,
+          "complexity_sg": 0.051063829787234005,
+          "attraction_pl": 0.39999999999999997,
+          "complexity_pl": 0.09361702127659577,
+          "attraction": 0.3361702127659575,
+          "complexity": 0.07234042553191489,
+          "balanced_bare": 0.951063829787234,
+          "balanced_match": 0.8787234042553191,
+          "balanced_mismatch": 0.5425531914893617
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9515151515151515,
+            "sg_match": 0.9151515151515152,
+            "sg_mismatch": 0.696969696969697,
+            "pl_match": 0.6060606060606061,
+            "pl_mismatch": 0.30303030303030304
+          },
+          "attraction_sg": 0.21818181818181814,
+          "complexity_sg": 0.08484848484848484,
+          "attraction_pl": 0.30303030303030304,
+          "complexity_pl": 0.34545454545454546,
+          "attraction": 0.2606060606060606,
+          "complexity": 0.21515151515151515,
+          "balanced_bare": 0.9757575757575758,
+          "balanced_match": 0.7606060606060606,
+          "balanced_mismatch": 0.5
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed7_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9775,
+          "bare_pl": 0.9775,
+          "sg_match": 0.865,
+          "sg_mismatch": 0.5725,
+          "pl_match": 0.83,
+          "pl_mismatch": 0.5925
+        },
+        "attraction_sg": 0.2925,
+        "complexity_sg": 0.11250000000000004,
+        "attraction_pl": 0.23749999999999993,
+        "complexity_pl": 0.14750000000000008,
+        "attraction": 0.26499999999999996,
+        "complexity": 0.13000000000000006,
+        "balanced_bare": 0.9775,
+        "balanced_match": 0.8474999999999999,
+        "balanced_mismatch": 0.5825
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9829787234042553,
+            "bare_pl": 0.9787234042553191,
+            "sg_match": 0.9319148936170213,
+            "sg_mismatch": 0.6170212765957447,
+            "pl_match": 0.7617021276595745,
+            "pl_mismatch": 0.4553191489361702
+          },
+          "attraction_sg": 0.3148936170212766,
+          "complexity_sg": 0.051063829787234005,
+          "attraction_pl": 0.30638297872340425,
+          "complexity_pl": 0.21702127659574466,
+          "attraction": 0.31063829787234043,
+          "complexity": 0.13404255319148933,
+          "balanced_bare": 0.9808510638297872,
+          "balanced_match": 0.8468085106382979,
+          "balanced_mismatch": 0.5361702127659574
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9696969696969697,
+            "bare_pl": 0.9757575757575757,
+            "sg_match": 0.7696969696969697,
+            "sg_mismatch": 0.509090909090909,
+            "pl_match": 0.9272727272727272,
+            "pl_mismatch": 0.7878787878787878
+          },
+          "attraction_sg": 0.2606060606060606,
+          "complexity_sg": 0.20000000000000007,
+          "attraction_pl": 0.1393939393939394,
+          "complexity_pl": 0.048484848484848464,
+          "attraction": 0.2,
+          "complexity": 0.12424242424242427,
+          "balanced_bare": 0.9727272727272727,
+          "balanced_match": 0.8484848484848484,
+          "balanced_mismatch": 0.6484848484848484
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed8_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.99,
+          "bare_pl": 0.97,
+          "sg_match": 0.9875,
+          "sg_mismatch": 0.855,
+          "pl_match": 0.7475,
+          "pl_mismatch": 0.4425
+        },
+        "attraction_sg": 0.13250000000000006,
+        "complexity_sg": 0.0024999999999999467,
+        "attraction_pl": 0.30500000000000005,
+        "complexity_pl": 0.22249999999999992,
+        "attraction": 0.21875000000000006,
+        "complexity": 0.11249999999999993,
+        "balanced_bare": 0.98,
+        "balanced_match": 0.8675,
+        "balanced_mismatch": 0.6487499999999999
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9872340425531915,
+            "bare_pl": 0.9659574468085106,
+            "sg_match": 0.9787234042553191,
+            "sg_mismatch": 0.8553191489361702,
+            "pl_match": 0.8468085106382979,
+            "pl_mismatch": 0.48936170212765956
+          },
+          "attraction_sg": 0.12340425531914889,
+          "complexity_sg": 0.008510638297872353,
+          "attraction_pl": 0.3574468085106383,
+          "complexity_pl": 0.11914893617021272,
+          "attraction": 0.2404255319148936,
+          "complexity": 0.06382978723404253,
+          "balanced_bare": 0.9765957446808511,
+          "balanced_match": 0.9127659574468086,
+          "balanced_mismatch": 0.6723404255319149
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9939393939393939,
+            "bare_pl": 0.9757575757575757,
+            "sg_match": 1.0,
+            "sg_mismatch": 0.8545454545454545,
+            "pl_match": 0.6060606060606061,
+            "pl_mismatch": 0.37575757575757573
+          },
+          "attraction_sg": 0.1454545454545455,
+          "complexity_sg": -0.0060606060606061,
+          "attraction_pl": 0.23030303030303034,
+          "complexity_pl": 0.36969696969696964,
+          "attraction": 0.18787878787878792,
+          "complexity": 0.18181818181818177,
+          "balanced_bare": 0.9848484848484849,
+          "balanced_match": 0.803030303030303,
+          "balanced_mismatch": 0.6151515151515151
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed9_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9875,
+          "bare_pl": 0.7,
+          "sg_match": 0.9375,
+          "sg_mismatch": 0.8425,
+          "pl_match": 0.5875,
+          "pl_mismatch": 0.2875
+        },
+        "attraction_sg": 0.09499999999999997,
+        "complexity_sg": 0.050000000000000044,
+        "attraction_pl": 0.30000000000000004,
+        "complexity_pl": 0.11249999999999993,
+        "attraction": 0.1975,
+        "complexity": 0.08124999999999999,
+        "balanced_bare": 0.84375,
+        "balanced_match": 0.7625,
+        "balanced_mismatch": 0.565
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9957446808510638,
+            "bare_pl": 0.7191489361702128,
+            "sg_match": 0.9531914893617022,
+            "sg_mismatch": 0.8851063829787233,
+            "pl_match": 0.5234042553191489,
+            "pl_mismatch": 0.1574468085106383
+          },
+          "attraction_sg": 0.06808510638297882,
+          "complexity_sg": 0.04255319148936165,
+          "attraction_pl": 0.3659574468085106,
+          "complexity_pl": 0.1957446808510639,
+          "attraction": 0.21702127659574472,
+          "complexity": 0.11914893617021277,
+          "balanced_bare": 0.8574468085106384,
+          "balanced_match": 0.7382978723404255,
+          "balanced_mismatch": 0.5212765957446808
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9757575757575757,
+            "bare_pl": 0.6727272727272727,
+            "sg_match": 0.9151515151515152,
+            "sg_mismatch": 0.7818181818181819,
+            "pl_match": 0.6787878787878788,
+            "pl_mismatch": 0.4727272727272727
+          },
+          "attraction_sg": 0.1333333333333333,
+          "complexity_sg": 0.06060606060606055,
+          "attraction_pl": 0.2060606060606061,
+          "complexity_pl": -0.0060606060606061,
+          "attraction": 0.1696969696969697,
+          "complexity": 0.027272727272727226,
+          "balanced_bare": 0.8242424242424242,
+          "balanced_match": 0.796969696969697,
+          "balanced_mismatch": 0.6272727272727273
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed10_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.83,
+          "sg_match": 0.955,
+          "sg_mismatch": 0.705,
+          "pl_match": 0.7425,
+          "pl_mismatch": 0.3
+        },
+        "attraction_sg": 0.25,
+        "complexity_sg": 0.04500000000000004,
+        "attraction_pl": 0.44250000000000006,
+        "complexity_pl": 0.08749999999999991,
+        "attraction": 0.34625000000000006,
+        "complexity": 0.06624999999999998,
+        "balanced_bare": 0.915,
+        "balanced_match": 0.84875,
+        "balanced_mismatch": 0.5025
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8127659574468085,
+            "sg_match": 0.9404255319148936,
+            "sg_mismatch": 0.8085106382978723,
+            "pl_match": 0.6808510638297872,
+            "pl_mismatch": 0.225531914893617
+          },
+          "attraction_sg": 0.13191489361702136,
+          "complexity_sg": 0.05957446808510636,
+          "attraction_pl": 0.4553191489361702,
+          "complexity_pl": 0.13191489361702124,
+          "attraction": 0.2936170212765958,
+          "complexity": 0.0957446808510638,
+          "balanced_bare": 0.9063829787234042,
+          "balanced_match": 0.8106382978723404,
+          "balanced_mismatch": 0.5170212765957447
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8545454545454545,
+            "sg_match": 0.9757575757575757,
+            "sg_mismatch": 0.5575757575757576,
+            "pl_match": 0.8303030303030303,
+            "pl_mismatch": 0.40606060606060607
+          },
+          "attraction_sg": 0.4181818181818181,
+          "complexity_sg": 0.024242424242424288,
+          "attraction_pl": 0.42424242424242425,
+          "complexity_pl": 0.024242424242424176,
+          "attraction": 0.42121212121212115,
+          "complexity": 0.024242424242424232,
+          "balanced_bare": 0.9272727272727272,
+          "balanced_match": 0.9030303030303031,
+          "balanced_mismatch": 0.4818181818181818
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed11_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.895,
+          "sg_match": 0.93,
+          "sg_mismatch": 0.7475,
+          "pl_match": 0.6675,
+          "pl_mismatch": 0.315
+        },
+        "attraction_sg": 0.1825,
+        "complexity_sg": 0.06999999999999995,
+        "attraction_pl": 0.3525,
+        "complexity_pl": 0.22750000000000004,
+        "attraction": 0.26749999999999996,
+        "complexity": 0.14875,
+        "balanced_bare": 0.9475,
+        "balanced_match": 0.7987500000000001,
+        "balanced_mismatch": 0.53125
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.902127659574468,
+            "sg_match": 0.9531914893617022,
+            "sg_mismatch": 0.723404255319149,
+            "pl_match": 0.6595744680851063,
+            "pl_mismatch": 0.15319148936170213
+          },
+          "attraction_sg": 0.2297872340425532,
+          "complexity_sg": 0.04680851063829783,
+          "attraction_pl": 0.5063829787234042,
+          "complexity_pl": 0.24255319148936172,
+          "attraction": 0.3680851063829787,
+          "complexity": 0.14468085106382977,
+          "balanced_bare": 0.951063829787234,
+          "balanced_match": 0.8063829787234043,
+          "balanced_mismatch": 0.43829787234042555
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8848484848484849,
+            "sg_match": 0.896969696969697,
+            "sg_mismatch": 0.7818181818181819,
+            "pl_match": 0.6787878787878788,
+            "pl_mismatch": 0.5454545454545454
+          },
+          "attraction_sg": 0.11515151515151512,
+          "complexity_sg": 0.10303030303030303,
+          "attraction_pl": 0.13333333333333341,
+          "complexity_pl": 0.20606060606060606,
+          "attraction": 0.12424242424242427,
+          "complexity": 0.15454545454545454,
+          "balanced_bare": 0.9424242424242424,
+          "balanced_match": 0.7878787878787878,
+          "balanced_mismatch": 0.6636363636363636
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed12_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.8525,
+          "sg_match": 0.94,
+          "sg_mismatch": 0.815,
+          "pl_match": 0.5475,
+          "pl_mismatch": 0.3025
+        },
+        "attraction_sg": 0.125,
+        "complexity_sg": 0.06000000000000005,
+        "attraction_pl": 0.245,
+        "complexity_pl": 0.30500000000000005,
+        "attraction": 0.185,
+        "complexity": 0.18250000000000005,
+        "balanced_bare": 0.92625,
+        "balanced_match": 0.7437499999999999,
+        "balanced_mismatch": 0.55875
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8553191489361702,
+            "sg_match": 0.9744680851063829,
+            "sg_mismatch": 0.8297872340425532,
+            "pl_match": 0.5702127659574469,
+            "pl_mismatch": 0.2425531914893617
+          },
+          "attraction_sg": 0.14468085106382977,
+          "complexity_sg": 0.025531914893617058,
+          "attraction_pl": 0.32765957446808514,
+          "complexity_pl": 0.28510638297872337,
+          "attraction": 0.23617021276595745,
+          "complexity": 0.15531914893617021,
+          "balanced_bare": 0.9276595744680851,
+          "balanced_match": 0.7723404255319148,
+          "balanced_mismatch": 0.5361702127659574
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8484848484848485,
+            "sg_match": 0.8909090909090909,
+            "sg_mismatch": 0.793939393939394,
+            "pl_match": 0.5151515151515151,
+            "pl_mismatch": 0.3878787878787879
+          },
+          "attraction_sg": 0.09696969696969693,
+          "complexity_sg": 0.10909090909090913,
+          "attraction_pl": 0.12727272727272726,
+          "complexity_pl": 0.33333333333333337,
+          "attraction": 0.1121212121212121,
+          "complexity": 0.22121212121212125,
+          "balanced_bare": 0.9242424242424243,
+          "balanced_match": 0.703030303030303,
+          "balanced_mismatch": 0.5909090909090909
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed13_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9125,
+          "sg_match": 0.85,
+          "sg_mismatch": 0.6275,
+          "pl_match": 0.805,
+          "pl_mismatch": 0.395
+        },
+        "attraction_sg": 0.22250000000000003,
+        "complexity_sg": 0.15000000000000002,
+        "attraction_pl": 0.41000000000000003,
+        "complexity_pl": 0.10749999999999993,
+        "attraction": 0.31625000000000003,
+        "complexity": 0.12874999999999998,
+        "balanced_bare": 0.95625,
+        "balanced_match": 0.8275,
+        "balanced_mismatch": 0.51125
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9063829787234042,
+            "sg_match": 0.8765957446808511,
+            "sg_mismatch": 0.723404255319149,
+            "pl_match": 0.8042553191489362,
+            "pl_mismatch": 0.37446808510638296
+          },
+          "attraction_sg": 0.15319148936170213,
+          "complexity_sg": 0.12340425531914889,
+          "attraction_pl": 0.42978723404255326,
+          "complexity_pl": 0.10212765957446801,
+          "attraction": 0.2914893617021277,
+          "complexity": 0.11276595744680845,
+          "balanced_bare": 0.9531914893617022,
+          "balanced_match": 0.8404255319148937,
+          "balanced_mismatch": 0.548936170212766
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9212121212121213,
+            "sg_match": 0.8121212121212121,
+            "sg_mismatch": 0.4909090909090909,
+            "pl_match": 0.806060606060606,
+            "pl_mismatch": 0.42424242424242425
+          },
+          "attraction_sg": 0.3212121212121212,
+          "complexity_sg": 0.18787878787878787,
+          "attraction_pl": 0.3818181818181818,
+          "complexity_pl": 0.11515151515151523,
+          "attraction": 0.3515151515151515,
+          "complexity": 0.15151515151515155,
+          "balanced_bare": 0.9606060606060607,
+          "balanced_match": 0.8090909090909091,
+          "balanced_mismatch": 0.4575757575757576
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed14_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.925,
+          "sg_match": 0.94,
+          "sg_mismatch": 0.5625,
+          "pl_match": 0.7875,
+          "pl_mismatch": 0.2425
+        },
+        "attraction_sg": 0.37749999999999995,
+        "complexity_sg": 0.06000000000000005,
+        "attraction_pl": 0.5449999999999999,
+        "complexity_pl": 0.13750000000000007,
+        "attraction": 0.46124999999999994,
+        "complexity": 0.09875000000000006,
+        "balanced_bare": 0.9625,
+        "balanced_match": 0.86375,
+        "balanced_mismatch": 0.40249999999999997
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9106382978723404,
+            "sg_match": 0.9829787234042553,
+            "sg_mismatch": 0.7531914893617021,
+            "pl_match": 0.7531914893617021,
+            "pl_mismatch": 0.2
+          },
+          "attraction_sg": 0.2297872340425532,
+          "complexity_sg": 0.017021276595744705,
+          "attraction_pl": 0.553191489361702,
+          "complexity_pl": 0.1574468085106383,
+          "attraction": 0.3914893617021276,
+          "complexity": 0.0872340425531915,
+          "balanced_bare": 0.9553191489361702,
+          "balanced_match": 0.8680851063829786,
+          "balanced_mismatch": 0.4765957446808511
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9454545454545454,
+            "sg_match": 0.8787878787878788,
+            "sg_mismatch": 0.2909090909090909,
+            "pl_match": 0.8363636363636363,
+            "pl_mismatch": 0.30303030303030304
+          },
+          "attraction_sg": 0.5878787878787879,
+          "complexity_sg": 0.12121212121212122,
+          "attraction_pl": 0.5333333333333332,
+          "complexity_pl": 0.10909090909090913,
+          "attraction": 0.5606060606060606,
+          "complexity": 0.11515151515151517,
+          "balanced_bare": 0.9727272727272727,
+          "balanced_match": 0.8575757575757575,
+          "balanced_mismatch": 0.296969696969697
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed15_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.94,
+          "sg_match": 0.9625,
+          "sg_mismatch": 0.7825,
+          "pl_match": 0.82,
+          "pl_mismatch": 0.4375
+        },
+        "attraction_sg": 0.18000000000000005,
+        "complexity_sg": 0.03749999999999998,
+        "attraction_pl": 0.38249999999999995,
+        "complexity_pl": 0.12,
+        "attraction": 0.28125,
+        "complexity": 0.07874999999999999,
+        "balanced_bare": 0.97,
+        "balanced_match": 0.89125,
+        "balanced_mismatch": 0.61
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9531914893617022,
+            "sg_match": 0.9914893617021276,
+            "sg_mismatch": 0.8723404255319149,
+            "pl_match": 0.8,
+            "pl_mismatch": 0.3659574468085106
+          },
+          "attraction_sg": 0.11914893617021272,
+          "complexity_sg": 0.008510638297872353,
+          "attraction_pl": 0.43404255319148943,
+          "complexity_pl": 0.15319148936170213,
+          "attraction": 0.2765957446808511,
+          "complexity": 0.08085106382978724,
+          "balanced_bare": 0.9765957446808511,
+          "balanced_match": 0.8957446808510638,
+          "balanced_mismatch": 0.6191489361702127
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9212121212121213,
+            "sg_match": 0.9212121212121213,
+            "sg_mismatch": 0.6545454545454545,
+            "pl_match": 0.8484848484848485,
+            "pl_mismatch": 0.5393939393939394
+          },
+          "attraction_sg": 0.2666666666666667,
+          "complexity_sg": 0.07878787878787874,
+          "attraction_pl": 0.3090909090909091,
+          "complexity_pl": 0.07272727272727275,
+          "attraction": 0.2878787878787879,
+          "complexity": 0.07575757575757575,
+          "balanced_bare": 0.9606060606060607,
+          "balanced_match": 0.8848484848484849,
+          "balanced_mismatch": 0.5969696969696969
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed16_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.795,
+          "sg_match": 0.9625,
+          "sg_mismatch": 0.8275,
+          "pl_match": 0.36,
+          "pl_mismatch": 0.12
+        },
+        "attraction_sg": 0.135,
+        "complexity_sg": 0.03749999999999998,
+        "attraction_pl": 0.24,
+        "complexity_pl": 0.43500000000000005,
+        "attraction": 0.1875,
+        "complexity": 0.23625000000000002,
+        "balanced_bare": 0.8975,
+        "balanced_match": 0.66125,
+        "balanced_mismatch": 0.47375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.825531914893617,
+            "sg_match": 0.9872340425531915,
+            "sg_mismatch": 0.8723404255319149,
+            "pl_match": 0.3446808510638298,
+            "pl_mismatch": 0.05106382978723404
+          },
+          "attraction_sg": 0.11489361702127654,
+          "complexity_sg": 0.012765957446808529,
+          "attraction_pl": 0.2936170212765957,
+          "complexity_pl": 0.4808510638297872,
+          "attraction": 0.20425531914893613,
+          "complexity": 0.24680851063829787,
+          "balanced_bare": 0.9127659574468086,
+          "balanced_match": 0.6659574468085107,
+          "balanced_mismatch": 0.46170212765957447
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.7515151515151515,
+            "sg_match": 0.9272727272727272,
+            "sg_mismatch": 0.7636363636363637,
+            "pl_match": 0.38181818181818183,
+            "pl_mismatch": 0.21818181818181817
+          },
+          "attraction_sg": 0.16363636363636358,
+          "complexity_sg": 0.07272727272727275,
+          "attraction_pl": 0.16363636363636366,
+          "complexity_pl": 0.36969696969696964,
+          "attraction": 0.16363636363636364,
+          "complexity": 0.2212121212121212,
+          "balanced_bare": 0.8757575757575757,
+          "balanced_match": 0.6545454545454545,
+          "balanced_mismatch": 0.4909090909090909
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed17_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.99,
+          "sg_match": 0.8625,
+          "sg_mismatch": 0.625,
+          "pl_match": 0.785,
+          "pl_mismatch": 0.4275
+        },
+        "attraction_sg": 0.23750000000000004,
+        "complexity_sg": 0.13749999999999996,
+        "attraction_pl": 0.35750000000000004,
+        "complexity_pl": 0.20499999999999996,
+        "attraction": 0.29750000000000004,
+        "complexity": 0.17124999999999996,
+        "balanced_bare": 0.995,
+        "balanced_match": 0.82375,
+        "balanced_mismatch": 0.52625
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9872340425531915,
+            "sg_match": 0.9276595744680851,
+            "sg_mismatch": 0.6595744680851063,
+            "pl_match": 0.7872340425531915,
+            "pl_mismatch": 0.3404255319148936
+          },
+          "attraction_sg": 0.2680851063829788,
+          "complexity_sg": 0.07234042553191489,
+          "attraction_pl": 0.4468085106382979,
+          "complexity_pl": 0.19999999999999996,
+          "attraction": 0.35744680851063837,
+          "complexity": 0.13617021276595742,
+          "balanced_bare": 0.9936170212765958,
+          "balanced_match": 0.8574468085106384,
+          "balanced_mismatch": 0.5
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9939393939393939,
+            "sg_match": 0.7696969696969697,
+            "sg_mismatch": 0.5757575757575758,
+            "pl_match": 0.7818181818181819,
+            "pl_mismatch": 0.5515151515151515
+          },
+          "attraction_sg": 0.19393939393939386,
+          "complexity_sg": 0.23030303030303034,
+          "attraction_pl": 0.23030303030303034,
+          "complexity_pl": 0.21212121212121204,
+          "attraction": 0.2121212121212121,
+          "complexity": 0.2212121212121212,
+          "balanced_bare": 0.996969696969697,
+          "balanced_match": 0.7757575757575758,
+          "balanced_mismatch": 0.5636363636363637
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed18_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.8975,
+          "sg_match": 0.9475,
+          "sg_mismatch": 0.5625,
+          "pl_match": 0.7975,
+          "pl_mismatch": 0.3225
+        },
+        "attraction_sg": 0.385,
+        "complexity_sg": 0.05249999999999999,
+        "attraction_pl": 0.475,
+        "complexity_pl": 0.09999999999999998,
+        "attraction": 0.43,
+        "complexity": 0.07624999999999998,
+        "balanced_bare": 0.94875,
+        "balanced_match": 0.8725,
+        "balanced_mismatch": 0.4425
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8893617021276595,
+            "sg_match": 0.9319148936170213,
+            "sg_mismatch": 0.6680851063829787,
+            "pl_match": 0.9106382978723404,
+            "pl_mismatch": 0.46808510638297873
+          },
+          "attraction_sg": 0.2638297872340426,
+          "complexity_sg": 0.06808510638297871,
+          "attraction_pl": 0.4425531914893617,
+          "complexity_pl": -0.021276595744680882,
+          "attraction": 0.35319148936170214,
+          "complexity": 0.023404255319148914,
+          "balanced_bare": 0.9446808510638298,
+          "balanced_match": 0.9212765957446809,
+          "balanced_mismatch": 0.5680851063829787
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9090909090909091,
+            "sg_match": 0.9696969696969697,
+            "sg_mismatch": 0.4121212121212121,
+            "pl_match": 0.6363636363636364,
+            "pl_mismatch": 0.11515151515151516
+          },
+          "attraction_sg": 0.5575757575757576,
+          "complexity_sg": 0.030303030303030276,
+          "attraction_pl": 0.5212121212121212,
+          "complexity_pl": 0.2727272727272727,
+          "attraction": 0.5393939393939394,
+          "complexity": 0.1515151515151515,
+          "balanced_bare": 0.9545454545454546,
+          "balanced_match": 0.803030303030303,
+          "balanced_mismatch": 0.2636363636363636
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed19_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9675,
+          "sg_match": 0.9375,
+          "sg_mismatch": 0.6975,
+          "pl_match": 0.885,
+          "pl_mismatch": 0.53
+        },
+        "attraction_sg": 0.24,
+        "complexity_sg": 0.0625,
+        "attraction_pl": 0.355,
+        "complexity_pl": 0.08250000000000002,
+        "attraction": 0.2975,
+        "complexity": 0.07250000000000001,
+        "balanced_bare": 0.98375,
+        "balanced_match": 0.91125,
+        "balanced_mismatch": 0.61375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9617021276595744,
+            "sg_match": 0.9702127659574468,
+            "sg_mismatch": 0.7404255319148936,
+            "pl_match": 0.9361702127659575,
+            "pl_mismatch": 0.6340425531914894
+          },
+          "attraction_sg": 0.2297872340425532,
+          "complexity_sg": 0.029787234042553234,
+          "attraction_pl": 0.3021276595744681,
+          "complexity_pl": 0.025531914893616947,
+          "attraction": 0.26595744680851063,
+          "complexity": 0.02765957446808509,
+          "balanced_bare": 0.9808510638297872,
+          "balanced_match": 0.9531914893617022,
+          "balanced_mismatch": 0.6872340425531915
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9757575757575757,
+            "sg_match": 0.8909090909090909,
+            "sg_mismatch": 0.6363636363636364,
+            "pl_match": 0.8121212121212121,
+            "pl_mismatch": 0.38181818181818183
+          },
+          "attraction_sg": 0.2545454545454545,
+          "complexity_sg": 0.10909090909090913,
+          "attraction_pl": 0.4303030303030303,
+          "complexity_pl": 0.16363636363636358,
+          "attraction": 0.3424242424242424,
+          "complexity": 0.13636363636363635,
+          "balanced_bare": 0.9878787878787878,
+          "balanced_match": 0.8515151515151516,
+          "balanced_mismatch": 0.509090909090909
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed20_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.955,
+          "bare_pl": 0.93,
+          "sg_match": 0.935,
+          "sg_mismatch": 0.6775,
+          "pl_match": 0.645,
+          "pl_mismatch": 0.2475
+        },
+        "attraction_sg": 0.25750000000000006,
+        "complexity_sg": 0.019999999999999907,
+        "attraction_pl": 0.3975,
+        "complexity_pl": 0.28500000000000003,
+        "attraction": 0.3275,
+        "complexity": 0.15249999999999997,
+        "balanced_bare": 0.9425,
+        "balanced_match": 0.79,
+        "balanced_mismatch": 0.4625
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9659574468085106,
+            "bare_pl": 0.9234042553191489,
+            "sg_match": 0.9617021276595744,
+            "sg_mismatch": 0.5957446808510638,
+            "pl_match": 0.7574468085106383,
+            "pl_mismatch": 0.22127659574468084
+          },
+          "attraction_sg": 0.3659574468085106,
+          "complexity_sg": 0.004255319148936176,
+          "attraction_pl": 0.5361702127659574,
+          "complexity_pl": 0.16595744680851066,
+          "attraction": 0.451063829787234,
+          "complexity": 0.08510638297872342,
+          "balanced_bare": 0.9446808510638298,
+          "balanced_match": 0.8595744680851063,
+          "balanced_mismatch": 0.4085106382978723
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9393939393939394,
+            "bare_pl": 0.9393939393939394,
+            "sg_match": 0.896969696969697,
+            "sg_mismatch": 0.793939393939394,
+            "pl_match": 0.48484848484848486,
+            "pl_mismatch": 0.28484848484848485
+          },
+          "attraction_sg": 0.10303030303030303,
+          "complexity_sg": 0.042424242424242475,
+          "attraction_pl": 0.2,
+          "complexity_pl": 0.4545454545454546,
+          "attraction": 0.15151515151515152,
+          "complexity": 0.24848484848484853,
+          "balanced_bare": 0.9393939393939394,
+          "balanced_match": 0.6909090909090909,
+          "balanced_mismatch": 0.5393939393939394
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed21_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9925,
+          "bare_pl": 0.9825,
+          "sg_match": 0.9475,
+          "sg_mismatch": 0.6675,
+          "pl_match": 0.6625,
+          "pl_mismatch": 0.185
+        },
+        "attraction_sg": 0.28,
+        "complexity_sg": 0.04500000000000004,
+        "attraction_pl": 0.4775,
+        "complexity_pl": 0.32000000000000006,
+        "attraction": 0.37875000000000003,
+        "complexity": 0.18250000000000005,
+        "balanced_bare": 0.9875,
+        "balanced_match": 0.8049999999999999,
+        "balanced_mismatch": 0.42625
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9872340425531915,
+            "bare_pl": 0.9787234042553191,
+            "sg_match": 0.9319148936170213,
+            "sg_mismatch": 0.6425531914893617,
+            "pl_match": 0.7829787234042553,
+            "pl_mismatch": 0.25957446808510637
+          },
+          "attraction_sg": 0.28936170212765955,
+          "complexity_sg": 0.05531914893617018,
+          "attraction_pl": 0.5234042553191489,
+          "complexity_pl": 0.19574468085106378,
+          "attraction": 0.40638297872340423,
+          "complexity": 0.12553191489361698,
+          "balanced_bare": 0.9829787234042553,
+          "balanced_match": 0.8574468085106384,
+          "balanced_mismatch": 0.451063829787234
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9878787878787879,
+            "sg_match": 0.9696969696969697,
+            "sg_mismatch": 0.703030303030303,
+            "pl_match": 0.4909090909090909,
+            "pl_mismatch": 0.07878787878787878
+          },
+          "attraction_sg": 0.2666666666666667,
+          "complexity_sg": 0.030303030303030276,
+          "attraction_pl": 0.4121212121212121,
+          "complexity_pl": 0.496969696969697,
+          "attraction": 0.3393939393939394,
+          "complexity": 0.26363636363636367,
+          "balanced_bare": 0.9939393939393939,
+          "balanced_match": 0.7303030303030303,
+          "balanced_mismatch": 0.3909090909090909
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed22_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9375,
+          "sg_match": 0.9425,
+          "sg_mismatch": 0.5875,
+          "pl_match": 0.8875,
+          "pl_mismatch": 0.4025
+        },
+        "attraction_sg": 0.355,
+        "complexity_sg": 0.057499999999999996,
+        "attraction_pl": 0.48499999999999993,
+        "complexity_pl": 0.050000000000000044,
+        "attraction": 0.41999999999999993,
+        "complexity": 0.05375000000000002,
+        "balanced_bare": 0.96875,
+        "balanced_match": 0.915,
+        "balanced_mismatch": 0.495
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9361702127659575,
+            "sg_match": 0.9404255319148936,
+            "sg_mismatch": 0.6680851063829787,
+            "pl_match": 0.8553191489361702,
+            "pl_mismatch": 0.451063829787234
+          },
+          "attraction_sg": 0.27234042553191495,
+          "complexity_sg": 0.05957446808510636,
+          "attraction_pl": 0.4042553191489362,
+          "complexity_pl": 0.08085106382978724,
+          "attraction": 0.3382978723404256,
+          "complexity": 0.0702127659574468,
+          "balanced_bare": 0.9680851063829787,
+          "balanced_match": 0.897872340425532,
+          "balanced_mismatch": 0.5595744680851064
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9393939393939394,
+            "sg_match": 0.9454545454545454,
+            "sg_mismatch": 0.4727272727272727,
+            "pl_match": 0.9333333333333333,
+            "pl_mismatch": 0.3333333333333333
+          },
+          "attraction_sg": 0.4727272727272727,
+          "complexity_sg": 0.054545454545454564,
+          "attraction_pl": 0.6000000000000001,
+          "complexity_pl": 0.0060606060606061,
+          "attraction": 0.5363636363636364,
+          "complexity": 0.03030303030303033,
+          "balanced_bare": 0.9696969696969697,
+          "balanced_match": 0.9393939393939394,
+          "balanced_mismatch": 0.403030303030303
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed23_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9575,
+          "bare_pl": 0.895,
+          "sg_match": 0.895,
+          "sg_mismatch": 0.7425,
+          "pl_match": 0.4725,
+          "pl_mismatch": 0.165
+        },
+        "attraction_sg": 0.15249999999999997,
+        "complexity_sg": 0.0625,
+        "attraction_pl": 0.3075,
+        "complexity_pl": 0.42250000000000004,
+        "attraction": 0.22999999999999998,
+        "complexity": 0.24250000000000002,
+        "balanced_bare": 0.92625,
+        "balanced_match": 0.68375,
+        "balanced_mismatch": 0.45375000000000004
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9787234042553191,
+            "bare_pl": 0.8978723404255319,
+            "sg_match": 0.9446808510638298,
+            "sg_mismatch": 0.7872340425531915,
+            "pl_match": 0.43829787234042555,
+            "pl_mismatch": 0.12340425531914893
+          },
+          "attraction_sg": 0.1574468085106383,
+          "complexity_sg": 0.0340425531914893,
+          "attraction_pl": 0.3148936170212766,
+          "complexity_pl": 0.4595744680851063,
+          "attraction": 0.23617021276595745,
+          "complexity": 0.2468085106382978,
+          "balanced_bare": 0.9382978723404255,
+          "balanced_match": 0.6914893617021277,
+          "balanced_mismatch": 0.4553191489361702
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9272727272727272,
+            "bare_pl": 0.8909090909090909,
+            "sg_match": 0.8242424242424242,
+            "sg_mismatch": 0.6787878787878788,
+            "pl_match": 0.5212121212121212,
+            "pl_mismatch": 0.22424242424242424
+          },
+          "attraction_sg": 0.1454545454545454,
+          "complexity_sg": 0.10303030303030303,
+          "attraction_pl": 0.296969696969697,
+          "complexity_pl": 0.36969696969696964,
+          "attraction": 0.2212121212121212,
+          "complexity": 0.23636363636363633,
+          "balanced_bare": 0.9090909090909091,
+          "balanced_match": 0.6727272727272727,
+          "balanced_mismatch": 0.45151515151515154
+        }
+      }
+    },
+    "syntax_delay0_exp10_size23M_seed24_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.975,
+          "sg_match": 0.9025,
+          "sg_mismatch": 0.6725,
+          "pl_match": 0.6925,
+          "pl_mismatch": 0.3
+        },
+        "attraction_sg": 0.22999999999999998,
+        "complexity_sg": 0.09750000000000003,
+        "attraction_pl": 0.3925,
+        "complexity_pl": 0.2825,
+        "attraction": 0.31125,
+        "complexity": 0.19,
+        "balanced_bare": 0.9875,
+        "balanced_match": 0.7975,
+        "balanced_mismatch": 0.48624999999999996
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9744680851063829,
+            "sg_match": 0.9404255319148936,
+            "sg_mismatch": 0.7574468085106383,
+            "pl_match": 0.6553191489361702,
+            "pl_mismatch": 0.251063829787234
+          },
+          "attraction_sg": 0.18297872340425536,
+          "complexity_sg": 0.05957446808510636,
+          "attraction_pl": 0.40425531914893614,
+          "complexity_pl": 0.3191489361702128,
+          "attraction": 0.2936170212765957,
+          "complexity": 0.18936170212765957,
+          "balanced_bare": 0.9872340425531915,
+          "balanced_match": 0.7978723404255319,
+          "balanced_mismatch": 0.5042553191489362
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9757575757575757,
+            "sg_match": 0.8484848484848485,
+            "sg_mismatch": 0.5515151515151515,
+            "pl_match": 0.7454545454545455,
+            "pl_mismatch": 0.3696969696969697
+          },
+          "attraction_sg": 0.296969696969697,
+          "complexity_sg": 0.1515151515151515,
+          "attraction_pl": 0.3757575757575758,
+          "complexity_pl": 0.23030303030303023,
+          "attraction": 0.3363636363636364,
+          "complexity": 0.19090909090909086,
+          "balanced_bare": 0.9878787878787878,
+          "balanced_match": 0.796969696969697,
+          "balanced_mismatch": 0.4606060606060606
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed1_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.8875,
+          "sg_match": 0.8925,
+          "sg_mismatch": 0.655,
+          "pl_match": 0.7275,
+          "pl_mismatch": 0.365
+        },
+        "attraction_sg": 0.23749999999999993,
+        "complexity_sg": 0.10750000000000004,
+        "attraction_pl": 0.36250000000000004,
+        "complexity_pl": 0.15999999999999992,
+        "attraction": 0.3,
+        "complexity": 0.13374999999999998,
+        "balanced_bare": 0.94375,
+        "balanced_match": 0.81,
+        "balanced_mismatch": 0.51
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8765957446808511,
+            "sg_match": 0.9191489361702128,
+            "sg_mismatch": 0.7787234042553192,
+            "pl_match": 0.6808510638297872,
+            "pl_mismatch": 0.41702127659574467
+          },
+          "attraction_sg": 0.1404255319148936,
+          "complexity_sg": 0.08085106382978724,
+          "attraction_pl": 0.26382978723404255,
+          "complexity_pl": 0.1957446808510639,
+          "attraction": 0.20212765957446807,
+          "complexity": 0.13829787234042556,
+          "balanced_bare": 0.9382978723404256,
+          "balanced_match": 0.8,
+          "balanced_mismatch": 0.597872340425532
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9030303030303031,
+            "sg_match": 0.8545454545454545,
+            "sg_mismatch": 0.47878787878787876,
+            "pl_match": 0.793939393939394,
+            "pl_mismatch": 0.2909090909090909
+          },
+          "attraction_sg": 0.37575757575757573,
+          "complexity_sg": 0.1454545454545455,
+          "attraction_pl": 0.503030303030303,
+          "complexity_pl": 0.10909090909090913,
+          "attraction": 0.4393939393939394,
+          "complexity": 0.12727272727272732,
+          "balanced_bare": 0.9515151515151515,
+          "balanced_match": 0.8242424242424242,
+          "balanced_mismatch": 0.38484848484848483
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed2_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.99,
+          "bare_pl": 0.99,
+          "sg_match": 0.88,
+          "sg_mismatch": 0.64,
+          "pl_match": 0.835,
+          "pl_mismatch": 0.605
+        },
+        "attraction_sg": 0.24,
+        "complexity_sg": 0.10999999999999999,
+        "attraction_pl": 0.22999999999999998,
+        "complexity_pl": 0.15500000000000003,
+        "attraction": 0.235,
+        "complexity": 0.1325,
+        "balanced_bare": 0.99,
+        "balanced_match": 0.8574999999999999,
+        "balanced_mismatch": 0.6225
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9872340425531915,
+            "bare_pl": 0.9872340425531915,
+            "sg_match": 0.902127659574468,
+            "sg_mismatch": 0.6468085106382979,
+            "pl_match": 0.8851063829787233,
+            "pl_mismatch": 0.5957446808510638
+          },
+          "attraction_sg": 0.25531914893617014,
+          "complexity_sg": 0.08510638297872342,
+          "attraction_pl": 0.28936170212765955,
+          "complexity_pl": 0.10212765957446812,
+          "attraction": 0.27234042553191484,
+          "complexity": 0.09361702127659577,
+          "balanced_bare": 0.9872340425531915,
+          "balanced_match": 0.8936170212765957,
+          "balanced_mismatch": 0.6212765957446809
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9939393939393939,
+            "bare_pl": 0.9939393939393939,
+            "sg_match": 0.8484848484848485,
+            "sg_mismatch": 0.6303030303030303,
+            "pl_match": 0.7636363636363637,
+            "pl_mismatch": 0.6181818181818182
+          },
+          "attraction_sg": 0.21818181818181825,
+          "complexity_sg": 0.1454545454545454,
+          "attraction_pl": 0.1454545454545455,
+          "complexity_pl": 0.23030303030303023,
+          "attraction": 0.18181818181818188,
+          "complexity": 0.1878787878787878,
+          "balanced_bare": 0.9939393939393939,
+          "balanced_match": 0.8060606060606061,
+          "balanced_mismatch": 0.6242424242424243
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed3_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9,
+          "sg_match": 0.94,
+          "sg_mismatch": 0.86,
+          "pl_match": 0.41,
+          "pl_mismatch": 0.265
+        },
+        "attraction_sg": 0.07999999999999996,
+        "complexity_sg": 0.06000000000000005,
+        "attraction_pl": 0.14499999999999996,
+        "complexity_pl": 0.49000000000000005,
+        "attraction": 0.11249999999999996,
+        "complexity": 0.275,
+        "balanced_bare": 0.95,
+        "balanced_match": 0.6749999999999999,
+        "balanced_mismatch": 0.5625
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8893617021276595,
+            "sg_match": 0.9702127659574468,
+            "sg_mismatch": 0.8851063829787233,
+            "pl_match": 0.502127659574468,
+            "pl_mismatch": 0.3148936170212766
+          },
+          "attraction_sg": 0.08510638297872342,
+          "complexity_sg": 0.029787234042553234,
+          "attraction_pl": 0.18723404255319143,
+          "complexity_pl": 0.3872340425531915,
+          "attraction": 0.13617021276595742,
+          "complexity": 0.20851063829787236,
+          "balanced_bare": 0.9446808510638298,
+          "balanced_match": 0.7361702127659574,
+          "balanced_mismatch": 0.6
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9151515151515152,
+            "sg_match": 0.896969696969697,
+            "sg_mismatch": 0.8242424242424242,
+            "pl_match": 0.2787878787878788,
+            "pl_mismatch": 0.19393939393939394
+          },
+          "attraction_sg": 0.07272727272727275,
+          "complexity_sg": 0.10303030303030303,
+          "attraction_pl": 0.08484848484848487,
+          "complexity_pl": 0.6363636363636364,
+          "attraction": 0.07878787878787881,
+          "complexity": 0.3696969696969697,
+          "balanced_bare": 0.9575757575757575,
+          "balanced_match": 0.5878787878787879,
+          "balanced_mismatch": 0.509090909090909
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed4_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9925,
+          "bare_pl": 0.935,
+          "sg_match": 0.905,
+          "sg_mismatch": 0.7575,
+          "pl_match": 0.655,
+          "pl_mismatch": 0.4075
+        },
+        "attraction_sg": 0.14750000000000008,
+        "complexity_sg": 0.08750000000000002,
+        "attraction_pl": 0.24750000000000005,
+        "complexity_pl": 0.28,
+        "attraction": 0.19750000000000006,
+        "complexity": 0.18375000000000002,
+        "balanced_bare": 0.9637500000000001,
+        "balanced_match": 0.78,
+        "balanced_mismatch": 0.5825
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9319148936170213,
+            "sg_match": 0.9446808510638298,
+            "sg_mismatch": 0.8808510638297873,
+            "pl_match": 0.574468085106383,
+            "pl_mismatch": 0.41702127659574467
+          },
+          "attraction_sg": 0.06382978723404253,
+          "complexity_sg": 0.05531914893617018,
+          "attraction_pl": 0.15744680851063836,
+          "complexity_pl": 0.35744680851063826,
+          "attraction": 0.11063829787234045,
+          "complexity": 0.20638297872340422,
+          "balanced_bare": 0.9659574468085106,
+          "balanced_match": 0.7595744680851064,
+          "balanced_mismatch": 0.648936170212766
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9818181818181818,
+            "bare_pl": 0.9393939393939394,
+            "sg_match": 0.8484848484848485,
+            "sg_mismatch": 0.5818181818181818,
+            "pl_match": 0.7696969696969697,
+            "pl_mismatch": 0.3939393939393939
+          },
+          "attraction_sg": 0.2666666666666667,
+          "complexity_sg": 0.1333333333333333,
+          "attraction_pl": 0.37575757575757573,
+          "complexity_pl": 0.1696969696969698,
+          "attraction": 0.3212121212121212,
+          "complexity": 0.15151515151515155,
+          "balanced_bare": 0.9606060606060607,
+          "balanced_match": 0.8090909090909091,
+          "balanced_mismatch": 0.48787878787878786
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed5_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 1.0,
+          "sg_match": 0.915,
+          "sg_mismatch": 0.78,
+          "pl_match": 0.835,
+          "pl_mismatch": 0.555
+        },
+        "attraction_sg": 0.135,
+        "complexity_sg": 0.08499999999999996,
+        "attraction_pl": 0.2799999999999999,
+        "complexity_pl": 0.16500000000000004,
+        "attraction": 0.20749999999999996,
+        "complexity": 0.125,
+        "balanced_bare": 1.0,
+        "balanced_match": 0.875,
+        "balanced_mismatch": 0.6675
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 1.0,
+            "sg_match": 0.9617021276595744,
+            "sg_mismatch": 0.8765957446808511,
+            "pl_match": 0.8382978723404255,
+            "pl_mismatch": 0.5531914893617021
+          },
+          "attraction_sg": 0.0851063829787233,
+          "complexity_sg": 0.03829787234042559,
+          "attraction_pl": 0.28510638297872337,
+          "complexity_pl": 0.16170212765957448,
+          "attraction": 0.18510638297872334,
+          "complexity": 0.10000000000000003,
+          "balanced_bare": 1.0,
+          "balanced_match": 0.8999999999999999,
+          "balanced_mismatch": 0.7148936170212766
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 1.0,
+            "sg_match": 0.8484848484848485,
+            "sg_mismatch": 0.6424242424242425,
+            "pl_match": 0.8303030303030303,
+            "pl_mismatch": 0.5575757575757576
+          },
+          "attraction_sg": 0.20606060606060606,
+          "complexity_sg": 0.1515151515151515,
+          "attraction_pl": 0.2727272727272727,
+          "complexity_pl": 0.16969696969696968,
+          "attraction": 0.23939393939393938,
+          "complexity": 0.16060606060606059,
+          "balanced_bare": 1.0,
+          "balanced_match": 0.8393939393939394,
+          "balanced_mismatch": 0.6000000000000001
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed6_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9875,
+          "sg_match": 0.925,
+          "sg_mismatch": 0.68,
+          "pl_match": 0.8375,
+          "pl_mismatch": 0.52
+        },
+        "attraction_sg": 0.245,
+        "complexity_sg": 0.07499999999999996,
+        "attraction_pl": 0.3175,
+        "complexity_pl": 0.15000000000000002,
+        "attraction": 0.28125,
+        "complexity": 0.11249999999999999,
+        "balanced_bare": 0.99375,
+        "balanced_match": 0.8812500000000001,
+        "balanced_mismatch": 0.6000000000000001
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9914893617021276,
+            "sg_match": 0.9617021276595744,
+            "sg_mismatch": 0.8170212765957446,
+            "pl_match": 0.8382978723404255,
+            "pl_mismatch": 0.4765957446808511
+          },
+          "attraction_sg": 0.14468085106382977,
+          "complexity_sg": 0.03829787234042559,
+          "attraction_pl": 0.36170212765957444,
+          "complexity_pl": 0.15319148936170213,
+          "attraction": 0.2531914893617021,
+          "complexity": 0.09574468085106386,
+          "balanced_bare": 0.9957446808510638,
+          "balanced_match": 0.8999999999999999,
+          "balanced_mismatch": 0.6468085106382979
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9818181818181818,
+            "sg_match": 0.8727272727272727,
+            "sg_mismatch": 0.48484848484848486,
+            "pl_match": 0.8363636363636363,
+            "pl_mismatch": 0.5818181818181818
+          },
+          "attraction_sg": 0.3878787878787878,
+          "complexity_sg": 0.12727272727272732,
+          "attraction_pl": 0.2545454545454545,
+          "complexity_pl": 0.1454545454545455,
+          "attraction": 0.32121212121212117,
+          "complexity": 0.1363636363636364,
+          "balanced_bare": 0.990909090909091,
+          "balanced_match": 0.8545454545454545,
+          "balanced_mismatch": 0.5333333333333333
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed7_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9425,
+          "sg_match": 0.9675,
+          "sg_mismatch": 0.7625,
+          "pl_match": 0.8325,
+          "pl_mismatch": 0.5325
+        },
+        "attraction_sg": 0.20500000000000007,
+        "complexity_sg": 0.03249999999999997,
+        "attraction_pl": 0.30000000000000004,
+        "complexity_pl": 0.10999999999999999,
+        "attraction": 0.25250000000000006,
+        "complexity": 0.07124999999999998,
+        "balanced_bare": 0.97125,
+        "balanced_match": 0.9,
+        "balanced_mismatch": 0.6475
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9276595744680851,
+            "sg_match": 0.9659574468085106,
+            "sg_mismatch": 0.7872340425531915,
+            "pl_match": 0.7957446808510639,
+            "pl_mismatch": 0.5446808510638298
+          },
+          "attraction_sg": 0.17872340425531907,
+          "complexity_sg": 0.03404255319148941,
+          "attraction_pl": 0.25106382978723407,
+          "complexity_pl": 0.13191489361702124,
+          "attraction": 0.21489361702127657,
+          "complexity": 0.08297872340425533,
+          "balanced_bare": 0.9638297872340426,
+          "balanced_match": 0.8808510638297873,
+          "balanced_mismatch": 0.6659574468085107
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9636363636363636,
+            "sg_match": 0.9696969696969697,
+            "sg_mismatch": 0.7272727272727273,
+            "pl_match": 0.8848484848484849,
+            "pl_mismatch": 0.5151515151515151
+          },
+          "attraction_sg": 0.24242424242424243,
+          "complexity_sg": 0.030303030303030276,
+          "attraction_pl": 0.36969696969696975,
+          "complexity_pl": 0.07878787878787874,
+          "attraction": 0.3060606060606061,
+          "complexity": 0.05454545454545451,
+          "balanced_bare": 0.9818181818181818,
+          "balanced_match": 0.9272727272727272,
+          "balanced_mismatch": 0.6212121212121212
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed8_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9725,
+          "bare_pl": 0.94,
+          "sg_match": 0.9025,
+          "sg_mismatch": 0.8175,
+          "pl_match": 0.7975,
+          "pl_mismatch": 0.5425
+        },
+        "attraction_sg": 0.08499999999999996,
+        "complexity_sg": 0.07000000000000006,
+        "attraction_pl": 0.255,
+        "complexity_pl": 0.14249999999999996,
+        "attraction": 0.16999999999999998,
+        "complexity": 0.10625000000000001,
+        "balanced_bare": 0.95625,
+        "balanced_match": 0.85,
+        "balanced_mismatch": 0.6799999999999999
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9744680851063829,
+            "bare_pl": 0.9276595744680851,
+            "sg_match": 0.9063829787234042,
+            "sg_mismatch": 0.8680851063829788,
+            "pl_match": 0.8127659574468085,
+            "pl_mismatch": 0.5148936170212766
+          },
+          "attraction_sg": 0.038297872340425476,
+          "complexity_sg": 0.06808510638297871,
+          "attraction_pl": 0.2978723404255319,
+          "complexity_pl": 0.11489361702127665,
+          "attraction": 0.1680851063829787,
+          "complexity": 0.09148936170212768,
+          "balanced_bare": 0.951063829787234,
+          "balanced_match": 0.8595744680851063,
+          "balanced_mismatch": 0.6914893617021276
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9696969696969697,
+            "bare_pl": 0.9575757575757575,
+            "sg_match": 0.896969696969697,
+            "sg_mismatch": 0.7454545454545455,
+            "pl_match": 0.7757575757575758,
+            "pl_mismatch": 0.5818181818181818
+          },
+          "attraction_sg": 0.1515151515151515,
+          "complexity_sg": 0.07272727272727275,
+          "attraction_pl": 0.19393939393939397,
+          "complexity_pl": 0.18181818181818177,
+          "attraction": 0.17272727272727273,
+          "complexity": 0.12727272727272726,
+          "balanced_bare": 0.9636363636363636,
+          "balanced_match": 0.8363636363636364,
+          "balanced_mismatch": 0.6636363636363636
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed9_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.785,
+          "sg_match": 0.935,
+          "sg_mismatch": 0.82,
+          "pl_match": 0.52,
+          "pl_mismatch": 0.3225
+        },
+        "attraction_sg": 0.1150000000000001,
+        "complexity_sg": 0.06499999999999995,
+        "attraction_pl": 0.1975,
+        "complexity_pl": 0.265,
+        "attraction": 0.15625000000000006,
+        "complexity": 0.16499999999999998,
+        "balanced_bare": 0.8925000000000001,
+        "balanced_match": 0.7275,
+        "balanced_mismatch": 0.57125
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.7787234042553192,
+            "sg_match": 0.9276595744680851,
+            "sg_mismatch": 0.8425531914893617,
+            "pl_match": 0.5276595744680851,
+            "pl_mismatch": 0.4085106382978723
+          },
+          "attraction_sg": 0.08510638297872342,
+          "complexity_sg": 0.07234042553191489,
+          "attraction_pl": 0.11914893617021277,
+          "complexity_pl": 0.25106382978723407,
+          "attraction": 0.1021276595744681,
+          "complexity": 0.16170212765957448,
+          "balanced_bare": 0.8893617021276596,
+          "balanced_match": 0.7276595744680852,
+          "balanced_mismatch": 0.625531914893617
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.793939393939394,
+            "sg_match": 0.9454545454545454,
+            "sg_mismatch": 0.7878787878787878,
+            "pl_match": 0.509090909090909,
+            "pl_mismatch": 0.2
+          },
+          "attraction_sg": 0.1575757575757576,
+          "complexity_sg": 0.054545454545454564,
+          "attraction_pl": 0.309090909090909,
+          "complexity_pl": 0.2848484848484849,
+          "attraction": 0.2333333333333333,
+          "complexity": 0.16969696969696973,
+          "balanced_bare": 0.896969696969697,
+          "balanced_match": 0.7272727272727273,
+          "balanced_mismatch": 0.4939393939393939
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed10_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.945,
+          "sg_match": 0.955,
+          "sg_mismatch": 0.8525,
+          "pl_match": 0.48,
+          "pl_mismatch": 0.22
+        },
+        "attraction_sg": 0.10249999999999992,
+        "complexity_sg": 0.04500000000000004,
+        "attraction_pl": 0.26,
+        "complexity_pl": 0.46499999999999997,
+        "attraction": 0.18124999999999997,
+        "complexity": 0.255,
+        "balanced_bare": 0.9724999999999999,
+        "balanced_match": 0.7175,
+        "balanced_mismatch": 0.53625
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9319148936170213,
+            "sg_match": 0.948936170212766,
+            "sg_mismatch": 0.9148936170212766,
+            "pl_match": 0.4595744680851064,
+            "pl_mismatch": 0.20851063829787234
+          },
+          "attraction_sg": 0.03404255319148941,
+          "complexity_sg": 0.051063829787234005,
+          "attraction_pl": 0.25106382978723407,
+          "complexity_pl": 0.4723404255319149,
+          "attraction": 0.14255319148936174,
+          "complexity": 0.26170212765957446,
+          "balanced_bare": 0.9659574468085106,
+          "balanced_match": 0.7042553191489362,
+          "balanced_mismatch": 0.5617021276595745
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9636363636363636,
+            "sg_match": 0.9636363636363636,
+            "sg_mismatch": 0.7636363636363637,
+            "pl_match": 0.509090909090909,
+            "pl_mismatch": 0.23636363636363636
+          },
+          "attraction_sg": 0.19999999999999996,
+          "complexity_sg": 0.036363636363636376,
+          "attraction_pl": 0.2727272727272727,
+          "complexity_pl": 0.4545454545454546,
+          "attraction": 0.23636363636363633,
+          "complexity": 0.24545454545454548,
+          "balanced_bare": 0.9818181818181818,
+          "balanced_match": 0.7363636363636363,
+          "balanced_mismatch": 0.5
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed11_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.8875,
+          "sg_match": 0.93,
+          "sg_mismatch": 0.835,
+          "pl_match": 0.7825,
+          "pl_mismatch": 0.61
+        },
+        "attraction_sg": 0.09500000000000008,
+        "complexity_sg": 0.06999999999999995,
+        "attraction_pl": 0.1725,
+        "complexity_pl": 0.10499999999999998,
+        "attraction": 0.13375000000000004,
+        "complexity": 0.08749999999999997,
+        "balanced_bare": 0.94375,
+        "balanced_match": 0.85625,
+        "balanced_mismatch": 0.7224999999999999
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8936170212765957,
+            "sg_match": 0.9531914893617022,
+            "sg_mismatch": 0.8723404255319149,
+            "pl_match": 0.825531914893617,
+            "pl_mismatch": 0.6808510638297872
+          },
+          "attraction_sg": 0.08085106382978724,
+          "complexity_sg": 0.04680851063829783,
+          "attraction_pl": 0.14468085106382977,
+          "complexity_pl": 0.06808510638297871,
+          "attraction": 0.1127659574468085,
+          "complexity": 0.05744680851063827,
+          "balanced_bare": 0.9468085106382979,
+          "balanced_match": 0.8893617021276596,
+          "balanced_mismatch": 0.7765957446808511
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8787878787878788,
+            "sg_match": 0.896969696969697,
+            "sg_mismatch": 0.7818181818181819,
+            "pl_match": 0.7212121212121212,
+            "pl_mismatch": 0.509090909090909
+          },
+          "attraction_sg": 0.11515151515151512,
+          "complexity_sg": 0.10303030303030303,
+          "attraction_pl": 0.21212121212121215,
+          "complexity_pl": 0.1575757575757576,
+          "attraction": 0.16363636363636364,
+          "complexity": 0.1303030303030303,
+          "balanced_bare": 0.9393939393939394,
+          "balanced_match": 0.8090909090909091,
+          "balanced_mismatch": 0.6454545454545455
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed12_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.99,
+          "bare_pl": 0.97,
+          "sg_match": 0.94,
+          "sg_mismatch": 0.865,
+          "pl_match": 0.7025,
+          "pl_mismatch": 0.4775
+        },
+        "attraction_sg": 0.07499999999999996,
+        "complexity_sg": 0.050000000000000044,
+        "attraction_pl": 0.22500000000000003,
+        "complexity_pl": 0.26749999999999996,
+        "attraction": 0.15,
+        "complexity": 0.15875,
+        "balanced_bare": 0.98,
+        "balanced_match": 0.82125,
+        "balanced_mismatch": 0.67125
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9872340425531915,
+            "bare_pl": 0.9617021276595744,
+            "sg_match": 0.9574468085106383,
+            "sg_mismatch": 0.8851063829787233,
+            "pl_match": 0.7404255319148936,
+            "pl_mismatch": 0.502127659574468
+          },
+          "attraction_sg": 0.072340425531915,
+          "complexity_sg": 0.029787234042553123,
+          "attraction_pl": 0.23829787234042554,
+          "complexity_pl": 0.22127659574468084,
+          "attraction": 0.15531914893617027,
+          "complexity": 0.12553191489361698,
+          "balanced_bare": 0.9744680851063829,
+          "balanced_match": 0.848936170212766,
+          "balanced_mismatch": 0.6936170212765957
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9939393939393939,
+            "bare_pl": 0.9818181818181818,
+            "sg_match": 0.9151515151515152,
+            "sg_mismatch": 0.8363636363636363,
+            "pl_match": 0.6484848484848484,
+            "pl_mismatch": 0.44242424242424244
+          },
+          "attraction_sg": 0.07878787878787885,
+          "complexity_sg": 0.07878787878787874,
+          "attraction_pl": 0.206060606060606,
+          "complexity_pl": 0.33333333333333337,
+          "attraction": 0.14242424242424243,
+          "complexity": 0.20606060606060606,
+          "balanced_bare": 0.9878787878787878,
+          "balanced_match": 0.7818181818181817,
+          "balanced_mismatch": 0.6393939393939394
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed13_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.9475,
+          "sg_match": 0.925,
+          "sg_mismatch": 0.82,
+          "pl_match": 0.775,
+          "pl_mismatch": 0.5275
+        },
+        "attraction_sg": 0.1050000000000001,
+        "complexity_sg": 0.07499999999999996,
+        "attraction_pl": 0.24750000000000005,
+        "complexity_pl": 0.1725,
+        "attraction": 0.17625000000000007,
+        "complexity": 0.12374999999999997,
+        "balanced_bare": 0.97375,
+        "balanced_match": 0.8500000000000001,
+        "balanced_mismatch": 0.67375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9531914893617022,
+            "sg_match": 0.9574468085106383,
+            "sg_mismatch": 0.8468085106382979,
+            "pl_match": 0.8595744680851064,
+            "pl_mismatch": 0.6297872340425532
+          },
+          "attraction_sg": 0.11063829787234047,
+          "complexity_sg": 0.04255319148936165,
+          "attraction_pl": 0.2297872340425532,
+          "complexity_pl": 0.09361702127659577,
+          "attraction": 0.17021276595744683,
+          "complexity": 0.06808510638297871,
+          "balanced_bare": 0.9765957446808511,
+          "balanced_match": 0.9085106382978724,
+          "balanced_mismatch": 0.7382978723404255
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9393939393939394,
+            "sg_match": 0.8787878787878788,
+            "sg_mismatch": 0.7818181818181819,
+            "pl_match": 0.6545454545454545,
+            "pl_mismatch": 0.38181818181818183
+          },
+          "attraction_sg": 0.09696969696969693,
+          "complexity_sg": 0.12121212121212122,
+          "attraction_pl": 0.2727272727272727,
+          "complexity_pl": 0.2848484848484849,
+          "attraction": 0.18484848484848482,
+          "complexity": 0.20303030303030306,
+          "balanced_bare": 0.9696969696969697,
+          "balanced_match": 0.7666666666666666,
+          "balanced_mismatch": 0.5818181818181818
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed14_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.8875,
+          "sg_match": 0.92,
+          "sg_mismatch": 0.7675,
+          "pl_match": 0.785,
+          "pl_mismatch": 0.51
+        },
+        "attraction_sg": 0.15250000000000008,
+        "complexity_sg": 0.07999999999999996,
+        "attraction_pl": 0.275,
+        "complexity_pl": 0.10249999999999992,
+        "attraction": 0.21375000000000005,
+        "complexity": 0.09124999999999994,
+        "balanced_bare": 0.94375,
+        "balanced_match": 0.8525,
+        "balanced_mismatch": 0.6387499999999999
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8723404255319149,
+            "sg_match": 0.9319148936170213,
+            "sg_mismatch": 0.902127659574468,
+            "pl_match": 0.8425531914893617,
+            "pl_mismatch": 0.5319148936170213
+          },
+          "attraction_sg": 0.029787234042553234,
+          "complexity_sg": 0.06808510638297871,
+          "attraction_pl": 0.31063829787234043,
+          "complexity_pl": 0.029787234042553234,
+          "attraction": 0.17021276595744683,
+          "complexity": 0.04893617021276597,
+          "balanced_bare": 0.9361702127659575,
+          "balanced_match": 0.8872340425531915,
+          "balanced_mismatch": 0.7170212765957447
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9090909090909091,
+            "sg_match": 0.9030303030303031,
+            "sg_mismatch": 0.5757575757575758,
+            "pl_match": 0.703030303030303,
+            "pl_mismatch": 0.47878787878787876
+          },
+          "attraction_sg": 0.32727272727272727,
+          "complexity_sg": 0.09696969696969693,
+          "attraction_pl": 0.22424242424242424,
+          "complexity_pl": 0.20606060606060606,
+          "attraction": 0.27575757575757576,
+          "complexity": 0.1515151515151515,
+          "balanced_bare": 0.9545454545454546,
+          "balanced_match": 0.803030303030303,
+          "balanced_mismatch": 0.5272727272727273
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed15_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9825,
+          "bare_pl": 0.905,
+          "sg_match": 0.86,
+          "sg_mismatch": 0.725,
+          "pl_match": 0.59,
+          "pl_mismatch": 0.3425
+        },
+        "attraction_sg": 0.135,
+        "complexity_sg": 0.12250000000000005,
+        "attraction_pl": 0.24749999999999994,
+        "complexity_pl": 0.31500000000000006,
+        "attraction": 0.19124999999999998,
+        "complexity": 0.21875000000000006,
+        "balanced_bare": 0.9437500000000001,
+        "balanced_match": 0.725,
+        "balanced_mismatch": 0.53375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9829787234042553,
+            "bare_pl": 0.9063829787234042,
+            "sg_match": 0.8765957446808511,
+            "sg_mismatch": 0.7702127659574468,
+            "pl_match": 0.6425531914893617,
+            "pl_mismatch": 0.3872340425531915
+          },
+          "attraction_sg": 0.1063829787234043,
+          "complexity_sg": 0.10638297872340419,
+          "attraction_pl": 0.25531914893617025,
+          "complexity_pl": 0.2638297872340425,
+          "attraction": 0.18085106382978727,
+          "complexity": 0.18510638297872334,
+          "balanced_bare": 0.9446808510638298,
+          "balanced_match": 0.7595744680851064,
+          "balanced_mismatch": 0.5787234042553191
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9818181818181818,
+            "bare_pl": 0.9030303030303031,
+            "sg_match": 0.8363636363636363,
+            "sg_mismatch": 0.6606060606060606,
+            "pl_match": 0.5151515151515151,
+            "pl_mismatch": 0.2787878787878788
+          },
+          "attraction_sg": 0.17575757575757567,
+          "complexity_sg": 0.1454545454545455,
+          "attraction_pl": 0.23636363636363633,
+          "complexity_pl": 0.38787878787878793,
+          "attraction": 0.206060606060606,
+          "complexity": 0.2666666666666667,
+          "balanced_bare": 0.9424242424242424,
+          "balanced_match": 0.6757575757575758,
+          "balanced_mismatch": 0.4696969696969697
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed16_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.94,
+          "sg_match": 0.91,
+          "sg_mismatch": 0.6375,
+          "pl_match": 0.8,
+          "pl_mismatch": 0.4275
+        },
+        "attraction_sg": 0.2725000000000001,
+        "complexity_sg": 0.08999999999999997,
+        "attraction_pl": 0.37250000000000005,
+        "complexity_pl": 0.1399999999999999,
+        "attraction": 0.32250000000000006,
+        "complexity": 0.11499999999999994,
+        "balanced_bare": 0.97,
+        "balanced_match": 0.855,
+        "balanced_mismatch": 0.5325
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9446808510638298,
+            "sg_match": 0.9617021276595744,
+            "sg_mismatch": 0.7702127659574468,
+            "pl_match": 0.7574468085106383,
+            "pl_mismatch": 0.35319148936170214
+          },
+          "attraction_sg": 0.1914893617021276,
+          "complexity_sg": 0.03829787234042559,
+          "attraction_pl": 0.40425531914893614,
+          "complexity_pl": 0.18723404255319154,
+          "attraction": 0.2978723404255319,
+          "complexity": 0.11276595744680856,
+          "balanced_bare": 0.9723404255319149,
+          "balanced_match": 0.8595744680851063,
+          "balanced_mismatch": 0.5617021276595745
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9333333333333333,
+            "sg_match": 0.8363636363636363,
+            "sg_mismatch": 0.4484848484848485,
+            "pl_match": 0.8606060606060606,
+            "pl_mismatch": 0.5333333333333333
+          },
+          "attraction_sg": 0.3878787878787878,
+          "complexity_sg": 0.1636363636363637,
+          "attraction_pl": 0.32727272727272727,
+          "complexity_pl": 0.07272727272727275,
+          "attraction": 0.35757575757575755,
+          "complexity": 0.11818181818181822,
+          "balanced_bare": 0.9666666666666667,
+          "balanced_match": 0.8484848484848484,
+          "balanced_mismatch": 0.4909090909090909
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed17_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.8825,
+          "sg_match": 0.9125,
+          "sg_mismatch": 0.715,
+          "pl_match": 0.7625,
+          "pl_mismatch": 0.5325
+        },
+        "attraction_sg": 0.1975,
+        "complexity_sg": 0.08750000000000002,
+        "attraction_pl": 0.22999999999999998,
+        "complexity_pl": 0.12,
+        "attraction": 0.21375,
+        "complexity": 0.10375000000000001,
+        "balanced_bare": 0.9412499999999999,
+        "balanced_match": 0.8374999999999999,
+        "balanced_mismatch": 0.62375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8638297872340426,
+            "sg_match": 0.9148936170212766,
+            "sg_mismatch": 0.7617021276595745,
+            "pl_match": 0.7957446808510639,
+            "pl_mismatch": 0.5872340425531914
+          },
+          "attraction_sg": 0.15319148936170213,
+          "complexity_sg": 0.08510638297872342,
+          "attraction_pl": 0.20851063829787242,
+          "complexity_pl": 0.06808510638297871,
+          "attraction": 0.18085106382978727,
+          "complexity": 0.07659574468085106,
+          "balanced_bare": 0.9319148936170213,
+          "balanced_match": 0.8553191489361702,
+          "balanced_mismatch": 0.6744680851063829
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9090909090909091,
+            "sg_match": 0.9090909090909091,
+            "sg_mismatch": 0.6484848484848484,
+            "pl_match": 0.7151515151515152,
+            "pl_mismatch": 0.45454545454545453
+          },
+          "attraction_sg": 0.2606060606060606,
+          "complexity_sg": 0.09090909090909094,
+          "attraction_pl": 0.2606060606060607,
+          "complexity_pl": 0.19393939393939386,
+          "attraction": 0.2606060606060606,
+          "complexity": 0.1424242424242424,
+          "balanced_bare": 0.9545454545454546,
+          "balanced_match": 0.8121212121212121,
+          "balanced_mismatch": 0.5515151515151515
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed18_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.92,
+          "sg_match": 0.9625,
+          "sg_mismatch": 0.8675,
+          "pl_match": 0.5675,
+          "pl_mismatch": 0.295
+        },
+        "attraction_sg": 0.09499999999999997,
+        "complexity_sg": 0.03749999999999998,
+        "attraction_pl": 0.2725,
+        "complexity_pl": 0.35250000000000004,
+        "attraction": 0.18375,
+        "complexity": 0.195,
+        "balanced_bare": 0.96,
+        "balanced_match": 0.765,
+        "balanced_mismatch": 0.58125
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9319148936170213,
+            "sg_match": 0.9787234042553191,
+            "sg_mismatch": 0.8851063829787233,
+            "pl_match": 0.6553191489361702,
+            "pl_mismatch": 0.28085106382978725
+          },
+          "attraction_sg": 0.09361702127659577,
+          "complexity_sg": 0.021276595744680882,
+          "attraction_pl": 0.3744680851063829,
+          "complexity_pl": 0.27659574468085113,
+          "attraction": 0.23404255319148934,
+          "complexity": 0.148936170212766,
+          "balanced_bare": 0.9659574468085106,
+          "balanced_match": 0.8170212765957446,
+          "balanced_mismatch": 0.5829787234042553
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9030303030303031,
+            "sg_match": 0.9393939393939394,
+            "sg_mismatch": 0.8424242424242424,
+            "pl_match": 0.44242424242424244,
+            "pl_mismatch": 0.3151515151515151
+          },
+          "attraction_sg": 0.09696969696969704,
+          "complexity_sg": 0.06060606060606055,
+          "attraction_pl": 0.12727272727272732,
+          "complexity_pl": 0.46060606060606063,
+          "attraction": 0.11212121212121218,
+          "complexity": 0.2606060606060606,
+          "balanced_bare": 0.9515151515151515,
+          "balanced_match": 0.6909090909090909,
+          "balanced_mismatch": 0.5787878787878787
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed19_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 0.9825,
+          "bare_pl": 0.9225,
+          "sg_match": 0.9575,
+          "sg_mismatch": 0.8025,
+          "pl_match": 0.64,
+          "pl_mismatch": 0.365
+        },
+        "attraction_sg": 0.15500000000000003,
+        "complexity_sg": 0.025000000000000022,
+        "attraction_pl": 0.275,
+        "complexity_pl": 0.2825,
+        "attraction": 0.21500000000000002,
+        "complexity": 0.15375,
+        "balanced_bare": 0.9525,
+        "balanced_match": 0.7987500000000001,
+        "balanced_mismatch": 0.58375
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 0.9787234042553191,
+            "bare_pl": 0.9106382978723404,
+            "sg_match": 0.9659574468085106,
+            "sg_mismatch": 0.8382978723404255,
+            "pl_match": 0.6638297872340425,
+            "pl_mismatch": 0.44680851063829785
+          },
+          "attraction_sg": 0.12765957446808507,
+          "complexity_sg": 0.012765957446808529,
+          "attraction_pl": 0.21702127659574466,
+          "complexity_pl": 0.2468085106382979,
+          "attraction": 0.17234042553191486,
+          "complexity": 0.1297872340425532,
+          "balanced_bare": 0.9446808510638298,
+          "balanced_match": 0.8148936170212766,
+          "balanced_mismatch": 0.6425531914893616
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 0.9878787878787879,
+            "bare_pl": 0.9393939393939394,
+            "sg_match": 0.9454545454545454,
+            "sg_mismatch": 0.7515151515151515,
+            "pl_match": 0.6060606060606061,
+            "pl_mismatch": 0.24848484848484848
+          },
+          "attraction_sg": 0.19393939393939397,
+          "complexity_sg": 0.042424242424242475,
+          "attraction_pl": 0.3575757575757576,
+          "complexity_pl": 0.33333333333333337,
+          "attraction": 0.27575757575757576,
+          "complexity": 0.18787878787878792,
+          "balanced_bare": 0.9636363636363636,
+          "balanced_match": 0.7757575757575758,
+          "balanced_mismatch": 0.5
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed20_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.96,
+          "sg_match": 0.9125,
+          "sg_mismatch": 0.6975,
+          "pl_match": 0.8325,
+          "pl_mismatch": 0.605
+        },
+        "attraction_sg": 0.21499999999999997,
+        "complexity_sg": 0.08750000000000002,
+        "attraction_pl": 0.22750000000000004,
+        "complexity_pl": 0.12749999999999995,
+        "attraction": 0.22125,
+        "complexity": 0.10749999999999998,
+        "balanced_bare": 0.98,
+        "balanced_match": 0.8725,
+        "balanced_mismatch": 0.65125
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9446808510638298,
+            "sg_match": 0.9234042553191489,
+            "sg_mismatch": 0.7872340425531915,
+            "pl_match": 0.8468085106382979,
+            "pl_mismatch": 0.723404255319149
+          },
+          "attraction_sg": 0.13617021276595742,
+          "complexity_sg": 0.07659574468085106,
+          "attraction_pl": 0.12340425531914889,
+          "complexity_pl": 0.09787234042553195,
+          "attraction": 0.12978723404255316,
+          "complexity": 0.0872340425531915,
+          "balanced_bare": 0.9723404255319149,
+          "balanced_match": 0.8851063829787233,
+          "balanced_mismatch": 0.7553191489361702
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9818181818181818,
+            "sg_match": 0.896969696969697,
+            "sg_mismatch": 0.5696969696969697,
+            "pl_match": 0.8121212121212121,
+            "pl_mismatch": 0.43636363636363634
+          },
+          "attraction_sg": 0.32727272727272727,
+          "complexity_sg": 0.10303030303030303,
+          "attraction_pl": 0.3757575757575758,
+          "complexity_pl": 0.16969696969696968,
+          "attraction": 0.35151515151515156,
+          "complexity": 0.13636363636363635,
+          "balanced_bare": 0.990909090909091,
+          "balanced_match": 0.8545454545454545,
+          "balanced_mismatch": 0.503030303030303
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed21_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.985,
+          "sg_match": 0.9025,
+          "sg_mismatch": 0.635,
+          "pl_match": 0.875,
+          "pl_mismatch": 0.5975
+        },
+        "attraction_sg": 0.26749999999999996,
+        "complexity_sg": 0.09750000000000003,
+        "attraction_pl": 0.27749999999999997,
+        "complexity_pl": 0.10999999999999999,
+        "attraction": 0.27249999999999996,
+        "complexity": 0.10375000000000001,
+        "balanced_bare": 0.9924999999999999,
+        "balanced_match": 0.8887499999999999,
+        "balanced_mismatch": 0.61625
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9872340425531915,
+            "sg_match": 0.9319148936170213,
+            "sg_mismatch": 0.8340425531914893,
+            "pl_match": 0.8680851063829788,
+            "pl_mismatch": 0.5829787234042553
+          },
+          "attraction_sg": 0.09787234042553195,
+          "complexity_sg": 0.06808510638297871,
+          "attraction_pl": 0.2851063829787235,
+          "complexity_pl": 0.11914893617021272,
+          "attraction": 0.19148936170212771,
+          "complexity": 0.09361702127659571,
+          "balanced_bare": 0.9936170212765958,
+          "balanced_match": 0.9,
+          "balanced_mismatch": 0.7085106382978723
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.9818181818181818,
+            "sg_match": 0.8606060606060606,
+            "sg_mismatch": 0.3515151515151515,
+            "pl_match": 0.8848484848484849,
+            "pl_mismatch": 0.6181818181818182
+          },
+          "attraction_sg": 0.509090909090909,
+          "complexity_sg": 0.1393939393939394,
+          "attraction_pl": 0.2666666666666667,
+          "complexity_pl": 0.09696969696969693,
+          "attraction": 0.3878787878787879,
+          "complexity": 0.11818181818181817,
+          "balanced_bare": 0.990909090909091,
+          "balanced_match": 0.8727272727272728,
+          "balanced_mismatch": 0.48484848484848486
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed22_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.8075,
+          "sg_match": 0.9525,
+          "sg_mismatch": 0.7825,
+          "pl_match": 0.56,
+          "pl_mismatch": 0.3875
+        },
+        "attraction_sg": 0.17000000000000004,
+        "complexity_sg": 0.04749999999999999,
+        "attraction_pl": 0.17250000000000004,
+        "complexity_pl": 0.24749999999999994,
+        "attraction": 0.17125000000000004,
+        "complexity": 0.14749999999999996,
+        "balanced_bare": 0.90375,
+        "balanced_match": 0.7562500000000001,
+        "balanced_mismatch": 0.585
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8085106382978723,
+            "sg_match": 0.9617021276595744,
+            "sg_mismatch": 0.723404255319149,
+            "pl_match": 0.6468085106382979,
+            "pl_mismatch": 0.4425531914893617
+          },
+          "attraction_sg": 0.23829787234042543,
+          "complexity_sg": 0.03829787234042559,
+          "attraction_pl": 0.20425531914893624,
+          "complexity_pl": 0.16170212765957437,
+          "attraction": 0.22127659574468084,
+          "complexity": 0.09999999999999998,
+          "balanced_bare": 0.9042553191489362,
+          "balanced_match": 0.8042553191489361,
+          "balanced_mismatch": 0.5829787234042554
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.806060606060606,
+            "sg_match": 0.9393939393939394,
+            "sg_mismatch": 0.8666666666666667,
+            "pl_match": 0.43636363636363634,
+            "pl_mismatch": 0.3090909090909091
+          },
+          "attraction_sg": 0.07272727272727275,
+          "complexity_sg": 0.06060606060606055,
+          "attraction_pl": 0.12727272727272726,
+          "complexity_pl": 0.3696969696969697,
+          "attraction": 0.1,
+          "complexity": 0.21515151515151512,
+          "balanced_bare": 0.9030303030303031,
+          "balanced_match": 0.6878787878787879,
+          "balanced_mismatch": 0.5878787878787879
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed23_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.865,
+          "sg_match": 0.9125,
+          "sg_mismatch": 0.845,
+          "pl_match": 0.51,
+          "pl_mismatch": 0.345
+        },
+        "attraction_sg": 0.0675,
+        "complexity_sg": 0.08750000000000002,
+        "attraction_pl": 0.16500000000000004,
+        "complexity_pl": 0.355,
+        "attraction": 0.11625000000000002,
+        "complexity": 0.22125,
+        "balanced_bare": 0.9325,
+        "balanced_match": 0.7112499999999999,
+        "balanced_mismatch": 0.595
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8553191489361702,
+            "sg_match": 0.9276595744680851,
+            "sg_mismatch": 0.8723404255319149,
+            "pl_match": 0.4978723404255319,
+            "pl_mismatch": 0.33617021276595743
+          },
+          "attraction_sg": 0.05531914893617018,
+          "complexity_sg": 0.07234042553191489,
+          "attraction_pl": 0.16170212765957448,
+          "complexity_pl": 0.3574468085106383,
+          "attraction": 0.10851063829787233,
+          "complexity": 0.2148936170212766,
+          "balanced_bare": 0.9276595744680851,
+          "balanced_match": 0.7127659574468085,
+          "balanced_mismatch": 0.6042553191489362
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.8787878787878788,
+            "sg_match": 0.8909090909090909,
+            "sg_mismatch": 0.806060606060606,
+            "pl_match": 0.5272727272727272,
+            "pl_mismatch": 0.3575757575757576
+          },
+          "attraction_sg": 0.08484848484848484,
+          "complexity_sg": 0.10909090909090913,
+          "attraction_pl": 0.16969696969696962,
+          "complexity_pl": 0.35151515151515156,
+          "attraction": 0.12727272727272723,
+          "complexity": 0.23030303030303034,
+          "balanced_bare": 0.9393939393939394,
+          "balanced_match": 0.709090909090909,
+          "balanced_mismatch": 0.5818181818181818
+        }
+      }
+    },
+    "syntax_delay0_exp10_size60M_seed24_szsweep": {
+      "verb": {
+        "cells": {
+          "bare_sg": 1.0,
+          "bare_pl": 0.775,
+          "sg_match": 0.9575,
+          "sg_mismatch": 0.89,
+          "pl_match": 0.625,
+          "pl_mismatch": 0.4075
+        },
+        "attraction_sg": 0.0675,
+        "complexity_sg": 0.04249999999999998,
+        "attraction_pl": 0.21750000000000003,
+        "complexity_pl": 0.15000000000000002,
+        "attraction": 0.14250000000000002,
+        "complexity": 0.09625,
+        "balanced_bare": 0.8875,
+        "balanced_match": 0.79125,
+        "balanced_mismatch": 0.6487499999999999
+      },
+      "sentence": {
+        "cells": {
+          "bare_sg": NaN,
+          "bare_pl": NaN,
+          "sg_match": NaN,
+          "sg_mismatch": NaN,
+          "pl_match": NaN,
+          "pl_mismatch": NaN
+        },
+        "attraction_sg": NaN,
+        "complexity_sg": NaN,
+        "attraction_pl": NaN,
+        "complexity_pl": NaN,
+        "attraction": NaN,
+        "complexity": NaN,
+        "balanced_bare": NaN,
+        "balanced_match": NaN,
+        "balanced_mismatch": NaN
+      },
+      "by_frame": {
+        "pp": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.7659574468085106,
+            "sg_match": 0.9404255319148936,
+            "sg_mismatch": 0.8595744680851064,
+            "pl_match": 0.6680851063829787,
+            "pl_mismatch": 0.451063829787234
+          },
+          "attraction_sg": 0.08085106382978724,
+          "complexity_sg": 0.05957446808510636,
+          "attraction_pl": 0.21702127659574466,
+          "complexity_pl": 0.09787234042553195,
+          "attraction": 0.14893617021276595,
+          "complexity": 0.07872340425531915,
+          "balanced_bare": 0.8829787234042553,
+          "balanced_match": 0.8042553191489361,
+          "balanced_mismatch": 0.6553191489361703
+        },
+        "rc": {
+          "cells": {
+            "bare_sg": 1.0,
+            "bare_pl": 0.7878787878787878,
+            "sg_match": 0.9818181818181818,
+            "sg_mismatch": 0.9333333333333333,
+            "pl_match": 0.5636363636363636,
+            "pl_mismatch": 0.34545454545454546
+          },
+          "attraction_sg": 0.048484848484848464,
+          "complexity_sg": 0.018181818181818188,
+          "attraction_pl": 0.21818181818181814,
+          "complexity_pl": 0.22424242424242424,
+          "attraction": 0.1333333333333333,
+          "complexity": 0.12121212121212122,
+          "balanced_bare": 0.8939393939393939,
+          "balanced_match": 0.7727272727272727,
+          "balanced_mismatch": 0.6393939393939394
+        }
+      }
+    }
+  },
+  "summary": {
+    "attraction_mean": 0.3148611111111111,
+    "attraction_sd": 0.11674909060243048,
+    "attraction_p": 1.7150525144217135e-34,
+    "attraction_sg": 0.25343750000000004,
+    "attraction_pl": 0.37628472222222226,
+    "sign_consistent": true,
+    "complexity_mean": 0.13684027777777777,
+    "match": 0.8233680555555556,
+    "mismatch": 0.5085069444444444,
+    "n": 72,
+    "verdict": "c"
+  },
+  "n_sextets": 400,
+  "step": null
+}
