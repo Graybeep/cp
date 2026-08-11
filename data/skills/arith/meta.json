@@ -1,0 +1,13 @@
+{
+  "config": {
+    "min_digits": 2,
+    "max_digits": 4,
+    "carrying": "mixed",
+    "seed": 1,
+    "prompt_prefix": "\n"
+  },
+  "n_train_problems": 200000,
+  "n_train_tokens": 1729608,
+  "n_eval_problems": 1000,
+  "dtype": "uint16"
+}

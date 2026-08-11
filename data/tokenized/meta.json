@@ -1,0 +1,31 @@
+{
+  "vocab_size": 16384,
+  "eot_id": 0,
+  "n_train_tokens": 14939511,
+  "n_val_tokens": 14366366,
+  "train_files": [
+    "aochildes.train",
+    "bnc_spoken.train",
+    "cbt.train",
+    "children_stories.train",
+    "gutenberg.train",
+    "open_subtitles.train",
+    "qed.train",
+    "simple_wikipedia.train",
+    "switchboard.train",
+    "wikipedia.train"
+  ],
+  "val_files": [
+    "aochildes.dev",
+    "bnc_spoken.dev",
+    "cbt.dev",
+    "children_stories.dev",
+    "gutenberg.dev",
+    "open_subtitles.dev",
+    "qed.dev",
+    "simple_wikipedia.dev",
+    "switchboard.dev",
+    "wikipedia.dev"
+  ],
+  "dtype": "uint16"
+}

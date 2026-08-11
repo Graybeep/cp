@@ -1,0 +1,61 @@
+{
+  "kept_lines": 1018129,
+  "held_lines": 40620,
+  "eval_instances": 3000,
+  "reinjected_lines": 37620,
+  "base_novocab_tokens": 12949203,
+  "vocab_tokens": 1804532,
+  "held_pct_lines": 3.84,
+  "per_file": {
+    "aochildes.train": {
+      "lines": 80000,
+      "held": 1418,
+      "held_pct": 1.77
+    },
+    "bnc_spoken.train": {
+      "lines": 90000,
+      "held": 2547,
+      "held_pct": 2.83
+    },
+    "cbt.train": {
+      "lines": 26000,
+      "held": 1919,
+      "held_pct": 7.38
+    },
+    "children_stories.train": {
+      "lines": 6000,
+      "held": 1075,
+      "held_pct": 17.92
+    },
+    "gutenberg.train": {
+      "lines": 120000,
+      "held": 5498,
+      "held_pct": 4.58
+    },
+    "open_subtitles.train": {
+      "lines": 528000,
+      "held": 10572,
+      "held_pct": 2.0
+    },
+    "qed.train": {
+      "lines": 100004,
+      "held": 4293,
+      "held_pct": 4.29
+    },
+    "simple_wikipedia.train": {
+      "lines": 68000,
+      "held": 8322,
+      "held_pct": 12.24
+    },
+    "switchboard.train": {
+      "lines": 15740,
+      "held": 285,
+      "held_pct": 1.81
+    },
+    "wikipedia.train": {
+      "lines": 25005,
+      "held": 4691,
+      "held_pct": 18.76
+    }
+  }
+}

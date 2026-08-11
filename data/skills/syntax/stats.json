@@ -1,0 +1,81 @@
+{
+  "kept_lines": 1042719,
+  "held_lines": 16030,
+  "base_nosyntax_tokens": 14603133,
+  "syntax_tokens": 336368,
+  "held_pct_lines": 1.51,
+  "per_file": {
+    "aochildes.train": {
+      "lines": 80000,
+      "held": 2425,
+      "held_long_distance": 536,
+      "held_pct": 3.03
+    },
+    "bnc_spoken.train": {
+      "lines": 90000,
+      "held": 1268,
+      "held_long_distance": 445,
+      "held_pct": 1.41
+    },
+    "cbt.train": {
+      "lines": 26000,
+      "held": 468,
+      "held_long_distance": 104,
+      "held_pct": 1.8
+    },
+    "children_stories.train": {
+      "lines": 6000,
+      "held": 416,
+      "held_long_distance": 231,
+      "held_pct": 6.93
+    },
+    "gutenberg.train": {
+      "lines": 120000,
+      "held": 712,
+      "held_long_distance": 148,
+      "held_pct": 0.59
+    },
+    "open_subtitles.train": {
+      "lines": 528000,
+      "held": 8331,
+      "held_long_distance": 2454,
+      "held_pct": 1.58
+    },
+    "qed.train": {
+      "lines": 100004,
+      "held": 1809,
+      "held_long_distance": 427,
+      "held_pct": 1.81
+    },
+    "simple_wikipedia.train": {
+      "lines": 68000,
+      "held": 273,
+      "held_long_distance": 58,
+      "held_pct": 0.4
+    },
+    "switchboard.train": {
+      "lines": 15740,
+      "held": 118,
+      "held_long_distance": 33,
+      "held_pct": 0.75
+    },
+    "wikipedia.train": {
+      "lines": 25005,
+      "held": 210,
+      "held_long_distance": 26,
+      "held_pct": 0.84
+    }
+  },
+  "augment": {
+    "n_original_lines": 16030,
+    "n_original_lines_excluded_for_holdout": 405,
+    "n_generated_matrix": 65335,
+    "n_generated_embedded": 0,
+    "n_generated_long_distance": 22112,
+    "n_target": 500000,
+    "seed": 1,
+    "pool_tokens": 942267,
+    "note": "syntax.bin = originals + frame-recombined variants, shuffled. Runs on the pre-augment pool are not comparable with runs on this one."
+  },
+  "syntax_tokens_augmented": 942267
+}
