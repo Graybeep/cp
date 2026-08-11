@@ -1,0 +1,12 @@
+{
+  "realized_tokens_by_stream": {
+    "base": 81920000
+  },
+  "planned": {
+    "base": {
+      "onset_step": 0,
+      "planned_micro_batches": 20000,
+      "planned_tokens": 81920000
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "realized_tokens_by_stream": {
+    "base": 77824000,
+    "arith": 4096000
+  },
+  "planned": {
+    "arith": {
+      "onset_step": 0,
+      "density": 0.05,
+      "planned_micro_batches": 1000,
+      "planned_tokens": 4096000
+    },
+    "base": {
+      "onset_step": 0,
+      "planned_micro_batches": 19000,
+      "planned_tokens": 77824000
+    }
+  }
+}
