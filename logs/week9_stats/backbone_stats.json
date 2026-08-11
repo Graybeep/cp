@@ -1,0 +1,738 @@
+{
+  "detect": {
+    "per_size": {
+      "11M": {
+        "early_anchor": {
+          "n": 3,
+          "mean": 0.538,
+          "sd": 0.018000000000000016,
+          "values": [
+            0.556,
+            0.538,
+            0.52
+          ]
+        },
+        "delayed_null": {
+          "n": 3,
+          "mean": 0.35733333333333334,
+          "sd": 0.06955094056397321,
+          "values": [
+            0.304,
+            0.332,
+            0.436
+          ]
+        },
+        "paired_deficit": {
+          "per_seed_diff": [
+            0.25200000000000006,
+            0.20600000000000002,
+            0.08400000000000002
+          ],
+          "mean_diff": 0.18066666666666667,
+          "sd_diff": 0.08681781691181445,
+          "t": 3.6043735840378344,
+          "df": 2,
+          "p": 0.03454561239331879,
+          "hedges_g": 1.1891348908595543,
+          "signs_agree": true
+        },
+        "welch": {
+          "t": 4.3556974450136074,
+          "p": 0.019414924860612557
+        },
+        "floor_rule_anchor_ge_0.60": false
+      },
+      "23M": {
+        "early_anchor": {
+          "n": 3,
+          "mean": 0.7913333333333333,
+          "sd": 0.0070237691685684995,
+          "values": [
+            0.798,
+            0.792,
+            0.784
+          ]
+        },
+        "delayed_null": {
+          "n": 3,
+          "mean": 0.5773333333333333,
+          "sd": 0.051159880114532444,
+          "values": [
+            0.524,
+            0.626,
+            0.582
+          ]
+        },
+        "paired_deficit": {
+          "per_seed_diff": [
+            0.274,
+            0.16600000000000004,
+            0.20200000000000007
+          ],
+          "mean_diff": 0.21400000000000005,
+          "sd_diff": 0.05499090833947007,
+          "t": 6.740366435331222,
+          "df": 2,
+          "p": 0.01065481171903427,
+          "hedges_g": 2.223744214785828,
+          "signs_agree": true
+        },
+        "welch": {
+          "t": 7.177778207774329,
+          "p": 0.008527152104021244
+        },
+        "floor_rule_anchor_ge_0.60": true
+      },
+      "60M": {
+        "early_anchor": {
+          "n": 3,
+          "mean": 0.8286666666666666,
+          "sd": 0.02685764943797821,
+          "values": [
+            0.798,
+            0.84,
+            0.848
+          ]
+        },
+        "delayed_null": {
+          "n": 3,
+          "mean": 0.6,
+          "sd": 0.039949968710876395,
+          "values": [
+            0.574,
+            0.646,
+            0.58
+          ]
+        },
+        "paired_deficit": {
+          "per_seed_diff": [
+            0.2240000000000001,
+            0.19399999999999995,
+            0.268
+          ],
+          "mean_diff": 0.22866666666666668,
+          "sd_diff": 0.037220066272554315,
+          "t": 10.64109563276451,
+          "df": 2,
+          "p": 0.004358030407095946,
+          "hedges_g": 3.510651101742366,
+          "signs_agree": true
+        },
+        "welch": {
+          "t": 8.227525442907718,
+          "p": 0.0010349862703111531
+        },
+        "floor_rule_anchor_ge_0.60": true
+      }
+    },
+    "notes": {
+      "11M": "EXCLUDED from the confirmatory family by the pre-registered Rule-1 FLOOR (anchor 0.538 < 0.60): a capacity/budget boundary, NOT a 'no critical period' timing claim."
+    },
+    "family_F1_holm": {
+      "60M": 0.008716060814191892,
+      "23M": 0.01065481171903427
+    },
+    "size_moderation": {
+      "deficit_23M": {
+        "n": 3,
+        "mean": 0.21400000000000005,
+        "sd": 0.05499090833947007,
+        "values": [
+          0.274,
+          0.16600000000000004,
+          0.20200000000000007
+        ]
+      },
+      "deficit_60M": {
+        "n": 3,
+        "mean": 0.22866666666666668,
+        "sd": 0.037220066272554315,
+        "values": [
+          0.2240000000000001,
+          0.19399999999999995,
+          0.268
+        ]
+      },
+      "welch_two_sided": {
+        "t": 0.3825653069625116,
+        "p": 0.7240315371217575
+      },
+      "pooled_sd": 0.04695387807909659,
+      "mde_80pct_power": 0.14419032818049485,
+      "reading": "Non-significant moderation. Report WITH the MDE: this design can only exclude size effects LARGER than the MDE, which is itself a large fraction of the deficit. 'Scale-robust' means 'the CP is present and of similar magnitude at both sizes', never 'size provably does not matter'."
+    }
+  },
+  "reopen": {
+    "per_size": {
+      "11M": {
+        "treated_endpoint": {
+          "n": 3,
+          "mean": 0.7466666666666667,
+          "sd": 0.021007935008784992,
+          "values": [
+            0.726,
+            0.768,
+            0.746
+          ]
+        },
+        "delayed_null_endpoint": {
+          "n": 3,
+          "mean": 0.35733333333333334,
+          "sd": 0.06955094056397321,
+          "values": [
+            0.304,
+            0.332,
+            0.436
+          ]
+        },
+        "early_anchor_endpoint": {
+          "n": 3,
+          "mean": 0.538,
+          "sd": 0.018000000000000016,
+          "values": [
+            0.556,
+            0.538,
+            0.52
+          ]
+        },
+        "gate_0.90x_own_d0": 0.4842,
+        "gate_margin": 0.2624666666666667,
+        "gate_pass": true,
+        "per_seed_lift_over_own_null": {
+          "per_seed_diff": [
+            0.422,
+            0.436,
+            0.31
+          ],
+          "mean_diff": 0.3893333333333333,
+          "sd_diff": 0.06906036007242745,
+          "t": 9.764575708934322,
+          "df": 2,
+          "p": 0.005162924129381261,
+          "hedges_g": 3.2214745223289776,
+          "signs_agree": true
+        },
+        "sd_collapse_null_to_treated": {
+          "null_sd": 0.06955094056397321,
+          "treated_sd": 0.021007935008784992
+        }
+      },
+      "23M": {
+        "treated_endpoint": {
+          "n": 3,
+          "mean": 0.7673333333333333,
+          "sd": 0.013613718571108104,
+          "values": [
+            0.752,
+            0.778,
+            0.772
+          ]
+        },
+        "delayed_null_endpoint": {
+          "n": 3,
+          "mean": 0.5773333333333333,
+          "sd": 0.051159880114532444,
+          "values": [
+            0.524,
+            0.626,
+            0.582
+          ]
+        },
+        "early_anchor_endpoint": {
+          "n": 3,
+          "mean": 0.7913333333333333,
+          "sd": 0.0070237691685684995,
+          "values": [
+            0.798,
+            0.792,
+            0.784
+          ]
+        },
+        "gate_0.90x_own_d0": 0.7122,
+        "gate_margin": 0.055133333333333256,
+        "gate_pass": true,
+        "per_seed_lift_over_own_null": {
+          "per_seed_diff": [
+            0.22799999999999998,
+            0.15200000000000002,
+            0.19000000000000006
+          ],
+          "mean_diff": 0.19000000000000003,
+          "sd_diff": 0.03799999999999998,
+          "t": 8.660254037844393,
+          "df": 2,
+          "p": 0.006536228780173249,
+          "hedges_g": 2.857142857142859,
+          "signs_agree": true
+        },
+        "sd_collapse_null_to_treated": {
+          "null_sd": 0.051159880114532444,
+          "treated_sd": 0.013613718571108104
+        }
+      },
+      "60M": {
+        "treated_endpoint": {
+          "n": 3,
+          "mean": 0.7959999999999999,
+          "sd": 0.021999999999999964,
+          "values": [
+            0.796,
+            0.818,
+            0.774
+          ]
+        },
+        "delayed_null_endpoint": {
+          "n": 3,
+          "mean": 0.6,
+          "sd": 0.039949968710876395,
+          "values": [
+            0.574,
+            0.646,
+            0.58
+          ]
+        },
+        "early_anchor_endpoint": {
+          "n": 3,
+          "mean": 0.8286666666666666,
+          "sd": 0.02685764943797821,
+          "values": [
+            0.798,
+            0.84,
+            0.848
+          ]
+        },
+        "gate_0.90x_own_d0": 0.7457999999999999,
+        "gate_margin": 0.05020000000000002,
+        "gate_pass": true,
+        "per_seed_lift_over_own_null": {
+          "per_seed_diff": [
+            0.2220000000000001,
+            0.17199999999999993,
+            0.19400000000000006
+          ],
+          "mean_diff": 0.19600000000000004,
+          "sd_diff": 0.025059928172283412,
+          "t": 13.54680492097225,
+          "df": 2,
+          "p": 0.002702489882934542,
+          "hedges_g": 4.469286553018671,
+          "signs_agree": true
+        },
+        "sd_collapse_null_to_treated": {
+          "null_sd": 0.039949968710876395,
+          "treated_sd": 0.021999999999999964
+        }
+      }
+    },
+    "family_F2_holm": {
+      "60M": 0.005404979765869084,
+      "23M": 0.006536228780173249
+    },
+    "same_endpoint_band": {
+      "band": [
+        0.722,
+        0.812
+      ],
+      "23M": 0.7673333333333333,
+      "60M": 0.7959999999999999,
+      "both_in_band": true
+    },
+    "single_seed_arms_23M": {
+      "null_cross_seed_range": [
+        0.524,
+        0.626
+      ],
+      "rule": "An n=1 arm inside the null's own cross-seed range cannot be distinguished from the null and is scored NO DETECTABLE RECOVERY (n=1), not 'fails'. Only an arm outside that range supports a directional claim at n=1.",
+      "arms": {
+        "reset_embedding": {
+          "endpoint": 0.586,
+          "inside_null_range": true,
+          "verdict": "no detectable recovery (n=1)"
+        },
+        "reset_plus_spike": {
+          "endpoint": 0.576,
+          "inside_null_range": true,
+          "verdict": "no detectable recovery (n=1)"
+        },
+        "lr_spike": {
+          "endpoint": 0.536,
+          "inside_null_range": true,
+          "verdict": "no detectable recovery (n=1)"
+        },
+        "cram": {
+          "endpoint": 0.574,
+          "inside_null_range": true,
+          "verdict": "no detectable recovery (n=1)"
+        },
+        "freeze": {
+          "endpoint": 0.332,
+          "inside_null_range": false,
+          "verdict": "harmful (below entire null range, n=1)"
+        }
+      }
+    },
+    "cram_plus_lr_shift_vs_lr_shift_23M": {
+      "per_seed_diff": [
+        -0.006000000000000005,
+        0.016000000000000014,
+        0.03200000000000003
+      ],
+      "mean_diff": 0.014000000000000012,
+      "sd_diff": 0.01907878402833893,
+      "t": 1.270977818604485,
+      "df": 2,
+      "p": 0.3315626352168081,
+      "hedges_g": 0.4193139346887673,
+      "signs_agree": false
+    },
+    "mechanism_11M_H2_H3": {
+      "delayed_lift": 0.38933333333333336,
+      "generic_component_H2": 0.11533333333333329,
+      "alignment_component_H3": 0.2740000000000001,
+      "pct_alignment": 70.37671232876714,
+      "label": "EXPLORATORY \u2014 pre-registered 11M cell remains FLOOR/STOPped."
+    },
+    "forgetting_60M": {
+      "breach_c_minus_b": {
+        "n": 3,
+        "mean": 1.67,
+        "sd": 0.10431203190428229,
+        "values": [
+          1.79,
+          1.601,
+          1.619
+        ]
+      },
+      "gate": 1.0,
+      "gate_tripped_all_seeds": true,
+      "matched_lr_lead": {
+        "n": 3,
+        "mean": 2.4766666666666666,
+        "sd": 0.2400694344004111,
+        "values": [
+          2.2,
+          2.63,
+          2.6
+        ]
+      },
+      "lead_exceeds_breach_all_seeds": true,
+      "upper_bound_on_residual_cost_ppl": 1.67,
+      "label": "BOUNDED-NOT-EXCLUDED",
+      "reading": "Gate honored as written: it trips at the fixed 5000-step horizon in all 3 seeds. The arm is read mid-anneal at 6x the null's terminal LR and leads the null by 2.48+/-0.24 ppl at matched LR \u2014 a lead exceeding the breach. Residual cost is bounded ABOVE by the breach; the anneal slope is unmeasured, so no point estimate is quoted."
+    }
+  },
+  "circuit": {
+    "triads": [
+      {
+        "triad": "23M-s2",
+        "deficit": 0.18200000000000005,
+        "transfer": 0.659
+      },
+      {
+        "triad": "60M-s2",
+        "deficit": 0.20199999999999996,
+        "transfer": 0.404
+      },
+      {
+        "triad": "23M-s3",
+        "deficit": 0.21000000000000008,
+        "transfer": 0.868
+      },
+      {
+        "triad": "60M-s1",
+        "deficit": 0.2240000000000001,
+        "transfer": 0.445
+      },
+      {
+        "triad": "60M-s3",
+        "deficit": 0.26,
+        "transfer": 0.201
+      },
+      {
+        "triad": "23M-s1",
+        "deficit": 0.29200000000000004,
+        "transfer": 0.187
+      }
+    ],
+    "contamination_correction": {
+      "per_triad": [
+        {
+          "triad": "23M-s2",
+          "deficit_superseded": 0.182,
+          "deficit_clean": 0.182,
+          "transfer_superseded": 0.71,
+          "transfer_clean": 0.659
+        },
+        {
+          "triad": "60M-s2",
+          "deficit_superseded": 0.25,
+          "deficit_clean": 0.202,
+          "transfer_superseded": 0.399,
+          "transfer_clean": 0.404
+        },
+        {
+          "triad": "23M-s3",
+          "deficit_superseded": 0.206,
+          "deficit_clean": 0.21,
+          "transfer_superseded": 0.868,
+          "transfer_clean": 0.868
+        },
+        {
+          "triad": "60M-s1",
+          "deficit_superseded": 0.224,
+          "deficit_clean": 0.224,
+          "transfer_superseded": 0.445,
+          "transfer_clean": 0.445
+        },
+        {
+          "triad": "60M-s3",
+          "deficit_superseded": 0.272,
+          "deficit_clean": 0.26,
+          "transfer_superseded": 0.308,
+          "transfer_clean": 0.201
+        },
+        {
+          "triad": "23M-s1",
+          "deficit_superseded": 0.292,
+          "deficit_clean": 0.292,
+          "transfer_superseded": 0.187,
+          "transfer_clean": 0.187
+        }
+      ],
+      "superseded_pooled_spearman": {
+        "rho": -0.942857142857143,
+        "p_exact": 0.008333333333333333
+      },
+      "note": "Seed-1 triads are unchanged at both sizes (their draw was already the held-out one) \u2014 that is the no-op control showing the eval draw is the only thing that moved."
+    },
+    "cross_harness_agreement": {
+      "per_model_clean": [
+        {
+          "triad": "23M-s2",
+          "arm": "A",
+          "diagnosis": 0.8,
+          "main": 0.792,
+          "abs_delta": 0.008
+        },
+        {
+          "triad": "23M-s2",
+          "arm": "B",
+          "diagnosis": 0.618,
+          "main": 0.626,
+          "abs_delta": 0.008
+        },
+        {
+          "triad": "23M-s2",
+          "arm": "C",
+          "diagnosis": 0.774,
+          "main": 0.778,
+          "abs_delta": 0.004
+        },
+        {
+          "triad": "60M-s2",
+          "arm": "A",
+          "diagnosis": 0.842,
+          "main": 0.84,
+          "abs_delta": 0.002
+        },
+        {
+          "triad": "60M-s2",
+          "arm": "B",
+          "diagnosis": 0.64,
+          "main": 0.646,
+          "abs_delta": 0.006
+        },
+        {
+          "triad": "60M-s2",
+          "arm": "C",
+          "diagnosis": 0.822,
+          "main": 0.818,
+          "abs_delta": 0.004
+        },
+        {
+          "triad": "23M-s3",
+          "arm": "A",
+          "diagnosis": 0.788,
+          "main": 0.784,
+          "abs_delta": 0.004
+        },
+        {
+          "triad": "23M-s3",
+          "arm": "B",
+          "diagnosis": 0.578,
+          "main": 0.582,
+          "abs_delta": 0.004
+        },
+        {
+          "triad": "23M-s3",
+          "arm": "C",
+          "diagnosis": 0.778,
+          "main": 0.772,
+          "abs_delta": 0.006
+        },
+        {
+          "triad": "60M-s1",
+          "arm": "A",
+          "diagnosis": 0.796,
+          "main": 0.798,
+          "abs_delta": 0.002
+        },
+        {
+          "triad": "60M-s1",
+          "arm": "B",
+          "diagnosis": 0.572,
+          "main": 0.574,
+          "abs_delta": 0.002
+        },
+        {
+          "triad": "60M-s1",
+          "arm": "C",
+          "diagnosis": 0.798,
+          "main": 0.796,
+          "abs_delta": 0.002
+        },
+        {
+          "triad": "60M-s3",
+          "arm": "A",
+          "diagnosis": 0.844,
+          "main": 0.848,
+          "abs_delta": 0.004
+        },
+        {
+          "triad": "60M-s3",
+          "arm": "B",
+          "diagnosis": 0.584,
+          "main": 0.58,
+          "abs_delta": 0.004
+        },
+        {
+          "triad": "60M-s3",
+          "arm": "C",
+          "diagnosis": 0.776,
+          "main": 0.774,
+          "abs_delta": 0.002
+        },
+        {
+          "triad": "23M-s1",
+          "arm": "A",
+          "diagnosis": 0.794,
+          "main": 0.798,
+          "abs_delta": 0.004
+        },
+        {
+          "triad": "23M-s1",
+          "arm": "B",
+          "diagnosis": 0.502,
+          "main": 0.506,
+          "abs_delta": 0.004
+        },
+        {
+          "triad": "23M-s1",
+          "arm": "C",
+          "diagnosis": 0.754,
+          "main": 0.752,
+          "abs_delta": 0.002
+        }
+      ],
+      "clean_all_triads": {
+        "n": 18,
+        "mean_abs_delta": 0.004,
+        "max_abs_delta": 0.008
+      },
+      "superseded_all_triads": {
+        "n": 18,
+        "mean_abs_delta": 0.017666666666666667,
+        "max_abs_delta": 0.062
+      },
+      "superseded_contaminated_triads_only": {
+        "n": 12,
+        "mean_abs_delta": 0.025166666666666667,
+        "max_abs_delta": 0.062
+      },
+      "expected_sd_of_two_draw_difference": 0.030983866769659335,
+      "reading": "On the corrected draw the two harnesses agree to ~0.005 on every model \u2014 that, not 0.03, is the measurement floor for identical items. The superseded spread was the contaminated draw, not harness disagreement."
+    },
+    "pooled_deficit_vs_transfer": {
+      "n": 6,
+      "spearman_rho": -0.7142857142857143,
+      "p_exact_permutation": 0.06805555555555555,
+      "p_scipy_asymptotic": 0.11078717201166179,
+      "pearson_r": -0.7570425885657871,
+      "pearson_p": 0.08137177371346557,
+      "note": "Exact permutation p replaces the asymptotic p: at n=6 there are only 720 orderings, so the exact value is computable and the approximation is unnecessary."
+    },
+    "leave_one_out_spearman": {
+      "drop_23M-s2": {
+        "rho": -0.7,
+        "p_exact": 0.11666666666666667,
+        "n": 5
+      },
+      "drop_60M-s2": {
+        "rho": -0.8999999999999998,
+        "p_exact": 0.041666666666666664,
+        "n": 5
+      },
+      "drop_23M-s3": {
+        "rho": -0.8999999999999998,
+        "p_exact": 0.041666666666666664,
+        "n": 5
+      },
+      "drop_60M-s1": {
+        "rho": -0.7,
+        "p_exact": 0.11666666666666667,
+        "n": 5
+      },
+      "drop_60M-s3": {
+        "rho": -0.49999999999999994,
+        "p_exact": 0.225,
+        "n": 5
+      },
+      "drop_23M-s1": {
+        "rho": -0.49999999999999994,
+        "p_exact": 0.225,
+        "n": 5
+      }
+    },
+    "loo_robust": false,
+    "by_size": {
+      "23M": {
+        "n": 3,
+        "mean": 0.5713333333333334,
+        "sd": 0.3488614815845013,
+        "values": [
+          0.659,
+          0.868,
+          0.187
+        ]
+      },
+      "60M": {
+        "n": 3,
+        "mean": 0.35000000000000003,
+        "sd": 0.13065603698260558,
+        "values": [
+          0.404,
+          0.445,
+          0.201
+        ]
+      },
+      "welch_two_sided_p": 0.3909949717501063,
+      "variance_ratio_23M_over_60M": 2.6700754870664394,
+      "pooled_sd": 0.2634153880597462,
+      "mde_80pct_power": 0.8089204301324028,
+      "outcome_span_all_triads": 0.681,
+      "reading": "UNDERPOWERED, NOT NULL. The contamination correction made the deficit ranges overlap, so size is no longer collinear with deficit depth and the comparison is ESTIMABLE. It is not thereby ANSWERED: MDE at 80% power is 0.809, which EXCEEDS the 0.681 span of the transfer ratio across all six triads, so no realizable difference could have been detected and the p=0.39 excludes nothing. Contrast C1, whose MDE (0.144) sits below its deficit (0.21) and so constrains. Report as untested; never as a tested null. The one directional size effect is REPRODUCIBILITY: SD 0.349 (23M) vs 0.131 (60M), 2.7x \u2014 not inferential at n=3/group."
+    },
+    "method_scope": {
+      "discriminating_methods": [
+        "mean_ablation_reciprocal_transfer"
+      ],
+      "non_discriminating_verified": {
+        "CKA": "0.66-0.82 for every triad regardless of verdict",
+        "single_head_patching": "r=0.045 (p=0.93) vs ablation, n=6",
+        "pruning": "sign of the answer flips with lambda; feasibility NO-GO",
+        "whole_layer_ablation": "saturates (any core layer -> acc~0)"
+      },
+      "label": "SINGLE-METHOD (by demonstration, not by omission)"
+    }
+  }
+}

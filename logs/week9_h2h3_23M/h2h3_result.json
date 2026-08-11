@@ -1,0 +1,108 @@
+{
+  "size": "23M",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "step": 5000,
+  "endpoints": {
+    "d0": {
+      "mean": 0.7913333333333333,
+      "sd": 0.007023769168568499,
+      "vals": [
+        0.798,
+        0.792,
+        0.784
+      ]
+    },
+    "d50": {
+      "mean": 0.5773333333333334,
+      "sd": 0.051159880114532444,
+      "vals": [
+        0.524,
+        0.626,
+        0.582
+      ]
+    },
+    "lr_shift(d50)": {
+      "mean": 0.7673333333333333,
+      "sd": 0.013613718571108104,
+      "vals": [
+        0.752,
+        0.778,
+        0.772
+      ]
+    },
+    "lr_shift(d0)_DISCRIM": {
+      "mean": 0.7833333333333333,
+      "sd": 0.025006665778014758,
+      "vals": [
+        0.758,
+        0.808,
+        0.784
+      ]
+    }
+  },
+  "per_seed_lifts": {
+    "delayed(d50+lrs - d50)": [
+      0.22799999999999998,
+      0.15200000000000002,
+      0.19000000000000006
+    ],
+    "generic_H2(d0+lrs - d0)": [
+      -0.040000000000000036,
+      0.016000000000000014,
+      0.0
+    ],
+    "alignment_H3": [
+      0.268,
+      0.136,
+      0.19000000000000006
+    ]
+  },
+  "means": {
+    "delayed_lift": 0.19000000000000003,
+    "generic_H2": -0.008000000000000007,
+    "alignment_H3": 0.19800000000000004,
+    "H2_frac": -0.04210526315789477,
+    "H3_frac": 1.0421052631578949
+  },
+  "alignment_paired_t": {
+    "t": 5.167757934621617,
+    "p_one_sided": 0.017732574231593745,
+    "df": 2,
+    "signs": [
+      1,
+      1,
+      1
+    ]
+  },
+  "val_ppl": {
+    "d0": [
+      48.550104887445066,
+      1.748691509425181
+    ],
+    "lr_shift(d0)": [
+      46.44254307267155,
+      0.8453996283632657
+    ]
+  },
+  "11M_precedent": {
+    "delayed_lift": 0.389,
+    "generic_H2": 0.115,
+    "alignment_H3": 0.274,
+    "H3_frac": 0.704
+  },
+  "sensitivity_as_logged_seed1_null": {
+    "d50_as_logged": [
+      0.506,
+      0.626,
+      0.582
+    ],
+    "delayed_lift": 0.19600000000000004,
+    "alignment_H3": 0.20400000000000004,
+    "H3_frac": 1.0408163265306123
+  },
+  "VERDICT": "H3 DOMINANT (exposure-alignment). lr_shift lifts the DELAYED run +0.190 but the EARLY run only -0.008, so 104% of the reopening effect requires the delayed-exposure profile; only ~-4% is a generic optimizer boost."
+}
