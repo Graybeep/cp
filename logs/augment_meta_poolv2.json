@@ -1,0 +1,11 @@
+{
+  "n_original_lines": 16030,
+  "n_original_lines_excluded_for_holdout": 520,
+  "n_generated_matrix": 65335,
+  "n_generated_embedded": 308344,
+  "n_generated_long_distance": 82088,
+  "n_target": 500000,
+  "seed": 1,
+  "pool_tokens": 4569854,
+  "note": "syntax.bin = originals + frame-recombined variants, shuffled. Runs on the pre-augment pool are not comparable with runs on this one."
+}
