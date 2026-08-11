@@ -1,0 +1,194 @@
+{
+  "seed": 3,
+  "size": "23M",
+  "run_ids": {
+    "A": "arith_delay0_exp20_size23M_seed3",
+    "C": "arith_delay50_exp20_size23M_seed3_ivlrshift0at2501"
+  },
+  "n_pairs": 900,
+  "A_top_causal_heads": [
+    {
+      "comp": [
+        "head",
+        4,
+        0
+      ],
+      "restoration": 0.3344
+    },
+    {
+      "comp": [
+        "head",
+        4,
+        2
+      ],
+      "restoration": 0.1644
+    },
+    {
+      "comp": [
+        "head",
+        2,
+        1
+      ],
+      "restoration": 0.1289
+    },
+    {
+      "comp": [
+        "head",
+        4,
+        1
+      ],
+      "restoration": 0.1156
+    },
+    {
+      "comp": [
+        "head",
+        3,
+        4
+      ],
+      "restoration": 0.0878
+    },
+    {
+      "comp": [
+        "head",
+        3,
+        7
+      ],
+      "restoration": 0.08
+    }
+  ],
+  "A_corrupt_sanity": 0.83,
+  "C_top_causal_heads": [
+    {
+      "comp": [
+        "head",
+        3,
+        1
+      ],
+      "restoration": 0.1289
+    },
+    {
+      "comp": [
+        "head",
+        3,
+        0
+      ],
+      "restoration": 0.1256
+    },
+    {
+      "comp": [
+        "head",
+        3,
+        4
+      ],
+      "restoration": 0.1044
+    },
+    {
+      "comp": [
+        "head",
+        4,
+        6
+      ],
+      "restoration": 0.0944
+    },
+    {
+      "comp": [
+        "head",
+        5,
+        6
+      ],
+      "restoration": 0.0833
+    },
+    {
+      "comp": [
+        "head",
+        1,
+        0
+      ],
+      "restoration": 0.0789
+    }
+  ],
+  "C_corrupt_sanity": 0.8,
+  "patching_overlap": {
+    "A_top": [
+      [
+        "head",
+        4,
+        0
+      ],
+      [
+        "head",
+        4,
+        2
+      ],
+      [
+        "head",
+        2,
+        1
+      ],
+      [
+        "head",
+        4,
+        1
+      ],
+      [
+        "head",
+        3,
+        4
+      ],
+      [
+        "head",
+        3,
+        7
+      ]
+    ],
+    "C_top": [
+      [
+        "head",
+        3,
+        1
+      ],
+      [
+        "head",
+        3,
+        0
+      ],
+      [
+        "head",
+        3,
+        4
+      ],
+      [
+        "head",
+        4,
+        6
+      ],
+      [
+        "head",
+        5,
+        6
+      ],
+      [
+        "head",
+        1,
+        0
+      ]
+    ],
+    "intersection": [
+      [
+        "head",
+        3,
+        4
+      ]
+    ],
+    "jaccard": 0.091
+  },
+  "A_heads_causal_in_C": {
+    "mean_restoration_of_A_top_in_C": 0.0659,
+    "mean_restoration_of_C_top_in_C": 0.1026
+  },
+  "cross_model_A_into_C": {
+    "mean_restoration_A_clean_into_C_at_A_top": 0.0654,
+    "caveat": "A,C share seed-init but drift (CKA~0.66); low value is consistent with different circuits but also partly reflects basis drift"
+  },
+  "corroboration_verdict": "PARTIAL / MIXED \u2014 see numbers"
+}

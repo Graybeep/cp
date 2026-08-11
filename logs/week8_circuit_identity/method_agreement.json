@@ -1,0 +1,68 @@
+[
+  {
+    "size": "23M",
+    "seed": 1,
+    "deficit": 0.29200000000000004,
+    "abl_transfer": 0.187,
+    "abl_jaccard": 0.0,
+    "pat_jaccard": 0.091,
+    "pat_A_in_C": 0.0885,
+    "pat_Cown_in_C": 0.1465,
+    "pat_ratio": 0.6040955631399317
+  },
+  {
+    "size": "23M",
+    "seed": 2,
+    "deficit": 0.18200000000000005,
+    "abl_transfer": 0.71,
+    "abl_jaccard": 0.091,
+    "pat_jaccard": 0.2,
+    "pat_A_in_C": 0.0756,
+    "pat_Cown_in_C": 0.1022,
+    "pat_ratio": 0.7397260273972602
+  },
+  {
+    "size": "23M",
+    "seed": 3,
+    "deficit": 0.20600000000000007,
+    "abl_transfer": 0.868,
+    "abl_jaccard": 0.2,
+    "pat_jaccard": 0.091,
+    "pat_A_in_C": 0.0659,
+    "pat_Cown_in_C": 0.1026,
+    "pat_ratio": 0.6423001949317739
+  },
+  {
+    "size": "60M",
+    "seed": 1,
+    "deficit": 0.2240000000000001,
+    "abl_transfer": 0.445,
+    "abl_jaccard": 0.091,
+    "pat_jaccard": 0.091,
+    "pat_A_in_C": 0.0622,
+    "pat_Cown_in_C": 0.1052,
+    "pat_ratio": 0.591254752851711
+  },
+  {
+    "size": "60M",
+    "seed": 2,
+    "deficit": 0.25,
+    "abl_transfer": 0.399,
+    "abl_jaccard": 0.0,
+    "pat_jaccard": 0.0,
+    "pat_A_in_C": 0.0509,
+    "pat_Cown_in_C": 0.0643,
+    "pat_ratio": 0.7916018662519441
+  },
+  {
+    "size": "60M",
+    "seed": 3,
+    "deficit": 0.2719999999999999,
+    "abl_transfer": 0.308,
+    "abl_jaccard": 0.091,
+    "pat_jaccard": 0.2,
+    "pat_A_in_C": 0.0689,
+    "pat_Cown_in_C": 0.093,
+    "pat_ratio": 0.7408602150537634
+  }
+]

@@ -1,0 +1,459 @@
+{
+  "seed": 3,
+  "run_ids": {
+    "A": "arith_delay0_exp20_size60M_seed3",
+    "B": "arith_delay50_exp20_size60M_seed3",
+    "C": "arith_delay50_exp20_size60M_seed3_ivlrshift0at2501"
+  },
+  "eval_seed": 1,
+  "n_eval": 500,
+  "eval_contamination_frac": 0.0,
+  "baseline_acc": {
+    "A": 0.844,
+    "B": 0.584,
+    "C": 0.776
+  },
+  "layer_ablation_note": {
+    "reason": "whole-layer mean-ablation saturates (any core layer -> acc~0); not discriminative, transfer done at head level instead",
+    "A_layer_damage": [
+      [
+        [
+          "attn",
+          0
+        ],
+        0.004
+      ],
+      [
+        [
+          "mlp",
+          0
+        ],
+        0.844
+      ],
+      [
+        [
+          "attn",
+          1
+        ],
+        0.844
+      ],
+      [
+        [
+          "mlp",
+          1
+        ],
+        0.35
+      ],
+      [
+        [
+          "attn",
+          2
+        ],
+        0.382
+      ],
+      [
+        [
+          "mlp",
+          2
+        ],
+        0.202
+      ],
+      [
+        [
+          "attn",
+          3
+        ],
+        0.652
+      ],
+      [
+        [
+          "mlp",
+          3
+        ],
+        0.086
+      ],
+      [
+        [
+          "attn",
+          4
+        ],
+        0.738
+      ],
+      [
+        [
+          "mlp",
+          4
+        ],
+        0.394
+      ],
+      [
+        [
+          "attn",
+          5
+        ],
+        0.142
+      ],
+      [
+        [
+          "mlp",
+          5
+        ],
+        0.512
+      ],
+      [
+        [
+          "attn",
+          6
+        ],
+        0.594
+      ],
+      [
+        [
+          "mlp",
+          6
+        ],
+        0.676
+      ],
+      [
+        [
+          "attn",
+          7
+        ],
+        0.074
+      ],
+      [
+        [
+          "mlp",
+          7
+        ],
+        0.366
+      ]
+    ]
+  },
+  "A_head_localization": [
+    {
+      "comp": [
+        "head",
+        6,
+        9
+      ],
+      "A_damage": 0.672,
+      "A_acc_ablated": 0.172
+    },
+    {
+      "comp": [
+        "head",
+        1,
+        6
+      ],
+      "A_damage": 0.426,
+      "A_acc_ablated": 0.418
+    },
+    {
+      "comp": [
+        "head",
+        4,
+        3
+      ],
+      "A_damage": 0.4,
+      "A_acc_ablated": 0.444
+    },
+    {
+      "comp": [
+        "head",
+        1,
+        1
+      ],
+      "A_damage": 0.3,
+      "A_acc_ablated": 0.544
+    },
+    {
+      "comp": [
+        "head",
+        2,
+        9
+      ],
+      "A_damage": 0.284,
+      "A_acc_ablated": 0.56
+    },
+    {
+      "comp": [
+        "head",
+        6,
+        8
+      ],
+      "A_damage": 0.268,
+      "A_acc_ablated": 0.576
+    },
+    {
+      "comp": [
+        "head",
+        1,
+        8
+      ],
+      "A_damage": 0.244,
+      "A_acc_ablated": 0.6
+    },
+    {
+      "comp": [
+        "head",
+        4,
+        4
+      ],
+      "A_damage": 0.244,
+      "A_acc_ablated": 0.6
+    },
+    {
+      "comp": [
+        "head",
+        3,
+        2
+      ],
+      "A_damage": 0.17,
+      "A_acc_ablated": 0.674
+    },
+    {
+      "comp": [
+        "head",
+        4,
+        2
+      ],
+      "A_damage": 0.138,
+      "A_acc_ablated": 0.706
+    },
+    {
+      "comp": [
+        "head",
+        3,
+        8
+      ],
+      "A_damage": 0.08,
+      "A_acc_ablated": 0.764
+    },
+    {
+      "comp": [
+        "head",
+        3,
+        4
+      ],
+      "A_damage": 0.076,
+      "A_acc_ablated": 0.768
+    }
+  ],
+  "C_head_localization": [
+    {
+      "comp": [
+        "head",
+        2,
+        7
+      ],
+      "C_damage": 0.482
+    },
+    {
+      "comp": [
+        "head",
+        6,
+        1
+      ],
+      "C_damage": 0.372
+    },
+    {
+      "comp": [
+        "head",
+        4,
+        6
+      ],
+      "C_damage": 0.364
+    },
+    {
+      "comp": [
+        "head",
+        7,
+        6
+      ],
+      "C_damage": 0.248
+    },
+    {
+      "comp": [
+        "head",
+        5,
+        6
+      ],
+      "C_damage": 0.23
+    },
+    {
+      "comp": [
+        "head",
+        6,
+        2
+      ],
+      "C_damage": 0.18
+    },
+    {
+      "comp": [
+        "head",
+        4,
+        0
+      ],
+      "C_damage": 0.164
+    },
+    {
+      "comp": [
+        "head",
+        4,
+        3
+      ],
+      "C_damage": 0.126
+    },
+    {
+      "comp": [
+        "head",
+        3,
+        6
+      ],
+      "C_damage": 0.086
+    },
+    {
+      "comp": [
+        "head",
+        2,
+        1
+      ],
+      "C_damage": 0.084
+    },
+    {
+      "comp": [
+        "head",
+        3,
+        0
+      ],
+      "C_damage": 0.08
+    },
+    {
+      "comp": [
+        "head",
+        4,
+        9
+      ],
+      "C_damage": 0.078
+    }
+  ],
+  "reciprocal_ablation": {
+    "A_top": [
+      [
+        "head",
+        6,
+        9
+      ],
+      [
+        "head",
+        1,
+        6
+      ],
+      [
+        "head",
+        4,
+        3
+      ],
+      [
+        "head",
+        1,
+        1
+      ],
+      [
+        "head",
+        2,
+        9
+      ],
+      [
+        "head",
+        6,
+        8
+      ]
+    ],
+    "C_top": [
+      [
+        "head",
+        2,
+        7
+      ],
+      [
+        "head",
+        6,
+        1
+      ],
+      [
+        "head",
+        4,
+        6
+      ],
+      [
+        "head",
+        7,
+        6
+      ],
+      [
+        "head",
+        5,
+        6
+      ],
+      [
+        "head",
+        6,
+        2
+      ]
+    ],
+    "jaccard": 0.0,
+    "frac_own_acc_lost": {
+      "A": {
+        "A_top_heads": 0.9242,
+        "C_top_heads": 0.1517
+      },
+      "B": {
+        "A_top_heads": 0.5,
+        "C_top_heads": 0.9281
+      },
+      "C": {
+        "A_top_heads": 0.1856,
+        "C_top_heads": 0.951
+      }
+    },
+    "C_over_A_transfer_ratio": 0.201,
+    "C_ownheads_over_Aheads_ratio": 5.125
+  },
+  "cka": {
+    "A_vs_C": {
+      "0": 0.9432,
+      "1": 0.7272,
+      "2": 0.7052,
+      "3": 0.6544,
+      "4": 0.5806,
+      "5": 0.757,
+      "6": 0.7969,
+      "7": 0.7858
+    },
+    "A_vs_B": {
+      "0": 0.922,
+      "1": 0.7187,
+      "2": 0.7242,
+      "3": 0.645,
+      "4": 0.6531,
+      "5": 0.7627,
+      "6": 0.7516,
+      "7": 0.7642
+    }
+  },
+  "verdict": {
+    "text": "NEW CIRCUIT \u2014 A's heads are not causal in C, yet C's own heads are; lr_shift rebuilt arithmetic in different machinery",
+    "transfer_ratio_C_over_A": 0.201,
+    "control_ratio_Cheads_over_Aheads": 5.125,
+    "jaccard_A_top_C_top": 0.0,
+    "cka_AC_circuit_layers": 0.702,
+    "circuit_layers": [
+      1,
+      2,
+      4,
+      6
+    ]
+  }
+}
