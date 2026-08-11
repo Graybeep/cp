@@ -1,0 +1,57 @@
+    [LD] best layer 5: probe=0.6035 ctrl=0.4865 per_layer=[0.5, 0.547, 0.558, 0.584, 0.585, 0.604, 0.603, 0.601]
+    [local] best layer 6: probe=0.6508 ctrl=0.4910 per_layer=[0.5, 0.583, 0.615, 0.644, 0.643, 0.64, 0.651, 0.648]
+delay0 seed1: LD probe=0.6035 (ctrl 0.4865, sel +0.1170, layer 5)  |  local probe=0.6508 (sel +0.1598)
+    [LD] best layer 6: probe=0.6010 ctrl=0.5035 per_layer=[0.5, 0.53, 0.551, 0.568, 0.58, 0.59, 0.601, 0.6]
+    [local] best layer 7: probe=0.6505 ctrl=0.5155 per_layer=[0.5, 0.573, 0.596, 0.622, 0.616, 0.65, 0.65, 0.65]
+delay0 seed2: LD probe=0.6010 (ctrl 0.5035, sel +0.0975, layer 6)  |  local probe=0.6505 (sel +0.1350)
+    [LD] best layer 5: probe=0.6300 ctrl=0.4925 per_layer=[0.5, 0.535, 0.554, 0.571, 0.58, 0.63, 0.623, 0.619]
+    [local] best layer 5: probe=0.6593 ctrl=0.4935 per_layer=[0.5, 0.56, 0.605, 0.629, 0.619, 0.659, 0.641, 0.645]
+delay0 seed3: LD probe=0.6300 (ctrl 0.4925, sel +0.1375, layer 5)  |  local probe=0.6593 (sel +0.1657)
+    [LD] best layer 7: probe=0.5845 ctrl=0.5102 per_layer=[0.5, 0.54, 0.542, 0.561, 0.579, 0.578, 0.584, 0.585]
+    [local] best layer 7: probe=0.6538 ctrl=0.4978 per_layer=[0.5, 0.613, 0.606, 0.628, 0.633, 0.638, 0.653, 0.654]
+delay25 seed1: LD probe=0.5845 (ctrl 0.5102, sel +0.0743, layer 7)  |  local probe=0.6538 (sel +0.1560)
+    [LD] best layer 6: probe=0.5755 ctrl=0.5060 per_layer=[0.5, 0.552, 0.56, 0.573, 0.561, 0.574, 0.576, 0.574]
+    [local] best layer 3: probe=0.6253 ctrl=0.5095 per_layer=[0.5, 0.599, 0.615, 0.625, 0.624, 0.616, 0.614, 0.614]
+delay25 seed2: LD probe=0.5755 (ctrl 0.5060, sel +0.0695, layer 6)  |  local probe=0.6253 (sel +0.1158)
+    [LD] best layer 5: probe=0.6325 ctrl=0.4842 per_layer=[0.5, 0.545, 0.564, 0.613, 0.622, 0.633, 0.617, 0.621]
+    [local] best layer 3: probe=0.6567 ctrl=0.4848 per_layer=[0.5, 0.554, 0.606, 0.657, 0.656, 0.654, 0.654, 0.65]
+delay25 seed3: LD probe=0.6325 (ctrl 0.4842, sel +0.1483, layer 5)  |  local probe=0.6567 (sel +0.1720)
+    [LD] best layer 6: probe=0.5865 ctrl=0.5060 per_layer=[0.5, 0.551, 0.547, 0.557, 0.569, 0.579, 0.587, 0.582]
+    [local] best layer 7: probe=0.6620 ctrl=0.5075 per_layer=[0.5, 0.647, 0.636, 0.64, 0.655, 0.659, 0.659, 0.662]
+delay50 seed1: LD probe=0.5865 (ctrl 0.5060, sel +0.0805, layer 6)  |  local probe=0.6620 (sel +0.1545)
+    [LD] best layer 4: probe=0.5860 ctrl=0.4992 per_layer=[0.5, 0.559, 0.569, 0.576, 0.586, 0.583, 0.582, 0.583]
+    [local] best layer 3: probe=0.6160 ctrl=0.5110 per_layer=[0.5, 0.597, 0.601, 0.616, 0.606, 0.613, 0.613, 0.611]
+delay50 seed2: LD probe=0.5860 (ctrl 0.4992, sel +0.0867, layer 4)  |  local probe=0.6160 (sel +0.1050)
+    [LD] best layer 4: probe=0.6247 ctrl=0.4897 per_layer=[0.5, 0.54, 0.559, 0.623, 0.625, 0.624, 0.622, 0.623]
+    [local] best layer 5: probe=0.6805 ctrl=0.4958 per_layer=[0.5, 0.572, 0.61, 0.655, 0.662, 0.68, 0.666, 0.668]
+delay50 seed3: LD probe=0.6247 (ctrl 0.4897, sel +0.1350, layer 4)  |  local probe=0.6805 (sel +0.1847)
+    [LD] best layer 7: probe=0.5855 ctrl=0.5115 per_layer=[0.5, 0.55, 0.543, 0.568, 0.574, 0.579, 0.584, 0.586]
+    [local] best layer 7: probe=0.6575 ctrl=0.5140 per_layer=[0.5, 0.638, 0.638, 0.644, 0.648, 0.644, 0.657, 0.657]
+delay75 seed1: LD probe=0.5855 (ctrl 0.5115, sel +0.0740, layer 7)  |  local probe=0.6575 (sel +0.1435)
+    [LD] best layer 7: probe=0.5808 ctrl=0.5015 per_layer=[0.5, 0.55, 0.554, 0.578, 0.574, 0.579, 0.58, 0.581]
+    [local] best layer 5: probe=0.6202 ctrl=0.5135 per_layer=[0.5, 0.591, 0.598, 0.605, 0.608, 0.62, 0.611, 0.609]
+delay75 seed2: LD probe=0.5808 (ctrl 0.5015, sel +0.0793, layer 7)  |  local probe=0.6202 (sel +0.1068)
+    [LD] best layer 3: probe=0.6240 ctrl=0.4888 per_layer=[0.5, 0.545, 0.565, 0.624, 0.609, 0.622, 0.617, 0.61]
+    [local] best layer 5: probe=0.6688 ctrl=0.5008 per_layer=[0.5, 0.56, 0.594, 0.648, 0.651, 0.669, 0.653, 0.65]
+delay75 seed3: LD probe=0.6240 (ctrl 0.4888, sel +0.1352, layer 3)  |  local probe=0.6688 (sel +0.1680)
+
+# Representational probe — filler-gap dependency (23M, seeds 1-3)
+
+Last-token linear probe on pooled minimal pairs; grammaticality target with complementizer balanced across the label; grouped CV; selectivity control.
+
+## LD (long-distance) probe accuracy by delay (chance=0.5)
+
+| delay | LD probe mean±SD | selectivity mean±SD | local probe mean±SD | local sel |
+|------:|:----------------:|:-------------------:|:-------------------:|:---------:|
+| 0 | 0.6115 ± 0.0161 | +0.1173 ± 0.0200 | 0.6535 ± 0.0050 | +0.1535 |
+| 25 | 0.5975 ± 0.0306 | +0.0973 ± 0.0442 | 0.6452 ± 0.0174 | +0.1479 |
+| 50 | 0.5991 ± 0.0222 | +0.1008 ± 0.0298 | 0.6528 ± 0.0332 | +0.1481 |
+| 75 | 0.5968 ± 0.0237 | +0.0962 ± 0.0339 | 0.6488 ± 0.0254 | +0.1394 |
+
+**Representational CP contrast (LD probe, delay0 vs delay50):** delay0=0.6115±0.0161, delay50=0.5991±0.0222, Welch t=0.784 p=0.4809
+
+**Is LD represented at all (pooled across all runs, n=12)?** probe vs chance 0.5: mean=0.6012 t=16.544 p=0.0000; selectivity vs 0: mean=+0.1029 t=12.033 p=0.0000
+
+**Positive control (local probe, all runs):** mean=0.6501 (must exceed chance + LD for the LD read to be informative)
+
+Wrote logs\syntax_ld_probe/summary.md , per_run.csv

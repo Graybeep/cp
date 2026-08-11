@@ -1,0 +1,26 @@
+[seed 2 60M] 900 aligned corrupt pairs
+
+[A] causal trace — top heads by restoration (unpatched-corrupt baseline predicts corrupt token 0.86):
+    L4H0  restoration=+0.103
+    L4H2  restoration=+0.090
+    L3H1  restoration=+0.078
+    L5H6  restoration=+0.076
+    L2H8  restoration=+0.070
+    L4H8  restoration=+0.070
+
+[C] causal trace — top heads by restoration (unpatched-corrupt baseline predicts corrupt token 0.85):
+    L3H3  restoration=+0.080
+    L3H8  restoration=+0.063
+    L4H4  restoration=+0.063
+    L4H3  restoration=+0.062
+    L5H2  restoration=+0.060
+    L3H4  restoration=+0.057
+
+[overlap] patching-derived A_top ∩ C_top = none  Jaccard=0.00
+
+[causal-in-C] mean restoration in C: A's top heads=0.051  vs C's own top heads=0.064
+[cross-model] patch A-clean into C-corrupt at A's top heads: restoration=0.046  (basis-drift caveat)
+
+[CORROBORATION seed 2 60M] PARTIAL / MIXED — see numbers
+
+wrote logs\week8_causal_trace/seed2_60M.json

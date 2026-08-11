@@ -1,0 +1,35 @@
+###### Week 4 seeds 2-3 replication start Tue Jul 21 13:43:53 IST 2026 ######
+=== [13:43:53] BASELINE seed2 -> arith_delay50_exp20_size23M_seed2 ===
+    exit 1
+=== [13:57:29] BASELINE seed3 -> arith_delay50_exp20_size23M_seed3 ===
+[13:57:23] BASELINE seed2 -> arith_delay50_exp20_size23M_seed2 ===
+    exit 1
+=== [13:57:51] BASELINE seed3 -> arith_delay50_exp20_size23M_seed3 ===
+###### Week 4 seeds 2-3 replication start Tue Jul 21 14:28:33 IST 2026 ######
+=== [14:28:33] BASELINE seed2 -> arith_delay50_exp20_size23M_seed2 ===
+    exit 0
+=== [14:40:57] BASELINE seed3 -> arith_delay50_exp20_size23M_seed3 ===
+    exit 1
+=== [14:41:39] FORK seed2_lrshift -> arith_delay50_exp20_size23M_seed2_ivlrshift0at2501 ===
+    exit 0
+=== [14:53:58] FORK seed3_lrshift -> arith_delay50_exp20_size23M_seed3_ivlrshift0at2501 ===
+    exit 1
+=== [14:54:04] FORK seed2_negctrl -> syntax_delay50_exp10_size23M_seed2_ivlrshift0at2501 ===
+    exit 0
+=== [15:04:49] FORK seed3_negctrl -> syntax_delay50_exp10_size23M_seed3_ivlrshift0at2501 ===
+    exit 0
+###### Week 4 seeds 2-3 replication done Tue Jul 21 15:15:42 IST 2026 ######
+###### Week 4 seeds 2-3 replication start Tue Jul 21 15:52:16 IST 2026 ######
+=== [15:52:16] BASELINE seed2 -> arith_delay50_exp20_size23M_seed2 ===
+    already complete — skipping
+=== [15:52:16] BASELINE seed3 -> arith_delay50_exp20_size23M_seed3 ===
+    exit 0
+=== [16:16:40] FORK seed2_lrshift -> arith_delay50_exp20_size23M_seed2_ivlrshift0at2501 ===
+    already complete — skipping
+=== [16:16:40] FORK seed3_lrshift -> arith_delay50_exp20_size23M_seed3_ivlrshift0at2501 ===
+    exit 0
+=== [16:29:43] FORK seed2_negctrl -> syntax_delay50_exp10_size23M_seed2_ivlrshift0at2501 ===
+    already complete — skipping
+=== [16:29:43] FORK seed3_negctrl -> syntax_delay50_exp10_size23M_seed3_ivlrshift0at2501 ===
+    already complete — skipping
+###### Week 4 seeds 2-3 replication done Tue Jul 21 16:29:43 IST 2026 ######

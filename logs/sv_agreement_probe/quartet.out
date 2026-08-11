@@ -1,0 +1,51 @@
+usable verb pairs: ['is/are', 'was/were', 'has/have', 'does/do', "isn't/aren't", "wasn't/weren't"]
+1000 sextets (6000 cells, 12000 sentences); tokenizer-unclean cells dropped: 0
+frame types: pp=595 rc=405
+
+[CONTROL unigram-only] attraction +0.0000 (must be 0.0000)   complexity +0.0000   balanced_bare 0.500
+
+[arith_delay0_exp20_size23M_seed1]  (PRIMARY = verb-position)
+   bare 1.000   match 0.888   mismatch 0.585
+   complexity +0.112   ATTRACTION +0.303   (sg +0.345 / pl +0.261)
+   [sentence-scored] attraction +0.335  complexity +0.066
+   [by frame] pp attraction +0.142  rc attraction +0.540
+
+[arith_delay0_exp20_size23M_seed2]  (PRIMARY = verb-position)
+   bare 0.985   match 0.819   mismatch 0.591
+   complexity +0.166   ATTRACTION +0.228   (sg +0.163 / pl +0.294)
+   [sentence-scored] attraction +0.202  complexity +0.161
+   [by frame] pp attraction +0.227  rc attraction +0.231
+
+[arith_delay0_exp20_size23M_seed3]  (PRIMARY = verb-position)
+   bare 0.976   match 0.853   mismatch 0.587
+   complexity +0.124   ATTRACTION +0.265   (sg +0.134 / pl +0.396)
+   [sentence-scored] attraction +0.277  complexity +0.061
+   [by frame] pp attraction +0.245  rc attraction +0.294
+
+[syntax_delay0_exp10_size23M_seed1]  (PRIMARY = verb-position)
+   bare 0.994   match 0.798   mismatch 0.528
+   complexity +0.195   ATTRACTION +0.270   (sg +0.223 / pl +0.317)
+   [sentence-scored] attraction +0.366  complexity +0.135
+   [by frame] pp attraction +0.220  rc attraction +0.343
+
+[syntax_delay0_exp10_size23M_seed2]  (PRIMARY = verb-position)
+   bare 0.973   match 0.816   mismatch 0.408
+   complexity +0.157   ATTRACTION +0.407   (sg +0.339 / pl +0.475)
+   [sentence-scored] attraction +0.477  complexity +0.124
+   [by frame] pp attraction +0.528  rc attraction +0.230
+
+[syntax_delay0_exp10_size23M_seed3]  (PRIMARY = verb-position)
+   bare 0.962   match 0.859   mismatch 0.512
+   complexity +0.104   ATTRACTION +0.347   (sg +0.324 / pl +0.369)
+   [sentence-scored] attraction +0.366  complexity +0.079
+   [by frame] pp attraction +0.412  rc attraction +0.251
+
+==============================================================================
+ATTRACTION  +0.3033 +/- 0.0645  n=6  t=11.52 p=8.63e-05
+  sign-consistent across head number: sg +0.2547 (pos in 6/6), pl +0.3520 (pos in 6/6)
+COMPLEXITY  +0.1431 +/- 0.0355  p=1.81e-04
+match 0.8387 vs chance p=1.95e-06 | mismatch 0.5353 vs chance p=2.75e-01
+
+VERDICT: (c) MIXED / does not cleanly meet (a) or (b)
+
+wrote logs\sv_agreement_probe/quartet.json

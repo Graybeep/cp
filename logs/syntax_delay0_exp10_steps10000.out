@@ -1,0 +1,4 @@
+run_id: syntax_delay0_exp10_steps10000_size23M_seed1
+model: 23.2M params (6L, 384d, 8h, vocab 16384, ctx 512)
+done: 10000 steps in 59.5 min (2.80 steps/s)
+tokens by stream: {'base': 147456000, 'syntax': 16384000}

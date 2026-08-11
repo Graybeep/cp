@@ -1,0 +1,6 @@
+=== seed3 done; continuation LD baseline vs hilr50 ===
+syntax_delay0_exp10_size23M_seed3 @ step 5000
+  continuation interaction: local=0.599  long-distance=0.520   (chance/prior-only = 0.5)
+syntax_delay0_exp10_size23M_seed3_hilr50 @ step 5000
+  continuation interaction: local=0.621  long-distance=0.527   (chance/prior-only = 0.5)
+SEED3 SCORING DONE

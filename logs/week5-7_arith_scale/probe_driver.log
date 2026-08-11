@@ -1,0 +1,17 @@
+###### arith scale check — stage=probe seeds=[1] sizes=[11M 60M] start Thu Jul 23 01:21:57 IST 2026 ######
+=== [01:21:57] BASELINE arith_delay0_exp20_size11M_seed1 (seed1 delay0.0 11M) ===
+    already complete — skipping
+=== [01:21:57] BASELINE arith_delay50_exp20_size11M_seed1 (seed1 delay0.5 11M) ===
+    exit 0
+=== [01:35:02] FORK lr_shift arith_delay50_exp20_size11M_seed1_ivlrshift0at2501 ===
+    exit 0
+=== [01:41:09] BASELINE arith_delay0_exp20_size60M_seed1 (seed1 delay0.0 60M) ===
+    exit 0
+=== [02:26:51] BASELINE arith_delay50_exp20_size60M_seed1 (seed1 delay0.5 60M) ===
+    exit 0
+=== [03:12:49] FORK lr_shift arith_delay50_exp20_size60M_seed1_ivlrshift0at2501 ===
+    exit 1
+###### arith scale check — stage=probe done Thu Jul 23 03:36:58 IST 2026 ######
+READ-OUT: pull step-5000 arith_accuracy (+ val_ppl for forgetting) from
+  logs/<run_id>/metrics.csv for every run, then APPLY the pre-registered
+  rules in notes/week5-7-arith-scale-check-preregistration.md (do NOT eyeball).

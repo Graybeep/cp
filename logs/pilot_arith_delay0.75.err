@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "D:\EXPERIMENTS\reopen\scripts\train_baseline.py", line 85, in <module>
+    main()
+  File "D:\EXPERIMENTS\reopen\scripts\train_baseline.py", line 73, in main
+    trainer = Trainer(model_cfg, train_cfg)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EXPERIMENTS\reopen\reopen\train.py", line 108, in __init__
+    self.streams = resolve_streams(train_cfg)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EXPERIMENTS\reopen\reopen\schedule.py", line 57, in resolve_streams
+    assert density < 0.5, (
+           ^^^^^^^^^^^^^
+AssertionError: skill density 0.80 (exposure 0.2 at delay 0.75) would dominate the stream — lower exposure_frac or delay

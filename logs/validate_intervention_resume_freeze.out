@@ -1,0 +1,57 @@
+== reference ivres_noise_a: complete, reusing
+== reference ivres_noise_b: complete, reusing
+== reference ivres_noise_c: complete, reusing
+== reference ivres_noise_d: complete, reusing
+== reference ivres_noise_e: complete, reusing
+== resume trial ivres_fix_a (kill + resume mid-freeze)
+   resumed at step 80 (inside freeze window)
+== resume trial ivres_fix_b (kill + resume mid-freeze)
+   resumed at step 80 (inside freeze window)
+== resume trial ivres_fix_c (kill + resume mid-freeze)
+   resumed at step 80 (inside freeze window)
+== resume trial ivres_fix_d (kill + resume mid-freeze)
+   resumed at step 80 (inside freeze window)
+
+[FIXED replay_fire] POST window: steps > 80 (8 checkpoints)
+run-level S(x) = mean |d(val_loss)| over POST window:
+  ref   ivres_noise_a: 0.00028
+  ref   ivres_noise_b: 0.00018
+  ref   ivres_noise_c: 0.00013
+  ref   ivres_noise_d: 0.00014
+  ref   ivres_noise_e: 0.00013
+  trial ivres_fix_a: 0.00064  (exceeds 5/5 refs)
+  trial ivres_fix_b: 0.00078  (exceeds 5/5 refs)
+  trial ivres_fix_c: 0.00012  (exceeds 0/5 refs)
+  trial ivres_fix_d: 0.00018  (exceeds 3/5 refs)
+PRIMARY run-level MW: p=0.556   SECONDARY pooled KS: p=0.000   (pooled MW p=0.000, max tested=0.00106 vs noise=0.00045)
+drift diagnostic (non-gating): rho=-0.60 p=0.120 -> no flag
+[FIXED replay_fire] VERDICT: FAIL
+== resume trial ivres_broken_a [BROKEN replay_fire] (kill + resume mid-freeze)
+   resumed at step 80 (inside freeze window)
+== resume trial ivres_broken_b [BROKEN replay_fire] (kill + resume mid-freeze)
+   resumed at step 80 (inside freeze window)
+== resume trial ivres_broken_c [BROKEN replay_fire] (kill + resume mid-freeze)
+   resumed at step 80 (inside freeze window)
+== resume trial ivres_broken_d [BROKEN replay_fire] (kill + resume mid-freeze)
+   resumed at step 100 (inside freeze window)
+
+[BROKEN replay_fire] POST window: steps > 100 (7 checkpoints)
+run-level S(x) = mean |d(val_loss)| over POST window:
+  ref   ivres_noise_a: 0.00028
+  ref   ivres_noise_b: 0.00018
+  ref   ivres_noise_c: 0.00013
+  ref   ivres_noise_d: 0.00014
+  ref   ivres_noise_e: 0.00013
+  trial ivres_broken_a: 0.56048  (exceeds 5/5 refs)
+  trial ivres_broken_b: 0.56037  (exceeds 5/5 refs)
+  trial ivres_broken_c: 0.56040  (exceeds 5/5 refs)
+  trial ivres_broken_d: 0.46157  (exceeds 5/5 refs)
+PRIMARY run-level MW: p=0.016   SECONDARY pooled KS: p=0.000   (pooled MW p=0.000, max tested=0.65590 vs noise=0.00045)
+drift diagnostic (non-gating): rho=+0.89 p=0.012 -> DRIFT FLAG
+[BROKEN replay_fire] VERDICT: FAIL
+
+============================================================
+FIXED replay_fire:  FAIL  (kill+resume of a stateful freeze == GPU-noise floor)
+BROKEN replay_fire: FAIL (as required)  — power control: the check must reject a broken replay
+OVERALL: FAIL
+(FAIL: keeping artifacts for diagnosis)

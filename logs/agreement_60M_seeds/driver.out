@@ -1,0 +1,15 @@
+###### 60M arith seeds=[5 6 7 8] driver start Mon Jul 27 13:57:20 IST 2026 ######
+=== [13:57:20] arith_delay0_exp20_size60M_seed5 ===
+    ... waiting for in-flight run to finish (600s)
+    ... waiting for in-flight run to finish (1200s)
+    ... waiting for in-flight run to finish (1800s)
+    ... waiting for in-flight run to finish (2400s)
+    ... waiting for in-flight run to finish (3000s)
+    ... waiting for in-flight run to finish (3600s)
+    ... waiting for in-flight run to finish (4200s)
+    ... waiting for in-flight run to finish (4800s)
+    ... waiting for in-flight run to finish (5400s)
+    ... waiting for in-flight run to finish (6000s)
+    ... waiting for in-flight run to finish (6600s)
+    ... waiting for in-flight run to finish (7200s)
+    !! GPU still busy after 7200s - aborting rather than OOM

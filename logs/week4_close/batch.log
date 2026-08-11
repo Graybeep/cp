@@ -1,0 +1,12 @@
+###### Week 4 close-out start Tue Jul 21 18:41:22 IST 2026 ######
+=== [18:41:22] BASELINE seed1 delay0.5 -> arith_delay50_exp20_size23M_seed1_recheck ===
+    exit 0
+=== [19:08:38] BASELINE seed2 delay0.0 -> arith_delay0_exp20_size23M_seed2 ===
+    exit 0
+=== [19:36:33] BASELINE seed3 delay0.0 -> arith_delay0_exp20_size23M_seed3 ===
+    exit 0
+=== [20:04:02] FORK seed2_cramlrshift -> arith_delay50_exp20_size23M_seed2_ivcramlrshift0at2501 ===
+    exit 0
+=== [20:18:03] FORK seed3_cramlrshift -> arith_delay50_exp20_size23M_seed3_ivcramlrshift0at2501 ===
+    exit 0
+###### Week 4 close-out done Tue Jul 21 20:30:29 IST 2026 ######

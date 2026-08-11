@@ -1,0 +1,31 @@
+D:\EXPERIMENTS\reopen\scripts\agreement_attraction_quartet.py:185: RuntimeWarning: Mean of empty slice
+  m = {c: np.nanmean(acc[c]) for c in CELLS}
+usable verb pairs: ['is/are', 'was/were', 'has/have', 'does/do', "isn't/aren't", "wasn't/weren't"]
+400 sextets (2400 cells, 4800 sentences); tokenizer-unclean cells dropped: 0
+frame types: pp=235 rc=165
+
+[CONTROL unigram-only] attraction +0.0000 (must be 0.0000)   complexity +0.0000   balanced_bare 0.500
+[arith_delay0_exp20_size11M_seed1] bare 0.971 match 0.769 mismatch 0.430 | cpx +0.203 ATTR +0.339 (sg +0.232/pl +0.445) | pp +0.400 rc +0.252
+[arith_delay0_exp20_size11M_seed2] bare 0.988 match 0.809 mismatch 0.354 | cpx +0.179 ATTR +0.455 (sg +0.355/pl +0.555) | pp +0.494 rc +0.400
+[arith_delay0_exp20_size11M_seed3] bare 0.981 match 0.899 mismatch 0.349 | cpx +0.083 ATTR +0.550 (sg +0.490/pl +0.610) | pp +0.751 rc +0.264
+[arith_delay0_exp20_size23M_seed1] bare 1.000 match 0.890 mismatch 0.595 | cpx +0.110 ATTR +0.295 (sg +0.353/pl +0.238) | pp +0.132 rc +0.527
+[arith_delay0_exp20_size23M_seed2] bare 0.979 match 0.824 mismatch 0.601 | cpx +0.155 ATTR +0.223 (sg +0.157/pl +0.288) | pp +0.215 rc +0.233
+[arith_delay0_exp20_size23M_seed3] bare 0.979 match 0.855 mismatch 0.591 | cpx +0.124 ATTR +0.264 (sg +0.118/pl +0.410) | pp +0.249 rc +0.285
+[arith_delay0_exp20_size60M_seed1] bare 0.991 match 0.865 mismatch 0.616 | cpx +0.126 ATTR +0.249 (sg +0.197/pl +0.300) | pp +0.185 rc +0.339
+[arith_delay0_exp20_size60M_seed2] bare 1.000 match 0.854 mismatch 0.512 | cpx +0.146 ATTR +0.341 (sg +0.200/pl +0.482) | pp +0.334 rc +0.352
+[arith_delay0_exp20_size60M_seed3] bare 0.932 match 0.870 mismatch 0.459 | cpx +0.062 ATTR +0.411 (sg +0.388/pl +0.435) | pp +0.291 rc +0.582
+[arith_delay0_exp20_size60M_seed4] bare 0.955 match 0.886 mismatch 0.731 | cpx +0.069 ATTR +0.155 (sg +0.113/pl +0.197) | pp +0.153 rc +0.158
+[arith_delay0_exp20_size60M_seed5] bare 0.936 match 0.866 mismatch 0.526 | cpx +0.070 ATTR +0.340 (sg +0.275/pl +0.405) | pp +0.219 rc +0.512
+[arith_delay0_exp20_size60M_seed6] bare 1.000 match 0.932 mismatch 0.686 | cpx +0.068 ATTR +0.246 (sg +0.307/pl +0.185) | pp +0.160 rc +0.370
+[arith_delay0_exp20_size60M_seed7] bare 0.960 match 0.948 mismatch 0.715 | cpx +0.013 ATTR +0.232 (sg +0.300/pl +0.165) | pp +0.264 rc +0.188
+[arith_delay0_exp20_size60M_seed8] bare 0.974 match 0.914 mismatch 0.760 | cpx +0.060 ATTR +0.154 (sg +0.150/pl +0.157) | pp +0.198 rc +0.091
+
+==============================================================================
+ATTRACTION  +0.3038 +/- 0.1121  n=14  t=10.14 p=1.53e-07
+  sign-consistent across head number: sg +0.2596 (pos in 14/14), pl +0.3480 (pos in 14/14)
+COMPLEXITY  +0.1047 +/- 0.0532  p=5.47e-06
+match 0.8700 vs chance p=3.63e-13 | mismatch 0.5662 vs chance p=8.76e-02
+
+VERDICT: (c) MIXED / does not cleanly meet (a) or (b)
+
+wrote logs\sv_agreement_probe/quartet_scale_arithmix_n8.json

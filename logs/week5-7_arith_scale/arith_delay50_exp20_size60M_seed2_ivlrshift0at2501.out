@@ -1,0 +1,5 @@
+[fork] arith_delay50_exp20_size60M_seed2_ivlrshift0at2501 <- arith_delay50_exp20_size60M_seed2/step_0002500 (lr_shift at step 2501)
+resumed arith_delay50_exp20_size60M_seed2_ivlrshift0at2501 from step 2500 (stream fast-forwarded, 0 metric rows kept)
+[intervention] step 2501: LR window replays schedule segment [0, 2500)
+done: 5000 steps in 24.4 min (1.71 steps/s, 2500 this launch)
+tokens by stream: {'base': 65536000, 'arith': 16384000}

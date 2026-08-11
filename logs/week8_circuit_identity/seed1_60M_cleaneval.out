@@ -1,0 +1,33 @@
+
+[seed 1] baseline exact-match:  A(early)=0.796  B(delayed)=0.572  C(lr_shift)=0.798
+
+[1] A's arithmetic circuit — top heads by A-damage (mean-ablation, single-head; discriminative unlike layer-level):
+    L1H1  A-damage=+0.370  (A acc 0.796->0.426)
+    L4H4  A-damage=+0.336  (A acc 0.796->0.460)
+    L4H0  A-damage=+0.312  (A acc 0.796->0.484)
+    L4H5  A-damage=+0.240  (A acc 0.796->0.556)
+    L1H0  A-damage=+0.214  (A acc 0.796->0.582)
+    L1H3  A-damage=+0.168  (A acc 0.796->0.628)
+    L2H9  A-damage=+0.162  (A acc 0.796->0.634)
+    L3H4  A-damage=+0.140  (A acc 0.796->0.656)
+
+[1b] C's own top heads: ['L1H4', 'L3H6', 'L4H5', 'L4H1', 'L3H2', 'L3H1']
+     A_top ∩ C_top = ['L4H5']  Jaccard=0.09
+
+[2] Reciprocal ablation — fraction of own accuracy lost:
+     model          ablate A's-heads   ablate C's-heads
+     A early              98%              51%
+     B delayed            69%              97%
+     C lr_shift           44%              95%
+
+[3] Linear CKA (residual stream) per layer:
+    layer:   0  1  2  3  4  5  6  7
+    A vs C:  0.95  0.90  0.71  0.59  0.74  0.76  0.77  0.73
+    A vs B:  0.92  0.86  0.69  0.58  0.73  0.75  0.74  0.72
+
+[VERDICT seed 1] MIXED / PARTIAL — see numbers
+    causal transfer C/A = 0.45  (low => A's heads not causal in C)
+    control C-own/A-heads = 2.18  (high => C DOES have its own circuit)
+    Jaccard(A_top,C_top) = 0.09   CKA(A,C)@circuit = 0.82
+
+wrote logs\week8_circuit_identity/seed1_60M_cleaneval.json

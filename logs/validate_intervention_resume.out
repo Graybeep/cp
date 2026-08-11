@@ -1,0 +1,71 @@
+== reference noise_a: training (straight cram run)
+== reference noise_b: training (straight cram run)
+== reference noise_c: training (straight cram run)
+== reference noise_d: training (straight cram run)
+== reference noise_e: training (straight cram run)
+== resume trial fix_a (kill + resume mid-cram)
+   resumed at step 80 (inside cram window)
+== resume trial fix_b (kill + resume mid-cram)
+   resumed at step 80 (inside cram window)
+== resume trial fix_c (kill + resume mid-cram)
+   resumed at step 80 (inside cram window)
+== resume trial fix_d (kill + resume mid-cram)
+   resumed at step 80 (inside cram window)
+
+[PRIMARY] deterministic exposure reconstruction:
+  straight-run exposure (all 5 refs identical): {'base': 2396160, 'arith': 1536000}
+  fixed fix_a: EXACT MATCH
+  fixed fix_b: EXACT MATCH
+  fixed fix_c: EXACT MATCH
+  fixed fix_d: EXACT MATCH
+[PRIMARY] fixed-trial exposure bit-identical to straight: PASS
+
+[DIAGNOSTIC: FIXED val_loss seam] POST window: steps > 80 (8 checkpoints)
+run-level S(x) = mean |d(val_loss)| over POST window:
+  ref   noise_a: 0.00709
+  ref   noise_b: 0.00879
+  ref   noise_c: 0.00598
+  ref   noise_d: 0.00476
+  ref   noise_e: 0.00511
+  trial fix_a: 0.00432  (exceeds 0/5 refs)
+  trial fix_b: 0.00431  (exceeds 0/5 refs)
+  trial fix_c: 0.00459  (exceeds 0/5 refs)
+  trial fix_d: 0.00514  (exceeds 2/5 refs)
+PRIMARY run-level MW: p=0.063   SECONDARY pooled KS: p=0.015   (pooled MW p=0.007, max tested=0.01234 vs noise=0.01809)
+drift diagnostic (non-gating): rho=-0.93 p=0.001 -> no flag
+[DIAGNOSTIC: FIXED val_loss seam] VERDICT: FAIL
+== resume trial broken_a [BROKEN replay_fire] (kill + resume mid-cram)
+   resumed at step 80 (inside cram window)
+== resume trial broken_b [BROKEN replay_fire] (kill + resume mid-cram)
+   resumed at step 80 (inside cram window)
+== resume trial broken_c [BROKEN replay_fire] (kill + resume mid-cram)
+   resumed at step 80 (inside cram window)
+== resume trial broken_d [BROKEN replay_fire] (kill + resume mid-cram)
+   resumed at step 80 (inside cram window)
+
+[POWER CONTROL] broken-replay exposure must DIFFER:
+  broken broken_a: differs (detected) {'base': 3543040, 'arith': 389120}
+  broken broken_b: differs (detected) {'base': 3543040, 'arith': 389120}
+  broken broken_c: differs (detected) {'base': 3543040, 'arith': 389120}
+  broken broken_d: differs (detected) {'base': 3543040, 'arith': 389120}
+[POWER CONTROL] broken replay detected via exposure mismatch: PASS
+
+[DIAGNOSTIC: BROKEN val_loss divergence] POST window: steps > 80 (8 checkpoints)
+run-level S(x) = mean |d(val_loss)| over POST window:
+  ref   noise_a: 0.00709
+  ref   noise_b: 0.00879
+  ref   noise_c: 0.00598
+  ref   noise_d: 0.00476
+  ref   noise_e: 0.00511
+  trial broken_a: 0.07844  (exceeds 5/5 refs)
+  trial broken_b: 0.08075  (exceeds 5/5 refs)
+  trial broken_c: 0.07885  (exceeds 5/5 refs)
+  trial broken_d: 0.08232  (exceeds 5/5 refs)
+PRIMARY run-level MW: p=0.016   SECONDARY pooled KS: p=0.000   (pooled MW p=0.000, max tested=0.10219 vs noise=0.01809)
+drift diagnostic (non-gating): rho=+0.95 p=0.000 -> DRIFT FLAG
+[DIAGNOSTIC: BROKEN val_loss divergence] VERDICT: FAIL
+
+============================================================
+replay_fire correctness (exposure bit-identical):  PASS
+power control (broken replay detected):            PASS
+OVERALL: PASS

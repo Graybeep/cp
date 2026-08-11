@@ -1,0 +1,4 @@
+run_id: arith_delay25_exp20_size23M_seed1
+model: 23.2M params (6L, 384d, 8h, vocab 16384, ctx 512)
+done: 5000 steps in 45.0 min (1.85 steps/s)
+tokens by stream: {'base': 65536000, 'arith': 16384000}

@@ -1,0 +1,6 @@
+###### Week 4 control forks start Tue Jul 21 13:09:33 IST 2026 ######
+=== [13:09:33] CONTROL q2_syntax_negctrl -> syntax_delay50_exp10_size23M_seed1_ivlrshift0at2501 ===
+    exit 0 (log: logs/week4_arith_pilot/q2_syntax_negctrl.out)
+=== [13:23:54] CONTROL q1_cram_lrshift -> arith_delay50_exp20_size23M_seed1_ivcramlrshift0at2501 ===
+    exit 0 (log: logs/week4_arith_pilot/q1_cram_lrshift.out)
+###### Week 4 control forks done Tue Jul 21 13:39:06 IST 2026 ######

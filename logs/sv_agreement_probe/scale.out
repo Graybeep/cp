@@ -1,0 +1,13 @@
+D:\EXPERIMENTS\reopen\scripts\sv_agreement_probe.py:113: RuntimeWarning: Mean of empty slice
+  return float(np.nanmean([a_sg, a_pl])), float(a_sg), float(a_pl), int(sg.sum()), int(pl.sum())
+D:\EXPERIMENTS\reopen\scripts\sv_agreement_saturation.py:47: RuntimeWarning: Mean of empty slice
+  r[p] = dict(raw=float(c.mean()), interaction=inter, acc_sg=a_sg, acc_pl=a_pl)
+D:\EXPERIMENTS\reopen\.venv\Lib\site-packages\numpy\_core\_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+==============================================================================
+(B) SCALE — size sweep (final checkpoint), 24 seeds per size
+  11M: n=24  attractor 0.325 +/- 0.030   simple 0.701 +/- 0.011   [attractor below 0.5 in 24/24 seeds]
+  23M: n=24  attractor 0.378 +/- 0.024   simple 0.710 +/- 0.016   [attractor below 0.5 in 24/24 seeds]
+  60M: n=24  attractor 0.446 +/- 0.029   simple 0.712 +/- 0.014   [attractor below 0.5 in 23/24 seeds]
+
+wrote logs\sv_agreement_probe/saturation_scale.json

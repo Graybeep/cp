@@ -1,0 +1,58 @@
+###### 11M EXPLORATORY follow-up (H1/H2/H3) — start Thu Jul 23 13:42:31 IST 2026 ######
+=== [13:42:31] BASELINE arith_delay0_exp20_size11M_seed2 ===
+    exit 0
+=== [13:55:58] BASELINE arith_delay50_exp20_size11M_seed2 ===
+    exit 0
+=== [14:10:46] FORK arith_delay50_exp20_size11M_seed2_ivlrshift0at2501 ===
+    exit 0
+=== [14:18:05] BASELINE arith_delay0_exp20_size11M_seed3 ===
+    exit 0
+=== [14:35:04] BASELINE arith_delay50_exp20_size11M_seed3 ===
+    exit 0
+=== [14:50:52] FORK arith_delay50_exp20_size11M_seed3_ivlrshift0at2501 ===
+    exit 0
+=== [14:57:13] FORK arith_delay0_exp20_size11M_seed1_ivlrshift0at2501 ===
+    exit 0
+=== [15:04:23] FORK arith_delay0_exp20_size11M_seed2_ivlrshift0at2501 ===
+    exit 0
+=== [15:10:53] FORK arith_delay0_exp20_size11M_seed3_ivlrshift0at2501 ===
+    exit 0
+###### 11M follow-up done Thu Jul 23 15:17:31 IST 2026 ######
+###### 60M fill to n=3 + drift control — start Thu Jul 23 15:17:31 IST 2026 ######
+=== [15:17:31] BASELINE arith_delay0_exp20_size60M_seed2 ===
+    exit 0
+=== [16:06:05] BASELINE arith_delay50_exp20_size60M_seed2 ===
+    exit 0
+=== [16:54:28] FORK arith_delay50_exp20_size60M_seed2_ivlrshift0at2501 ===
+    exit 0
+=== [17:19:11] BASELINE arith_delay0_exp20_size60M_seed3 ===
+    exit 0
+=== [18:10:06] BASELINE arith_delay50_exp20_size60M_seed3 ===
+    exit 0
+=== [19:00:23] FORK arith_delay50_exp20_size60M_seed3_ivlrshift0at2501 ===
+    exit 0
+=== [19:25:30] FORK arith_delay50_exp20_size60M_seed1_ivlrshift2501at2501 ===
+    exit 0
+=== [19:51:17] FORK arith_delay50_exp20_size60M_seed2_ivlrshift2501at2501 ===
+###### RESUME Fri Jul 24 00:13:55 IST 2026 — remaining: 60M drift-control forks seed2, seed3 ######
+###### 60M fill to n=3 + drift control — start Fri Jul 24 00:13:55 IST 2026 ######
+=== [00:13:55] BASELINE arith_delay0_exp20_size60M_seed2 ===
+    already complete — skipping
+=== [00:13:55] BASELINE arith_delay50_exp20_size60M_seed2 ===
+    already complete — skipping
+=== [00:13:56] FORK arith_delay50_exp20_size60M_seed2_ivlrshift0at2501 ===
+    already complete — skipping
+=== [00:13:56] BASELINE arith_delay0_exp20_size60M_seed3 ===
+    already complete — skipping
+=== [00:13:56] BASELINE arith_delay50_exp20_size60M_seed3 ===
+    already complete — skipping
+=== [00:13:56] FORK arith_delay50_exp20_size60M_seed3_ivlrshift0at2501 ===
+    already complete — skipping
+=== [00:13:56] FORK arith_delay50_exp20_size60M_seed1_ivlrshift2501at2501 ===
+    already complete — skipping
+=== [00:13:56] FORK arith_delay50_exp20_size60M_seed2_ivlrshift2501at2501 ===
+    exit 0
+=== [00:37:08] FORK arith_delay50_exp20_size60M_seed3_ivlrshift2501at2501 ===
+    exit 0
+###### 60M fill done Fri Jul 24 01:00:03 IST 2026 ######
+###### ALL FOLLOW-UPS COMPLETE Fri Jul 24 01:00:03 IST 2026 ######

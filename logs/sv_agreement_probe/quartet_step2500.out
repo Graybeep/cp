@@ -1,0 +1,23 @@
+D:\EXPERIMENTS\reopen\scripts\agreement_attraction_quartet.py:185: RuntimeWarning: Mean of empty slice
+  m = {c: np.nanmean(acc[c]) for c in CELLS}
+usable verb pairs: ['is/are', 'was/were', 'has/have', 'does/do', "isn't/aren't", "wasn't/weren't"]
+1000 sextets (6000 cells, 12000 sentences); tokenizer-unclean cells dropped: 0
+frame types: pp=595 rc=405
+
+[CONTROL unigram-only] attraction +0.0000 (must be 0.0000)   complexity +0.0000   balanced_bare 0.500
+[arith_delay0_exp20_size23M_seed1] bare 1.000 match 0.849 mismatch 0.578 | cpx +0.152 ATTR +0.270 (sg +0.222/pl +0.319) | pp +0.250 rc +0.300
+[arith_delay0_exp20_size23M_seed2] bare 0.992 match 0.786 mismatch 0.463 | cpx +0.206 ATTR +0.324 (sg +0.252/pl +0.395) | pp +0.360 rc +0.270
+[arith_delay0_exp20_size23M_seed3] bare 0.986 match 0.953 mismatch 0.475 | cpx +0.033 ATTR +0.478 (sg +0.446/pl +0.509) | pp +0.424 rc +0.557
+[syntax_delay0_exp10_size23M_seed1] bare 0.988 match 0.849 mismatch 0.459 | cpx +0.139 ATTR +0.389 (sg +0.364/pl +0.415) | pp +0.422 rc +0.342
+[syntax_delay0_exp10_size23M_seed2] bare 0.947 match 0.812 mismatch 0.284 | cpx +0.135 ATTR +0.528 (sg +0.507/pl +0.549) | pp +0.707 rc +0.265
+[syntax_delay0_exp10_size23M_seed3] bare 0.994 match 0.893 mismatch 0.530 | cpx +0.100 ATTR +0.363 (sg +0.300/pl +0.426) | pp +0.415 rc +0.286
+
+==============================================================================
+ATTRACTION  +0.3920 +/- 0.0960  n=6  t=10.00 p=1.71e-04
+  sign-consistent across head number: sg +0.3485 (pos in 6/6), pl +0.4355 (pos in 6/6)
+COMPLEXITY  +0.1275 +/- 0.0575  p=2.86e-03
+match 0.8570 vs chance p=2.63e-05 | mismatch 0.4650 vs chance p=4.30e-01
+
+VERDICT: (a) ATTRACTION CONFIRMED
+
+wrote logs\sv_agreement_probe/quartet_step2500.json

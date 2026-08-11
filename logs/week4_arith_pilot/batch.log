@@ -1,0 +1,14 @@
+###### Week 4 arith pilot batch start Tue Jul 21 11:11:08 IST 2026 ######
+=== [11:11:08] ARM reset -> arith_delay50_exp20_size23M_seed1_ivresetembedding2501 ===
+    exit 0 (log: logs/week4_arith_pilot/reset.out)
+=== [11:26:28] ARM reset_spike -> arith_delay50_exp20_size23M_seed1_ivresetspikeembedding2501 ===
+    exit 0 (log: logs/week4_arith_pilot/reset_spike.out)
+=== [11:41:18] ARM spike -> arith_delay50_exp20_size23M_seed1_ivspike2501 ===
+    exit 0 (log: logs/week4_arith_pilot/spike.out)
+=== [11:56:05] ARM freeze -> arith_delay50_exp20_size23M_seed1_ivfreeze2501 ===
+    exit 0 (log: logs/week4_arith_pilot/freeze.out)
+=== [12:10:16] ARM cram -> arith_delay50_exp20_size23M_seed1_ivcram2501 ===
+    exit 0 (log: logs/week4_arith_pilot/cram.out)
+=== [12:22:58] ARM lr_shift -> arith_delay50_exp20_size23M_seed1_ivlrshift0at2501 ===
+    exit 0 (log: logs/week4_arith_pilot/lr_shift.out)
+###### Week 4 arith pilot batch done Tue Jul 21 12:35:38 IST 2026 ######

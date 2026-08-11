@@ -1,0 +1,89 @@
+D:\EXPERIMENTS\reopen\scripts\agreement_attraction_quartet.py:185: RuntimeWarning: Mean of empty slice
+  m = {c: np.nanmean(acc[c]) for c in CELLS}
+usable verb pairs: ['is/are', 'was/were', 'has/have', 'does/do', "isn't/aren't", "wasn't/weren't"]
+400 sextets (2400 cells, 4800 sentences); tokenizer-unclean cells dropped: 0
+frame types: pp=235 rc=165
+
+[CONTROL unigram-only] attraction +0.0000 (must be 0.0000)   complexity +0.0000   balanced_bare 0.500
+[syntax_delay0_exp10_size11M_seed1_szsweep] bare 0.960 match 0.819 mismatch 0.361 | cpx +0.141 ATTR +0.458 (sg +0.355/pl +0.560) | pp +0.585 rc +0.276
+[syntax_delay0_exp10_size11M_seed2_szsweep] bare 0.969 match 0.867 mismatch 0.304 | cpx +0.101 ATTR +0.564 (sg +0.603/pl +0.525) | pp +0.702 rc +0.367
+[syntax_delay0_exp10_size11M_seed3_szsweep] bare 0.953 match 0.839 mismatch 0.345 | cpx +0.114 ATTR +0.494 (sg +0.390/pl +0.597) | pp +0.521 rc +0.455
+[syntax_delay0_exp10_size11M_seed4_szsweep] bare 0.971 match 0.850 mismatch 0.426 | cpx +0.121 ATTR +0.424 (sg +0.335/pl +0.512) | pp +0.536 rc +0.264
+[syntax_delay0_exp10_size11M_seed5_szsweep] bare 0.972 match 0.781 mismatch 0.359 | cpx +0.191 ATTR +0.422 (sg +0.323/pl +0.522) | pp +0.551 rc +0.239
+[syntax_delay0_exp10_size11M_seed6_szsweep] bare 0.991 match 0.868 mismatch 0.506 | cpx +0.124 ATTR +0.361 (sg +0.280/pl +0.443) | pp +0.385 rc +0.327
+[syntax_delay0_exp10_size11M_seed7_szsweep] bare 0.984 match 0.814 mismatch 0.386 | cpx +0.170 ATTR +0.427 (sg +0.302/pl +0.552) | pp +0.457 rc +0.385
+[syntax_delay0_exp10_size11M_seed8_szsweep] bare 0.971 match 0.804 mismatch 0.419 | cpx +0.167 ATTR +0.385 (sg +0.290/pl +0.480) | pp +0.487 rc +0.239
+[syntax_delay0_exp10_size11M_seed9_szsweep] bare 0.983 match 0.856 mismatch 0.314 | cpx +0.126 ATTR +0.542 (sg +0.550/pl +0.535) | pp +0.649 rc +0.391
+[syntax_delay0_exp10_size11M_seed10_szsweep] bare 0.972 match 0.771 mismatch 0.420 | cpx +0.201 ATTR +0.351 (sg +0.287/pl +0.415) | pp +0.519 rc +0.112
+[syntax_delay0_exp10_size11M_seed11_szsweep] bare 0.954 match 0.847 mismatch 0.385 | cpx +0.106 ATTR +0.463 (sg +0.417/pl +0.508) | pp +0.598 rc +0.270
+[syntax_delay0_exp10_size11M_seed12_szsweep] bare 0.971 match 0.859 mismatch 0.407 | cpx +0.112 ATTR +0.451 (sg +0.378/pl +0.525) | pp +0.445 rc +0.461
+[syntax_delay0_exp10_size11M_seed13_szsweep] bare 0.979 match 0.887 mismatch 0.400 | cpx +0.091 ATTR +0.487 (sg +0.422/pl +0.552) | pp +0.623 rc +0.294
+[syntax_delay0_exp10_size11M_seed14_szsweep] bare 0.970 match 0.821 mismatch 0.374 | cpx +0.149 ATTR +0.448 (sg +0.400/pl +0.495) | pp +0.587 rc +0.248
+[syntax_delay0_exp10_size11M_seed15_szsweep] bare 0.905 match 0.795 mismatch 0.431 | cpx +0.110 ATTR +0.364 (sg +0.285/pl +0.443) | pp +0.502 rc +0.167
+[syntax_delay0_exp10_size11M_seed16_szsweep] bare 0.989 match 0.860 mismatch 0.464 | cpx +0.129 ATTR +0.396 (sg +0.340/pl +0.453) | pp +0.436 rc +0.339
+[syntax_delay0_exp10_size11M_seed17_szsweep] bare 0.951 match 0.764 mismatch 0.438 | cpx +0.188 ATTR +0.326 (sg +0.255/pl +0.397) | pp +0.326 rc +0.327
+[syntax_delay0_exp10_size11M_seed18_szsweep] bare 0.995 match 0.904 mismatch 0.353 | cpx +0.091 ATTR +0.551 (sg +0.535/pl +0.568) | pp +0.632 rc +0.436
+[syntax_delay0_exp10_size11M_seed19_szsweep] bare 0.975 match 0.728 mismatch 0.412 | cpx +0.248 ATTR +0.315 (sg +0.230/pl +0.400) | pp +0.417 rc +0.170
+[syntax_delay0_exp10_size11M_seed20_szsweep] bare 0.941 match 0.866 mismatch 0.388 | cpx +0.075 ATTR +0.479 (sg +0.387/pl +0.570) | pp +0.560 rc +0.364
+[syntax_delay0_exp10_size11M_seed21_szsweep] bare 0.974 match 0.811 mismatch 0.444 | cpx +0.163 ATTR +0.367 (sg +0.345/pl +0.390) | pp +0.451 rc +0.248
+[syntax_delay0_exp10_size11M_seed22_szsweep] bare 0.975 match 0.858 mismatch 0.525 | cpx +0.117 ATTR +0.333 (sg +0.305/pl +0.360) | pp +0.360 rc +0.294
+[syntax_delay0_exp10_size11M_seed23_szsweep] bare 0.956 match 0.849 mismatch 0.402 | cpx +0.107 ATTR +0.446 (sg +0.310/pl +0.583) | pp +0.511 rc +0.355
+[syntax_delay0_exp10_size11M_seed24_szsweep] bare 0.991 match 0.915 mismatch 0.458 | cpx +0.076 ATTR +0.457 (sg +0.315/pl +0.600) | pp +0.383 rc +0.564
+[syntax_delay0_exp10_size23M_seed1_szsweep] bare 1.000 match 0.770 mismatch 0.515 | cpx +0.230 ATTR +0.255 (sg +0.215/pl +0.295) | pp +0.191 rc +0.345
+[syntax_delay0_exp10_size23M_seed2_szsweep] bare 0.927 match 0.841 mismatch 0.390 | cpx +0.086 ATTR +0.451 (sg +0.380/pl +0.522) | pp +0.602 rc +0.236
+[syntax_delay0_exp10_size23M_seed3_szsweep] bare 0.979 match 0.896 mismatch 0.516 | cpx +0.083 ATTR +0.380 (sg +0.315/pl +0.445) | pp +0.464 rc +0.261
+[syntax_delay0_exp10_size23M_seed4_szsweep] bare 0.969 match 0.896 mismatch 0.539 | cpx +0.073 ATTR +0.357 (sg +0.337/pl +0.378) | pp +0.338 rc +0.385
+[syntax_delay0_exp10_size23M_seed5_szsweep] bare 0.991 match 0.850 mismatch 0.478 | cpx +0.141 ATTR +0.372 (sg +0.318/pl +0.427) | pp +0.466 rc +0.239
+[syntax_delay0_exp10_size23M_seed6_szsweep] bare 0.961 match 0.830 mismatch 0.525 | cpx +0.131 ATTR +0.305 (sg +0.250/pl +0.360) | pp +0.336 rc +0.261
+[syntax_delay0_exp10_size23M_seed7_szsweep] bare 0.978 match 0.847 mismatch 0.583 | cpx +0.130 ATTR +0.265 (sg +0.292/pl +0.237) | pp +0.311 rc +0.200
+[syntax_delay0_exp10_size23M_seed8_szsweep] bare 0.980 match 0.868 mismatch 0.649 | cpx +0.112 ATTR +0.219 (sg +0.133/pl +0.305) | pp +0.240 rc +0.188
+[syntax_delay0_exp10_size23M_seed9_szsweep] bare 0.844 match 0.762 mismatch 0.565 | cpx +0.081 ATTR +0.198 (sg +0.095/pl +0.300) | pp +0.217 rc +0.170
+[syntax_delay0_exp10_size23M_seed10_szsweep] bare 0.915 match 0.849 mismatch 0.502 | cpx +0.066 ATTR +0.346 (sg +0.250/pl +0.443) | pp +0.294 rc +0.421
+[syntax_delay0_exp10_size23M_seed11_szsweep] bare 0.948 match 0.799 mismatch 0.531 | cpx +0.149 ATTR +0.267 (sg +0.182/pl +0.352) | pp +0.368 rc +0.124
+[syntax_delay0_exp10_size23M_seed12_szsweep] bare 0.926 match 0.744 mismatch 0.559 | cpx +0.183 ATTR +0.185 (sg +0.125/pl +0.245) | pp +0.236 rc +0.112
+[syntax_delay0_exp10_size23M_seed13_szsweep] bare 0.956 match 0.828 mismatch 0.511 | cpx +0.129 ATTR +0.316 (sg +0.223/pl +0.410) | pp +0.291 rc +0.352
+[syntax_delay0_exp10_size23M_seed14_szsweep] bare 0.963 match 0.864 mismatch 0.402 | cpx +0.099 ATTR +0.461 (sg +0.377/pl +0.545) | pp +0.391 rc +0.561
+[syntax_delay0_exp10_size23M_seed15_szsweep] bare 0.970 match 0.891 mismatch 0.610 | cpx +0.079 ATTR +0.281 (sg +0.180/pl +0.382) | pp +0.277 rc +0.288
+[syntax_delay0_exp10_size23M_seed16_szsweep] bare 0.897 match 0.661 mismatch 0.474 | cpx +0.236 ATTR +0.188 (sg +0.135/pl +0.240) | pp +0.204 rc +0.164
+[syntax_delay0_exp10_size23M_seed17_szsweep] bare 0.995 match 0.824 mismatch 0.526 | cpx +0.171 ATTR +0.298 (sg +0.238/pl +0.358) | pp +0.357 rc +0.212
+[syntax_delay0_exp10_size23M_seed18_szsweep] bare 0.949 match 0.873 mismatch 0.443 | cpx +0.076 ATTR +0.430 (sg +0.385/pl +0.475) | pp +0.353 rc +0.539
+[syntax_delay0_exp10_size23M_seed19_szsweep] bare 0.984 match 0.911 mismatch 0.614 | cpx +0.073 ATTR +0.297 (sg +0.240/pl +0.355) | pp +0.266 rc +0.342
+[syntax_delay0_exp10_size23M_seed20_szsweep] bare 0.943 match 0.790 mismatch 0.463 | cpx +0.152 ATTR +0.328 (sg +0.258/pl +0.398) | pp +0.451 rc +0.152
+[syntax_delay0_exp10_size23M_seed21_szsweep] bare 0.988 match 0.805 mismatch 0.426 | cpx +0.183 ATTR +0.379 (sg +0.280/pl +0.477) | pp +0.406 rc +0.339
+[syntax_delay0_exp10_size23M_seed22_szsweep] bare 0.969 match 0.915 mismatch 0.495 | cpx +0.054 ATTR +0.420 (sg +0.355/pl +0.485) | pp +0.338 rc +0.536
+[syntax_delay0_exp10_size23M_seed23_szsweep] bare 0.926 match 0.684 mismatch 0.454 | cpx +0.243 ATTR +0.230 (sg +0.152/pl +0.307) | pp +0.236 rc +0.221
+[syntax_delay0_exp10_size23M_seed24_szsweep] bare 0.988 match 0.797 mismatch 0.486 | cpx +0.190 ATTR +0.311 (sg +0.230/pl +0.393) | pp +0.294 rc +0.336
+[syntax_delay0_exp10_size60M_seed1_szsweep] bare 0.944 match 0.810 mismatch 0.510 | cpx +0.134 ATTR +0.300 (sg +0.237/pl +0.363) | pp +0.202 rc +0.439
+[syntax_delay0_exp10_size60M_seed2_szsweep] bare 0.990 match 0.857 mismatch 0.623 | cpx +0.133 ATTR +0.235 (sg +0.240/pl +0.230) | pp +0.272 rc +0.182
+[syntax_delay0_exp10_size60M_seed3_szsweep] bare 0.950 match 0.675 mismatch 0.562 | cpx +0.275 ATTR +0.112 (sg +0.080/pl +0.145) | pp +0.136 rc +0.079
+[syntax_delay0_exp10_size60M_seed4_szsweep] bare 0.964 match 0.780 mismatch 0.583 | cpx +0.184 ATTR +0.198 (sg +0.148/pl +0.248) | pp +0.111 rc +0.321
+[syntax_delay0_exp10_size60M_seed5_szsweep] bare 1.000 match 0.875 mismatch 0.667 | cpx +0.125 ATTR +0.207 (sg +0.135/pl +0.280) | pp +0.185 rc +0.239
+[syntax_delay0_exp10_size60M_seed6_szsweep] bare 0.994 match 0.881 mismatch 0.600 | cpx +0.112 ATTR +0.281 (sg +0.245/pl +0.318) | pp +0.253 rc +0.321
+[syntax_delay0_exp10_size60M_seed7_szsweep] bare 0.971 match 0.900 mismatch 0.647 | cpx +0.071 ATTR +0.253 (sg +0.205/pl +0.300) | pp +0.215 rc +0.306
+[syntax_delay0_exp10_size60M_seed8_szsweep] bare 0.956 match 0.850 mismatch 0.680 | cpx +0.106 ATTR +0.170 (sg +0.085/pl +0.255) | pp +0.168 rc +0.173
+[syntax_delay0_exp10_size60M_seed9_szsweep] bare 0.893 match 0.728 mismatch 0.571 | cpx +0.165 ATTR +0.156 (sg +0.115/pl +0.198) | pp +0.102 rc +0.233
+[syntax_delay0_exp10_size60M_seed10_szsweep] bare 0.972 match 0.718 mismatch 0.536 | cpx +0.255 ATTR +0.181 (sg +0.102/pl +0.260) | pp +0.143 rc +0.236
+[syntax_delay0_exp10_size60M_seed11_szsweep] bare 0.944 match 0.856 mismatch 0.722 | cpx +0.087 ATTR +0.134 (sg +0.095/pl +0.172) | pp +0.113 rc +0.164
+[syntax_delay0_exp10_size60M_seed12_szsweep] bare 0.980 match 0.821 mismatch 0.671 | cpx +0.159 ATTR +0.150 (sg +0.075/pl +0.225) | pp +0.155 rc +0.142
+[syntax_delay0_exp10_size60M_seed13_szsweep] bare 0.974 match 0.850 mismatch 0.674 | cpx +0.124 ATTR +0.176 (sg +0.105/pl +0.248) | pp +0.170 rc +0.185
+[syntax_delay0_exp10_size60M_seed14_szsweep] bare 0.944 match 0.853 mismatch 0.639 | cpx +0.091 ATTR +0.214 (sg +0.153/pl +0.275) | pp +0.170 rc +0.276
+[syntax_delay0_exp10_size60M_seed15_szsweep] bare 0.944 match 0.725 mismatch 0.534 | cpx +0.219 ATTR +0.191 (sg +0.135/pl +0.247) | pp +0.181 rc +0.206
+[syntax_delay0_exp10_size60M_seed16_szsweep] bare 0.970 match 0.855 mismatch 0.532 | cpx +0.115 ATTR +0.323 (sg +0.273/pl +0.373) | pp +0.298 rc +0.358
+[syntax_delay0_exp10_size60M_seed17_szsweep] bare 0.941 match 0.837 mismatch 0.624 | cpx +0.104 ATTR +0.214 (sg +0.198/pl +0.230) | pp +0.181 rc +0.261
+[syntax_delay0_exp10_size60M_seed18_szsweep] bare 0.960 match 0.765 mismatch 0.581 | cpx +0.195 ATTR +0.184 (sg +0.095/pl +0.273) | pp +0.234 rc +0.112
+[syntax_delay0_exp10_size60M_seed19_szsweep] bare 0.953 match 0.799 mismatch 0.584 | cpx +0.154 ATTR +0.215 (sg +0.155/pl +0.275) | pp +0.172 rc +0.276
+[syntax_delay0_exp10_size60M_seed20_szsweep] bare 0.980 match 0.873 mismatch 0.651 | cpx +0.107 ATTR +0.221 (sg +0.215/pl +0.228) | pp +0.130 rc +0.352
+[syntax_delay0_exp10_size60M_seed21_szsweep] bare 0.992 match 0.889 mismatch 0.616 | cpx +0.104 ATTR +0.272 (sg +0.267/pl +0.277) | pp +0.191 rc +0.388
+[syntax_delay0_exp10_size60M_seed22_szsweep] bare 0.904 match 0.756 mismatch 0.585 | cpx +0.147 ATTR +0.171 (sg +0.170/pl +0.173) | pp +0.221 rc +0.100
+[syntax_delay0_exp10_size60M_seed23_szsweep] bare 0.932 match 0.711 mismatch 0.595 | cpx +0.221 ATTR +0.116 (sg +0.068/pl +0.165) | pp +0.109 rc +0.127
+[syntax_delay0_exp10_size60M_seed24_szsweep] bare 0.887 match 0.791 mismatch 0.649 | cpx +0.096 ATTR +0.143 (sg +0.068/pl +0.218) | pp +0.149 rc +0.133
+
+==============================================================================
+ATTRACTION  +0.3149 +/- 0.1167  n=72  t=22.88 p=1.72e-34
+  sign-consistent across head number: sg +0.2534 (pos in 72/72), pl +0.3763 (pos in 72/72)
+COMPLEXITY  +0.1368 +/- 0.0515  p=4.57e-34
+match 0.8234 vs chance p=1.26e-54 | mismatch 0.5085 vs chance p=4.81e-01
+
+VERDICT: (c) MIXED / does not cleanly meet (a) or (b)
+
+wrote logs\sv_agreement_probe/quartet_scale.json

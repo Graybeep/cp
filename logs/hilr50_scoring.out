@@ -1,0 +1,31 @@
+=== replication done; scoring continuation LD ===
+syntax_delay0_exp10_size23M_seed2 @ step 5000
+  wh_vs_that_with_gap                           0.459
+  wh_vs_that_no_gap                             0.779
+  wh_vs_that_with_gap_long_distance             0.097
+  wh_vs_that_no_gap_long_distance               0.947
+  continuation interaction: local=0.619  long-distance=0.522   (chance/prior-only = 0.5)
+syntax_delay0_exp10_size23M_seed2_hilr50 @ step 5000
+  wh_vs_that_with_gap                           0.451
+  wh_vs_that_no_gap                             0.818
+  wh_vs_that_with_gap_long_distance             0.107
+  wh_vs_that_no_gap_long_distance               0.957
+  continuation interaction: local=0.634  long-distance=0.532   (chance/prior-only = 0.5)
+syntax_delay0_exp10_size23M_seed3 @ step 5000
+  wh_vs_that_with_gap                           0.479
+  wh_vs_that_no_gap                             0.720
+  wh_vs_that_with_gap_long_distance             0.090
+  wh_vs_that_no_gap_long_distance               0.951
+  continuation interaction: local=0.599  long-distance=0.520   (chance/prior-only = 0.5)
+syntax_delay0_exp10_size23M_seed3_hilr50 @ step 5000
+  wh_vs_that_with_gap                           0.498
+  wh_vs_that_no_gap                             0.745
+  wh_vs_that_with_gap_long_distance             0.096
+  wh_vs_that_no_gap_long_distance               0.959
+  continuation interaction: local=0.621  long-distance=0.527   (chance/prior-only = 0.5)
+=== live final metrics (val_ppl / liveLD / local) ===
+syntax_delay0_exp10_size23M_seed2             val_ppl=46.70 liveLD=0.5080 local=0.5830
+syntax_delay0_exp10_size23M_seed2_hilr50      val_ppl=45.90 liveLD=0.5100 local=0.5770
+syntax_delay0_exp10_size23M_seed3             val_ppl=47.35 liveLD=0.5100 local=0.5760
+syntax_delay0_exp10_size23M_seed3_hilr50      val_ppl=46.19 liveLD=0.5170 local=0.5820
+SCORING DONE
