@@ -1,0 +1,19 @@
+{
+  "realized_tokens_by_stream": {
+    "base": 65536000,
+    "syntax": 16384000
+  },
+  "planned": {
+    "syntax": {
+      "onset_step": 0,
+      "density": 0.2,
+      "planned_micro_batches": 4000,
+      "planned_tokens": 16384000
+    },
+    "base": {
+      "onset_step": 0,
+      "planned_micro_batches": 16000,
+      "planned_tokens": 65536000
+    }
+  }
+}

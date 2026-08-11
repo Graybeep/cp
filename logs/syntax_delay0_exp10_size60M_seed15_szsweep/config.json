@@ -1,0 +1,61 @@
+{
+  "model": {
+    "vocab_size": 16384,
+    "n_layer": 8,
+    "n_head": 10,
+    "n_embd": 640,
+    "block_size": 512,
+    "dropout": 0.0,
+    "rope_theta": 10000.0,
+    "norm_eps": 1e-05
+  },
+  "train": {
+    "skill": "syntax",
+    "delay_onset": 0.0,
+    "skill_exposure_frac": 0.1,
+    "intervention": null,
+    "intervention_step": null,
+    "forked_from": null,
+    "model_size_tag": "60M",
+    "seed": 15,
+    "run_name": "sanity_babylm",
+    "run_suffix": "szsweep",
+    "total_steps": 5000,
+    "checkpoint_interval": 2500,
+    "warmup_steps": 300,
+    "lr": 0.0006,
+    "min_lr_ratio": 0.1,
+    "weight_decay": 0.1,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "grad_clip": 1.0,
+    "micro_batch_size": 8,
+    "grad_accum_steps": 4,
+    "compile": false,
+    "num_workers": 8,
+    "device": "cuda",
+    "eval_batches": 32,
+    "skill_eval_n": 500,
+    "tokenized_dir": "D:\\EXPERIMENTS\\reopen\\data\\tokenized"
+  },
+  "exposure_plan": {
+    "tokens_per_micro_batch": 4096,
+    "total_micro_batches": 20000,
+    "total_tokens": 81920000,
+    "streams": {
+      "syntax": {
+        "onset_step": 0,
+        "density": 0.1,
+        "planned_micro_batches": 2000,
+        "planned_tokens": 8192000
+      },
+      "base": {
+        "onset_step": 0,
+        "planned_micro_batches": 18000,
+        "planned_tokens": 73728000
+      }
+    }
+  }
+}
