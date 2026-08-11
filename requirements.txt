@@ -1,0 +1,9 @@
+# torch is installed separately with the CUDA index:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu126
+numpy
+tokenizers
+pandas
+scipy
+seaborn
+tqdm
+requests
