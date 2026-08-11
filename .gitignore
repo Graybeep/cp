@@ -1,32 +1,17 @@
-# Python environment
+# Python environment — platform-specific binaries, rebuild from requirements.txt
 .venv/
 __pycache__/
 *.pyc
 
-# Model checkpoints (~98 GB). Kept locally — see the ARCHIVE, NEVER DELETE rule in
-# CLAUDE.md. Training is deterministic and resume-validated, so these are regenerable.
+# Model checkpoints (~98 GB). Far beyond any remote's limits. Kept locally under
+# the ARCHIVE, NEVER DELETE rule in CLAUDE.md; training is deterministic and
+# resume-validated, so these are regenerable rather than lost.
 checkpoints/
 
-# Raw corpora (BabyLM, redistributed by the challenge) and pre-tokenized memmaps.
-# Regenerate with the scripts in scripts/ after downloading the corpus.
+# Raw BabyLM corpora (~910 MB). Excluded for two independent reasons:
+#   1. babylm_data.zip (241 MB) and babylm_100M/open_subtitles.train (159 MB)
+#      each exceed GitHub's 100 MB hard per-file limit, so a push is rejected.
+#   2. Third-party corpus with mixed upstream licences (OpenSubtitles, BNC,
+#      Wikipedia, Gutenberg, CBT) — fetched, not redistributed.
+# Rebuild with scripts/prepare_babylm.py, then scripts/prepare_skills.py.
 data/raw/
-*.bin
-*.zip
-
-# Bulk stdout/stderr from batch training runs (~140 MB).
-# Per-checkpoint eval results are kept as logs/**/*.{json,csv,jsonl}.
-*.log
-*.out
-*.err
-
-# LaTeX build artifacts
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.synctex.gz
-*.toc
-
-# Local editor/agent settings
-.claude/settings.local.json
