@@ -1,0 +1,163 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Achille et~al.(2019)Achille, Rovere, and Soatto}]{achille-etal-2019}
+Alessandro Achille, Matteo Rovere, and Stefano Soatto. 2019.
+\newblock \href {https://openreview.net/forum?id=BkeStsCcKQ} {Critical learning
+  periods in deep networks}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}.
+\newblock ArXiv:1711.08856, where the title is \emph{Critical Learning Periods
+  in Deep Neural Networks}.
+
+\bibitem[{Ash and Adams(2020)}]{ash-adams-2020}
+Jordan~T. Ash and Ryan~P. Adams. 2020.
+\newblock \href
+  {https://proceedings.neurips.cc/paper/2020/hash/288cd2567953f06e460a33951f55daaf-Abstract.html}
+  {On warm-starting neural network training}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~33.
+
+\bibitem[{Bengio et~al.(2009)Bengio, Louradour, Collobert, and
+  Weston}]{bengio-etal-2009}
+Yoshua Bengio, J{\'e}r{\^o}me Louradour, Ronan Collobert, and Jason Weston.
+  2009.
+\newblock \href {https://doi.org/10.1145/1553374.1553380} {Curriculum
+  learning}.
+\newblock In \emph{Proceedings of the 26th Annual International Conference on
+  Machine Learning (ICML)}, pages 41--48.
+
+\bibitem[{Berariu et~al.(2021)Berariu, Czarnecki, De, Bornschein, Smith,
+  Pascanu, and Clopath}]{berariu-etal-2021}
+Tudor Berariu, Wojciech Czarnecki, Soham De, J{\"o}rg Bornschein, Samuel Smith,
+  Razvan Pascanu, and Claudia Clopath. 2021.
+\newblock \href {https://arxiv.org/abs/2106.00042} {A study on the plasticity
+  of neural networks}.
+\newblock \emph{arXiv preprint arXiv:2106.00042}.
+\newblock Preprint; no archival venue located.
+
+\bibitem[{Dohare et~al.(2024)Dohare, Hernandez-Garcia, Lan, Rahman, Mahmood,
+  and Sutton}]{dohare-etal-2024}
+Shibhansh Dohare, J.~Fernando Hernandez-Garcia, Qingfeng Lan, Parash Rahman,
+  A.~Rupam Mahmood, and Richard~S. Sutton. 2024.
+\newblock \href {https://doi.org/10.1038/s41586-024-07711-7} {Loss of
+  plasticity in deep continual learning}.
+\newblock \emph{Nature}, 632:768--774.
+
+\bibitem[{Elhage et~al.(2021)Elhage, Nanda, Olsson, Henighan, Joseph, Mann,
+  Askell, Bai, Chen, Conerly, DasSarma, Drain, Ganguli, Hatfield-Dodds,
+  Hernandez, Jones, Kernion, Lovitt, Ndousse, Amodei, Brown, Clark, Kaplan,
+  McCandlish, and Olah}]{elhage-etal-2021}
+Nelson Elhage, Neel Nanda, Catherine Olsson, Tom Henighan, Nicholas Joseph, Ben
+  Mann, Amanda Askell, Yuntao Bai, Anna Chen, Tom Conerly, Nova DasSarma, Dawn
+  Drain, Deep Ganguli, Zac Hatfield-Dodds, Danny Hernandez, Andy Jones, Jackson
+  Kernion, Liane Lovitt, Kamal Ndousse, and 6 others. 2021.
+\newblock \href {https://transformer-circuits.pub/2021/framework/index.html} {A
+  mathematical framework for transformer circuits}.
+\newblock \emph{Transformer Circuits Thread}.
+\newblock Non-archival web publication; not peer reviewed.
+
+\bibitem[{Hubel and Wiesel(1970)}]{hubel-wiesel-1970}
+David~H. Hubel and Torsten~N. Wiesel. 1970.
+\newblock \href {https://doi.org/10.1113/jphysiol.1970.sp009022} {The period of
+  susceptibility to the physiological effects of unilateral eye closure in
+  kittens}.
+\newblock \emph{The Journal of Physiology}, 206(2):419--436.
+
+\bibitem[{Johnson and Newport(1989)}]{johnson-newport-1989}
+Jacqueline~S. Johnson and Elissa~L. Newport. 1989.
+\newblock \href {https://doi.org/10.1016/0010-0285(89)90003-0} {Critical period
+  effects in second language learning: The influence of maturational state on
+  the acquisition of {E}nglish as a second language}.
+\newblock \emph{Cognitive Psychology}, 21(1):60--99.
+
+\bibitem[{Kornblith et~al.(2019)Kornblith, Norouzi, Lee, and
+  Hinton}]{kornblith-etal-2019}
+Simon Kornblith, Mohammad Norouzi, Honglak Lee, and Geoffrey Hinton. 2019.
+\newblock \href {https://proceedings.mlr.press/v97/kornblith19a.html}
+  {Similarity of neural network representations revisited}.
+\newblock In \emph{Proceedings of the 36th International Conference on Machine
+  Learning (ICML)}, volume~97 of \emph{PMLR}.
+\newblock ArXiv:1905.00414.
+
+\bibitem[{Lenneberg(1967)}]{lenneberg-1967}
+Eric~H. Lenneberg. 1967.
+\newblock \emph{Biological Foundations of Language}.
+\newblock Wiley, New York.
+
+\bibitem[{Linzen et~al.(2016)Linzen, Dupoux, and Goldberg}]{linzen-etal-2016}
+Tal Linzen, Emmanuel Dupoux, and Yoav Goldberg. 2016.
+\newblock \href {https://doi.org/10.1162/tacl_a_00115} {Assessing the ability
+  of {LSTM}s to learn syntax-sensitive dependencies}.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  4:521--535.
+
+\bibitem[{Lyle et~al.(2023)Lyle, Zheng, Nikishin, Pires, Pascanu, and
+  Dabney}]{lyle-etal-2023}
+Clare Lyle, Zeyu Zheng, Evgenii Nikishin, Bernardo~Avila Pires, Razvan Pascanu,
+  and Will Dabney. 2023.
+\newblock \href {https://proceedings.mlr.press/v202/lyle23b.html}
+  {Understanding plasticity in neural networks}.
+\newblock In \emph{Proceedings of the 40th International Conference on Machine
+  Learning (ICML)}, volume 202 of \emph{PMLR}.
+\newblock ArXiv:2303.01486.
+
+\bibitem[{Marvin and Linzen(2018)}]{marvin-linzen-2018}
+Rebecca Marvin and Tal Linzen. 2018.
+\newblock \href {https://doi.org/10.18653/v1/D18-1151} {Targeted syntactic
+  evaluation of language models}.
+\newblock In \emph{Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 1192--1202, Brussels, Belgium.
+  Association for Computational Linguistics.
+
+\bibitem[{Meng et~al.(2022)Meng, Bau, Andonian, and Belinkov}]{meng-etal-2022}
+Kevin Meng, David Bau, Alex Andonian, and Yonatan Belinkov. 2022.
+\newblock \href
+  {https://proceedings.neurips.cc/paper_files/paper/2022/hash/6f1d43d5a82a37e89b0665b33bf3a182-Abstract-Conference.html}
+  {Locating and editing factual associations in {GPT}}.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~35.
+\newblock ArXiv:2202.05262.
+
+\bibitem[{Power et~al.(2022)Power, Burda, Edwards, Babuschkin, and
+  Misra}]{power-etal-2022}
+Alethea Power, Yuri Burda, Harri Edwards, Igor Babuschkin, and Vedant Misra.
+  2022.
+\newblock \href {https://arxiv.org/abs/2201.02177} {Grokking: Generalization
+  beyond overfitting on small algorithmic datasets}.
+\newblock \emph{arXiv preprint arXiv:2201.02177}.
+\newblock Preprint; presented at the ICLR 2021 MATH-AI workshop.
+
+\bibitem[{Wang et~al.(2023)Wang, Variengien, Conmy, Shlegeris, and
+  Steinhardt}]{wang-etal-2023}
+Kevin Wang, Alexandre Variengien, Arthur Conmy, Buck Shlegeris, and Jacob
+  Steinhardt. 2023.
+\newblock \href {https://arxiv.org/abs/2211.00593} {Interpretability in the
+  wild: a circuit for indirect object identification in {GPT-2} small}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}.
+\newblock Preprint arXiv:2211.00593 dated 2022.
+
+\bibitem[{Warstadt et~al.(2023)Warstadt, Mueller, Choshen, Wilcox, Zhuang,
+  Ciro, Mosquera, Paranjabe, Williams, Linzen, and
+  Cotterell}]{warstadt-etal-2023}
+Alex Warstadt, Aaron Mueller, Leshem Choshen, Ethan Wilcox, Chengxu Zhuang,
+  Juan Ciro, Rafael Mosquera, Bhargavi Paranjabe, Adina Williams, Tal Linzen,
+  and Ryan Cotterell. 2023.
+\newblock \href {https://doi.org/10.18653/v1/2023.conll-babylm.1} {Findings of
+  the {B}aby{LM} challenge: Sample-efficient pretraining on developmentally
+  plausible corpora}.
+\newblock In \emph{Proceedings of the BabyLM Challenge at the 27th Conference
+  on Computational Natural Language Learning}, pages 1--34, Singapore.
+  Association for Computational Linguistics.
+
+\bibitem[{Warstadt et~al.(2020)Warstadt, Parrish, Liu, Mohananey, Peng, Wang,
+  and Bowman}]{warstadt-etal-2020}
+Alex Warstadt, Alicia Parrish, Haokun Liu, Anhad Mohananey, Wei Peng, Sheng-Fu
+  Wang, and Samuel~R. Bowman. 2020.
+\newblock \href {https://doi.org/10.1162/tacl_a_00321} {{BL}i{MP}: The
+  benchmark of linguistic minimal pairs for {E}nglish}.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  8:377--392.
+
+\end{thebibliography}
