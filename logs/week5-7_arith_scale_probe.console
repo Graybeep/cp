@@ -1,0 +1,4 @@
+###### arith scale check — stage=probe seeds=[1] sizes=[11M 60M] start Wed Jul 22 20:22:44 IST 2026 ######
+=== [20:22:44] BASELINE arith_delay0_exp20_size11M_seed1 (seed1 delay0.0 11M) ===
+    exit 0
+=== [20:37:01] BASELINE arith_delay50_exp20_size11M_seed1 (seed1 delay0.5 11M) ===

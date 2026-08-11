@@ -1,0 +1,131 @@
+{
+  "60M": {
+    "d0": {
+      "mean": 0.8286666666666667,
+      "sd": 0.02685764943797821,
+      "vals": [
+        0.798,
+        0.84,
+        0.848
+      ]
+    },
+    "d50": {
+      "mean": 0.6,
+      "sd": 0.039949968710876395,
+      "vals": [
+        0.574,
+        0.646,
+        0.58
+      ]
+    },
+    "lr_shift": {
+      "mean": 0.796,
+      "sd": 0.021999999999999964,
+      "vals": [
+        0.796,
+        0.818,
+        0.774
+      ]
+    },
+    "gap": 0.22866666666666668,
+    "lift": 0.19600000000000006,
+    "detect_welch": {
+      "t": 8.227525442907721,
+      "df": 3.501201397863791,
+      "p_one_sided": 0.001036706931690243
+    },
+    "DETECT_VERDICT": "CP CONFIRMED (gap>=0.15)",
+    "rule2": {
+      "2a_gap>=0.15": true,
+      "2b_lrs>=0.90*d0": true,
+      "0.90*d0": 0.7458,
+      "2c_lift>=0.10": true
+    },
+    "REOPEN_VERDICT": "THRESHOLD reopening GENERALIZES (2a&2b&2c)",
+    "band": "IN-BAND [0.722,0.812] precise",
+    "forgetting": {
+      "c_minus_b_per_seed": [
+        1.7904725580095544,
+        1.6008480571659334,
+        1.6194177326244343
+      ],
+      "mean": 1.6702461159333073,
+      "gate": 1.0,
+      "VERDICT": "BREACH (forgetting, not reopening)"
+    },
+    "drift_control": {
+      "ppl_delta_vs_null": [
+        -0.03172432202602948,
+        -0.008157500476805524,
+        0.004924074447103521
+      ],
+      "mean_ppl_delta": -0.011652582685243829,
+      "acc_delta_vs_null": [
+        0.0020000000000000018,
+        -0.006000000000000005,
+        0.038000000000000034
+      ],
+      "mean_acc_delta": 0.011333333333333343,
+      "interpretation": "no-op fork reproduces null (|dppl|,|dacc|~0) -> fork mechanics contribute ~0; the +1.67 ppl of lr_shift is intervention-induced, NOT fork machinery"
+    },
+    "matched_lr_test": {
+      "per_seed": [
+        {
+          "seed": 1,
+          "arm_lr": 0.0003572053987831113,
+          "arm_ppl": 43.02735619945174,
+          "null_matched_step": 2500,
+          "null_matched_ppl": 45.22914634696003,
+          "null_5000_ppl": 41.23688364144218,
+          "matched_lead": 2.201790147508291,
+          "null_anneal_gain": 3.9922627055178452,
+          "residual_upper_bound": 1.7904725580095544
+        },
+        {
+          "seed": 2,
+          "arm_lr": 0.0003572053987831113,
+          "arm_ppl": 43.51104628585908,
+          "null_matched_step": 2500,
+          "null_matched_ppl": 46.13985597925332,
+          "null_5000_ppl": 41.91019822869315,
+          "matched_lead": 2.6288096933942384,
+          "null_anneal_gain": 4.229657750560172,
+          "residual_upper_bound": 1.6008480571659334
+        },
+        {
+          "seed": 3,
+          "arm_lr": 0.0003572053987831113,
+          "arm_ppl": 43.67487128325118,
+          "null_matched_step": 2500,
+          "null_matched_ppl": 46.278145761378845,
+          "null_5000_ppl": 42.055453550626744,
+          "matched_lead": 2.603274478127666,
+          "null_anneal_gain": 4.2226922107521006,
+          "residual_upper_bound": 1.6194177326244343
+        }
+      ],
+      "matched_lead_mean": 2.4779581063433986,
+      "matched_lead_sd": 0.23950901427720803,
+      "null_anneal_gain_mean": 4.148204222276706,
+      "breach_mean": 1.6702461159333073,
+      "VERDICT": "BOUNDED-ARTIFACT: arm ahead of null at matched LR in ALL seeds (lead 2.48\u00b10.24 > breach 1.67); breach persists only if arm's remaining anneal delivers < 1.67 vs null's ~4.15 -> residual bounded <= breach, evidence leans near-full erasure (NO specific endpoint - anneal slope unmeasured), part-real not excluded, needs arm-extension"
+    }
+  },
+  "11M": {
+    "d0": 0.538,
+    "d50": 0.35733333333333334,
+    "lr_shift(d50)": 0.7466666666666667,
+    "lr_shift(d0)_DISCRIM": 0.6533333333333333,
+    "delayed_lift(d50+lrs - d50)": 0.38933333333333336,
+    "generic_H2(d0+lrs - d0)": 0.11533333333333329,
+    "generic_H2_per_seed": [
+      0.05599999999999994,
+      0.16599999999999993,
+      0.124
+    ],
+    "alignment_H3(delayed - generic)": 0.2740000000000001,
+    "H2_frac": 0.2962328767123286,
+    "H3_frac": 0.7037671232876713,
+    "H_VERDICT": "H3 DOMINANT (exposure-alignment). lr_shift lifts the DELAYED run +0.389 but the EARLY run only +0.115, so 70% of the reopening effect requires the delayed-exposure profile (high LR replayed over the arith window); only ~30% is a generic optimizer boost. The gain is exposure-timing-specific, NOT mere accuracy inflation."
+  }
+}
