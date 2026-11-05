@@ -35,6 +35,11 @@ schedule at the point of delayed exposure recovers the endpoint to within 90 % o
 early-exposure anchor at both sizes, and to nearly the same absolute level at each. Fourth,
 that **concentrated re-exposure does not reproduce this**: extra skill density on top of a
 restored schedule adds nothing, while a restored schedule without it recovers the skill.
+Fifth, that **this is not an artifact of the one schedule shape we happened to use**: under
+warmup-stable-decay, which is still at its peak learning rate where cosine has already
+decayed, the deficit is abolished rather than merely reduced. Sixth, that **the schedule's
+level and its shape do different jobs**: crossing the two shows that the level is what
+reopens the skill, while the shape is what keeps the recovery free of a perplexity cost.
 What closes the window at this onset is therefore largely the optimizer's decayed
 learning-rate schedule rather than representations hardened against revision.
 
@@ -161,9 +166,16 @@ say so here rather than presenting the replacements as the original plan.
 
 Confirmatory tests are Holm-corrected within a declared family and reported both uncorrected
 and adjusted: the Detect family (paired deficit at two sizes), the Reopen family (lift over
-the matched null at two sizes), and the agreement-slope family. Gates whose thresholds were
+the matched null at two sizes), and the agreement-slope family (the paired
+attraction−complexity contrast, one test per mixture). Gates whose thresholds were
 fixed in advance are decision rules, not tests, and carry no *p*. Exploratory analyses are
 flagged in-text and never carry a headline.
+
+Membership is declared positively, so that a test's absence from a family is a statement
+rather than an omission. §6 is the section where this matters most: it reports many *p*
+values on models trained for a different purpose, and exactly one of its families is
+confirmatory. Its header says so, and names the rest as exploratory by declaration rather
+than leaving the reader to infer scope from which numbers happen to carry an adjustment.
 
 ---
 

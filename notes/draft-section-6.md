@@ -13,7 +13,18 @@ qualifiers at this length was cut whole rather than trimmed into an unlabelled v
 
 ---
 
-# §6 A secondary probe: agreement attraction across scale
+# §6 A secondary probe: agreement attraction across scale (exploratory except where stated)
+
+**Multiplicity scope for this section, declared here rather than inferred.** One family in
+§6 is confirmatory: **F6**, the paired attraction−complexity contrast, one test per mixture,
+Holm-corrected at *m* = 2 (the syntax mixture survives; the arithmetic one does not). Every
+other *p* reported below — the attraction magnitude at a single size, the three
+mismatch-versus-chance tests, the complexity-slope null, the per-size cross-mixture
+contrasts, and the within-run trajectory — is **exploratory by declaration**: uncorrected,
+descriptive, and carrying no headline. They are reported because withholding them would
+misrepresent what was looked at, not because any of them is being asserted. This section
+analyses models trained for a different purpose, so its tests were not part of the
+pre-registered design and are not promoted by consistency with it.
 
 The models trained for this study support one question the critical-period design did not
 set out to ask. Subject–verb agreement is acquired almost perfectly here (0.98 on

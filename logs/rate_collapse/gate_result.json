@@ -1,0 +1,336 @@
+{
+  "primary_threshold": 0.5593,
+  "secondary_threshold": 0.55,
+  "excluded_threshold": 0.57,
+  "guard_floor": 0.15,
+  "realised_n_delayed": 24,
+  "missing_runs": [],
+  "fisher": {
+    "0.5593": {
+      "delayed_high": 6,
+      "delayed_n": 24,
+      "baseline_high": 6,
+      "baseline_n": 24,
+      "p_one_sided": 0.6300162501934145,
+      "tag": "PRIMARY"
+    },
+    "0.55": {
+      "delayed_high": 14,
+      "delayed_n": 24,
+      "baseline_high": 12,
+      "baseline_n": 24,
+      "p_one_sided": 0.8074203962942961,
+      "tag": "robustness"
+    }
+  },
+  "excluded_counts": {
+    "delayed": 4,
+    "baseline": 2
+  },
+  "mannwhitney": {
+    "U": 303.0,
+    "p_one_sided": 0.625461421699907
+  },
+  "mean_difference": 0.0010208333333333597,
+  "boot_ci": [
+    -0.006416666666666629,
+    0.008667187500000034
+  ],
+  "holm": {
+    "mannwhitney": 1.0,
+    "fisher_primary": 1.0
+  },
+  "significant": false,
+  "delayed_rows": [
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed1_ratecollapse",
+      "ld": 0.5445,
+      "ld_with_gap": 0.164,
+      "ld_no_gap": 0.925
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed2_ratecollapse",
+      "ld": 0.543,
+      "ld_with_gap": 0.204,
+      "ld_no_gap": 0.882
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed3_ratecollapse",
+      "ld": 0.5555,
+      "ld_with_gap": 0.177,
+      "ld_no_gap": 0.934
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed4_ratecollapse",
+      "ld": 0.5725,
+      "ld_with_gap": 0.226,
+      "ld_no_gap": 0.919
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed5_ratecollapse",
+      "ld": 0.5425,
+      "ld_with_gap": 0.138,
+      "ld_no_gap": 0.947
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed6_ratecollapse",
+      "ld": 0.5509999999999999,
+      "ld_with_gap": 0.154,
+      "ld_no_gap": 0.948
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed7_ratecollapse",
+      "ld": 0.553,
+      "ld_with_gap": 0.202,
+      "ld_no_gap": 0.904
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed8_ratecollapse",
+      "ld": 0.5865,
+      "ld_with_gap": 0.257,
+      "ld_no_gap": 0.916
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed9_ratecollapse",
+      "ld": 0.5605,
+      "ld_with_gap": 0.177,
+      "ld_no_gap": 0.944
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed10_ratecollapse",
+      "ld": 0.5395,
+      "ld_with_gap": 0.148,
+      "ld_no_gap": 0.931
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed11_ratecollapse",
+      "ld": 0.5485,
+      "ld_with_gap": 0.183,
+      "ld_no_gap": 0.914
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed12_ratecollapse",
+      "ld": 0.5275,
+      "ld_with_gap": 0.146,
+      "ld_no_gap": 0.909
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed13_ratecollapse",
+      "ld": 0.5425,
+      "ld_with_gap": 0.159,
+      "ld_no_gap": 0.926
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed14_ratecollapse",
+      "ld": 0.5305,
+      "ld_with_gap": 0.128,
+      "ld_no_gap": 0.933
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed15_ratecollapse",
+      "ld": 0.571,
+      "ld_with_gap": 0.262,
+      "ld_no_gap": 0.88
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed16_ratecollapse",
+      "ld": 0.5509999999999999,
+      "ld_with_gap": 0.13,
+      "ld_no_gap": 0.972
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed17_ratecollapse",
+      "ld": 0.5545,
+      "ld_with_gap": 0.199,
+      "ld_no_gap": 0.91
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed18_ratecollapse",
+      "ld": 0.555,
+      "ld_with_gap": 0.202,
+      "ld_no_gap": 0.908
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed19_ratecollapse",
+      "ld": 0.54,
+      "ld_with_gap": 0.202,
+      "ld_no_gap": 0.878
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed20_ratecollapse",
+      "ld": 0.5640000000000001,
+      "ld_with_gap": 0.244,
+      "ld_no_gap": 0.884
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed21_ratecollapse",
+      "ld": 0.555,
+      "ld_with_gap": 0.205,
+      "ld_no_gap": 0.905
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed22_ratecollapse",
+      "ld": 0.5740000000000001,
+      "ld_with_gap": 0.226,
+      "ld_no_gap": 0.922
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed23_ratecollapse",
+      "ld": 0.554,
+      "ld_with_gap": 0.186,
+      "ld_no_gap": 0.922
+    },
+    {
+      "run_id": "syntax_delay50_exp10_size60M_seed24_ratecollapse",
+      "ld": 0.551,
+      "ld_with_gap": 0.211,
+      "ld_no_gap": 0.891
+    }
+  ],
+  "baseline_rows": [
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed1_szsweep",
+      "ld": 0.5545,
+      "ld_with_gap": 0.176,
+      "ld_no_gap": 0.933
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed2_szsweep",
+      "ld": 0.541,
+      "ld_with_gap": 0.167,
+      "ld_no_gap": 0.915
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed3_szsweep",
+      "ld": 0.541,
+      "ld_with_gap": 0.168,
+      "ld_no_gap": 0.914
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed4_szsweep",
+      "ld": 0.5455,
+      "ld_with_gap": 0.157,
+      "ld_no_gap": 0.934
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed5_szsweep",
+      "ld": 0.5485,
+      "ld_with_gap": 0.19,
+      "ld_no_gap": 0.907
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed6_szsweep",
+      "ld": 0.557,
+      "ld_with_gap": 0.193,
+      "ld_no_gap": 0.921
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed7_szsweep",
+      "ld": 0.5465,
+      "ld_with_gap": 0.154,
+      "ld_no_gap": 0.939
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed8_szsweep",
+      "ld": 0.56,
+      "ld_with_gap": 0.262,
+      "ld_no_gap": 0.858
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed9_szsweep",
+      "ld": 0.545,
+      "ld_with_gap": 0.216,
+      "ld_no_gap": 0.874
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed10_szsweep",
+      "ld": 0.541,
+      "ld_with_gap": 0.181,
+      "ld_no_gap": 0.901
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed11_szsweep",
+      "ld": 0.5685,
+      "ld_with_gap": 0.223,
+      "ld_no_gap": 0.914
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed12_szsweep",
+      "ld": 0.581,
+      "ld_with_gap": 0.248,
+      "ld_no_gap": 0.914
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed13_szsweep",
+      "ld": 0.5645,
+      "ld_with_gap": 0.233,
+      "ld_no_gap": 0.896
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed14_szsweep",
+      "ld": 0.5545,
+      "ld_with_gap": 0.205,
+      "ld_no_gap": 0.904
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed15_szsweep",
+      "ld": 0.5815,
+      "ld_with_gap": 0.26,
+      "ld_no_gap": 0.903
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed16_szsweep",
+      "ld": 0.5599999999999999,
+      "ld_with_gap": 0.17,
+      "ld_no_gap": 0.95
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed17_szsweep",
+      "ld": 0.5395,
+      "ld_with_gap": 0.176,
+      "ld_no_gap": 0.903
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed18_szsweep",
+      "ld": 0.534,
+      "ld_with_gap": 0.156,
+      "ld_no_gap": 0.912
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed19_szsweep",
+      "ld": 0.535,
+      "ld_with_gap": 0.206,
+      "ld_no_gap": 0.864
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed20_szsweep",
+      "ld": 0.5545,
+      "ld_with_gap": 0.2,
+      "ld_no_gap": 0.909
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed21_szsweep",
+      "ld": 0.5565,
+      "ld_with_gap": 0.224,
+      "ld_no_gap": 0.889
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed22_szsweep",
+      "ld": 0.5545,
+      "ld_with_gap": 0.19,
+      "ld_no_gap": 0.919
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed23_szsweep",
+      "ld": 0.537,
+      "ld_with_gap": 0.211,
+      "ld_no_gap": 0.863
+    },
+    {
+      "run_id": "syntax_delay0_exp10_size60M_seed24_szsweep",
+      "ld": 0.5415,
+      "ld_with_gap": 0.22,
+      "ld_no_gap": 0.863
+    }
+  ]
+}

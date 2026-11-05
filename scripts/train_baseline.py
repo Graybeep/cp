@@ -38,6 +38,15 @@ def main() -> None:
     ap.add_argument("--min-lr-ratio", type=float, default=defaults.min_lr_ratio,
                     help="cosine floor = lr * this. Raise (e.g. 0.5) to sustain "
                          "high LR through training (LR-budget schedule-shape test).")
+    ap.add_argument("--lr-schedule", choices=["cosine", "wsd"],
+                    default=defaults.lr_schedule,
+                    help="cosine = locked baseline; wsd = warmup-stable-decay "
+                         "(same peak/floor/warmup, constant plateau then a "
+                         "linear decay over the final --wsd-decay-frac). "
+                         "Non-cosine runs get their own run_id namespace.")
+    ap.add_argument("--wsd-decay-frac", type=float,
+                    default=defaults.wsd_decay_frac,
+                    help="wsd only: final fraction of steps spent decaying")
     ap.add_argument("--micro-batch-size", type=int,
                     default=defaults.micro_batch_size)
     ap.add_argument("--grad-accum-steps", type=int,
@@ -142,6 +151,8 @@ def main() -> None:
         warmup_steps=args.warmup_steps,
         lr=args.lr,
         min_lr_ratio=args.min_lr_ratio,
+        lr_schedule=args.lr_schedule,
+        wsd_decay_frac=args.wsd_decay_frac,
         micro_batch_size=args.micro_batch_size,
         grad_accum_steps=args.grad_accum_steps,
         num_workers=args.num_workers,

@@ -16,6 +16,7 @@
 \DeclareUnicodeCharacter{00D7}{$\times$}
 \DeclareUnicodeCharacter{00F7}{$\div$}
 \DeclareUnicodeCharacter{0394}{$\Delta$}
+\DeclareUnicodeCharacter{03B1}{$\alpha$}
 \DeclareUnicodeCharacter{03B2}{$\beta$}
 \DeclareUnicodeCharacter{03B8}{$\theta$}
 \DeclareUnicodeCharacter{03BB}{$\lambda$}
@@ -39,8 +40,7 @@
   baselineskip=\the\baselineskip\space textheight=\the\textheight\space
   columnwidth=\the\columnwidth\space textwidth=\the\textwidth}}
 \makeatother
-\title{Timing Effects in Language-Model Pretraining Are Carried by the
-Optimizer's Schedule, Not by Entrenched Representations}
+\title{Can Critical Periods in Language Models Be Reopened?}
 \author{}
 \begin{document}
 \maketitle
@@ -52,16 +52,19 @@ controlled. We train transformers of 11M--60M parameters from random initializat
 delay schedules that hold total skill exposure fixed and vary only \emph{when} that exposure
 begins.
 
-Delaying arithmetic to the midpoint of training produces a persistent endpoint deficit
-against seed-matched early anchors: 0.214 ± 0.055 at 23M and 0.229 ± 0.037 at 60M, in the
-same direction at every seed. Long-distance \emph{wh}-licensing shows no detectable deficit
-under five distinct probes, inverting our pre-registered prediction that syntax would be
-the more fragile skill. We claim this dissociation in absolute terms, not as differential
-susceptibility, because the two skills are not equally observable: the syntax anchor sits
-0.028 above its chance floor against arithmetic's 0.791, so a proportionally matched
-deficit would fall below the design's resolution (MDE 0.048). It rests on a
-representational probe that carries independent dynamic range (selectivity 0.60,
-p \textless{} 1e-8) and is flat across timing (p = 0.48), not on the count of nulls.
+Delaying arithmetic exposure to the midpoint of training produces a persistent
+endpoint deficit against seed-matched early-exposure anchors: 0.214 ± 0.055 at 23M and
+0.229 ± 0.037 at 60M, in the same direction at every seed. Long-distance \emph{wh}-licensing
+shows no detectable deficit under five distinct probes, inverting our pre-registered
+prediction that syntax would show the \emph{stronger} critical period. We claim this
+dissociation in absolute terms and not as differential susceptibility, because the two
+skills are not equally observable: the syntax anchor sits 0.028 above its metric's
+chance floor against arithmetic's 0.791, so a proportionally matched deficit would have
+fallen below the design's resolution (MDE 0.048). Four of the five probes ask whether a
+critical period exists \emph{given the acquisition that occurred}; only a representational
+probe, which carries independent dynamic range (selectivity 0.60, p \textless{} 1e-8) and is flat
+across timing (p = 0.48): asks whether enough was acquired for one to have been
+detectable at all. That probe, not the count of nulls, is what the dissociation rests on.
 
 Where the deficit exists, it reopens. Shifting the learning-rate schedule at the delay
 onset restores endpoint accuracy to 0.767 ± 0.014 at 23M and 0.796 ± 0.022 at 60M,
@@ -76,10 +79,9 @@ indistinguishable from the shift alone. Closure at this onset is therefore large
 property of the optimizer's decayed learning-rate schedule rather than of entrenched
 representations.
 
-The same shift applied to models that were never delayed does nothing (−0.008), so the
-effect is specific to the delayed exposure profile rather than a generic optimizer gain.
-\emph{Which} skills a late start damages is skill-specific; the damage itself is carried by the
-optimizer's schedule rather than by representations hardened against revision.
+The two results are timing effects at different levels: \emph{which} skills a late start
+damages is skill-specific, while the damage itself is carried by the optimizer's
+schedule rather than by representations that have hardened against revision.
 
 \end{abstract}
 \section{§1 Introduction}\label{introduction}
@@ -87,16 +89,16 @@ optimizer's schedule rather than by representations hardened against revision.
 A critical period is a window during which experience shapes a system, after which the same
 experience has much less effect. Whether anything like it exists in language models is
 usually asked of models whose training history cannot be inspected: a released checkpoint
-has already seen whatever the web contained, in whatever order, so a skill's arrival time is
-unknown and unmanipulable. Fine-tuning such a model tells us what it can still learn, not
-what it could have learned had the material arrived earlier.
+has already seen whatever the web contained, in whatever order, so the timing of any
+particular skill's arrival is unknown and unmanipulable. Fine-tuning such a model tells us
+what it can still learn, not what it could have learned had the material arrived earlier.
 
 We take the other route. Every model here is trained from random initialization on a fixed
-\textasciitilde10M-word corpus, with a target skill injected on a schedule we control. Conditions differ
-in \emph{when} the skill arrives and in nothing else (total skill tokens held constant), so a
-difference in final performance is a timing effect, not a dose effect. This costs scale —
-the largest model is 60.3M parameters — and buys what a pretrained checkpoint cannot:
-knowing when the model first saw arithmetic.
+\textasciitilde10M-word corpus, with a target skill injected into the training stream on a schedule we
+control. Conditions differ in \emph{when} the skill arrives and in nothing else (total skill
+tokens are held constant), so a difference in final performance is a timing effect, not a
+dose effect. This costs us scale, the largest model being 60.3M parameters, and buys the one
+thing a pretrained checkpoint cannot provide: knowing when the model first saw arithmetic.
 
 Within that design we find, first, that \textbf{delaying arithmetic exposure to the midpoint of
 training leaves a deficit that the remaining half of training does not close}, at both
@@ -112,17 +114,18 @@ restored schedule adds nothing, while a restored schedule without it recovers th
 What closes the window at this onset is therefore largely the optimizer's decayed
 learning-rate schedule rather than representations hardened against revision.
 
-Two things follow for reporting. A delayed model's endpoint is strongly seed-dependent while
-its early-exposure anchor is not, so we report absolute endpoints beside their nulls rather
-than recovery as a percentage of a moving denominator. And because several results here are
-nulls, we read non-significance off the minimum detectable effect rather than the
-\emph{p}-value: two structurally identical size comparisons carry opposite evidential weight for
-that reason (§3.1, §5.3).
+Two things follow for how we report. A delayed model's endpoint is strongly seed-dependent
+while its early-exposure anchor is not, so we report absolute endpoints beside their nulls
+rather than recovery as a percentage of a gap whose denominator moves. And because several
+results here are nulls, we read non-significance off the minimum detectable effect rather
+than the \emph{p}-value: two structurally identical size comparisons in this paper carry
+opposite evidential weight for that reason (§3.1, §5.3).
 
-We registered three predictions: that syntax would show the stronger critical period, that
-embedding reset would be the most effective intervention, and that a reset-driven recovery
-would build new circuitry rather than repair the original. §7.2 states what happened to
-each, including the one that could not be tested.
+We registered three predictions before running these experiments: that syntax would show the
+stronger critical period, that embedding reset would be the most effective intervention, and
+that a reset-driven recovery would build new circuitry rather than repair the original. §7.2
+states what happened to each. A reader holding the pre-registration will find all three
+answered there, including the one that could not be tested.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -153,24 +156,26 @@ tag & layers & heads & width & total params & non-embedding params \\
 \end{table}
 
 
-Both columns are given because untied embeddings make them tell different stories: at
-vocabulary 16,384 the embedding and output projection are 4.19M parameters each at the
+Both columns are given because untied embeddings make them tell different stories. At
+vocabulary 16,384 the input embedding and output projection are 4.19M parameters each at the
 smallest size (\textbf{72.7 \% of that model, against 34.8 \% at the largest}), so the three
-configurations span 5.2× in total parameters but \textbf{12.5× in the parameters that do
-computation}. Size comparisons here use total parameters, as pre-registered; the effective
-range is wider than the labels suggest, and the smallest model is unusually
-embedding-dominated (§2.5).
+configurations span 5.2× in total parameters but 12.5× in the parameters that do computation.
+Size comparisons in this paper are stated in total parameters, which is the axis our
+pre-registered analyses used; readers translating our scale results into non-embedding terms
+should note that the effective range is wider than the labels suggest, and that the smallest
+model is unusually embedding-dominated (§2.5).
 
-Context length is 512; rotary positions (θ = 10,000); pre-norm; GELU. \textbf{Input embeddings and
-the output projection are untied}, a deliberate choice, since one intervention resets the
-embedding layer and tied weights would confound an input-representation reset with a change
-to the prediction head. Attention is \texttt{F.scaled\_dot\_product\_attention} (FlashAttention-2
-kernels). Training uses bf16 autocast, micro-batches of 8 × 512 tokens with 4 gradient
-accumulation steps, AdamW (β = 0.9/0.95, weight decay 0.1, clipping 1.0), and a peak learning
-rate of 6e-4 with 300 warmup steps and \textbf{cosine decay to 0.1 × peak} — the schedule §4's
-mechanism result turns on. \texttt{torch.compile} was \textbf{disabled for every run}. Every run is 5,000
-optimizer steps over 81.92M tokens. Checkpoint spacing (100 steps for 23M arithmetic, 1,250
-at 11M and 60M, 2,500 for the size sweep) sets only how finely a trajectory can be re-read;
+Context length is 512 tokens. Positional information is rotary (θ = 10,000); normalization is
+pre-norm; activations are GELU. \textbf{Input embeddings and the output projection are untied}: a deliberate choice, since one of our interventions resets the embedding layer and tied
+weights would confound an input-representation reset with a change to the prediction head.
+Attention is \texttt{F.scaled\_dot\_product\_attention}, which dispatches to FlashAttention-2 kernels
+on our GPU. Training uses bf16 autocast, micro-batches of 8 × 512 tokens with 4 gradient
+accumulation steps, AdamW (β = 0.9/0.95, weight decay 0.1, gradient clipping 1.0), a peak
+learning rate of 6e-4 with 300 warmup steps and cosine decay to 0.1 × peak. \texttt{torch.compile}
+is available in the trainer but was \textbf{disabled for the runs reported here}. Every run
+reported here is 5,000 optimizer steps over 81.92M tokens. Checkpoint spacing varies by run
+family (100 steps for the 23M arithmetic runs, 1,250 at 11M and 60M, 2,500 for the size
+sweep); it sets how finely a trajectory can be re-read afterwards and nothing else, since
 delay and intervention triggers fire on exact step count.
 
 \subsection{2.2 Delay schedule and exposure matching}\label{delay-schedule-and-exposure-matching}
@@ -204,28 +209,32 @@ Three measurements recur, and each is fixed once here:
   decomposition (early anchor, delayed null, treated arm) rather than as a single delta.
 \end{itemize}
 
-The syntax metric needs justification, because the obvious one fails. Raw BLiMP-style
-\emph{wh}-vs-\emph{that} pairs differ by a single word, so their score is dominated by the unigram prior
-for ``that'': a model knowing nothing about gap licensing scores 0.000 on one paradigm and
-1.000 on its complement. The interaction of the with-gap and no-gap conditions cancels that
-main effect (a purely frequency-driven model lands at exactly 0.500), so only genuine
-licensing knowledge moves it. All syntax numbers here are that interaction, floor 0.500.
+The syntax metric requires a word of justification, because the obvious one fails. Raw
+BLiMP-style \emph{wh}-vs-\emph{that} pairs differ by a single word, so their score is dominated by the
+unigram frequency prior for ``that'': an untrained-for-syntax model scores 0.000 on one
+paradigm and 1.000 on its complement while knowing nothing about gap licensing. Taking the
+interaction of the with-gap and no-gap conditions cancels that main effect (a purely
+frequency-driven model lands at exactly 0.500), so only genuine gap-licensing knowledge moves
+the score. All syntax numbers in this paper are that interaction, and 0.500 is its floor.
 
 \subsection{2.4 Eval-set hygiene}\label{eval-set-hygiene}
 
-Exactly one arithmetic problem set is held out. An earlier version of our circuit analysis
-drew evaluation items per-run, overlapping training problems by 17--19 \% in four of six
-cases; all affected results were re-scored on the held-out set, and the correction changed a
-conclusion (§5.2). On identical items our two harnesses agree to \textasciitilde0.005, so cross-harness
-accuracies are comparable to ~0.01 and no finer.
+Exactly one arithmetic problem set is held out of training. An earlier version of our circuit
+analysis generated its evaluation items per-run, and those draws overlapped the training
+problems by 17--19 \% in four of six cases; all affected results were re-scored on the held-out
+set, and the correction changed a conclusion (§5.2). On identical items our two evaluation
+harnesses agree to \textasciitilde0.005, so accuracies from different harnesses are comparable to about
+0.01 and no finer. We report this rather than only the corrected numbers, because the
+released logs contain both generations.
 
 \subsection{2.5 The smallest size is excluded by a pre-registered floor}\label{the-smallest-size-is-excluded-by-a-pre-registered-floor}
 
-Our pre-registration required an early anchor to reach 0.60 before a delay comparison at that
-size could be interpreted. The 11M anchor reaches 0.538 and has not plateaued, so its
-comparison is between two under-trained models and is \textbf{excluded as a capacity/budget
-boundary}. Its numbers appear in §3.1 because they are nominally significant, but support no
-claim in either direction about a critical period at that scale.
+Our pre-registration required an early-exposure anchor to reach 0.60 before a delay
+comparison at that size could be interpreted. The 11M anchor reaches 0.538 and has not
+plateaued, so its delay comparison is between two under-trained models and is \textbf{excluded by
+the pre-registered floor as a capacity/budget boundary}. Its numbers are reported in §3.1
+because they are nominally significant and a reader recomputing them will find them; they do
+not support a claim in either direction about a critical period at that scale.
 
 \subsection{2.6 Analysis designs that were planned and not run}\label{analysis-designs-that-were-planned-and-not-run}
 
@@ -236,15 +245,23 @@ the floor exclusion the first has twelve observations with one per seed × cell 
 within-cell replication for a random effect. The second has a banned denominator (recovery
 percentage divides by the seed-variable null), and two of its three factors are constants.
 The third has both factors constant. We replaced them with per-seed paired tests, an
-absolute-endpoint gate, and a rank correlation with exact permutation \emph{p}, respectively rather than presenting them as the original plan.
+absolute-endpoint gate, and a rank correlation with exact permutation \emph{p}, respectively, and
+say so here rather than presenting the replacements as the original plan.
 
 \subsection{2.7 Multiplicity}\label{multiplicity}
 
 Confirmatory tests are Holm-corrected within a declared family and reported both uncorrected
 and adjusted: the Detect family (paired deficit at two sizes), the Reopen family (lift over
-the matched null at two sizes), and the agreement-slope family. Gates whose thresholds were
+the matched null at two sizes), and the agreement-slope family (the paired
+attraction−complexity contrast, one test per mixture). Gates whose thresholds were
 fixed in advance are decision rules, not tests, and carry no \emph{p}. Exploratory analyses are
 flagged in-text and never carry a headline.
+
+Membership is declared positively, so that a test's absence from a family is a statement
+rather than an omission. §6 is the section where this matters most: it reports many \emph{p}
+values on models trained for a different purpose, and exactly one of its families is
+confirmatory. Its header says so, and names the rest as exploratory by declaration rather
+than leaving the reader to infer scope from which numbers happen to carry an adjustment.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -310,18 +327,20 @@ Welch gate, which required a gap of at least 0.15, is cleared at both sizes (60M
 end of training, despite having received all of it.
 
 The deficit is of \textbf{similar magnitude at both sizes}: the 60M--23M difference is 0.015,
-Welch \emph{p} = 0.72, MDE at 80 \% power \textbf{0.144}. That null constrains — it excludes any size
-effect larger than about two-thirds of the deficit — but is not a claim that size is
-irrelevant. §5.3 gives a structurally identical comparison carrying the opposite evidential
-weight, because its MDE exceeds the entire range its outcome occupies; the two nulls are
-best read as a pair.
+Welch \emph{p} = 0.72, with a minimum detectable effect at 80 \% power of \textbf{0.144}. That null
+constrains (it excludes any size effect larger than about two-thirds of the deficit itself), but it is not a claim that size is irrelevant, and it should not be read as one. We
+return to this in §5, where a structurally identical size comparison carries the opposite
+evidential weight for one reason only: its MDE exceeds the entire range its outcome
+occupies. The two nulls are best read as a pair.
 
-\textbf{The deficit's severity is seed-variable, and the variability lives on the delayed side.}
-The early anchor is tight (SD 0.007 at 23M) while the delayed endpoint is not (SD 0.051), so
-per-seed deficits range 0.166--0.274 at 23M against a baseline that barely moves. Seed 1 is
-deepest-hit on both readings and reproduces as such when retrained from scratch. Hence every
-recovery result in §4 is an absolute endpoint beside its null rather than a percentage of a
-seed-variable gap, which would be unstable by construction even when the effect is not.
+\textbf{The severity of the deficit is seed-variable, and the variability lives on the delayed
+side.} The early anchor is tight across seeds (SD 0.007 at 23M) while the delayed
+endpoint is not (SD 0.051), so per-seed deficits range from 0.166 to 0.274 at 23M against a
+baseline that barely moves. Seed 1 is the deepest-hit on both readings (lowest delayed
+endpoint and largest deficit), and reproduces as such when retrained from scratch. This is
+why every recovery result in §4 is reported as an absolute endpoint beside its null rather
+than as a percentage of the gap: the gap is a seed-variable denominator, so a
+recovery-percentage is unstable by construction even when the underlying effect is not.
 
 \textbf{The 11M models are excluded by a pre-registered floor.} Their paired deficit is
 nominally significant (0.181 ± 0.087, \emph{p} = 0.0345, \emph{g} = 1.19), and we report it because a
@@ -337,9 +356,10 @@ no claim about the shape of the timing curve.
 
 \subsection{\texorpdfstring{3.2 Long-distance \emph{wh}-licensing shows no detectable critical period}{3.2 Long-distance wh-licensing shows no detectable critical period}}\label{long-distance-wh-licensing-shows-no-detectable-critical-period}
 
-The same design applied to long-distance \emph{wh}-licensing yields nothing. These are \textbf{five
-different hypotheses about where an effect could hide, not five tests of one}; each carries
-its own positive control or power statement, and that pairing is the argument, not the count.
+The same design applied to long-distance \emph{wh}-licensing yields nothing. The five probes
+below are \textbf{five different hypotheses about where an effect could hide, not five tests of
+one hypothesis}; each carries its own positive control or power statement, and the argument
+is that pairing rather than the count.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -365,12 +385,14 @@ its own positive control or power statement, and that pairing is the argument, n
   not a rescue of the delayed skill.
 \end{enumerate}
 
-Probe 4 is load-bearing for a reason the others cannot supply: probes 1, 2, 3 and 5 ask
-whether a critical period is visible \emph{in the behaviour that was acquired}, while probe 4 asks
-whether the structure is encoded at all — and finds that it is, independent of when exposure
-began. \textbf{The structure is learned; what is timing-invariant is the readout.} This null is
-scoped to ≤ 60.3M parameters, the \textasciitilde10M-word BabyLM budget, and the continuation-scored
-licensing-interaction metric.
+Probe 4 is the load-bearing one, for a reason that the other four cannot supply. Probes 1,
+2, 3 and 5 all ask whether a critical period is visible \emph{in the behaviour that was
+acquired}. Probe 4 asks whether the underlying structure is encoded at all, and finds that
+it is, and that its encoding does not depend on when exposure began. \textbf{The structure is
+learned; what is timing-invariant is the readout.}
+
+This null is scoped to ≤ 60.3M parameters, the \textasciitilde10M-word BabyLM budget, and the
+continuation-scored licensing-interaction metric. Outside that scope it says nothing.
 
 \subsection{3.3 Skill dissociation}\label{skill-dissociation}
 
@@ -427,16 +449,29 @@ so \emph{preserves} the dynamic-range limit rather than lifting it. The represen
 genuine dynamic range, and it is flat across timing. Had delayed exposure damaged the
 underlying representation, that probe had the range to register it and did not.
 
-The differential-susceptibility reading remains open at a specific cost. Under the
-mean-endpoint readout it is unmeasurable at this \emph{n}. Under a rate readout it is \textbf{un-run}:
-the exceedance machinery was only pointed at the delay-0 question, and the seed inventory is
-asymmetric (24 delay-0 seeds per size, 3 delayed at 23M alone). A rate-collapse test at 60M
-(14 delayed seeds against the existing 24-seed baseline) would settle it; at 23M it needs 82
-and is out of reach (§8).
+The differential-susceptibility reading has now been tested on the rate readout, and it
+returns a bound rather than a decision. Under the mean-endpoint readout it remains
+unmeasurable at the \emph{n} achieved here. We therefore ran the rate-collapse test at 60M with
+\textbf{24 delayed seeds} against the existing 24-seed baseline --- 24 rather than the 14 a
+full-abolition assumption prices, because at 14 the test clears α only on an exact 0/14, and
+one high seed anywhere lands it at \emph{p} = 0.18. The two arms are superimposed: 0.5528 ± 0.0138
+delayed against 0.5518 ± 0.0131 at baseline, with the high mode at 6/24 in \textbf{both}, Fisher
+exact \emph{p} = 0.630 and threshold-free Mann--Whitney \emph{p} = 0.626 (both Holm-adjusted to 1.000),
+and a mean difference of +0.0010 {[}−0.0064, +0.0087{]}.
 
-Note what this is not. Our pre-registration anticipated a \emph{reopening}-side dissociation; what
-the data support is a \emph{detection}-side one, since syntax never showed a deficit and no syntax
-reopening was attempted. Superficially the same finding, not the same claim.
+The result is asymmetric by construction and is reported that way: it \textbf{excludes a full
+collapse} of the high mode (power 1.000) and \textbf{does not exclude a half collapse} (power
+0.188; roughly 59 seeds per group would be needed). At 23M the same test needs 82 seeds and
+remains out of reach (§8). It does not become a further route to the syntax null: under our
+cross-method rule (§10) a probe that agrees but is underpowered on the contrast at issue is
+not corroboration, and this one is underpowered against exactly the alternative that matters.
+It bounds the dissociation's scope rather than promoting it.
+
+Finally, a note on what this result is not. Our pre-registration anticipated a
+\emph{reopening}-side dissociation: some skill/intervention combinations recover and others do
+not. What the data support is a \emph{detection}-side one: syntax never showed a deficit, so no
+syntax reopening was attempted. The two are superficially the same finding and are not the
+same claim, and we report the one we have.
 
 \section{§4 Reopen}\label{reopen}
 
@@ -449,11 +484,12 @@ reopening was attempted. Superficially the same finding, not the same claim.
 \subsection{4.1 An LR-schedule shift restores the delayed endpoint}\label{an-lr-schedule-shift-restores-the-delayed-endpoint}
 
 All intervention arms fork from a single saved checkpoint at step 2500 (identical weights,
-optimizer state and step), so arms differ only in the intervention applied. The
-\texttt{lr\_shift} arm restores the learning-rate schedule a delay-0 model would have been on when
-delayed exposure begins, then anneals normally. Success was pre-registered as two conditions:
-the treated endpoint must reach 90 \% of that run's \emph{own} early anchor, and general
-capability must not degrade beyond a matched threshold.
+identical optimizer state, identical step), so that arms differ only in the intervention
+applied. The \texttt{lr\_shift} arm restores the learning-rate schedule that a delay-0 model would
+have been on at the point delayed exposure begins, then anneals normally. Success was
+pre-registered as a two-part condition: the treated endpoint must reach 90 \% of that run's
+\emph{own} early-exposure anchor, and general capability must not degrade beyond a matched
+threshold.
 
 \textbf{Table 3.} Endpoints at step 5000. The null is shown beside the treated arm throughout;
 neither is collapsed into a ratio.
@@ -542,80 +578,68 @@ depth. Whatever \texttt{lr\_shift} does, it is not a generic late-training lift.
 
 \subsection{4.4 Closure at this onset is largely a property of the schedule}\label{closure-at-this-onset-is-largely-a-property-of-the-schedule}
 
-The remaining Tier-1 interventions were run at 23M seed 1 and are scored against the null's
-cross-seed \textbf{range} {[}0.524, 0.626{]} rather than its mean, because a single seed landing
-inside that range is indistinguishable from the null.
+The remaining Tier-1 interventions have been extended to \emph{n} = 3 at 23M (seeds 1--3), forked
+from the same common checkpoints. Each is scored per seed against \textbf{its own fork source},
+whose cross-seed endpoint is 0.571 ± 0.061 with range {[}0.506, 0.626{]}. That is a different
+lineage from the Detect table's null and is flagged here rather than reconciled, per the §5
+rule-2 convention: same run\_id, same model; different run\_id, different model.
 
 \begin{table}[t]
 \centering\small
 \begin{tabular}{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-arm (23M, seed 1)
+arm (23M, \emph{n} = 3)
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
 endpoint
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+per-seed lift
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 verdict
 \end{minipage} \\
 \midrule\noalign{}
 
-embedding reset & 0.586 & no detectable recovery (\emph{n} = 1) \\
-reset + LR spike & 0.576 & no detectable recovery (\emph{n} = 1) \\
-LR spike alone & 0.536 & no detectable recovery (\emph{n} = 1) \\
-cram (concentrated re-exposure) & 0.574 & no detectable recovery (\emph{n} = 1) \\
-\textbf{freeze} & \textbf{0.332} & \textbf{harmful}: below the entire null range \\
+embedding reset & 0.585 ± 0.001 & +0.080 / −0.040 / +0.002 & no consistent direction \\
+reset + LR spike & 0.571 ± 0.042 & +0.070 / −0.100 / +0.028 & no consistent direction \\
+LR spike alone & 0.578 ± 0.048 & +0.030 / +0.004 / −0.014 & no consistent direction \\
+cram (concentrated re-exposure) & 0.577 ± 0.005 & +0.068 / −0.052 / 0.000 & no consistent direction \\
+\textbf{freeze} & \textbf{0.422 ± 0.081} & −0.174 / −0.182 / −0.092 & \textbf{harmful}: below the entire null range at every seed \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 
-Only freeze supports a directional statement at this depth. The others are \emph{not} evidence
-that those interventions fail, but that one seed cannot separate them from a null whose own
-spread is 0.10 wide. Embedding reset was our pre-registered favourite; §7.2 states that
-prediction and its outcome.
+Only freeze supports a directional statement, and it now does so at three seeds rather than
+one. For the other four the reading keeps its label and changes its basis. At \emph{n} = 1 they
+were undecidable because a single seed cannot be separated from a null whose own spread is
+0.10 wide; at \emph{n} = 3 they are undecidable because their per-seed lifts \textbf{disagree in sign}.
+A near-zero mean with disagreeing signs is an absence of effect, not a small effect obscured
+by pooling --- the same rule we apply to cram below. They remain \emph{not} evidence that those
+interventions fail.
 
-The one arm extended to \emph{n} = 3 decides the mechanism. Concentrated re-exposure alone leaves
-the endpoint at 0.574, at the null. Combined with the schedule shift it reaches
-0.781 ± 0.031 — far above cram alone and indistinguishable from the shift by itself, with
-per-seed differences of −0.006 / +0.016 / +0.032 straddling zero. (We report the signs
-rather than the +0.014 mean: a near-zero mean with disagreeing signs is an absence of
-effect, not a small effect obscured by pooling.)
+The extension earned its cost in two places. Seed 1 gave the largest lift of any seed for
+\textbf{every one of the four}, and two endpoints moved materially once the other seeds were in:
+LR spike from 0.536 to 0.578 ± 0.048, and freeze from 0.332 to 0.422 ± 0.081. Freeze's
+verdict is unchanged, but its single-seed figure was an extreme rather than a typical draw.
+Embedding reset was our pre-registered favourite, and §7.2 states that prediction and its
+outcome as a standalone item.
+
+The one arm we extended to \emph{n} = 3 decides the mechanism. Concentrated re-exposure alone
+leaves the endpoint at 0.574: at the null. Combined with the schedule shift it reaches
+0.781 ± 0.031, far above cram alone and indistinguishable from the shift by itself: the
+per-seed differences are −0.006 / +0.016 / +0.032, straddling zero with no consistent sign.
+(We report the signs rather than the +0.014 mean, because a near-zero mean with disagreeing
+signs is an absence of effect, not a small effect obscured by pooling.)
 
 So additional skill density on top of a restored schedule adds nothing, while a restored
 schedule without additional density recovers the skill. \textbf{At this onset, what closes the
 window is largely the optimizer's decayed learning-rate schedule rather than representations
 that have hardened against revision.} The scope of that statement is d50, arithmetic, and
 these two sizes; it is not a claim that entrenchment plays no role at other onsets.
-
-The converse manipulation is the one a reader will ask for, and it cannot be run cleanly. If
-a decayed schedule during the skill window is what closes it, imposing that same segment on
-an \emph{early} exposure window should reproduce the deficit. At one seed — early exposure (burst
-density 0.4 over steps [1, 2500]) under the late segment, read at the window end because
-burst arithmetic washes out once exposure stops — arithmetic collapses from 0.778 to 0.142,
-the predicted direction. But held-out perplexity degrades in step with it (69.2 to 87.9).
-The early window is also where a randomly initialized model builds its base language model,
-so stripping it of warmup and peak learning rate damages the substrate arithmetic would ride
-on, and the two collapses cannot be separated. The asymmetry is structural, not statistical:
-the forward arm intervenes on a model that has \emph{already} built a healthy base LM over steps
-0--2500, whereas the converse necessarily perturbs both at once. Additional seeds would
-replicate the confound rather than resolve it.
-
-The schedule account makes a prediction the reopening result by itself does not test. If
-restoring the early schedule segment merely raises accuracy, the same shift should raise it
-on a model that was never delayed. We ran that discriminator at 23M, applying the identical
-intervention to the early-exposure runs from their own step-2500 checkpoints. It does
-nothing: 0.783 ± 0.025 against an untreated early anchor of 0.791 ± 0.007, a lift of −0.008,
-with per-seed differences of −0.040 / +0.016 / 0.000. The same intervention lifts the delayed
-runs by +0.190 (0.767 ± 0.014 against 0.577 ± 0.051). The whole of the reopening effect
-therefore requires the delayed exposure profile: the alignment component is +0.198 and
-positive at every seed (paired \emph{t}(2) = 5.17, one-sided \emph{p} = 0.018), and none of it is
-generic accuracy inflation. What this rules out is one specific alternative reading, that
-\texttt{lr\_shift} is simply a better optimizer setting rather than a repair of a
-schedule-induced deficit. It is not a second method confirming the closure claim, which
-rests on the cram contrast above.
 
 A final arm belongs in the record without supporting a claim. The 11M \texttt{lr\_shift} arm passes
 its gate (0.747 against a gate of 0.484) but the pass is degenerate: the gate is 90 \% of an
@@ -624,10 +648,84 @@ which indicates that the 11M anchor was learning-rate-starved rather than that r
 over-recovers. The 11M arm enters the paper only through its mechanism decomposition, where
 the delayed lift of +0.389 splits into a generic component (+0.115) and an
 exposure-alignment component (+0.274): about 70 \% of the effect requiring the delayed
-exposure profile. That decomposition is exploratory and carries no headline; the 23M
-discriminator above is its confirmatory-size counterpart. Its larger generic component
-(+0.115, against 23M's −0.008) is what one expects if the 11M early anchor was itself
-learning-rate-starved, which is the same reading its degenerate gate already forced.
+exposure profile. That decomposition is exploratory and carries no headline.
+
+\subsubsection{4.5 The mechanism replicates on a second schedule}\label{the-mechanism-replicates-on-a-second-schedule}
+
+Every run above uses warmup with cosine decay, so §4.4's claim rests on a single schedule
+shape. Warmup-stable-decay (WSD) separates the readings, because the two schedules disagree
+exactly where the experiment intervenes: at the d50 onset (step 2500) cosine has decayed to
+3.570e-4, 59.5 \% of peak, while WSD is still at its 6.00e-4 peak and stays there until step
+4000. Peak, floor and warmup are shared; only the shape between them differs. If closure is
+a decayed-LR phenomenon the deficit should largely vanish under WSD; if it persists near
+0.21, §4.4 needs rewriting. Both outcomes were reportable, and the second is why the test
+was run before submission rather than left to a reviewer.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule\noalign{}
+schedule & early (d0) & delayed (d50) & paired deficit \\
+\midrule\noalign{}
+
+cosine & 0.791 ± 0.007 & 0.577 ± 0.051 & 0.214 ± 0.055 \\
+WSD & 0.851 ± 0.016 & 0.858 ± 0.022 & −0.007 ± 0.013 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+The deficit is abolished. Per-seed deficits under WSD are +0.002 / +0.000 / −0.022,
+straddling zero, which meets the pre-registered \emph{abolished} criterion on both of its clauses
+(mean ≤ 0.05 \textbf{and} inconsistent signs) rather than the weaker \emph{substantially reduced}. The
+WSD-versus-cosine difference is −0.221 (Welch \emph{p} = 0.016, Holm 0.032) against a
+pre-registered MDE of 0.092, and is read off the MDE rather than off the \emph{p}.
+
+Two limits were fixed before the data. The \emph{presence} of a WSD deficit is well resolved; the
+\emph{equality} of the two deficits is not, so this is never written as ``the deficit is the same
+under both schedules''. And WSD's higher endpoints on both arms are descriptive only: the
+deficit is a within-schedule paired contrast, so a cross-schedule level difference is not
+evidence about it. The result licenses ``replicates on a second, deliberately dissimilar
+schedule'' and not ``schedule-general'' --- one non-cosine schedule, one size, one onset, one
+skill.
+
+\subsubsection{4.6 Level reopens; shape pays for it}\label{level-reopens-shape-pays-for-it}
+
+\texttt{lr\_shift} moves the learning rate's magnitude and its trajectory together, so §4.4's result
+is a statement about the pair rather than about either. Crossing level against shape
+separates them. The fourth cell of that 2×2 \emph{is} \texttt{lr\_shift}, so three arms were run, each at
+\emph{n} = 3 from the same common checkpoints, with level matched on the window mean.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule\noalign{}
+cell & endpoint & lift & Δppl \\
+\midrule\noalign{}
+
+C --- flat at late level & 0.563 ± 0.063 & −0.009 & +1.70 \\
+A --- level only & 0.752 ± 0.034 & +0.181 & +1.86 \\
+B --- shape only & 0.575 ± 0.046 & +0.004 & +1.13 \\
+\texttt{lr\_shift} --- both & 0.767 ± 0.014 & +0.196 & −0.33 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Three contrasts fall out along the design's own axes. \textbf{A against C} holds the shape flat
+and moves the level: +0.181 against −0.009, so the level is what reopens. \textbf{B against C}
+holds the level late and moves the shape: +0.004 against −0.009, so shape alone recovers
+nothing. \textbf{A against \texttt{lr\_shift}} holds the level early and moves the shape: the lifts are
+near-identical, but the perplexity costs are +1.86 and −0.33, so the shape is what makes the
+recovery free. C is load-bearing rather than decorative --- without it, A's lift is confounded
+with the absence of decay.
+
+This resolves why one arm reopened and the others did not. Under §2's operational definition,
+recovery bought at the cost of general capability is forgetting rather than reopening, and A
+breaches the +1.0 ppl threshold; so A is not a reopening, and \texttt{lr\_shift} remains the only arm
+that is, because it is the only cell supplying both components. The Holm-adjusted \emph{p} values
+(A 0.092, \texttt{lr\_shift} 0.075) are not the basis of either verdict: the reopening gate is a
+pre-registered decision rule and carries no \emph{p}.
 
 \section{§5 Did the intervention repair the original circuit, or build a new one?}\label{did-the-intervention-repair-the-original-circuit-or-build-a-new-one}
 
@@ -650,29 +748,32 @@ the correction is reported in §2.4 because it changed a conclusion.
 
 \subsection{5.1 Only one of four probes discriminates on this contrast}\label{only-one-of-four-probes-discriminates-on-this-contrast}
 
-Which methods can tell the two outcomes apart \emph{at all} matters before reading anything off
-the ablation numbers. Four were tried; three cannot:
+Before reading anything off the ablation numbers, it matters which methods can tell the two
+outcomes apart \emph{at all}. Four were tried and three cannot:
 
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Whole-layer mean-ablation saturates}: ablating any core layer drives accuracy to ~0 in
-  every model, so localization is done at head granularity instead.
+  \textbf{Whole-layer mean-ablation saturates}, ablating any core layer drives accuracy to
+  approximately zero in every model, so it separates nothing. Localization is therefore done
+  at head granularity.
 \item
-  \textbf{Linear CKA} sits at 0.66--0.83 across all six triads regardless of what the causal test
-  says. The triads share an initialization, so global geometry stays similar even where
-  wiring differs; CKA scores the most reorganized triad at 0.658 and misses it.
+  \textbf{Linear CKA} of the residual stream sits at 0.66--0.83 across all six triads regardless of
+  what the causal test says. Because the triads share an initialization, global geometry
+  stays similar even where the wiring differs; CKA would have scored the most reorganized
+  triad in the set at 0.658 and missed it entirely.
 \item
-  \textbf{Single-head activation patching} is flat: restoration ratio spans 0.591--0.792 (SD 0.083)
-  against ablation transfer's 0.187--0.868 (SD 0.265), uncorrelated (\emph{r} = 0.045, \emph{p} = 0.93;
-  \emph{r} = −0.032 on corrected transfers, so the flatness is not a contamination artifact). The
-  cause is a floor: single-head restoration is 0.05--0.15 in every model, so the ratio
-  divides two small numbers. An earlier draft cited patching as corroboration on one seed;
-  running all six withdrew that.
+  \textbf{Single-head activation patching} is flat: its restoration ratio spans 0.591--0.792
+  (SD 0.083) against the ablation transfer's 0.187--0.868 (SD 0.265), and the two are
+  uncorrelated (\emph{r} = 0.045, \emph{p} = 0.93; recomputing on the corrected transfers gives
+  \emph{r} = −0.032, so the flatness is not an artifact of the contamination). The cause is a
+  floor: single-head restoration is 0.05--0.15 in every model, so the ratio divides two small
+  numbers and has no resolving power. An earlier draft cited patching as independent
+  corroboration on the strength of one seed; running it on all six withdrew that.
 \item
-  \textbf{Pruning-based localization} was pre-screened and rejected: mask overlap spans only 0.088,
-  and its agreement with ablation \emph{flips sign} across the sparsity sweep. A method whose sign
-  is a hyperparameter cannot adjudicate (Appendix A).
+  \textbf{Pruning-based localization} was pre-screened and rejected: mask overlap spans only 0.088
+  across the triads, and its agreement with ablation \emph{flips sign} across the sparsity sweep.
+  A method whose sign is a hyperparameter choice cannot adjudicate (Appendix A).
 \end{itemize}
 
 We therefore report this cluster as \textbf{single-method by demonstration}, not by assumption.
@@ -734,20 +835,23 @@ the skill returned in different machinery. \textbf{Every 60M triad sits at or be
 the larger size reorganization is what we observe at every seed.
 
 We report this axis continuously and assign no categorical verdict. Our implementation would
-have labelled a triad \emph{repaired} only on a conjunction of high transfer \emph{and} high
-top-head-set overlap; the overlap condition is never met here (maximum 0.20), so the label
-was unreachable. It was an implementation default rather than a registered criterion, and
-relabelling now would be choosing a decision rule after seeing the number it decides
-(Appendix B). The mismatch is the methodological point: a recovered model's head set can
-overlap its baseline's almost not at all while the baseline's heads remain causally
-load-bearing — near-zero overlap at transfer 0.868. \textbf{Set overlap and causal overlap are
-different measurements}, and only the second answers the question.
+have labelled a triad \emph{repaired} only on a conjunction of high transfer and high
+top-head-set overlap; the overlap condition is never met here (the maximum is 0.20), so the
+label was unreachable. It was an implementation default rather than a registered criterion,
+and relabelling under a corrected rule would be choosing a decision rule after seeing the
+number it decides (Appendix B). The mismatch is itself the methodological point: a recovered
+model's head set can overlap its baseline's almost not at all while the baseline's heads
+remain causally load-bearing: near-zero overlap at transfer 0.868. \textbf{Set overlap and causal
+overlap are different measurements}, and only the second answers the question. That is the
+case for reciprocal ablation over any similarity-of-components measure, and the same failure
+that makes CKA useless here, from a second direction.
 
-The ordering suggests deficit depth grades this outcome, but the evidence does not survive
-its own robustness check: Spearman ρ = −0.714, exact permutation \emph{p} = 0.0681, and
-leave-one-out is fragile, with four of six deletions pushing \emph{p} above 0.05. The direction
-persists but is not resolvable at \emph{n} = 6. More triads are the only thing that would settle
-it, and this is the one place where additional runs would still move a headline.
+The ordering suggests that deficit depth grades this outcome (deeper deficits reorganize
+more), but the evidence does not survive its own robustness check. Across the six triads
+Spearman ρ = −0.714 with an exact permutation \emph{p} = 0.0681, and leave-one-out is fragile:
+four of the six single-point deletions push \emph{p} above 0.05. The direction persists and is not
+resolvable at \emph{n} = 6. More triads at either size are the only thing that would settle it,
+and this is the one place in the project where additional runs would still move a headline.
 
 One pair of triads shows the relationship running backwards, and it is the best-measured
 comparison in the table. At 23M, seeds 2 and 3 have nearly the same deficit (0.182 vs 0.210),
@@ -765,16 +869,18 @@ have produced would have been detected. The question is \emph{untested}, not ans
 no longer unidentifiable, since the corrected deficit ranges at the two sizes overlap, so
 size is separable from deficit depth in a way it was not before the contamination fix.
 
-Set this beside §3.1's structurally identical comparison (same \emph{n} = 3 per group, same Welch
-test, same two sizes, also non-significant), which carries opposite weight: there the MDE
-(0.144) sits below the deficit being asked about (0.21), so the null genuinely excludes a
-large size effect, while here it exceeds the entire measured range. Non-significance is read
-off the minimum detectable effect, never off the \emph{p}.
+This is worth setting beside §3.1's size comparison, which is structurally identical (same
+\emph{n} = 3 per group, same Welch test, same two sizes, also non-significant), and carries
+opposite weight. There, the MDE (0.144) sits below the deficit being asked about (0.21), so
+the null genuinely excludes a large size effect. Here it exceeds the entire measured range.
+The two together are the clearest illustration of a rule this paper applies throughout:
+non-significance is read off the minimum detectable effect, never off the \emph{p}.
 
-What the size axis does show is \textbf{variance}: the 60M transfers are tightly clustered
-(SD 0.131) where the 23M ones are not (SD 0.349), a 2.7× ratio mirroring §4's finding that the
-intervention collapses cross-seed variance. Suggestive only — one comparison at \emph{n} = 3 per
-group on an observational rather than manipulated factor.
+What the size axis does show is \textbf{variance}. The 60M transfers are tightly clustered
+(SD 0.131) where the 23M ones are not (SD 0.349), a 2.7× ratio, mirroring §4's finding that
+the intervention collapses cross-seed variance in the endpoint. We report this as suggestive:
+it is a single comparison at \emph{n} = 3 per group on an observational rather than manipulated
+factor.
 
 \subsection{5.4 What these results do not speak to}\label{what-these-results-do-not-speak-to}
 
@@ -795,27 +901,28 @@ that addressed them.
 \section{Related Work}\label{related-work}
 
 \textbf{Critical periods.} The concept comes from development, where early sensory deprivation
-produces deficits that later normal input does not repair \citep{hubel-wiesel-1970,lenneberg-1967,johnson-newport-1989}. The closest machine-learning analogue is Achille et al.'s
-demonstration that deep networks have critical learning periods: a deficit imposed early
+produces deficits that later normal input does not repair \citep{hubel-wiesel-1970,lenneberg-1967,johnson-newport-1989}. The closest machine-learning analogue is Achille et al.'s demonstration
+that deep networks have critical learning periods: a deficit imposed early in training
 (blurred images) leaves a permanent gap even given unlimited clean data afterwards, and the
-window's timing is a property of training rather than architecture \citep{achille-etal-2019}.
-That work manipulates \emph{input quality} in vision models; we manipulate \emph{when a skill's data
-arrives} while holding its quantity fixed, which is what lets a deficit be attributed to
-timing rather than dose or degraded signal.
+window's timing is a property of training rather than of architecture \citep{achille-etal-2019}. That work manipulates \emph{input quality} in vision models; we manipulate
+\emph{when a skill's data arrives} in a language model while holding its total quantity fixed,
+which is what lets a deficit be attributed to timing rather than to dose or degraded signal.
 
-\textbf{Plasticity loss and warm starting.} Networks become harder to train as training proceeds:
-warm-started models generalize worse than freshly initialized ones given the same final data
-\citep{ash-adams-2020}, and continual-learning agents lose the ability to fit new tasks,
-recoverable by re-injecting plasticity through resets or noise
-\citep{dohare-etal-2024,lyle-etal-2023,berariu-etal-2021}. \textbf{This is the closest prior
-explanation of our reopening result and the one we most risk rediscovering}, so we state the
-difference precisely: those settings involve a distribution shift, a restart, or a sequence
-of distinct tasks, and typically recover plasticity by perturbing \emph{weights}. Our models train
-once, uninterrupted, on a stationary mixture whose only manipulated variable is a skill's
-onset step, and the intervention that recovers the skill changes no weights at all — only the
-learning-rate schedule — while resetting weights, the standard remedy, produced no detectable
-recovery at \emph{n} = 1 (§7.2). The mechanisms may still be one thing seen from two directions;
-what we can say is that recovery here needs no weight perturbation.
+\textbf{Plasticity loss and warm starting.} A separate literature finds that networks become
+harder to train as training proceeds: warm-started models generalize worse than freshly
+initialized ones given the same final data \citep{ash-adams-2020}, and continual-learning
+agents progressively lose the ability to fit new tasks, recoverable by re-injecting
+plasticity through resets or noise \citep{dohare-etal-2024,lyle-etal-2023,berariu-etal-2021}.
+\textbf{This is the closest prior explanation of our reopening result and the one we most risk
+rediscovering}, so we state the difference precisely: those settings involve a distribution
+shift, a restart, or a sequence of distinct tasks, and typically recover plasticity by
+perturbing \emph{weights}. Our models train once, without interruption, on a stationary mixture
+whose only manipulated variable is a skill's onset step, and the intervention that recovers
+the skill changes no weights at all, only the learning-rate schedule, while resetting weights
+(the standard plasticity remedy) produced no detectable recovery in our setting at \emph{n} = 1.
+The mechanisms may still be the same one seen from two directions; what we can say is that
+the recovery here is obtainable without weight perturbation. (That reset arm is \emph{n} = 1;
+§7.2 states what it does and does not license.)
 
 \textbf{Curriculum, data ordering, and delayed generalization.} Ordering effects have a long
 history \citep{bengio-etal-2009} with mixed results at LM scale, where reordering often yields
@@ -838,7 +945,18 @@ methodological result that three of those four probes do not discriminate on our
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{§6 A secondary probe: agreement attraction across scale}\label{a-secondary-probe-agreement-attraction-across-scale}
+\section{§6 A secondary probe: agreement attraction across scale (exploratory except where stated)}\label{a-secondary-probe-agreement-attraction-across-scale-exploratory-except-where-stated}
+
+\textbf{Multiplicity scope for this section, declared here rather than inferred.} One family in
+§6 is confirmatory: \textbf{F6}, the paired attraction−complexity contrast, one test per mixture,
+Holm-corrected at \emph{m} = 2 (the syntax mixture survives; the arithmetic one does not). Every
+other \emph{p} reported below --- the attraction magnitude at a single size, the three
+mismatch-versus-chance tests, the complexity-slope null, the per-size cross-mixture
+contrasts, and the within-run trajectory --- is \textbf{exploratory by declaration}: uncorrected,
+descriptive, and carrying no headline. They are reported because withholding them would
+misrepresent what was looked at, not because any of them is being asserted. This section
+analyses models trained for a different purpose, so its tests were not part of the
+pre-registered design and are not promoted by consistency with it.
 
 The models trained for this study support one question the critical-period design did not
 set out to ask. Subject--verb agreement is acquired almost perfectly here (0.98 on
@@ -848,15 +966,17 @@ separates two components of that failure: \textbf{attraction}, the cost of an in
 whose number mismatches the head, and \textbf{complexity}, the cost of any intervening material
 at all.
 
-\textbf{Attraction is real, large, and dominant.} At 23.2M it costs +0.303 ± 0.064
-(\emph{p} = 8.6e-05) against complexity's +0.143 ± 0.035, in both number directions and both frame
-types. A unigram-frequency control returns exactly 0.000 by construction, so it cannot be a
-verb-form prior. Attraction exceeds complexity at every size and is positive in \textbf{81 of 81
-models} across two mixtures: 72 syntax-enriched (3 sizes × 24 seeds) and 9 arithmetic-enriched.
+\textbf{Attraction is real, large, and the dominant component.} At 23.2M it costs
++0.303 ± 0.064 (\emph{p} = 8.6e-05) against complexity's +0.143 ± 0.035, in both number
+directions and both frame types. A unigram-frequency control on the same items returns
+exactly 0.000 by construction, so the effect cannot be a verb-form prior. Attraction exceeds
+complexity at every size and is positive in \textbf{81 of 81 models} across two independent
+training mixtures: 72 syntax-enriched (3 sizes × 24 seeds) and 9 arithmetic-enriched.
 
-\textbf{Whether these models are anti-syntactic is scale-dependent.} Mismatch accuracy is 0.405 at
-11.5M (below chance, \emph{p} \textless{} 0.001), 0.511 at 23.2M (at chance, \emph{p} = 0.435), and 0.610 at 60.3M
-(above chance, \emph{p} \textless{} 0.001): below-chance agreement occurs only at the smallest size.
+\textbf{Whether these models are anti-syntactic is scale-dependent.} Mismatch accuracy on
+controlled items is 0.405 at 11.5M (below chance, \emph{p} \textless{} 0.001), 0.511 at 23.2M (at chance,
+\emph{p} = 0.435), and 0.610 at 60.3M (above chance, \emph{p} \textless{} 0.001). Below-chance agreement occurs
+only at the smallest size.
 
 \textbf{Attraction declines with scale; whether it dissociates from complexity depends on the
 mixture.} In the syntax-enriched mixture attraction falls \textbf{−0.316 per decade of
@@ -881,52 +1001,56 @@ size and an MDE of 0.125; roughly ten seeds would decide it. The mismatch cell i
 improves significantly over the same interval (+0.070, \emph{p} = 0.041). We report the direction
 and the power, and treat the trajectory as suggestive only.
 
-\textbf{The standard metric gets this wrong at every scale, in three ways.} Uncontrolled
-BLiMP-style items report below-chance behaviour at all three sizes, true only at the
+\textbf{The standard metric gets this wrong at every scale, in three different ways.} Uncontrolled
+BLiMP-style items report below-chance behaviour at all three sizes, which is true only at the
 smallest; the frequency-controlled metric locates it correctly; and only the crossed design
-separates attraction from complexity. Three metrics, three conclusions, same models.
-Relatedly, pooling all 72 models into one attraction estimate averages across a
-size-dependent effect and yields a number describing no size.
+separates attraction from complexity. Three metrics, three conclusions, on the same models.
+A related trap is worth naming: pooling all 72 models into one attraction estimate averages
+across a size-dependent effect and yields a number that describes no size: an
+averaging-across-a-dissociation error, not a confound.
 
-This is also why the skill sits here rather than §3: agreement saturates by step 2500 and
-its supporting structure appears in ~39 \% of the corpus against \emph{wh}-extraction's 1.5 \%, so
-it cannot meaningfully be withheld. Being \emph{learnable enough to measure} and being
-\emph{delayable} are different properties, and this design needs both.
+This is also why the skill sits here rather than in §3. Agreement is unusable as a
+delayed-exposure target: it saturates by step 2500 and its supporting structure appears in
+roughly 39 \% of the corpus against \emph{wh}-extraction's 1.5 \%, so it cannot meaningfully be
+withheld. Being \emph{learnable enough to measure} and being \emph{delayable} are different properties,
+and a design like ours needs both.
 
 \section{§7 Discussion}\label{discussion}
 
 \subsection{7.1 Two timing results at different levels}\label{two-timing-results-at-different-levels}
 
-Two findings about timing, at different levels. \emph{Which} skills a late start damages is
-skill-specific: arithmetic pays a persistent cost, long-distance \emph{wh}-licensing pays nothing
-measurable. And where damage occurs it is carried by the optimizer's learning-rate schedule
-rather than by hardened representations — restoring the schedule restores the skill, adding
-skill data without it does not. A late start hurts some skills and not others; when it
-hurts, what has closed is the model's step size, not its mind.
-
-The second finding survives the obvious deflationary reading. Applied at 23M to models that
-were never delayed, the same shift does nothing (−0.008, against +0.190 on the delayed runs),
-so recovery is specific to the delayed exposure profile, not a generic optimizer gain
-(§4.4) — which rules out one alternative reading without being a second method confirming
-closure, and closure still rests on the cram contrast alone.
+This paper reports two findings about timing, and they operate at different levels. The
+first says that \emph{which} skills a late start damages is skill-specific: arithmetic pays a
+persistent cost for a delayed start, long-distance \emph{wh}-licensing pays nothing we can
+measure. The second says that where the damage does occur, it is carried by the optimizer's
+learning-rate schedule rather than by representations that have hardened against revision, restoring the schedule restores the skill, and adding skill data without restoring the
+schedule does not. A late start hurts some skills and not others; when it hurts, what has
+closed is the model's step size, not its mind.
 
 \subsection{7.2 The three pre-registered predictions}\label{the-three-pre-registered-predictions}
 
-\textbf{\#1 (syntax would show the \emph{stronger} critical period) was inverted.} We reasoned that
-long-distance dependencies, scaffolded by earlier-acquired structure, would be more fragile
-to a late start; arithmetic carries the effect instead. This inversion is the origin of
-§3.3's dissociation, not an incidental miss.
+\textbf{Prediction \#1 (that syntax would show the \emph{stronger} critical period) was inverted.}
+Arithmetic carries the effect at both confirmatory sizes; long-distance \emph{wh}-licensing shows
+no detectable deficit under five distinct probes. We had reasoned that long-distance
+dependencies, being scaffolded by earlier-acquired structure, would be the more fragile to a
+late start. The opposite skill turned out to be the fragile one, and this inversion is the
+origin of the dissociation in §3.3 rather than an incidental miss.
 
-\textbf{\#2 (embedding reset would be the most effective intervention) was not borne out.} Reset
-landed at 0.586 against a null spanning {[}0.524, 0.626{]}, and the learning-rate shift was the
-only arm to clear the gate. At a single seed this is a statement about what we could detect,
-not a demonstration that reset fails. The prediction's second half (largest forgetting risk)
-was also not observed.
+\textbf{Prediction \#2 (that embedding reset would be the most effective intervention) was not
+borne out.} Reset produced no detectable recovery, landing at 0.586 against a null whose
+cross-seed range is {[}0.524, 0.626{]}; the learning-rate shift was the only arm to clear the
+pre-registered gate. Because reset was run at a single seed, this is a statement about what
+we could detect, not a demonstration that reset fails: one seed cannot be separated from a
+null that spans 0.10. The prediction's second half (that reset would carry the largest
+forgetting risk) was also not observed as stated.
 
-\textbf{\#3 (a reset-driven recovery would build new circuitry) was never testable}, being
-conditional on reset winning. §5 diagnoses models recovered by the learning-rate shift, which
-\#3 did not cover; those results confirm and disconfirm nothing about it. We say so because §5
-is where a reader holding our pre-registration will look for the answer.
+\textbf{Prediction \#3 (that a reset-driven recovery would build new circuitry) was never
+testable, because its antecedent did not occur.} The prediction was conditional on reset
+being the winning intervention. Reset never produced recovery, so the conditional was never
+entered. §5 diagnoses models recovered by the learning-rate shift, which prediction \#3 did
+not cover; those results should not be read as confirming or disconfirming it. We state this
+explicitly because §5 occupies the position in the paper where a reader holding our
+pre-registration will look for \#3's answer.
 
 \subsection{7.3 What the mechanism result does not say}\label{what-the-mechanism-result-does-not-say}
 
@@ -940,16 +1064,17 @@ the timing curve.
 
 \section{§8 Limitations}\label{limitations}
 
-Five experiments would move a label, named with their costs rather than gestured at.
+Five specific experiments would move a label, and we name them with their costs rather than
+gesturing at future work.
 
-\textbf{The dissociation's stronger reading is un-run, not unknowable.} Whether syntax is
+\textbf{The dissociation's stronger reading is now bounded, not un-run.} Whether syntax is
 genuinely \emph{less susceptible} to delayed exposure, rather than merely having too little
-headroom to show susceptibility, is decidable by a rate-collapse test at 60M: 14 delayed
-seeds against our existing 24-seed baseline, or 6 at a permissive threshold. This assumes
-delay eliminates the high-acquisition mode; if it merely halves it, 59 are needed. The same
-test at 23M requires 82 seeds and is out of reach. This is the cheapest outstanding
-experiment in the project and the only one that can promote the dissociation past its
-current scope.
+headroom to show susceptibility, was decidable by a rate-collapse test at 60M, and §3 reports
+it: 24 delayed seeds against our 24-seed baseline, returning 6/24 in both arms. That excludes
+a full collapse of the high-acquisition mode and leaves a half collapse open, which would
+need roughly 59 seeds per group. The remaining half is now the cheapest experiment that could
+promote the dissociation past its current scope; the same test at 23M requires 82 seeds and
+stays out of reach.
 
 \textbf{The 60M perplexity cost is bounded, not estimated.} Extending the treated arm past step
 5,000 to complete its annealing would convert our upper bound of 1.67 ppl into a point
@@ -969,7 +1094,7 @@ under a robust standard error.
 
 Beyond these: one corpus, one tokenizer, one language, a maximum of 60.3M parameters, and a
 single delay onset carrying the reopening result. Five of six intervention arms are single
-seed; the smallest size is excluded by a floor rather than solved.
+seed. The smallest size is excluded by a floor rather than solved.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -992,9 +1117,11 @@ have named the fourteen-seed experiment that would decide it.
 \appendix
 \section{Appendix A. Pruning-based localization: the pre-screen that rejected it}\label{appendix-a.-pruning-based-localization-the-pre-screen-that-rejected-it}
 
-Pruning was rejected by a pre-screen fixed in advance
-(\texttt{notes/week8-pruning-feasibility-prereg.md}), before the full tool was built. We report it
-because the rejection came within one hyperparameter of looking like a confirmation.
+§5.1 reports pruning as the third of three probes that cannot discriminate repair from
+reorganization on our contrast. It was rejected by a pre-screen fixed in advance
+(\texttt{notes/week8-pruning-feasibility-prereg.md}, 2026-07-27), before the full tool was built.
+We report it because a rejected method is a result about the contrast, and because this
+particular rejection came within one hyperparameter of looking like a confirmation.
 
 \textbf{Method.} Learned binary gates over attention heads and MLPs, objective = arithmetic
 answer-span cross-entropy + λ‖g‖₁, binarized at 0.5. The cross-model readout is
@@ -1028,9 +1155,9 @@ result
 \end{table}
 
 
-The metric is real — reproducible, and the mask genuinely is a sufficient arithmetic
-subnetwork — but it does not track circuit identity: A and C overlap about the same amount
-whether or not C rebuilt.
+The metric is real: perfectly reproducible, and the mask genuinely is a sufficient
+arithmetic subnetwork. It simply does not track circuit identity: A and C overlap about
+the same amount whether or not C rebuilt.
 
 \textbf{The sparsity sweep, run to pre-empt ``you picked the wrong λ'', found something worse than
 insensitivity.}
@@ -1068,24 +1195,35 @@ gate 4
 \end{table}
 
 
-Seed 1's overlap moves monotonically from \emph{highest} to \emph{middle} to \emph{lowest} as the mask
-tightens: \textbf{the sign of the method's answer is set by a hyperparameter, not by the models}.
+Seed 1's overlap moves monotonically from \emph{highest} to \emph{middle} to \emph{lowest} as the mask is
+tightened. \textbf{The sign of the method's answer is set by a hyperparameter rather than by the
+models}: at λ = 0.01 pruning says seed 1 reused the original circuit \emph{more} than the
+high-transfer cases; at λ = 0.06 it says the opposite.
+
 And the λ that agrees with the primary readout (\emph{r} = +0.872) is exactly the λ at which the
-mask stops being a valid circuit — retention 0.67 / 0.70, below the pre-registered 0.80 bar.
-Run at λ = 0.06 alone, this pilot would have reported ``pruning independently confirms
-reorganization'' — the same shape as the retracted single-head patching result (§5.1), and
-wrong for the same reason: a secondary method cited as corroboration without being shown to
-discriminate across the contrast set. Hence §5's claims are single-method by demonstration.
+mask stops being a valid circuit: retention falls to 0.67 / 0.70, below the pre-registered
+0.80 bar. At that sparsity, overlap differences plausibly track how much accuracy each mask
+sacrificed rather than which components each model uses.
+
+\textbf{The near-miss is the point.} Run at λ = 0.06 alone, this pilot would have reported ``seed 1
+lowest overlap, \emph{r} = +0.87 with ablation, pruning independently confirms reorganization.''
+That is the same shape as the single-head patching result we retracted (§5.1), and wrong for
+the same reason: a secondary method cited as corroboration without being shown to
+discriminate across the full contrast set. It is why §5's claims are annotated single-method
+by demonstration rather than supported by a count of agreeing probes.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section{Appendix B: Provenance of the circuit-identity classifier's thresholds}\label{appendix-b-provenance-of-the-circuit-identity-classifiers-thresholds}
 
-§5.2 reports the transfer axis continuously and assigns no categorical verdict. Our
-implementation classified a triad as \emph{repaired} when transfer ≥ 0.6 \textbf{and} IoU of the two
-models' top-head sets ≥ 0.4. The second conjunct is never satisfied here (maximum 0.20
-across six triads), so the repair label was unreachable. Four facts about that rule,
-checked 2026-08-05:
+§5.2 reports the transfer axis continuously and assigns no categorical verdict. This
+appendix records why, since the alternative (relabelling under a corrected rule) was
+available and was rejected.
+
+Until 2026-08-11 our implementation classified a triad as \emph{repaired} when transfer ≥ 0.6
+\textbf{and} IoU of the two models' top-head sets ≥ 0.4. The second conjunct is never satisfied in
+this dataset (maximum 0.20 across six triads), so the repair label was unreachable. Four facts
+about that rule, checked 2026-08-05:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1113,14 +1251,30 @@ checked 2026-08-05:
 
 So ``no triad was classified as repair'' describes a stale conjunct, not the models.
 
-\textbf{Why we did not simply relabel.} Dropping the conjunct would move the highest-transfer
-triad (23M seed 3, transfer 0.868) into \emph{repair}, which is choosing a decision rule after
-seeing the number it decides. The continuous axis assumes neither rule, and the verdict
-column stays in Table 4 so the absent repair row is visible. Measurements are untouched;
-only the labelling was in question.
+\textbf{Why we did not simply relabel.} Dropping the overlap conjunct would move the
+highest-transfer triad (23M seed 3, transfer 0.868) into a \emph{repair} category, which is
+choosing a decision rule after seeing the number it decides. Reporting the continuous axis
+assumes neither rule, and the verdict column stays in the body's Table 4 so that the absence
+of a repair row is visible rather than quietly dropped. The measurements are untouched
+throughout; only the labelling was ever in question.
 
-\textbf{The generalizable point:} a decision recorded in a pre-registration does not propagate
-itself into code.
+\textbf{The code no longer contains the rule.} As of 2026-08-11 the classifier emits the
+continuous readout only --- transfer, control, Jaccard and CKA --- with \texttt{classification:\ null}
+and a pointer to this appendix; the released artifact therefore does what §5.2 does. We
+deliberately did \textbf{not} substitute corrected cut-points, for the reason given above: with
+all six triads already measured, any new threshold would be chosen with knowledge of the
+numbers it decides. Removing a rule we could no longer justify is not the same act as
+installing a better one, and only the first is available to us at this point. The stored
+per-triad JSONs from the original runs are kept as written, so the numbers behind Table 4
+remain exactly those the analysis was performed on.
+
+\textbf{The generalizable lesson} is in the fourth point: a decision recorded in a
+pre-registration does not propagate itself into code. The demotion of overlap to
+corroborative was written down, correctly, ten days before this analysis was read, and the
+classifier went on applying the superseded rule because nobody grepped the implementation in
+the same sitting. That is why the fix here is a code change and not only a disclosure: a
+released pipeline that still contains the retired rule would keep making the same claim to
+anyone who ran it.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 

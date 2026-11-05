@@ -273,21 +273,50 @@ def main():
     # (global geometry; shared init keeps it high even when causal wiring differs).
     circuit_layers = sorted({c[1] for c in A_top})
     cka_circuit = float(np.mean([cka_AC[L] for L in circuit_layers]))
-    if transfer_ratio >= 0.6 and jacc >= 0.4:
-        verdict = "REPAIR — C's arithmetic runs through A's heads"
-    elif transfer_ratio <= 0.3 and control_ratio >= 2.0:
-        verdict = ("NEW CIRCUIT — A's heads are not causal in C, yet C's own heads are; "
-                   "lr_shift rebuilt arithmetic in different machinery")
-    else:
-        verdict = "MIXED / PARTIAL — see numbers"
+
+    # ---- CONTINUOUS readout — no categorical verdict is assigned ----------
+    # HISTORY (Appendix B). This block used to emit REPAIR / NEW CIRCUIT /
+    # MIXED from the rule `transfer_ratio >= 0.6 and jacc >= 0.4`. That rule
+    # was never pre-registered (notes/week8-diagnosis-seed-scope.md fixes seed
+    # scope and which diagnostics run, and specifies no verdict thresholds),
+    # and its Jaccard conjunct contradicted the docstring directly above:
+    # Jaccard is designated CORROBORATIVE there, but the conjunct made it a
+    # hard gate on the repair branch only, so only one of the two verdicts
+    # could ever be blocked by it. The conjunct was formally demoted on
+    # 2026-07-26 (notes/week8-60M-seed2-prereg.md: "Jaccard is corroborative
+    # only — it did NOT discriminate at 23M: seed 2 had Jaccard 0.09 WITH
+    # transfer 0.71"), but the code was never changed, so the tool went on
+    # applying a rule the project had already retired. Max Jaccard across the
+    # six triads is 0.20, so the repair label was unreachable by construction.
+    #
+    # THE FIX IS NOT A REPLACEMENT THRESHOLD. Choosing new cut-points now,
+    # with all six triads already measured, would be selecting a decision rule
+    # after seeing the numbers it decides — the same error in a new coat, and
+    # it would move the highest-transfer triad (23M seed 3, transfer 0.868)
+    # into "repair" by fiat. §5.2 reports the transfer axis continuously and
+    # assigns no categorical label; this tool now does the same. The measured
+    # quantities below are unchanged — only the labelling was ever in question.
+    verdict = (f"CONTINUOUS READOUT (no categorical label): "
+               f"transfer={transfer_ratio:.3f}, control={control_ratio:.3f}, "
+               f"jaccard={jacc:.3f}, cka@circuit={cka_circuit:.3f}. "
+               f"Low transfer => A's heads are not causal in C (reorganization); "
+               f"high transfer => C's arithmetic runs through A's heads (repair). "
+               f"Read on the axis, not against a cut-point (Appendix B).")
     report["verdict"] = {
         "text": verdict,
+        # explicit, machine-readable: this tool no longer classifies
+        "classification": None,
+        "classification_note": (
+            "No categorical verdict is emitted. The former thresholds "
+            "(transfer>=0.6 AND jaccard>=0.4) were unregistered and the "
+            "Jaccard conjunct was demoted to corroborative on 2026-07-26; "
+            "see Appendix B."),
         "transfer_ratio_C_over_A": round(transfer_ratio, 3),
         "control_ratio_Cheads_over_Aheads": round(control_ratio, 3),
         "jaccard_A_top_C_top": round(jacc, 3),
         "cka_AC_circuit_layers": round(cka_circuit, 3),
         "circuit_layers": circuit_layers}
-    print(f"\n[VERDICT seed {args.seed}] {verdict}")
+    print(f"\n[READOUT seed {args.seed}] {verdict}")
     print(f"    causal transfer C/A = {transfer_ratio:.2f}  (low => A's heads not causal in C)")
     print(f"    control C-own/A-heads = {control_ratio:.2f}  (high => C DOES have its own circuit)")
     print(f"    Jaccard(A_top,C_top) = {jacc:.2f}   CKA(A,C)@circuit = {cka_circuit:.2f}")

@@ -1,0 +1,98 @@
+########## tier1 chain start 2026-08-11 23:32:01 pid=1507 ##########
+########## tier1 chain start 2026-08-12 15:44:52 pid=1848 ##########
+########## tier1 chain start 2026-08-13 00:49:28 pid=8018 ##########
+2026-08-13 04:59:47 GPU free — starting Tier-1 chain
+===== [2026-08-13 04:59:47] CHAIN STEP: T1.3 WSD schedule phase 1 (scripts/wsd_schedule_batch.sh) =====
+###### WSD schedule batch (phase 1) start Thu Aug 13 04:59:47 IST 2026 ######
+=== [2026-08-13 04:59:47] WSD delay0 seed1 -> arith_delay0_exp20_wsd_size23M_seed1 ===
+    exit 0
+=== [2026-08-13 05:27:19] WSD delay50 seed1 -> arith_delay50_exp20_wsd_size23M_seed1 ===
+    exit 0
+=== [2026-08-13 05:55:07] WSD delay0 seed2 -> arith_delay0_exp20_wsd_size23M_seed2 ===
+    exit 0
+=== [2026-08-13 06:22:53] WSD delay50 seed2 -> arith_delay50_exp20_wsd_size23M_seed2 ===
+    exit 0
+=== [2026-08-13 06:51:04] WSD delay0 seed3 -> arith_delay0_exp20_wsd_size23M_seed3 ===
+    exit 0
+=== [2026-08-13 07:19:11] WSD delay50 seed3 -> arith_delay50_exp20_wsd_size23M_seed3 ===
+    exit 0
+###### WSD schedule batch (phase 1) done Thu Aug 13 07:47:34 IST 2026 ######
+WSD-PHASE1-COMPLETE 2026-08-13 07:47:34
+===== [2026-08-13 07:47:34] CHAIN STEP OK: T1.3 WSD schedule phase 1 =====
+===== [2026-08-13 07:47:34] CHAIN STEP: T1.2 intervention arms n=3 (scripts/intervention_arms_seeds23_batch.sh) =====
+###### intervention arms -> n=3 start Thu Aug 13 07:47:35 IST 2026 ######
+=== [2026-08-13 07:47:35] seed2 ARM reset -> arith_delay50_exp20_size23M_seed2_ivresetembedding2501 ===
+    exit 127 (log: logs/intervention_arms_n3/seed2_reset.out)
+ARM-FAILURE seed2 reset
+=== [2026-08-13 08:01:39] seed2 ARM reset_spike -> arith_delay50_exp20_size23M_seed2_ivresetspikeembedding2501 ===
+    exit 127 (log: logs/intervention_arms_n3/seed2_reset_spike.out)
+ARM-FAILURE seed2 reset_spike
+=== [2026-08-13 08:14:43] seed2 ARM spike -> arith_delay50_exp20_size23M_seed2_ivspike2501 ===
+########## tier1 chain start 2026-08-13 08:18:05 pid=585 ##########
+2026-08-13 08:18:05 GPU free — starting Tier-1 chain
+===== [2026-08-13 08:18:05] CHAIN STEP: T1.3 WSD schedule phase 1 (scripts/wsd_schedule_batch.sh) =====
+###### WSD schedule batch (phase 1) start Thu Aug 13 08:18:05 IST 2026 ######
+=== [2026-08-13 08:18:05] WSD delay0 seed1 -> arith_delay0_exp20_wsd_size23M_seed1 ===
+    already complete — skipping
+=== [2026-08-13 08:18:05] WSD delay50 seed1 -> arith_delay50_exp20_wsd_size23M_seed1 ===
+    already complete — skipping
+=== [2026-08-13 08:18:05] WSD delay0 seed2 -> arith_delay0_exp20_wsd_size23M_seed2 ===
+    already complete — skipping
+=== [2026-08-13 08:18:05] WSD delay50 seed2 -> arith_delay50_exp20_wsd_size23M_seed2 ===
+    already complete — skipping
+=== [2026-08-13 08:18:05] WSD delay0 seed3 -> arith_delay0_exp20_wsd_size23M_seed3 ===
+    already complete — skipping
+=== [2026-08-13 08:18:05] WSD delay50 seed3 -> arith_delay50_exp20_wsd_size23M_seed3 ===
+    already complete — skipping
+###### WSD schedule batch (phase 1) done Thu Aug 13 08:18:06 IST 2026 ######
+WSD-PHASE1-COMPLETE 2026-08-13 08:18:06
+===== [2026-08-13 08:18:06] CHAIN STEP OK: T1.3 WSD schedule phase 1 =====
+===== [2026-08-13 08:18:06] CHAIN STEP: T1.2 intervention arms n=3 (scripts/intervention_arms_seeds23_batch.sh) =====
+###### intervention arms -> n=3 start Thu Aug 13 08:18:06 IST 2026 ######
+=== [2026-08-13 08:18:06] seed2 ARM reset -> arith_delay50_exp20_size23M_seed2_ivresetembedding2501 ===
+    exit 0 (log: logs/intervention_arms_n3/seed2_reset.out)
+=== [2026-08-13 08:19:09] seed2 ARM reset_spike -> arith_delay50_exp20_size23M_seed2_ivresetspikeembedding2501 ===
+    exit 0 (log: logs/intervention_arms_n3/seed2_reset_spike.out)
+=== [2026-08-13 08:23:24] seed2 ARM spike -> arith_delay50_exp20_size23M_seed2_ivspike2501 ===
+    exit 0 (log: logs/intervention_arms_n3/seed2_spike.out)
+=== [2026-08-13 08:36:10] seed2 ARM freeze -> arith_delay50_exp20_size23M_seed2_ivfreeze2501 ===
+    exit 0 (log: logs/intervention_arms_n3/seed2_freeze.out)
+=== [2026-08-13 08:49:35] seed2 ARM cram -> arith_delay50_exp20_size23M_seed2_ivcram2501 ===
+    exit 0 (log: logs/intervention_arms_n3/seed2_cram.out)
+=== [2026-08-13 09:03:27] seed3 ARM reset -> arith_delay50_exp20_size23M_seed3_ivresetembedding2501 ===
+    exit 0 (log: logs/intervention_arms_n3/seed3_reset.out)
+=== [2026-08-13 09:17:18] seed3 ARM reset_spike -> arith_delay50_exp20_size23M_seed3_ivresetspikeembedding2501 ===
+    exit 0 (log: logs/intervention_arms_n3/seed3_reset_spike.out)
+=== [2026-08-13 09:31:18] seed3 ARM spike -> arith_delay50_exp20_size23M_seed3_ivspike2501 ===
+    exit 0 (log: logs/intervention_arms_n3/seed3_spike.out)
+=== [2026-08-13 09:45:17] seed3 ARM freeze -> arith_delay50_exp20_size23M_seed3_ivfreeze2501 ===
+    exit 0 (log: logs/intervention_arms_n3/seed3_freeze.out)
+=== [2026-08-13 09:59:03] seed3 ARM cram -> arith_delay50_exp20_size23M_seed3_ivcram2501 ===
+    exit 0 (log: logs/intervention_arms_n3/seed3_cram.out)
+###### intervention arms -> n=3 done Thu Aug 13 10:13:12 IST 2026 ######
+ARMS-N3-COMPLETE 2026-08-13 10:13:12
+===== [2026-08-13 10:13:12] CHAIN STEP OK: T1.2 intervention arms n=3 =====
+===== [2026-08-13 10:13:12] CHAIN STEP: T1.4 lr level/shape 2x2 (scripts/lr_decomposition_batch.sh) =====
+###### lr_shift level/shape decomposition start Thu Aug 13 10:13:13 IST 2026 ######
+=== [2026-08-13 10:13:13] seed1 ARM lr_flat_control -> arith_delay50_exp20_size23M_seed1_ivlrflatcontrol2501 ===
+    exit 0 (log: logs/lr_decomposition/seed1_lr_flat_control.out)
+=== [2026-08-13 10:27:43] seed1 ARM lr_level_only -> arith_delay50_exp20_size23M_seed1_ivlrlevelonly2501 ===
+    exit 0 (log: logs/lr_decomposition/seed1_lr_level_only.out)
+=== [2026-08-13 10:42:06] seed1 ARM lr_shape_only -> arith_delay50_exp20_size23M_seed1_ivlrshapeonly2501 ===
+    exit 0 (log: logs/lr_decomposition/seed1_lr_shape_only.out)
+=== [2026-08-13 10:56:26] seed2 ARM lr_flat_control -> arith_delay50_exp20_size23M_seed2_ivlrflatcontrol2501 ===
+    exit 0 (log: logs/lr_decomposition/seed2_lr_flat_control.out)
+=== [2026-08-13 11:10:46] seed2 ARM lr_level_only -> arith_delay50_exp20_size23M_seed2_ivlrlevelonly2501 ===
+    exit 0 (log: logs/lr_decomposition/seed2_lr_level_only.out)
+=== [2026-08-13 11:25:40] seed2 ARM lr_shape_only -> arith_delay50_exp20_size23M_seed2_ivlrshapeonly2501 ===
+    exit 0 (log: logs/lr_decomposition/seed2_lr_shape_only.out)
+=== [2026-08-13 11:40:31] seed3 ARM lr_flat_control -> arith_delay50_exp20_size23M_seed3_ivlrflatcontrol2501 ===
+    exit 0 (log: logs/lr_decomposition/seed3_lr_flat_control.out)
+=== [2026-08-13 11:55:28] seed3 ARM lr_level_only -> arith_delay50_exp20_size23M_seed3_ivlrlevelonly2501 ===
+    exit 0 (log: logs/lr_decomposition/seed3_lr_level_only.out)
+=== [2026-08-13 12:10:27] seed3 ARM lr_shape_only -> arith_delay50_exp20_size23M_seed3_ivlrshapeonly2501 ===
+    exit 0 (log: logs/lr_decomposition/seed3_lr_shape_only.out)
+###### lr_shift decomposition done Thu Aug 13 12:25:01 IST 2026 ######
+LRDECOMP-COMPLETE 2026-08-13 12:25:02
+===== [2026-08-13 12:25:02] CHAIN STEP OK: T1.4 lr level/shape 2x2 =====
+TIER1-CHAIN-COMPLETE 2026-08-13 12:25:02

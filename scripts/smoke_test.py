@@ -81,6 +81,27 @@ def main() -> None:
     assert lrs[-1] >= tcfg.lr * tcfg.min_lr_ratio * 0.99, "cosine floor"
     print("LR schedule OK (warmup -> cosine -> floor)")
 
+    # WSD schedule shape: same warmup, same peak, same floor, but the peak is
+    # HELD through the middle of training (the property that makes the
+    # non-cosine generalization test decisive at a mid-training delay onset)
+    from dataclasses import replace
+    wcfg = replace(tcfg, lr_schedule="wsd", wsd_decay_frac=0.2)
+    wlrs = [lr_at_step(s, wcfg) for s in range(wcfg.total_steps + 1)]
+    decay_start = wcfg.total_steps - int(round(0.2 * wcfg.total_steps))
+    assert abs(max(wlrs) - wcfg.lr) / wcfg.lr < 1e-9, "wsd peak == cfg.lr"
+    assert wlrs[wcfg.warmup_steps] == wcfg.lr, "plateau starts at warmup end"
+    assert wlrs[decay_start - 1] == wcfg.lr, "peak held until decay_start"
+    assert wlrs[wcfg.total_steps // 2] == wcfg.lr, \
+        "wsd must still be at peak mid-training (unlike cosine)"
+    assert all(wlrs[s] >= wlrs[s + 1] for s in range(decay_start,
+                                                     wcfg.total_steps)), \
+        "monotone decay in the final window"
+    assert abs(wlrs[wcfg.total_steps] - wcfg.lr * wcfg.min_lr_ratio) < 1e-12, \
+        "wsd must reach exactly the same floor as cosine"
+    assert wlrs[:wcfg.warmup_steps] == lrs[:wcfg.warmup_steps], \
+        "warmup must be identical across schedules"
+    print("WSD schedule OK (warmup -> plateau at peak -> linear decay -> floor)")
+
     if torch.cuda.is_available():
         model = model.cuda()
         x, y = x.cuda(), y.cuda()

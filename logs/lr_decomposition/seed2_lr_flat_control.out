@@ -1,0 +1,6 @@
+[fork] arith_delay50_exp20_size23M_seed2_ivlrflatcontrol2501 <- arith_delay50_exp20_size23M_seed2/step_0002500 (lr_flat_control at step 2501)
+resumed arith_delay50_exp20_size23M_seed2_ivlrflatcontrol2501 from step 2500 (stream fast-forwarded, 0 metric rows kept)
+[intervention] step 2501: LR component window shape=flat level=late (scale 0.0001692) over [2501, 5001)
+retention: pruned 22 intermediate checkpoints (5.7 GB), kept steps (1250, 2500, 3750, 5000)
+done: 5000 steps in 14.0 min (2.99 steps/s, 2500 this launch)
+tokens by stream: {'base': 65536000, 'arith': 16384000}

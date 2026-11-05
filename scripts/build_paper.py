@@ -53,6 +53,8 @@ UNICODE = {
     "2212": r"$-$", "2248": r"$\approx$", "2264": r"$\leq$",
     "03BB": r"$\lambda$", "2016": r"$\|$", "2032": r"$'$", "2081": r"$_1$",
     "2265": r"$\geq$",
+    # third row added 2026-08-13 with the WSD / decomposition / rate-collapse sections
+    "03B1": r"$\alpha$",
 }
 
 # The drafts carry citations as plain bracketed text ("[Achille, Rovere & Soatto, ICLR
@@ -91,7 +93,12 @@ CITATIONS = {
 
 # A bracket group holding only digits and arithmetic punctuation is a numeric interval
 # (e.g. a confidence interval "[0.611, 0.708]"), not a citation.
-NUMERIC = re.compile(r"[\d\s,.\-–—+±%]*")
+# U+2212 MINUS SIGN belongs here alongside the hyphen and dashes: the drafts set negative
+# numbers with it throughout (it is already mapped to $-$ in the preamble above), so a CI
+# with a negative bound -- "[-0.0064, +0.0087]" -- is a numeric interval that this guard
+# would otherwise reject as an unknown citation. Found 2026-08-13, when exactly that CI
+# failed the build.
+NUMERIC = re.compile(r"[\d\s,.\-–—−+±%]*")
 
 
 def cite(md):

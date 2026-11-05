@@ -1,0 +1,268 @@
+{
+  "family": "arms_n3",
+  "prereg": "notes/intervention-arms-n3-preregistration.md",
+  "gate": 0.7122,
+  "gate_frac": 0.9,
+  "early_anchor": {
+    "mean": 0.7913333333333333,
+    "sd": 0.0070237691685684995,
+    "n": 3,
+    "values": [
+      0.798,
+      0.792,
+      0.784
+    ]
+  },
+  "delayed_null": {
+    "mean": 0.5713333333333334,
+    "sd": 0.060706946335105115,
+    "n": 3,
+    "values": [
+      0.506,
+      0.626,
+      0.582
+    ]
+  },
+  "null_cross_seed_range": [
+    0.506,
+    0.626
+  ],
+  "arms": {
+    "reset (embedding)": {
+      "n": 3,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "treated_endpoint": {
+        "mean": 0.5853333333333333,
+        "sd": 0.0011547005383792527,
+        "n": 3,
+        "values": [
+          0.586,
+          0.586,
+          0.584
+        ]
+      },
+      "null_endpoint": {
+        "mean": 0.5713333333333334,
+        "sd": 0.060706946335105115,
+        "n": 3,
+        "values": [
+          0.506,
+          0.626,
+          0.582
+        ]
+      },
+      "per_seed_lift_over_own_null": {
+        "1": 0.07999999999999996,
+        "2": -0.040000000000000036,
+        "3": 0.0020000000000000018
+      },
+      "lift_mean": 0.013999999999999976,
+      "ppl_cost_vs_own_null": {
+        "1": 1.3169795375202966,
+        "2": 0.9662377642793345,
+        "3": 1.0655646851399254
+      },
+      "ppl_cost_mean": 1.1162606623131854,
+      "clears_gate": false,
+      "below_entire_null_range": false,
+      "all_seeds_negative_lift": false,
+      "sign_consistent": false,
+      "paired_t": 0.3982160867920013,
+      "p_two_sided": 0.7289589175681723,
+      "p_holm": 1.0
+    },
+    "reset + spike": {
+      "n": 3,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "treated_endpoint": {
+        "mean": 0.5706666666666665,
+        "sd": 0.042253205006642175,
+        "n": 3,
+        "values": [
+          0.576,
+          0.526,
+          0.61
+        ]
+      },
+      "null_endpoint": {
+        "mean": 0.5713333333333334,
+        "sd": 0.060706946335105115,
+        "n": 3,
+        "values": [
+          0.506,
+          0.626,
+          0.582
+        ]
+      },
+      "per_seed_lift_over_own_null": {
+        "1": 0.06999999999999995,
+        "2": -0.09999999999999998,
+        "3": 0.028000000000000025
+      },
+      "lift_mean": -0.0006666666666666673,
+      "ppl_cost_vs_own_null": {
+        "1": 0.9907017035805339,
+        "2": 0.6701875564353657,
+        "3": 0.8558016240561059
+      },
+      "ppl_cost_mean": 0.8388969613573352,
+      "clears_gate": false,
+      "below_entire_null_range": false,
+      "all_seeds_negative_lift": false,
+      "sign_consistent": false,
+      "paired_t": -0.01303990448565745,
+      "p_two_sided": 0.9907797870530348,
+      "p_holm": 1.0
+    },
+    "LR spike": {
+      "n": 3,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "treated_endpoint": {
+        "mean": 0.578,
+        "sd": 0.04779121258139408,
+        "n": 3,
+        "values": [
+          0.536,
+          0.63,
+          0.568
+        ]
+      },
+      "null_endpoint": {
+        "mean": 0.5713333333333334,
+        "sd": 0.060706946335105115,
+        "n": 3,
+        "values": [
+          0.506,
+          0.626,
+          0.582
+        ]
+      },
+      "per_seed_lift_over_own_null": {
+        "1": 0.030000000000000027,
+        "2": 0.0040000000000000036,
+        "3": -0.014000000000000012
+      },
+      "lift_mean": 0.006666666666666672,
+      "ppl_cost_vs_own_null": {
+        "1": -0.2190616331658859,
+        "2": -0.28352771410514777,
+        "3": -0.13078531792382364
+      },
+      "ppl_cost_mean": -0.21112488839828578,
+      "clears_gate": false,
+      "below_entire_null_range": false,
+      "all_seeds_negative_lift": false,
+      "sign_consistent": false,
+      "paired_t": 0.5219957509718806,
+      "p_two_sided": 0.6537283194677781,
+      "p_holm": 1.0
+    },
+    "freeze": {
+      "n": 3,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "treated_endpoint": {
+        "mean": 0.422,
+        "sd": 0.08126499861564015,
+        "n": 3,
+        "values": [
+          0.332,
+          0.444,
+          0.49
+        ]
+      },
+      "null_endpoint": {
+        "mean": 0.5713333333333334,
+        "sd": 0.060706946335105115,
+        "n": 3,
+        "values": [
+          0.506,
+          0.626,
+          0.582
+        ]
+      },
+      "per_seed_lift_over_own_null": {
+        "1": -0.174,
+        "2": -0.182,
+        "3": -0.09199999999999997
+      },
+      "lift_mean": -0.14933333333333332,
+      "ppl_cost_vs_own_null": {
+        "1": 1.075116194788258,
+        "2": 1.3734996186924135,
+        "3": 1.19617127731307
+      },
+      "ppl_cost_mean": 1.2149290302645805,
+      "clears_gate": false,
+      "below_entire_null_range": true,
+      "all_seeds_negative_lift": true,
+      "sign_consistent": true,
+      "paired_t": -5.19247999211988,
+      "p_two_sided": 0.03514579636499295,
+      "p_holm": 0.17572898182496477
+    },
+    "cram": {
+      "n": 3,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "treated_endpoint": {
+        "mean": 0.5766666666666667,
+        "sd": 0.004618802153517011,
+        "n": 3,
+        "values": [
+          0.574,
+          0.574,
+          0.582
+        ]
+      },
+      "null_endpoint": {
+        "mean": 0.5713333333333334,
+        "sd": 0.060706946335105115,
+        "n": 3,
+        "values": [
+          0.506,
+          0.626,
+          0.582
+        ]
+      },
+      "per_seed_lift_over_own_null": {
+        "1": 0.06799999999999995,
+        "2": -0.052000000000000046,
+        "3": 0.0
+      },
+      "lift_mean": 0.005333333333333301,
+      "ppl_cost_vs_own_null": {
+        "1": 0.14119263783388192,
+        "2": 0.08153467961093241,
+        "3": 0.17446428914274037
+      },
+      "ppl_cost_mean": 0.13239720219585158,
+      "clears_gate": false,
+      "below_entire_null_range": false,
+      "all_seeds_negative_lift": false,
+      "sign_consistent": false,
+      "paired_t": 0.15350591129066632,
+      "p_two_sided": 0.8920887744229955,
+      "p_holm": 1.0
+    }
+  },
+  "pending": []
+}

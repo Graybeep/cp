@@ -81,9 +81,9 @@ by demonstration rather than supported by a count of agreeing probes.
 appendix records why, since the alternative (relabelling under a corrected rule) was
 available and was rejected.
 
-Our implementation classified a triad as *repaired* when transfer ≥ 0.6 **and**
-IoU of the two models' top-head sets ≥ 0.4. The second conjunct is never satisfied in this
-dataset (maximum 0.20 across six triads), so the repair label was unreachable. Four facts
+Until 2026-08-11 our implementation classified a triad as *repaired* when transfer ≥ 0.6
+**and** IoU of the two models' top-head sets ≥ 0.4. The second conjunct is never satisfied in
+this dataset (maximum 0.20 across six triads), so the repair label was unreachable. Four facts
 about that rule, checked 2026-08-05:
 
 1. **It was not pre-registered.** The genuine pre-registration
@@ -111,11 +111,23 @@ assumes neither rule, and the verdict column stays in the body's Table 4 so that
 of a repair row is visible rather than quietly dropped. The measurements are untouched
 throughout; only the labelling was ever in question.
 
+**The code no longer contains the rule.** As of 2026-08-11 the classifier emits the
+continuous readout only — transfer, control, Jaccard and CKA — with `classification: null`
+and a pointer to this appendix; the released artifact therefore does what §5.2 does. We
+deliberately did **not** substitute corrected cut-points, for the reason given above: with
+all six triads already measured, any new threshold would be chosen with knowledge of the
+numbers it decides. Removing a rule we could no longer justify is not the same act as
+installing a better one, and only the first is available to us at this point. The stored
+per-triad JSONs from the original runs are kept as written, so the numbers behind Table 4
+remain exactly those the analysis was performed on.
+
 **The generalizable lesson** is in the fourth point: a decision recorded in a
 pre-registration does not propagate itself into code. The demotion of overlap to
 corroborative was written down, correctly, ten days before this analysis was read, and the
 classifier went on applying the superseded rule because nobody grepped the implementation in
-the same sitting.
+the same sitting. That is why the fix here is a code change and not only a disclosure: a
+released pipeline that still contains the retired rule would keep making the same claim to
+anyone who ran it.
 
 ---
 

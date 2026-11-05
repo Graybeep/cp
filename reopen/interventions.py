@@ -213,6 +213,81 @@ class ShiftedLRWindow:
 
 
 @dataclass
+class LRComponentWindow:
+    """Factorial dissection of ShiftedLRWindow into LEVEL and SHAPE.
+
+    `lr_shift` moves two things at once — the learning rate's overall
+    MAGNITUDE and its TRAJECTORY (warmup ramp + decay curvature) — so
+    "the schedule matters" cannot be attributed to either. This class
+    crosses them:
+
+                        level=late            level=early
+        shape=flat      C: flat control       A: level only
+        shape=source    B: shape only         = ShiftedLRWindow (lr_shift)
+
+    The fourth cell reproduces ShiftedLRWindow exactly (asserted in
+    tests), so the decomposition is anchored to the arm it explains
+    rather than being a parallel implementation of it.
+
+    A vs C isolates level (both flat, different magnitude). B vs C
+    isolates shape (same mean magnitude, different trajectory). C is
+    load-bearing: without it, A confounds "higher LR" with "no decay".
+
+    LEVEL is matched on the window MEAN, not the peak, because the mean
+    is what the flat cells can express; a peak-matched flat arm would
+    have a different area under the schedule and stop being a level
+    control. Normalisation is computed from cfg alone (no data
+    dependence), so it is identical across seeds.
+    """
+    at_step: int
+    end_step: int          # exclusive; hands back to the schedule here
+    source_start: int      # schedule step the shape is read from
+    shape: str             # "flat" | "source"
+    level: str             # "late" | "early"
+    _scale: float | None = field(default=None, init=False, repr=False)
+
+    def _window_mean(self, start: int, n: int, cfg) -> float:
+        return sum(lr_at_step(start + t, cfg) for t in range(n)) / n
+
+    def _ensure_scale(self, trainer) -> None:
+        """Resolve the normalisation once, from cfg. Recomputed after a
+        resume (instance state is not checkpointed) — deterministic, so
+        the resumed value equals the original."""
+        if self._scale is not None:
+            return
+        cfg = trainer.cfg
+        n = self.end_step - self.at_step
+        target = (self._window_mean(self.at_step, n, cfg) if self.level == "late"
+                  else self._window_mean(self.source_start, n, cfg))
+        if self.shape == "flat":
+            base_mean = 1.0
+        elif self.shape == "source":
+            base_mean = self._window_mean(self.source_start, n, cfg)
+        else:
+            raise ValueError(f"unknown shape {self.shape!r}")
+        self._scale = target / base_mean
+
+    def _base(self, step: int, trainer) -> float:
+        if self.shape == "flat":
+            return 1.0
+        return lr_at_step(step - self.at_step + self.source_start, trainer.cfg)
+
+    def __call__(self, step: int, trainer) -> None:
+        if step == self.at_step:
+            self._ensure_scale(trainer)
+            _stamp(trainer, f"lr_{self.shape}_{self.level}", step)
+            print(f"[intervention] step {step}: LR component window "
+                  f"shape={self.shape} level={self.level} "
+                  f"(scale {self._scale:.4g}) over "
+                  f"[{self.at_step}, {self.end_step})")
+        if self.at_step <= step < self.end_step:
+            self._ensure_scale(trainer)
+            trainer.lr_override = self._base(step, trainer) * self._scale
+        elif step == self.end_step:
+            trainer.lr_override = None
+
+
+@dataclass
 class EarlyBurstControl:
     """Density-decoupling control for the Detect phase (NOT a reopening
     intervention): same total skill tokens and window length as a delay

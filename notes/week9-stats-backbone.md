@@ -126,18 +126,27 @@ the paper only as the H2/H3 mechanism decomposition: delayed lift +0.389 = gener
 +0.115 + exposure-alignment +0.274, i.e. **~70 % of the effect requires the delayed
 exposure profile** (SUGGESTIVE, exploratory).
 
-**(b) Single-seed arms scored against the null's cross-seed RANGE, not its mean.** With
-a seed-variable null (0.524–0.626 at 23M), an n = 1 arm landing inside that range is
-indistinguishable from the null and must be scored as *no detectable recovery (n = 1)* —
-not as "fails to reopen", which claims more than one seed can support:
+**(b) Arms scored per seed against their OWN fork source. EXTENDED TO n = 3 on 2026-08-13
+— the label survives, its basis does not.** The n = 1 version of this block scored each arm
+against the null's cross-seed *range* because one seed landing inside a 0.10-wide range is
+indistinguishable from the null. At n = 3 the arms are scored by **per-seed sign consistency**
+against each arm's own fork source (0.571 ± 0.061, range 0.506–0.626 — fork-source lineage,
+deliberately not the Detect null; do not reconcile). Four arms now fail on *disagreeing
+signs* rather than on insufficient n. The verdict wording is unchanged and "fails to reopen"
+stays banned; only the reason moves.
 
-| arm (23M, seed 1) | endpoint | verdict |
-|:--|--:|:--|
-| reset (embedding) | 0.586 | no detectable recovery (n = 1) — inside null range |
-| reset + LR spike | 0.576 | no detectable recovery (n = 1) — inside null range |
-| LR spike alone | 0.536 | no detectable recovery (n = 1) — inside null range |
-| cram | 0.574 | no detectable recovery (n = 1) — inside null range |
-| **freeze** | **0.332** | **harmful** — below the *entire* null range |
+| arm (23M, n = 3) | endpoint | per-seed lift | verdict |
+|:--|--:|:--|:--|
+| reset (embedding) | 0.585 ± 0.001 | +0.080 / −0.040 / +0.002 | no consistent direction |
+| reset + LR spike | 0.571 ± 0.042 | +0.070 / −0.100 / +0.028 | no consistent direction |
+| LR spike alone | 0.578 ± 0.048 | +0.030 / +0.004 / −0.014 | no consistent direction |
+| cram | 0.577 ± 0.005 | +0.068 / −0.052 / 0.000 | no consistent direction |
+| **freeze** | **0.422 ± 0.081** | −0.174 / −0.182 / −0.092 | **harmful** — below the *entire* null range at every seed |
+
+Two endpoints moved materially against their published n = 1 values (LR spike 0.536 → 0.578,
+freeze 0.332 → 0.422), and seed 1 gave the largest lift of any seed for all four
+non-directional arms. Any surviving "(n = 1)" qualifier on these arms is now stale and must
+be struck wherever it appears.
 
 This is the one place where the write-up can currently say something directional from
 n = 1, and only for freeze. Prediction #2 (reset predicted best) is **not borne out**;
@@ -175,8 +184,9 @@ undelayed model?), not the same contrast by another route. Do not write it as
 cross-method validation; the §10 rule has already cost the project twice.
 
 **Label:** lr_shift reopening at 23M and 60M — **ESTABLISHED**; scale-invariant
-endpoint — **ESTABLISHED**; the other four Tier-1 interventions — **SUGGESTIVE (n = 1)**,
-with freeze's harm the only directional one; 60M general-LM cost —
+endpoint — **ESTABLISHED**; the other four Tier-1 interventions — **SUGGESTIVE (n = 3,
+signs disagree)**, with freeze's harm the only directional one and now directional at three
+seeds rather than one; 60M general-LM cost —
 **BOUNDED-NOT-EXCLUDED**, residual bounded above by 1.67 ppl, no point estimate quoted
 (the anneal slope is unmeasured; the arm-extension is the only run that would collapse
 it, and is future work).
@@ -454,10 +464,10 @@ submission.
 | 7 | Closure at d50 is largely LR-schedule, not representational entrenchment | C2 | ESTABLISHED (cram+lr_shift ≈ lr_shift ≫ cram, n = 3) |
 | 8 | ~70 % of the 11M effect requires the delayed exposure profile (H3) | C2 | SUGGESTIVE (exploratory) |
 | 8b | At 23M the reopening effect is **entirely** exposure-aligned: the identical shift lifts the early runs −0.008 (0.783 ± 0.025 vs anchor 0.791 ± 0.007) while lifting the delayed runs +0.190; alignment +0.198, positive at all 3 seeds, paired *t*(2) = 5.17, one-sided *p* = 0.018 | C2 | ESTABLISHED — but scoped as *rules out the generic-booster reading*, NOT as a second method confirming claim 7 (which rests on the cram contrast). See the §10 cross-method rule |
-| 9 | Reset / spike / cram show no detectable recovery; freeze is harmful | C2 | SUGGESTIVE (n = 1) |
+| 9 | Reset / reset+spike / spike / cram show no consistent direction; freeze is harmful | C2 | SUGGESTIVE (n = 3, per-seed signs disagree) — **re-based 2026-08-13**: label unchanged, basis moved from "one seed cannot separate it from the null" to "three seeds disagree in sign". Freeze's harm is now directional at 3 seeds (below the entire null range at every one). Endpoints restated at n = 3; the n = 1 figures for LR spike (0.536) and freeze (0.332) were seed-1 extremes |
 | 10 | The 60M general-LM cost is bounded above by 1.67 ppl and is likely a horizon artifact | C2 | BOUNDED-NOT-EXCLUDED |
 | 11 | Long-distance wh-licensing shows no detectable critical period under five distinct probes | C3 | ESTABLISHED (null, scoped) |
-| 11b | Arithmetic and long-distance syntax dissociate under matched design: delayed exposure costs arithmetic 0.214 ± 0.055 and costs LD nothing measurable across five probes. **Scoped — syntax's acquisition ceiling (0.028 of headroom vs arithmetic's 0.791) is a partial alternative explanation that this design cannot fully exclude**, since the LD MDE (0.048) exceeds its total headroom. The absolute dissociation is established; the differential-*susceptibility* reading is not — unmeasurable at the achieved n under the mean readout, and **un-run** under the rate readout, where a 60M rate-collapse test (14 delayed seeds) would settle it (§2.3.1, §2.3.1a) | C1 × C3 | **ESTABLISHED (scoped)** |
+| 11b | Arithmetic and long-distance syntax dissociate under matched design: delayed exposure costs arithmetic 0.214 ± 0.055 and costs LD nothing measurable across five probes. **Scoped — syntax's acquisition ceiling (0.028 of headroom vs arithmetic's 0.791) is a partial alternative explanation that this design cannot fully exclude**, since the LD MDE (0.048) exceeds its total headroom. The absolute dissociation is established; the differential-*susceptibility* reading is not — unmeasurable at the achieved n under the mean readout, and **bounded but undecided** under the rate readout: the 60M rate-collapse test ran at 24 delayed vs 24 baseline seeds on 2026-08-13 (6/24 in both arms, Fisher p = 0.630) and excludes a *full* collapse of the high mode while leaving a *half* collapse open at ~59 seeds/group (§2.3.1, §2.3.1a, claim 24) | C1 × C3 | **ESTABLISHED (scoped)** |
 | 12 | The structure is encoded but its readout is timing-invariant (probe positive control passes) | C3 | ESTABLISHED |
 | 13 | Recovered models span a continuum from near-complete transfer of the original circuit (0.868) to full reorganization (0.187) | C4 | ESTABLISHED (single-method) — **reworded 2026-08-05; see §2.4a. Do not write "range from repair to reorganization": *repair* is a categorical verdict the classifier never awarded** |
 | 14 | 60M reorganizes at every seed | C4 | ESTABLISHED (single-method) |
@@ -469,6 +479,9 @@ submission.
 | 19 | Attraction dissociates from general complexity | C5 | ESTABLISHED (single-mixture) + BOUNDED-NOT-EXCLUDED (replication) |
 | 20 | Below-chance agreement occurs only at the smallest size | C5 | ESTABLISHED |
 | 21 | Attraction declines *within* training (+0.392 → +0.303, steps 2500 → 5000, paired, n = 6 at 23.2M, 5/6 seeds) — weak evidence of unlearning | C5 | **SUGGESTIVE (exploratory)** — added 2026-08-05. p = 0.053 is marginal at 53 % power (MDE 0.125; ≈ 10 seeds needed). **The power numbers travel with the claim**; the mismatch cell's own improvement (+0.070, p = 0.041) is the part that is not marginal. Never a headline (already flagged exploratory in §4) |
+| 22 | The d50 arithmetic deficit is **abolished under a WSD schedule** (−0.007 ± 0.013, per-seed +0.002/+0.000/−0.022) against 0.214 ± 0.055 under cosine, confirming claim 7's mechanism on a second, deliberately dissimilar schedule | C2 | **ESTABLISHED** — added 2026-08-13. Scoped to *one* non-cosine schedule, one size, one onset, one skill: write "replicates on a second schedule", never "schedule-general". The WSD−cosine difference (−0.221, Welch p = 0.016, Holm 0.032) is **read off the MDE (0.092), not off the p**. Never assert the two deficits are *equal* — presence is resolved, equality is not. WSD's higher absolute endpoints on both arms are descriptive only |
+| 23 | `lr_shift` decomposes into a **level** component that does the reopening and a **shape** component that prevents the forgetting: level-only lifts +0.181 at +1.86 ppl, shape-only +0.004, the flat late-level control −0.009, and both together +0.196 at −0.33 ppl | C2 | **ESTABLISHED** — added 2026-08-13. Explains why only one arm reopened: it is the sole cell supplying both components. **Level-only is scored as forgetting, not as a second reopening** — it clears the skill gate but breaches the +1.0 ppl threshold, which §2's operational definition classifies as forgetting. The flat control C is load-bearing: without it, level-only confounds "higher LR" with "no decay". Holm p (A 0.092, both 0.075) are not the basis — the gate is a decision rule |
+| 24 | The 60M syntax rate-collapse test **excludes a full collapse** of the high-acquisition mode (power 1.000) and **does not exclude a half collapse** (power 0.188, ~59 seeds/group), at 24 delayed vs 24 baseline seeds: 6/24 in both arms, Fisher p = 0.630, Mann–Whitney p = 0.626, both Holm 1.000, mean difference +0.0010 [−0.0064, +0.0087] | C1 × C3 | **BOUNDED-NOT-EXCLUDED** — added 2026-08-13. **Not a sixth route to the syntax null**: under the §10 cross-method rule an underpowered probe that agrees is not corroboration, and this one is underpowered against precisely the surviving alternative. It bounds claim 11b's scope; it does not promote it. Claim 11 stays at *five* probes |
 
 ---
 
@@ -485,7 +498,20 @@ uncorrected-plus-adjusted; exploratory tests are flagged and never carry a headl
 | **F4 Syntax** | the compound size-sweep gate | the gate *is* the decision rule; components are not independent tests | DISCONFIRM |
 | **F5 Circuit** | one primary (ρ, exact p) | single test | p = 0.068 (n.s.) |
 | **F6 SVA slopes** | paired attraction−complexity contrast, one per mixture | Holm (m = 2) | syntax survives; arithmetic does not |
-| **exploratory** | 11M H2/H3 · Week-8 seed-2/3 bootstrap inversion · trajectory (p = 0.053) · per-size cross-mixture contrasts | flagged in-text, no headline | — |
+| **F7 WSD schedule** | primary: WSD paired deficit ≠ 0; secondary: WSD deficit vs cosine deficit | Holm (m = 2), declared separately from F1–F3 | 0.477 n.s.; −0.221 raw 0.016 → Holm 0.032, survives. **Read off the MDE (0.092), not the p** |
+| **F8 LR decomposition** | the three new 2×2 cells' paired lifts vs own null | Holm (m = 4, including lr_shift) | A 0.092, lr_shift 0.075, B 0.771, C 0.491 — none survives Holm; **the gate, not the p, is the decision rule** |
+| **F9 Rate collapse** | Fisher exact at the pre-derived threshold; threshold-free Mann–Whitney | Holm (m = 2), pre-registered | 0.630, 0.626 → both 1.000. The 0.57 threshold was **excluded a priori** as unpowered by construction and never tested |
+| **exploratory** | 11M H2/H3 · Week-8 seed-2/3 bootstrap inversion · trajectory (p = 0.053) · per-size cross-mixture contrasts · **§6's remaining tests: attraction magnitude at a single size (8.6e-05), the three mismatch-vs-chance tests, the complexity-slope null (0.43)** | flagged in-text, no headline | — |
+
+**§6 scope, added 2026-08-11.** F6 is the *only* confirmatory family in §6; everything
+else that section reports is exploratory **by declaration**, and §6's header now says so
+rather than leaving it to be inferred from which numbers carry an adjustment. The audit
+that prompted this: F6 and the exploratory row were correctly declared here, but the
+manuscript's §2.7 named only "the agreement-slope family" and §6 itself carried no scope
+line, so a reader could not tell which of that section's dozen *p* values were inside a
+family and which were not. A correction policy that is declared in the backbone but not
+legible in the section is not, from the reader's side, declared at all — the same
+propagation failure as Appendix B's, in the reporting direction rather than the code one.
 
 ---
 
@@ -590,7 +616,11 @@ good faith need to be findable.
 | "the divergence did not replicate" / "is excluded" | "does not survive replication; not excluded (CI contains +0.133)" | CI still admits the original effect |
 | "no critical period at 11M" | "excluded by the pre-registered floor: a capacity/budget boundary" | the anchor never plateaued |
 | "size does not matter for the deficit" | "similar magnitude at both sizes (MDE 0.144)" | non-significance ≠ equivalence |
-| "reset fails to reopen" | "no detectable recovery at n = 1 (inside the null's cross-seed range)" | one seed cannot separate it from the null |
+| "reset fails to reopen" | "no consistent direction at n = 3 (per-seed lifts disagree in sign)" | **replacement REVISED 2026-08-13**: the old wording "no detectable recovery at n = 1 (inside the null's cross-seed range)" is now itself stale — the arms are at n = 3 and fail on sign disagreement, not on insufficient n. Any site still carrying the n = 1 phrasing is out of date |
+| "the deficit is the same under both schedules" | "abolished under WSD (−0.007 ± 0.013) against 0.214 ± 0.055 under cosine; the two deficits' *equality* is not resolved at this n" | presence is well-resolved, equality is not — MDE 0.092 |
+| "the schedule mechanism is schedule-general" | "replicates on a second, deliberately dissimilar schedule" | one non-cosine schedule, one size, one onset, one skill |
+| "level-only also reopens" | "level-only clears the skill gate but breaches the +1.0 ppl threshold, so it scores as forgetting under §2, not as reopening" | recovery at the cost of general capability is the pitfall the study was built to catch |
+| "the rate test is a further route to the syntax null" | "excludes a full collapse (power 1.000); does not exclude a half collapse (power 0.188, ~59 seeds/group)" | an underpowered probe that agrees is not corroboration (§10) |
 
 ---
 

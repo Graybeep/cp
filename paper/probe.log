@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.9)  9 AUG 2026 19:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.9)  13 AUG 2026 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
 \c@section=\count276
@@ -23,30 +23,34 @@ File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
-(neurips_2025.sty
-Package: neurips_2025 2025/05/01 NeurIPS 2025 submission/camera-ready style fil
-e
+(acl.sty
+Conference Style for ACL
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
-
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
-ty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-\@envbody=\toks17
-) (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip51
-\bibsep=\skip52
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count283
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
-
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
+\KV@toks@=\toks17
 )
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -54,9 +58,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count284
-\Gm@cntv=\count285
-\c@Gm@tempcnt=\count286
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
 \Gm@bindingoffset=\dimen149
 \Gm@wd@mp=\dimen150
 \Gm@odd@mp=\dimen151
@@ -65,132 +69,34 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layoutheight=\dimen154
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
-\Gm@dimlist=\toks19
+\Gm@dimlist=\toks18
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-\@neuripsabovecaptionskip=\skip53
-\@neuripsbelowcaptionskip=\skip54
-) (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
-6.
+\titlebox=\skip51
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-))
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen157
+\captionmargin=\dimen158
+\caption@leftmargin=\dimen159
+\caption@rightmargin=\dimen160
+\caption@width=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
+Package caption Info: Standard document class detected.
 )
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
-Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count287
+\c@caption@flags=\count286
+\c@continuedfloat=\count287
 )
-\MT@toks=\toks22
-\MT@tempbox=\box53
-\MT@count=\count288
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
-LaTeX Info: Redefining \leftprotrusion on input line 1085.
-\MT@prot@toks=\toks23
-LaTeX Info: Redefining \rightprotrusion on input line 1104.
-LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen157
-LaTeX Info: Redefining \microtypecontext on input line 2053.
-LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count289
-
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
-tex.def
-File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 944.
-LaTeX Info: Redefining \lslig on input line 944.
-\MT@outer@space=\skip55
-)
-Package microtype Info: Loading configuration file microtype.cfg.
-
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
-File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
-)
-LaTeX Info: Redefining \microtypesetup on input line 3065.
-)
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 106.
-
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen158
-\Gin@req@width=\dimen159
-)
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen160
-\lightrulewidth=\dimen161
-\cmidrulewidth=\dimen162
-\belowrulesep=\dimen163
-\belowbottomsep=\dimen164
-\aboverulesep=\dimen165
-\abovetopsep=\dimen166
-\cmidrulesep=\dimen167
-\cmidrulekern=\dimen168
-\defaultaddspace=\dimen169
-\@cmidla=\count290
-\@cmidlb=\count291
-\@aboverulesep=\dimen170
-\@belowrulesep=\dimen171
-\@thisruleclass=\count292
-\@lastruleclass=\count293
-\@thisrulewidth=\dimen172
-)
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks24
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen173
-\ar@mcellbox=\box54
-\extrarowheight=\dimen174
-\NC@list=\toks25
-\extratabsurround=\skip56
-\backup@length=\skip57
-\ar@cellbox=\box55
-)
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
-Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count294
-\calc@Bcount=\count295
-\calc@Adimen=\dimen175
-\calc@Bdimen=\dimen176
-\calc@Askip=\skip58
-\calc@Bskip=\skip59
-LaTeX Info: Redefining \setlength on input line 86.
-LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count296
-\calc@Cskip=\skip60
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count288
 )
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
@@ -238,16 +144,20 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count297
+\c@section@level=\count289
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count290
 )
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
 ty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen177
-\Hy@linkcounter=\count298
-\Hy@pagecounter=\count299
+\@linkdim=\dimen165
+\Hy@linkcounter=\count291
+\Hy@pagecounter=\count292
  (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -255,12 +165,13 @@ Now handling font encoding PD1 ...
 ) (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count300
+\Hy@SavedSpaceFactor=\count293
  (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `breaklinks' set `true' on input line 4066.
 Package hyperref Info: Hyper figures OFF on input line 4195.
 Package hyperref Info: Link nesting OFF on input line 4200.
 Package hyperref Info: Hyper index ON on input line 4203.
@@ -268,14 +179,14 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count301
+\c@Hy@tempcnt=\count294
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen178
+\XeTeXLinkMargin=\dimen166
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -285,9 +196,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count302
-\Field@Width=\dimen179
-\Fld@charsize=\dimen180
+\Fld@menulength=\count295
+\Field@Width=\dimen167
+\Fld@charsize=\dimen168
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -295,16 +206,16 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count303
-\c@Item=\count304
-\c@Hfootnote=\count305
+\Hy@abspage=\count296
+\c@Item=\count297
+\c@Hfootnote=\count298
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count306
-\c@bookmark@seq@number=\count307
+\Fld@listcount=\count299
+\c@bookmark@seq@number=\count300
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -317,13 +228,140 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip61
+\Hy@SectionHShift=\skip54
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 305.
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+6.
+
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+\MT@toks=\toks21
+\MT@tempbox=\box53
+\MT@count=\count301
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks22
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen169
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count302
+
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
+tex.def
+File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip55
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen170
+\Gin@req@width=\dimen171
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen172
+\lightrulewidth=\dimen173
+\cmidrulewidth=\dimen174
+\belowrulesep=\dimen175
+\belowbottomsep=\dimen176
+\aboverulesep=\dimen177
+\abovetopsep=\dimen178
+\cmidrulesep=\dimen179
+\cmidrulekern=\dimen180
+\defaultaddspace=\dimen181
+\@cmidla=\count303
+\@cmidlb=\count304
+\@aboverulesep=\dimen182
+\@belowrulesep=\dimen183
+\@thisruleclass=\count305
+\@lastruleclass=\count306
+\@thisrulewidth=\dimen184
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks23
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen185
+\ar@mcellbox=\box54
+\extrarowheight=\dimen186
+\NC@list=\toks24
+\extratabsurround=\skip56
+\backup@length=\skip57
+\ar@cellbox=\box55
+)
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count307
+\calc@Bcount=\count308
+\calc@Adimen=\dimen187
+\calc@Bdimen=\dimen188
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count309
+\calc@Cskip=\skip60
 )
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B1 (decimal 177)
    defining Unicode char U+00D7 (decimal 215)
    defining Unicode char U+00F7 (decimal 247)
    defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+03B1 (decimal 945)
    defining Unicode char U+03B2 (decimal 946)
    defining Unicode char U+03B8 (decimal 952)
    defining Unicode char U+03BB (decimal 955)
@@ -343,129 +381,43 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count308
+\l__color_backend_stack_int=\count310
 ) (probe.aux)
 \openout1 = `probe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=430.00462pt
-* \textheight=556.47656pt
-* \oddsidemargin=19.8752pt
-* \evensidemargin=19.8752pt
-* \topmargin=-13.87262pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(108.405pt, 397.48499pt, 108.40501pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43pt, 72.27pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=397.48499pt
-* \textheight=650.43pt
-* \oddsidemargin=36.13501pt
-* \evensidemargin=36.13501pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-LaTeX Info: Redefining \microtypecontext on input line 41.
-Package microtype Info: Applying patch `item' on input line 41.
-Package microtype Info: Applying patch `toc' on input line 41.
-Package microtype Info: Applying patch `eqnum' on input line 41.
-Package microtype Info: Applying patch `footnote' on input line 41.
-Package microtype Info: Applying patch `verbatim' on input line 41.
-LaTeX Info: Redefining \microtypesetup on input line 41.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `alltext-nott'.
-Package microtype Info: Patching command `\showhyphens'.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
-File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
-)
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count309
-\scratchdimen=\dimen181
+\scratchcounter=\count311
+\scratchdimen=\dimen189
 \scratchbox=\box56
-\nofMPsegments=\count310
-\nofMParguments=\count311
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count312
-\MPscratchDim=\dimen182
-\MPnumerator=\count313
-\makeMPintoPDFobject=\count314
-\everyMPtoPDFconversion=\toks27
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen190
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks26
 )
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -477,19 +429,82 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 41.
- (probe.out) (probe.out)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: heightrounded 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=704.60031pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=17.07182pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 45.
+(probe.out) (probe.out)
 \@outlinefile=\write3
 \openout3 = `probe.out'.
 
+LaTeX Info: Redefining \microtypecontext on input line 45.
+Package microtype Info: Applying patch `item' on input line 45.
+Package microtype Info: Applying patch `toc' on input line 45.
+Package microtype Info: Applying patch `eqnum' on input line 45.
+Package microtype Info: Applying patch `footnote' on input line 45.
+Package microtype Info: Applying patch `verbatim' on input line 45.
+LaTeX Info: Redefining \microtypesetup on input line 45.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
 
-ACLDIAG fsize=10 baselineskip=10.95pt textheight=650.43pt columnwidth=397.48499
-pt textwidth=397.48499pt
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+ACLDIAG fsize=10.95 baselineskip=13.6pt textheight=704.60031pt columnwidth=219.
+08614pt textwidth=455.24411pt
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 46
+.
+
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
 
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -498,7 +513,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -507,193 +522,268 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-[1
+[1{C:/Users/wicke/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/wi
+cke/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
-{C:/Users/wicke/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/wick
-e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] [2]
+
+]
+Overfull \hbox (49.37871pt too wide) in paragraph at lines 146--156
+ [][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 17
+1.
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
+(microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 171.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-82.
+
+Underfull \hbox (badness 1762) in paragraph at lines 168--180
+[]\T1/ptm/m/n/10.95 (+20) Context length is 512 to-kens. Po-si-tional
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 168--180
+\T1/ptm/m/n/10.95 (+20) re-sets the em-bed-ding layer and tied weights
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 168--180
+\T1/ptm/m/n/10.95 (+20) would con-found an input-representation re-set
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--180
+\T1/ptm/m/n/10.95 (+20) is \T1/pcr/m/n/10.95 F.scaled_dot_product_attention\T1/
+ptm/m/n/10.95 (+20) ,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 168--180
+\T1/ptm/m/n/10.95 (+20) batches of 8 $\OMS/cmsy/m/n/10.95 ^^B$ \T1/ptm/m/n/10.9
+5 (+20) 512 to-kens with 4 gra-di-ent
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+04.
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 [3] [4]
-Underfull \vbox (badness 1629) has occurred while \output is active []
+Underfull \hbox (badness 1082) in paragraph at lines 380--383
+[]\T1/ptm/b/n/10.95 (+20) Representational probe\T1/ptm/m/n/10.95 (+20) : delay
+-0 ver-sus
+ []
 
- [5]
-[6] [7]
-Underfull \vbox (badness 2735) has occurred while \output is active []
-
- [8]
-[9] [10] [11] [12]
-
-Package natbib Warning: Citation `achille-etal-2019' on page 13 undefined on in
-put line 902.
-
-
-Package natbib Warning: Citation `ash-adams-2020' on page 13 undefined on input
- line 905.
-
-
-Package natbib Warning: Citation `dohare-etal-2024' on page 13 undefined on inp
-ut line 905.
-
-
-Package natbib Warning: Citation `lyle-etal-2023' on page 13 undefined on input
- line 905.
-
-
-Package natbib Warning: Citation `power-etal-2022' on page 13 undefined on inpu
-t line 912.
-
-
-Package natbib Warning: Citation `elhage-etal-2021' on page 13 undefined on inp
-ut line 914.
-
-
-Package natbib Warning: Citation `wang-etal-2023' on page 13 undefined on input
- line 914.
-
-
-Package natbib Warning: Citation `meng-etal-2022' on page 13 undefined on input
- line 914.
-
-
-Package natbib Warning: Citation `kornblith-etal-2019' on page 13 undefined on 
-input line 914.
-
-
-Underfull \hbox (badness 2150) in paragraph at lines 919--924
-\T1/ptm/m/n/10 (+20) Ÿ5.1 re-ports prun-ing as the third of three probes that c
-an-not dis-crim-i-nate re-pair from
+[5]
+Underfull \hbox (badness 1009) in paragraph at lines 486--493
+\T1/ptm/m/n/10.95 (+20) dif-fer only in the in-ter-ven-tion ap-plied. The
  []
 
 
-Underfull \hbox (badness 4872) in paragraph at lines 919--924
-\T1/ptm/m/n/10 (+20) re-or-ga-ni-za-tion on our con-trast. It was re-jected by 
-a pre-screen fixed in ad-vance
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 1031--1036
-[]\T1/ptm/b/n/10 (+20) It was not pre-registered. \T1/ptm/m/n/10 (+20) The gen-
-uine pre-registration
+Overfull \hbox (2.98044pt too wide) in paragraph at lines 511--512
+ []\T1/ptm/m/n/9 (-20) treated
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 1031--1036
-\T1/ptm/m/n/10 (+20) (\T1/cmtt/m/n/10 notes/week8-diagnosis-seed-scope.md\T1/pt
-m/m/n/10 (+20) , 2026-07-21, writ-ten be-fore the tool-
+Overfull \hbox (27.15562pt too wide) in paragraph at lines 511--512
+ \T1/ptm/m/n/9 (-20) (\T1/pcr/m/n/9 lr_shift\T1/ptm/m/n/9 (-20) )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1036--1039
-[]\T1/ptm/b/n/10 (+20) It is a code-level de-fault \T1/ptm/m/n/10 (+20) in-tro-
-duced with the tool
+Overfull \hbox (6.41154pt too wide) in paragraph at lines 513--514
+ []\T1/ptm/m/n/9 (-20) delayed
  []
 
 
-Underfull \vbox (badness 3068) has occurred while \output is active []
-
- [14]
-Overfull \hbox (5.70103pt too wide) in paragraph at lines 1144--1145
- \T1/ptm/m/n/9 (-20) embedding
+Overfull \hbox (3.80646pt too wide) in paragraph at lines 519--520
+ []\T1/ptm/m/n/9 (-20) margin
  []
 
 
-Overfull \hbox (11.64557pt too wide) in paragraph at lines 1146--1147
- []\T1/ptm/m/n/9 (-20) embed+head
+Overfull \hbox (3.80101pt too wide) in paragraph at lines 525--525
+ []|\T1/ptm/m/n/9 (-20) +0.055|
  []
 
 
-Overfull \hbox (6.19528pt too wide) in paragraph at lines 1152--1152
- []|\T1/ptm/m/n/9 (-20) 11,536,640|
+Overfull \hbox (3.23663pt too wide) in paragraph at lines 525--526
+ []|\T1/ptm/m/n/9 (-20) 0.0065|
  []
 
 
-Overfull \hbox (1.78528pt too wide) in paragraph at lines 1152--1152
- []|\T1/ptm/m/n/9 (-20) 3,148,032|
+Overfull \hbox (3.80101pt too wide) in paragraph at lines 526--526
+ []|\T1/ptm/m/n/9 (-20) +0.050|
  []
 
 
-Overfull \hbox (1.78528pt too wide) in paragraph at lines 1152--1152
- []|\T1/ptm/m/n/9 (-20) 8,388,608|
+Overfull \hbox (3.23663pt too wide) in paragraph at lines 526--527
+ []|\T1/ptm/m/n/9 (-20) 0.0027|
+ []
+
+[6]
+Underfull \hbox (badness 2050) in paragraph at lines 554--557
+[]\T1/ptm/m/n/10.95 (+20) At \T1/ptm/b/n/10.95 (+20) 23M there is no breach\T1/
+ptm/m/n/10.95 (+20) : \T1/ptm/m/it/10.95 (+20) c $\OMS/cmsy/m/n/10.95 ^^@$ \T1/
+ptm/m/it/10.95 (+20) b \T1/ptm/m/n/10.95 (+20) =
  []
 
 
-Overfull \hbox (6.19528pt too wide) in paragraph at lines 1153--1153
- []|\T1/ptm/m/n/9 (-20) 23,204,736|
+Underfull \hbox (badness 1622) in paragraph at lines 554--557
+\T1/ptm/m/n/10.95 (+20) a pre-registered gate of +1.0 (seed 1: \T1/ptm/m/it/10.
+95 (+20) b \T1/ptm/m/n/10.95 (+20) =
+ []
+
+[7]
+Overfull \hbox (12.18214pt too wide) in paragraph at lines 666--675
+ [][] 
+ []
+
+[8]
+Underfull \hbox (badness 2245) in paragraph at lines 766--774
+[]\T1/ptm/b/n/10.95 (+20) Single-head ac-ti-va-tion patch-ing \T1/ptm/m/n/10.95
+ (+20) is flat:
  []
 
 
-Overfull \hbox (6.19528pt too wide) in paragraph at lines 1153--1153
- []|\T1/ptm/m/n/9 (-20) 10,621,824|
+Underfull \hbox (badness 10000) in paragraph at lines 774--777
+[]\T1/ptm/b/n/10.95 (+20) Pruning-based lo-cal-iza-tion \T1/ptm/m/n/10.95 (+20)
+ was pre-
  []
 
 
-Overfull \hbox (6.19528pt too wide) in paragraph at lines 1153--1153
- []|\T1/ptm/m/n/9 (-20) 12,582,912|
+Underfull \hbox (badness 1762) in paragraph at lines 779--783
+[]\T1/ptm/m/n/10.95 (+20) We there-fore re-port this clus-ter as \T1/ptm/b/n/10
+.95 (+20) single-
+ []
+
+[9]
+Overfull \hbox (1.03125pt too wide) in paragraph at lines 806--807
+ []\T1/ptm/m/n/9 (-20) deficit
  []
 
 
-Overfull \hbox (6.19528pt too wide) in paragraph at lines 1154--1154
- []|\T1/ptm/m/n/9 (-20) 60,304,000|
+Overfull \hbox (5.76448pt too wide) in paragraph at lines 808--809
+ []\T1/ptm/m/n/9 (-20) transfer
  []
 
 
-Overfull \hbox (6.19528pt too wide) in paragraph at lines 1154--1154
- []|\T1/ptm/m/n/9 (-20) 39,332,480|
+Overfull \hbox (3.96841pt too wide) in paragraph at lines 810--811
+ []\T1/ptm/m/n/9 (-20) control
  []
 
 
-Overfull \hbox (6.19528pt too wide) in paragraph at lines 1154--1154
- []|\T1/ptm/m/n/9 (-20) 20,971,520|
+Overfull \hbox (15.63762pt too wide) in paragraph at lines 812--813
+ []\T1/ptm/m/n/9 (-20) Jaccard(A,
  []
 
-[15]
 
-Package natbib Warning: There were undefined citations.
+Overfull \hbox (13.62343pt too wide) in paragraph at lines 814--815
+\T1/ptm/m/n/9 (-20) registered 
+ []
 
-[16] (probe.aux)
+
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 818--819
+[]|\T1/ptm/m/n/9 (-20) mixed 
+ []
+
+
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 819--820
+[]|\T1/ptm/m/n/9 (-20) mixed 
+ []
+
+
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 820--821
+[]|\T1/ptm/m/n/9 (-20) mixed 
+ []
+
+
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 821--822
+[]|\T1/ptm/m/n/9 (-20) mixed 
+ []
+
+[10]
+Underfull \hbox (badness 1221) in paragraph at lines 936--940
+[]\T1/ptm/b/n/10.95 (+20) Small-scale LM eval-u-a-tion. \T1/ptm/m/n/10.95 (+20)
+ We use the
+ []
+
+[11] [12] [13]
+Underfull \hbox (badness 1406) in paragraph at lines 1087--1090
+[]\T1/ptm/b/n/10.95 (+20) The cir-cuit re-sults are single-method by
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 1087--1090
+\T1/ptm/m/n/10.95 (+20) to have dy-namic range on the repair-versus-
+ []
+
+(probe.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 97--104
+[]\T1/ptm/m/n/10 (+20) Clare Lyle, Zeyu Zheng, Ev-genii Nik-ishin,
+ []
+
+
+Underfull \hbox (badness 5771) in paragraph at lines 97--104
+\T1/ptm/m/n/10 (+20) Bernardo Avila Pires, Raz-van Pas-canu, and
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 97--104
+\T1/ptm/m/n/10 (+20) Will Dab-ney. 2023.  [][]Un-der-stand-ing plas-tic-ity
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 97--104
+\T1/ptm/m/it/10 (+20) In-ter-na-tional Con-fer-ence on Ma-chine Learn-ing
+ []
+
+[14]
+Underfull \hbox (badness 1147) in paragraph at lines 124--130
+[]\T1/ptm/m/n/10 (+20) Alethea Power, Yuri Burda, Harri Ed-wards, Igor
+ []
+
+) [15
+
+] (probe.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `probe.out' has not changed.
-(rerunfilecheck)             Checksum: C9823EE71A9EAAB8659C17A90307300A;10742.
+(rerunfilecheck)             Checksum: 7323C669183B70565135F05E478A8872;8924.
  ) 
 Here is how much of TeX's memory you used:
- 13006 strings out of 467871
- 202562 string characters out of 5418377
- 652632 words of memory out of 5000000
- 41273 multiletter control sequences out of 15000+600000
- 681162 words of font info for 327 fonts, out of 8000000 for 9000
+ 15017 strings out of 467871
+ 238154 string characters out of 5418377
+ 692066 words of memory out of 5000000
+ 43122 multiletter control sequences out of 15000+600000
+ 698953 words of font info for 432 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1004b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\wicke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
-0900.pk> <C:\Users\wicke\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ectt1000.pk><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi9.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/wicke/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/wicke/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/wicke/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/wicke/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/User
-s/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/User
-s/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Use
-rs/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Use
-rs/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on probe.pdf (16 pages, 233153 bytes).
+ 90i,13n,93p,1004b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/wicke/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/wicke/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/wicke/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/wicke/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/wicke/AppData/Local/P
+rograms/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/wicke/AppData/Local/P
+rograms/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on probe.pdf (15 pages, 251782 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 46897 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
+ 57097 words of extra memory for PDF output out of 61914 (max. 10000000)
 

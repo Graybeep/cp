@@ -1,0 +1,8 @@
+[supervisor] launch 1: arith_delay50_exp20_wsd_size23M_seed1 at step 0/5000 (timeout 5400s)
+run_id: arith_delay50_exp20_wsd_size23M_seed1
+model: 23.2M params (6L, 384d, 8h, vocab 16384, ctx 512)
+retention: pruned 46 intermediate checkpoints (11.9 GB), kept steps (1250, 2500, 3750, 5000)
+done: 5000 steps in 27.6 min (3.02 steps/s)
+tokens by stream: {'base': 65536000, 'arith': 16384000}
+[supervisor] launch 1 ended after 27.8 min (exit 0), step 0 -> 5000
+[supervisor] arith_delay50_exp20_wsd_size23M_seed1 complete at step 5000

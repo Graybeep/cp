@@ -39,7 +39,11 @@ Every sentence is mapped to a claim and label in the audit table below.
 > phase stays near the null, while cram combined with the schedule shift is
 > indistinguishable from the shift alone. Closure at this onset is therefore largely a
 > property of the optimizer's decayed learning-rate schedule rather than of entrenched
-> representations.
+> representations. The mechanism survives a deliberately dissimilar schedule — under
+> warmup-stable-decay, still at peak learning rate where cosine has decayed, the deficit is
+> abolished (−0.007 ± 0.013 against cosine's 0.214 ± 0.055) — and it decomposes: crossing
+> the schedule's level against its shape shows that the level is what reopens the skill,
+> while the shape is what makes the recovery free of a perplexity cost.
 >
 > The two results are timing effects at different levels: *which* skills a late start
 > damages is skill-specific, while the damage itself is carried by the optimizer's
@@ -60,15 +64,19 @@ Every sentence is mapped to a claim and label in the audit table below.
 | ppl: 23M none / 60M ≤1.67 bounded | **10** | BOUNDED-NOT-EXCLUDED | quoted *with* its bound; forgetting-vs-reopening pitfall |
 | band → scale-invariant; variance collapse | **5**, **6** | ESTABLISHED | claim 5 kept as non-anchor per §12 |
 | cram ≈ null; cram+shift ≈ shift | **7** | ESTABLISHED | mechanism stated as the consequence, not asserted bare |
+| WSD abolishes the deficit, −0.007 ± 0.013 vs 0.214 ± 0.055 | **22** | ESTABLISHED | "a second, deliberately dissimilar schedule", never "schedule-general"; both deficits shown, not collapsed into a ratio |
+| level reopens / shape makes it free | **23** | ESTABLISHED | the two components named separately; the level-only arm is not reported as a second reopening (it breaches the ppl gate — §4.6) |
 | linking sentence | 11b × 7 | — | §12 required link; without it the two anchors read as two papers |
 
 ## Deliberately absent
 
 - **Predictions #2 and #3** — §11 locates both in the Discussion, not the abstract.
   Do not let "a data-only cram phase stays near the null" drift into a reset claim.
-- **The priced 60M rate-collapse test** (14 delayed seeds) — belongs in Limitations,
-  phrased as the specific experiment that would resolve 11b's susceptibility half.
-  It must not soften into "future work could investigate".
+- **The 60M rate-collapse test** — now *run*, not priced: 24 delayed vs 24 baseline seeds,
+  excluding a full collapse and leaving a half collapse open at ~59 seeds/group. It belongs
+  in §3 and Limitations, phrased as what it bounds of 11b's susceptibility half. It must not
+  soften into "future work could investigate", and the old "fourteen-seed" pricing is stale
+  wherever it still appears.
 - **The 11M floor exclusion** — reported in §2.1 and §8. Add a parenthetical here only
   if a reviewer reads "11M–60M" and then finds no 11M confirmatory numbers.
 
@@ -79,7 +87,11 @@ Every sentence is mapped to a claim and label in the audit table below.
 2. "in the same direction at every seed" (recoverable from the ± SDs)
 3. The parenthetical statistics inside the probe-4 clause — but **not** the clause itself;
    losing it reintroduces the "five converging nulls" overclaim
-4. Never cut: the headroom contrast (0.028 vs 0.791), the 60M ppl bound, or the
+4. The WSD parenthetical (−0.007 ± 0.013 against 0.214 ± 0.055) — but **not** the
+   "deliberately dissimilar schedule" clause, which is what stops the mechanism reading as
+   cosine-specific
+5. Never cut: the headroom contrast (0.028 vs 0.791), the 60M ppl bound, or the
    absolute-vs-susceptibility distinction. Each is a label obligation, not a nicety.
 
-**~330 words.** If the venue caps at 250, apply cuts 1–3 and compress the setup sentence.
+**~392 words** (was ~330 before the WSD and level/shape clauses were added 2026-08-14).
+If the venue caps at 250, apply cuts 1–4 and compress the setup sentence.

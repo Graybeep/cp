@@ -29,12 +29,12 @@ late start. The opposite skill turned out to be the fragile one, and this invers
 origin of the dissociation in §3.3 rather than an incidental miss.
 
 **Prediction #2 (that embedding reset would be the most effective intervention) was not
-borne out.** Reset produced no detectable recovery, landing at 0.586 against a null whose
-cross-seed range is [0.524, 0.626]; the learning-rate shift was the only arm to clear the
-pre-registered gate. Because reset was run at a single seed, this is a statement about what
-we could detect, not a demonstration that reset fails: one seed cannot be separated from a
-null that spans 0.10. The prediction's second half (that reset would carry the largest
-forgetting risk) was also not observed as stated.
+borne out.** Reset produced no consistent recovery, landing at 0.585 ± 0.001 against a fork
+source of 0.571 ± 0.061; the learning-rate shift was the only arm to clear the pre-registered
+gate. Because reset's per-seed lifts disagree in sign (+0.080 / −0.040 / +0.002), this is a
+statement that three seeds found no consistent direction, not a demonstration that reset
+fails. The prediction's second half (that reset would carry the largest forgetting risk) was
+also not observed as stated.
 
 **Prediction #3 (that a reset-driven recovery would build new circuitry) was never
 testable, because its antecedent did not occur.** The prediction was conditional on reset
@@ -59,14 +59,14 @@ the timing curve.
 Five specific experiments would move a label, and we name them with their costs rather than
 gesturing at future work.
 
-**The dissociation's stronger reading is un-run, not unknowable.** Whether syntax is
+**The dissociation's stronger reading is now bounded, not un-run.** Whether syntax is
 genuinely *less susceptible* to delayed exposure, rather than merely having too little
-headroom to show susceptibility, is decidable by a rate-collapse test at 60M: 14 delayed
-seeds against our existing 24-seed baseline, or 6 at a permissive threshold. This assumes
-delay eliminates the high-acquisition mode; if it merely halves it, 59 are needed. The same
-test at 23M requires 82 seeds and is out of reach. This is the cheapest outstanding
-experiment in the project and the only one that can promote the dissociation past its
-current scope.
+headroom to show susceptibility, was decidable by a rate-collapse test at 60M, and §3 reports
+it: 24 delayed seeds against our 24-seed baseline, returning 6/24 in both arms. That excludes
+a full collapse of the high-acquisition mode and leaves a half collapse open, which would
+need roughly 59 seeds per group. The remaining half is now the cheapest experiment that could
+promote the dissociation past its current scope; the same test at 23M requires 82 seeds and
+stays out of reach.
 
 **The 60M perplexity cost is bounded, not estimated.** Extending the treated arm past step
 5,000 to complete its annealing would convert our upper bound of 1.67 ppl into a point
@@ -84,9 +84,17 @@ drop the annotation. Three probes we tried do not discriminate.
 smallest size would rebalance the leverage that makes it significant under OLS and marginal
 under a robust standard error.
 
+**The schedule mechanism is scoped to the conditions that produced it.** Its replication is
+one non-cosine schedule (WSD), and its level/shape decomposition one 2×2, both run at a
+single size, a single onset and a single skill. That licenses "replicates on a second,
+deliberately dissimilar schedule" and not "schedule-general"; the equality of the two
+schedules' deficits is not resolved, only the presence of a deficit under each. Running
+either at a second size or onset is what would widen the claim.
+
 Beyond these: one corpus, one tokenizer, one language, a maximum of 60.3M parameters, and a
-single delay onset carrying the reopening result. Five of six intervention arms are single
-seed. The smallest size is excluded by a floor rather than solved.
+single delay onset carrying the reopening result. All six intervention arms are replicated at
+three seeds, but four of them resolve to no consistent direction rather than to a
+demonstrated absence of effect. The smallest size is excluded by a floor rather than solved.
 
 ---
 
@@ -99,8 +107,10 @@ prediction and which we state in absolute terms because the two skills are not e
 observable. Where the deficit exists it reopens, and it reopens when the learning-rate
 schedule is restored rather than when the missed data is concentrated, so what closes at
 this onset behaves like a property of the optimizer rather than of entrenched representation.
-Whether the skill contrast reflects genuine differential susceptibility remains open, and we
-have named the fourteen-seed experiment that would decide it.
+Whether the skill contrast reflects genuine differential susceptibility remains open, but it
+is open in a narrower way than when we started: a 24-seed rate test at 60M excludes a full
+collapse of the high-acquisition mode, against which it has power 1.000, and leaves a half
+collapse unresolved, which would take roughly 59 seeds per group at 60M and 82 at 23M.
 
 ---
 

@@ -101,6 +101,12 @@ class TrainConfig:
     # ---- optimizer: locked baseline = AdamW, warmup + cosine decay ----
     lr: float = 6e-4
     min_lr_ratio: float = 0.1    # cosine floor = lr * min_lr_ratio
+    # "cosine" is the locked baseline. "wsd" (warmup-stable-decay) exists to
+    # test whether the schedule mechanism is cosine-specific or general; it
+    # shares peak, floor and warmup with cosine, so only the shape differs.
+    # Non-default schedules get their own run_id namespace (see run_id).
+    lr_schedule: str = "cosine"
+    wsd_decay_frac: float = 0.2  # final fraction of steps spent decaying (wsd)
     weight_decay: float = 0.1
     betas: tuple[float, float] = (0.9, 0.95)
     grad_clip: float = 1.0
@@ -135,6 +141,10 @@ class TrainConfig:
             # non-default durations get their own namespace so a longer run
             # can't clobber the default-length run's checkpoints
             parts.append(f"steps{self.total_steps}")
+        if self.lr_schedule != "cosine":
+            # a different LR schedule is a different experiment: namespace it
+            # so it cannot land in the cosine runs' checkpoints or logs
+            parts.append(self.lr_schedule)
         parts.append(f"size{self.model_size_tag}")
         parts.append(f"seed{self.seed}")
         if self.run_suffix:

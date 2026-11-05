@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.9)  9 AUG 2026 13:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.9)  14 AUG 2026 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,6 +361,7 @@ LaTeX Info: Redefining \addtolength on input line 87.
    defining Unicode char U+00D7 (decimal 215)
    defining Unicode char U+00F7 (decimal 247)
    defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+03B1 (decimal 945)
    defining Unicode char U+03B2 (decimal 946)
    defining Unicode char U+03B8 (decimal 952)
    defining Unicode char U+03BB (decimal 955)
@@ -384,24 +385,24 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -465,18 +466,18 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 44.
+Package hyperref Info: Link coloring ON on input line 45.
 (paper.out) (paper.out)
 \@outlinefile=\write3
 \openout3 = `paper.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 44.
-Package microtype Info: Applying patch `item' on input line 44.
-Package microtype Info: Applying patch `toc' on input line 44.
-Package microtype Info: Applying patch `eqnum' on input line 44.
-Package microtype Info: Applying patch `footnote' on input line 44.
-Package microtype Info: Applying patch `verbatim' on input line 44.
-LaTeX Info: Redefining \microtypesetup on input line 44.
+LaTeX Info: Redefining \microtypecontext on input line 45.
+Package microtype Info: Applying patch `item' on input line 45.
+Package microtype Info: Applying patch `toc' on input line 45.
+Package microtype Info: Applying patch `eqnum' on input line 45.
+Package microtype Info: Applying patch `footnote' on input line 45.
+Package microtype Info: Applying patch `verbatim' on input line 45.
+LaTeX Info: Redefining \microtypesetup on input line 45.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -497,13 +498,13 @@ ACLDIAG fsize=10.95 baselineskip=13.6pt textheight=704.60031pt columnwidth=219.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 45
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 46
 .
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
 
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -512,7 +513,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 
 
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -527,12 +528,12 @@ cke/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Overfull \hbox (49.37871pt too wide) in paragraph at lines 145--155
+Overfull \hbox (49.37871pt too wide) in paragraph at lines 155--165
  [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 17
-1.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 18
+0.
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -541,258 +542,273 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 1762) in paragraph at lines 167--180
+Underfull \hbox (badness 1762) in paragraph at lines 177--189
 []\T1/ptm/m/n/10.95 (+20) Context length is 512 to-kens. Po-si-tional
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 167--180
+Underfull \hbox (badness 1442) in paragraph at lines 177--189
 \T1/ptm/m/n/10.95 (+20) re-sets the em-bed-ding layer and tied weights
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 167--180
+Underfull \hbox (badness 1715) in paragraph at lines 177--189
 \T1/ptm/m/n/10.95 (+20) would con-found an input-representation re-set
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--180
+Underfull \hbox (badness 10000) in paragraph at lines 177--189
 \T1/ptm/m/n/10.95 (+20) is \T1/pcr/m/n/10.95 F.scaled_dot_product_attention\T1/
 ptm/m/n/10.95 (+20) ,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 167--180
+Underfull \hbox (badness 1502) in paragraph at lines 177--189
 \T1/ptm/m/n/10.95 (+20) batches of 8 $\OMS/cmsy/m/n/10.95 ^^B$ \T1/ptm/m/n/10.9
 5 (+20) 512 to-kens with 4 gra-di-ent
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
+[2]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-04.
-
-(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+13.
+ (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-[3] [4]
-Underfull \hbox (badness 1082) in paragraph at lines 375--378
+[3]
+Underfull \vbox (badness 1199) has occurred while \output is active []
+
+ [4]
+Underfull \hbox (badness 1082) in paragraph at lines 389--392
 []\T1/ptm/b/n/10.95 (+20) Representational probe\T1/ptm/m/n/10.95 (+20) : delay
 -0 ver-sus
  []
 
 [5]
-Overfull \hbox (2.98044pt too wide) in paragraph at lines 495--496
+Underfull \hbox (badness 1009) in paragraph at lines 495--502
+\T1/ptm/m/n/10.95 (+20) dif-fer only in the in-ter-ven-tion ap-plied. The
+ []
+
+
+Overfull \hbox (2.98044pt too wide) in paragraph at lines 520--521
  []\T1/ptm/m/n/9 (-20) treated
  []
 
 
-Overfull \hbox (27.15562pt too wide) in paragraph at lines 495--496
+Overfull \hbox (27.15562pt too wide) in paragraph at lines 520--521
  \T1/ptm/m/n/9 (-20) (\T1/pcr/m/n/9 lr_shift\T1/ptm/m/n/9 (-20) )
  []
 
 
-Overfull \hbox (6.41154pt too wide) in paragraph at lines 497--498
+Overfull \hbox (6.41154pt too wide) in paragraph at lines 522--523
  []\T1/ptm/m/n/9 (-20) delayed
  []
 
 
-Overfull \hbox (3.80646pt too wide) in paragraph at lines 503--504
+Overfull \hbox (3.80646pt too wide) in paragraph at lines 528--529
  []\T1/ptm/m/n/9 (-20) margin
  []
 
 
-Overfull \hbox (3.80101pt too wide) in paragraph at lines 509--509
+Overfull \hbox (3.80101pt too wide) in paragraph at lines 534--534
  []|\T1/ptm/m/n/9 (-20) +0.055|
  []
 
 
-Overfull \hbox (3.23663pt too wide) in paragraph at lines 509--510
+Overfull \hbox (3.23663pt too wide) in paragraph at lines 534--535
  []|\T1/ptm/m/n/9 (-20) 0.0065|
  []
 
 
-Overfull \hbox (3.80101pt too wide) in paragraph at lines 510--510
+Overfull \hbox (3.80101pt too wide) in paragraph at lines 535--535
  []|\T1/ptm/m/n/9 (-20) +0.050|
  []
 
 
-Overfull \hbox (3.23663pt too wide) in paragraph at lines 510--511
+Overfull \hbox (3.23663pt too wide) in paragraph at lines 535--536
  []|\T1/ptm/m/n/9 (-20) 0.0027|
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 538--541
+Underfull \hbox (badness 2050) in paragraph at lines 563--566
 []\T1/ptm/m/n/10.95 (+20) At \T1/ptm/b/n/10.95 (+20) 23M there is no breach\T1/
 ptm/m/n/10.95 (+20) : \T1/ptm/m/it/10.95 (+20) c $\OMS/cmsy/m/n/10.95 ^^@$ \T1/
 ptm/m/it/10.95 (+20) b \T1/ptm/m/n/10.95 (+20) =
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 538--541
+Underfull \hbox (badness 1622) in paragraph at lines 563--566
 \T1/ptm/m/n/10.95 (+20) a pre-registered gate of +1.0 (seed 1: \T1/ptm/m/it/10.
 95 (+20) b \T1/ptm/m/n/10.95 (+20) =
  []
 
 [6] [7]
-Underfull \hbox (badness 2245) in paragraph at lines 659--667
+Overfull \hbox (12.18214pt too wide) in paragraph at lines 690--699
+ [][] 
+ []
+
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 790--798
 []\T1/ptm/b/n/10.95 (+20) Single-head ac-ti-va-tion patch-ing \T1/ptm/m/n/10.95
  (+20) is flat:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--670
+Underfull \hbox (badness 10000) in paragraph at lines 798--801
 []\T1/ptm/b/n/10.95 (+20) Pruning-based lo-cal-iza-tion \T1/ptm/m/n/10.95 (+20)
  was pre-
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 672--676
+Underfull \hbox (badness 1762) in paragraph at lines 803--807
 []\T1/ptm/m/n/10.95 (+20) We there-fore re-port this clus-ter as \T1/ptm/b/n/10
 .95 (+20) single-
  []
 
-
-Overfull \hbox (1.03125pt too wide) in paragraph at lines 699--700
+[9]
+Overfull \hbox (1.03125pt too wide) in paragraph at lines 830--831
  []\T1/ptm/m/n/9 (-20) deficit
  []
 
 
-Overfull \hbox (5.76448pt too wide) in paragraph at lines 701--702
+Overfull \hbox (5.76448pt too wide) in paragraph at lines 832--833
  []\T1/ptm/m/n/9 (-20) transfer
  []
 
 
-Overfull \hbox (3.96841pt too wide) in paragraph at lines 703--704
+Overfull \hbox (3.96841pt too wide) in paragraph at lines 834--835
  []\T1/ptm/m/n/9 (-20) control
  []
 
 
-Overfull \hbox (15.63762pt too wide) in paragraph at lines 705--706
+Overfull \hbox (15.63762pt too wide) in paragraph at lines 836--837
  []\T1/ptm/m/n/9 (-20) Jaccard(A,
  []
 
 
-Overfull \hbox (13.62343pt too wide) in paragraph at lines 707--708
+Overfull \hbox (13.62343pt too wide) in paragraph at lines 838--839
 \T1/ptm/m/n/9 (-20) registered 
  []
 
 
-Overfull \hbox (0.89645pt too wide) in paragraph at lines 711--712
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 842--843
 []|\T1/ptm/m/n/9 (-20) mixed 
  []
 
 
-Overfull \hbox (0.89645pt too wide) in paragraph at lines 712--713
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 843--844
 []|\T1/ptm/m/n/9 (-20) mixed 
  []
 
 
-Overfull \hbox (0.89645pt too wide) in paragraph at lines 713--714
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 844--845
 []|\T1/ptm/m/n/9 (-20) mixed 
  []
 
 
-Overfull \hbox (0.89645pt too wide) in paragraph at lines 714--715
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 845--846
 []|\T1/ptm/m/n/9 (-20) mixed 
  []
 
-[8]
+[10]
 
-Package natbib Warning: Citation `hubel-wiesel-1970' on page 9 undefined on inp
-ut line 798.
-
-
-Package natbib Warning: Citation `lenneberg-1967' on page 9 undefined on input 
-line 798.
+Package natbib Warning: Citation `hubel-wiesel-1970' on page 11 undefined on in
+put line 928.
 
 
-Package natbib Warning: Citation `johnson-newport-1989' on page 9 undefined on 
-input line 798.
+Package natbib Warning: Citation `lenneberg-1967' on page 11 undefined on input
+ line 928.
 
 
-Package natbib Warning: Citation `achille-etal-2019' on page 9 undefined on inp
-ut line 801.
+Package natbib Warning: Citation `johnson-newport-1989' on page 11 undefined on
+ input line 928.
 
 
-Package natbib Warning: Citation `ash-adams-2020' on page 9 undefined on input 
-line 807.
+Package natbib Warning: Citation `achille-etal-2019' on page 11 undefined on in
+put line 931.
 
 
-Package natbib Warning: Citation `dohare-etal-2024' on page 9 undefined on inpu
-t line 809.
+Package natbib Warning: Citation `ash-adams-2020' on page 11 undefined on input
+ line 937.
 
 
-Package natbib Warning: Citation `lyle-etal-2023' on page 9 undefined on input 
-line 809.
+Package natbib Warning: Citation `dohare-etal-2024' on page 11 undefined on inp
+ut line 939.
 
 
-Package natbib Warning: Citation `berariu-etal-2021' on page 9 undefined on inp
-ut line 809.
-
-[9]
-
-Package natbib Warning: Citation `bengio-etal-2009' on page 10 undefined on inp
-ut line 822.
+Package natbib Warning: Citation `lyle-etal-2023' on page 11 undefined on input
+ line 939.
 
 
-Package natbib Warning: Citation `power-etal-2022' on page 10 undefined on inpu
-t line 825.
+Package natbib Warning: Citation `berariu-etal-2021' on page 11 undefined on in
+put line 939.
 
 
-Package natbib Warning: Citation `warstadt-etal-2023' on page 10 undefined on i
-nput line 830.
+Package natbib Warning: Citation `bengio-etal-2009' on page 11 undefined on inp
+ut line 952.
 
 
-Package natbib Warning: Citation `warstadt-etal-2020' on page 10 undefined on i
-nput line 831.
+Package natbib Warning: Citation `power-etal-2022' on page 11 undefined on inpu
+t line 955.
 
 
-Package natbib Warning: Citation `linzen-etal-2016' on page 10 undefined on inp
-ut line 832.
+Package natbib Warning: Citation `warstadt-etal-2023' on page 11 undefined on i
+nput line 960.
 
 
-Package natbib Warning: Citation `marvin-linzen-2018' on page 10 undefined on i
-nput line 832.
+Package natbib Warning: Citation `warstadt-etal-2020' on page 11 undefined on i
+nput line 961.
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 830--834
+Package natbib Warning: Citation `linzen-etal-2016' on page 11 undefined on inp
+ut line 962.
+
+
+Package natbib Warning: Citation `marvin-linzen-2018' on page 11 undefined on i
+nput line 962.
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 960--964
 []\T1/ptm/b/n/10.95 (+20) Small-scale LM eval-u-a-tion. \T1/ptm/m/n/10.95 (+20)
  We use the
  []
 
 
-Package natbib Warning: Citation `elhage-etal-2021' on page 10 undefined on inp
-ut line 836.
+Package natbib Warning: Citation `elhage-etal-2021' on page 11 undefined on inp
+ut line 966.
 
 
-Package natbib Warning: Citation `wang-etal-2023' on page 10 undefined on input
- line 836.
+Package natbib Warning: Citation `wang-etal-2023' on page 11 undefined on input
+ line 966.
 
 
-Package natbib Warning: Citation `meng-etal-2022' on page 10 undefined on input
- line 836.
+Package natbib Warning: Citation `meng-etal-2022' on page 11 undefined on input
+ line 966.
 
 
-Package natbib Warning: Citation `kornblith-etal-2019' on page 10 undefined on 
-input line 837.
+Package natbib Warning: Citation `kornblith-etal-2019' on page 11 undefined on 
+input line 967.
 
-[10] [11]
-Underfull \hbox (badness 1406) in paragraph at lines 971--974
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Underfull \hbox (badness 1406) in paragraph at lines 1111--1114
 []\T1/ptm/b/n/10.95 (+20) The cir-cuit re-sults are single-method by
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 971--974
+Underfull \hbox (badness 1701) in paragraph at lines 1111--1114
 \T1/ptm/m/n/10.95 (+20) to have dy-namic range on the repair-versus-
  []
 
+[13]
 
 Package natbib Warning: There were undefined citations.
 
-[12] [13
+[14] [15
 
 ] (paper.aux)
  ***********
@@ -800,30 +816,31 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 16B4C38CB63239EF9DC571D33C53C40D;8147.
+(rerunfilecheck)             Checksum: 7323C669183B70565135F05E478A8872;8924.
  ) 
 Here is how much of TeX's memory you used:
- 14881 strings out of 467871
- 235627 string characters out of 5418377
- 691471 words of memory out of 5000000
- 43057 multiletter control sequences out of 15000+600000
- 696029 words of font info for 403 fonts, out of 8000000 for 9000
+ 14910 strings out of 467871
+ 236029 string characters out of 5418377
+ 691672 words of memory out of 5000000
+ 43062 multiletter control sequences out of 15000+600000
+ 697221 words of font info for 415 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,13n,93p,1004b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,93p,1004b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmmi10.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmr10.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/wicke/AppData/Local/Programs/MiKT
-eX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/wicke/AppData/Local/Programs/Mi
-KTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/wicke/AppData/Local/Programs/
-MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/wicke/AppData/Local/Programs/
-MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/wicke/AppData/Local/Programs
-/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/wicke/AppData/Local/Programs
-/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (13 pages, 202456 bytes).
+blic/amsfonts/cm/cmr9.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/wicke/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/wicke/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/wicke/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/wicke/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/wicke/AppData/Local/P
+rograms/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/wicke/AppData/Local/P
+rograms/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (15 pages, 226123 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
- 57081 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 287 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 57097 words of extra memory for PDF output out of 61914 (max. 10000000)
 

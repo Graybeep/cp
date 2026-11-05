@@ -6,11 +6,11 @@ every previous compile left out: **a typeset bibliography and the appendices**.
 
 | build | pages |
 |:--|--:|
-| body only, references excluded (comparable to every length number) | 12 pp |
-| + references | 13 pp |
-| **+ appendices = the arXiv package** | **15 pp** |
+| body only, references excluded (comparable to every length number) | 14 pp |
+| + references | 15 pp |
+| **+ appendices = the arXiv package** | **16 pp** |
 
-References cost **1 page** and the appendices **2**. Neither counts against any venue limit
+References cost **1 page** and the appendices **1**. Neither counts against any venue limit
 considered, which is exactly why neither had ever been compiled.
 
 ## What was verified

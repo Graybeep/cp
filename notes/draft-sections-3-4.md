@@ -138,12 +138,23 @@ so *preserves* the dynamic-range limit rather than lifting it. The representatio
 genuine dynamic range, and it is flat across timing. Had delayed exposure damaged the
 underlying representation, that probe had the range to register it and did not.
 
-The differential-susceptibility reading remains open, and its cost is specific rather than
-unknown. Under the mean-endpoint readout it is unmeasurable at the *n* achieved here. Under
-a rate readout it is **un-run**: the exceedance machinery was only ever pointed at the
-delay-0 question, and the seed inventory is asymmetric (24 delay-0 seeds per size, 3 delayed
-seeds at 23M alone). A rate-collapse test at 60M (14 delayed seeds against the existing
-24-seed baseline) would settle it; at 23M the same test needs 82 and is out of reach (§8).
+The differential-susceptibility reading has now been tested on the rate readout, and it
+returns a bound rather than a decision. Under the mean-endpoint readout it remains
+unmeasurable at the *n* achieved here. We therefore ran the rate-collapse test at 60M with
+**24 delayed seeds** against the existing 24-seed baseline — 24 rather than the 14 a
+full-abolition assumption prices, because at 14 the test clears α only on an exact 0/14, and
+one high seed anywhere lands it at *p* = 0.18. The two arms are superimposed: 0.5528 ± 0.0138
+delayed against 0.5518 ± 0.0131 at baseline, with the high mode at 6/24 in **both**, Fisher
+exact *p* = 0.630 and threshold-free Mann–Whitney *p* = 0.626 (both Holm-adjusted to 1.000),
+and a mean difference of +0.0010 [−0.0064, +0.0087].
+
+The result is asymmetric by construction and is reported that way: it **excludes a full
+collapse** of the high mode (power 1.000) and **does not exclude a half collapse** (power
+0.188; roughly 59 seeds per group would be needed). At 23M the same test needs 82 seeds and
+remains out of reach (§8). It does not become a further route to the syntax null: under our
+cross-method rule (§10) a probe that agrees but is underpowered on the contrast at issue is
+not corroboration, and this one is underpowered against exactly the alternative that matters.
+It bounds the dissociation's scope rather than promoting it.
 
 Finally, a note on what this result is not. Our pre-registration anticipated a
 *reopening*-side dissociation: some skill/intervention combinations recover and others do
@@ -164,7 +175,7 @@ same claim, and we report the one we have.
 | probe 4 positive control; readout-vs-structure | **12** | ESTABLISHED | the two-jobs distinction un-blurred |
 | dissociation + Table 2 + MDE 1.7× headroom | **11b** | ESTABLISHED (scoped) | scope in place, not deferred |
 | probe 5 does not relieve; probe 4 does | **11b** | — | the natural-but-wrong inference blocked explicitly |
-| rate readout un-run; 14 seeds at 60M | **11b** | — | priced, not "we cannot know"; forward ref to §8 |
+| rate-collapse test, 24 v 24 at 60M | **24** | BOUNDED-NOT-EXCLUDED | full collapse excluded (power 1.000), half collapse not (0.188, ~59/group); explicitly *not* a sixth route to the null; forward ref to §8 |
 | reopening-side vs detection-side | — | — | backbone §10 case (c) |
 
 ---
@@ -236,25 +247,49 @@ A single-seed control could not have distinguished "no generic effect" from "an 
 happened to land near zero once", which is why the control was run at the arm's own seed
 depth. Whatever `lr_shift` does, it is not a generic late-training lift.
 
+The same question arises within arithmetic itself: the shift might simply be a better
+optimizer setting, in which case it should lift a run that never missed anything. Applying
+the identical shift to the **early (delay-0)** 23M runs, forked from their own step-2500
+checkpoints, moves the endpoint by −0.008 — 0.783 ± 0.025 against a 0.791 ± 0.007 anchor,
+per-seed −0.040 / +0.016 / 0.000 — while the same shift applied to the delayed runs lifts
+them +0.190. The difference between the two, the component of the effect requiring the
+delayed exposure profile, is +0.198, positive at every seed (paired *t*(2) = 5.17, one-sided
+*p* = 0.018). The shift helps a model that missed the skill and does nothing measurable for
+one that did not, which is what separates a schedule account from a better-hyperparameter
+account. This rules out one alternative reading; it is not a second method corroborating
+§4.4, because it asks a different question (does the shift help an *undelayed* model?) rather
+than re-answering the same one by another route.
+
 ## 4.4 Closure at this onset is largely a property of the schedule
 
-The remaining Tier-1 interventions were run at 23M seed 1 and are scored against the null's
-cross-seed **range** [0.524, 0.626] rather than its mean, because a single seed landing
-inside that range is indistinguishable from the null.
+The remaining Tier-1 interventions have been extended to *n* = 3 at 23M (seeds 1–3), forked
+from the same common checkpoints. Each is scored per seed against **its own fork source**,
+whose cross-seed endpoint is 0.571 ± 0.061 with range [0.506, 0.626]. That is a different
+lineage from the Detect table's null and is flagged here rather than reconciled, per the §5
+rule-2 convention: same run\_id, same model; different run\_id, different model.
 
-| arm (23M, seed 1) | endpoint | verdict |
-|:--|--:|:--|
-| embedding reset | 0.586 | no detectable recovery (*n* = 1) |
-| reset + LR spike | 0.576 | no detectable recovery (*n* = 1) |
-| LR spike alone | 0.536 | no detectable recovery (*n* = 1) |
-| cram (concentrated re-exposure) | 0.574 | no detectable recovery (*n* = 1) |
-| **freeze** | **0.332** | **harmful**: below the entire null range |
+| arm (23M, *n* = 3) | endpoint | per-seed lift | verdict |
+|:--|--:|:--|:--|
+| embedding reset | 0.585 ± 0.001 | +0.080 / −0.040 / +0.002 | no consistent direction |
+| reset + LR spike | 0.571 ± 0.042 | +0.070 / −0.100 / +0.028 | no consistent direction |
+| LR spike alone | 0.578 ± 0.048 | +0.030 / +0.004 / −0.014 | no consistent direction |
+| cram (concentrated re-exposure) | 0.577 ± 0.005 | +0.068 / −0.052 / 0.000 | no consistent direction |
+| **freeze** | **0.422 ± 0.081** | −0.174 / −0.182 / −0.092 | **harmful**: below the entire null range at every seed |
 
-Only freeze supports a directional statement at this depth. The others are *not* evidence
-that those interventions fail; they are evidence that one seed cannot separate them from a
-null whose own spread is 0.10 wide. Embedding reset was our pre-registered favourite, and
-§7.2 states that prediction and its outcome as a standalone item; here it is one row of a
-table, at *n* = 1.
+Only freeze supports a directional statement, and it now does so at three seeds rather than
+one. For the other four the reading keeps its label and changes its basis. At *n* = 1 they
+were undecidable because a single seed cannot be separated from a null whose own spread is
+0.10 wide; at *n* = 3 they are undecidable because their per-seed lifts **disagree in sign**.
+A near-zero mean with disagreeing signs is an absence of effect, not a small effect obscured
+by pooling — the same rule we apply to cram below. They remain *not* evidence that those
+interventions fail.
+
+The extension earned its cost in two places. Seed 1 gave the largest lift of any seed for
+**every one of the four**, and two endpoints moved materially once the other seeds were in:
+LR spike from 0.536 to 0.578 ± 0.048, and freeze from 0.332 to 0.422 ± 0.081. Freeze's
+verdict is unchanged, but its single-seed figure was an extreme rather than a typical draw.
+Embedding reset was our pre-registered favourite, and §7.2 states that prediction and its
+outcome as a standalone item.
 
 The one arm we extended to *n* = 3 decides the mechanism. Concentrated re-exposure alone
 leaves the endpoint at 0.574: at the null. Combined with the schedule shift it reaches
@@ -276,7 +311,68 @@ which indicates that the 11M anchor was learning-rate-starved rather than that r
 over-recovers. The 11M arm enters the paper only through its mechanism decomposition, where
 the delayed lift of +0.389 splits into a generic component (+0.115) and an
 exposure-alignment component (+0.274): about 70 % of the effect requiring the delayed
-exposure profile. That decomposition is exploratory and carries no headline.
+exposure profile. That decomposition is exploratory and carries no headline; §4.3 runs the
+same split at a confirmatory size, and its generic component of −0.008 against 11M's +0.115
+is a further sign that the 11M anchor was learning-rate-starved.
+
+### 4.5 The mechanism replicates on a second schedule
+
+Every run above uses warmup with cosine decay, so §4.4's claim rests on a single schedule
+shape. Warmup-stable-decay (WSD) separates the readings, because the two schedules disagree
+exactly where the experiment intervenes: at the d50 onset (step 2500) cosine has decayed to
+3.570e-4, 59.5 % of peak, while WSD is still at its 6.00e-4 peak and stays there until step
+4000. Peak, floor and warmup are shared; only the shape between them differs. If closure is
+a decayed-LR phenomenon the deficit should largely vanish under WSD; if it persists near
+0.21, §4.4 needs rewriting. Both outcomes were reportable, and the second is why the test
+was run before submission rather than left to a reviewer.
+
+| schedule | early (d0) | delayed (d50) | paired deficit |
+|:--|--:|--:|--:|
+| cosine | 0.791 ± 0.007 | 0.577 ± 0.051 | 0.214 ± 0.055 |
+| WSD | 0.851 ± 0.016 | 0.858 ± 0.022 | −0.007 ± 0.013 |
+
+The deficit is abolished. Per-seed deficits under WSD are +0.002 / +0.000 / −0.022,
+straddling zero, which meets the pre-registered *abolished* criterion on both of its clauses
+(mean ≤ 0.05 **and** inconsistent signs) rather than the weaker *substantially reduced*. The
+WSD-versus-cosine difference is −0.221 (Welch *p* = 0.016, Holm 0.032) against a
+pre-registered MDE of 0.092, and is read off the MDE rather than off the *p*.
+
+Two limits were fixed before the data. The *presence* of a WSD deficit is well resolved; the
+*equality* of the two deficits is not, so this is never written as "the deficit is the same
+under both schedules". And WSD's higher endpoints on both arms are descriptive only: the
+deficit is a within-schedule paired contrast, so a cross-schedule level difference is not
+evidence about it. The result licenses "replicates on a second, deliberately dissimilar
+schedule" and not "schedule-general" — one non-cosine schedule, one size, one onset, one
+skill.
+
+### 4.6 Level reopens; shape pays for it
+
+`lr_shift` moves the learning rate's magnitude and its trajectory together, so §4.4's result
+is a statement about the pair rather than about either. Crossing level against shape
+separates them. The fourth cell of that 2×2 *is* `lr_shift`, so three arms were run, each at
+*n* = 3 from the same common checkpoints, with level matched on the window mean.
+
+| cell | endpoint | lift | Δppl |
+|:--|--:|--:|--:|
+| C — flat at late level | 0.563 ± 0.063 | −0.009 | +1.70 |
+| A — level only | 0.752 ± 0.034 | +0.181 | +1.86 |
+| B — shape only | 0.575 ± 0.046 | +0.004 | +1.13 |
+| `lr_shift` — both | 0.767 ± 0.014 | +0.196 | −0.33 |
+
+Three contrasts fall out along the design's own axes. **A against C** holds the shape flat
+and moves the level: +0.181 against −0.009, so the level is what reopens. **B against C**
+holds the level late and moves the shape: +0.004 against −0.009, so shape alone recovers
+nothing. **A against `lr_shift`** holds the level early and moves the shape: the lifts are
+near-identical, but the perplexity costs are +1.86 and −0.33, so the shape is what makes the
+recovery free. C is load-bearing rather than decorative — without it, A's lift is confounded
+with the absence of decay.
+
+This resolves why one arm reopened and the others did not. Under §2's operational definition,
+recovery bought at the cost of general capability is forgetting rather than reopening, and A
+breaches the +1.0 ppl threshold; so A is not a reopening, and `lr_shift` remains the only arm
+that is, because it is the only cell supplying both components. The Holm-adjusted *p* values
+(A 0.092, `lr_shift` 0.075) are not the basis of either verdict: the reopening gate is a
+pre-registered decision rule and carries no *p*.
 
 ### §4 sentence → claim audit
 
@@ -289,8 +385,11 @@ exposure profile. That decomposition is exploratory and carries no headline.
 | 23M three-number ppl, canonical lineage | **10** | — | §5 rule 2 lineage; deviation from the log table flagged |
 | 60M breach + two controls + no point estimate | **10** | BOUNDED-NOT-EXCLUDED | quoted with its bound; forgetting pitfall discharged here |
 | syntax control at n = 3 | — | — | control-arm seed-depth rule |
-| n = 1 table scored against the null's range | **9** | SUGGESTIVE (n = 1) | "no detectable recovery", never "reset fails"; freeze the only directional read |
+| d0 + `lr_shift` discriminator, −0.008 vs +0.190 | **8b** | ESTABLISHED | rules out the better-optimizer reading; explicitly *not* written as cross-method corroboration (§10 rule) |
+| n = 3 arms table, per-seed signs vs own fork source | **9** | SUGGESTIVE (n = 3) | label kept, basis re-stated; freeze the only directional read, now at 3 seeds; lineage deviation flagged |
 | cram vs cram+shift, per-seed signs | **7** | ESTABLISHED | signs over pooled mean; mechanism as consequence, scoped |
+| WSD deficit −0.007 ± 0.013 vs cosine 0.214 ± 0.055 | **22** | ESTABLISHED | read off the MDE not the p; "second schedule", never "schedule-general"; equality-of-deficits disclaimed |
+| level/shape 2×2, A vs C vs B vs both | **23** | ESTABLISHED | C stated as load-bearing; A scored as forgetting under §2, not as a second reopening |
 | 11M degenerate gate + H2/H3 split | **8** | NOT-A-CLAIM / SUGGESTIVE (exploratory) | degeneracy explained, not just reported |
 
 ---

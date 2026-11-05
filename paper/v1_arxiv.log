@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.9)  10 AUG 2026 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.9)  13 AUG 2026 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,6 +361,7 @@ LaTeX Info: Redefining \addtolength on input line 87.
    defining Unicode char U+00D7 (decimal 215)
    defining Unicode char U+00F7 (decimal 247)
    defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+03B1 (decimal 945)
    defining Unicode char U+03B2 (decimal 946)
    defining Unicode char U+03B8 (decimal 952)
    defining Unicode char U+03BB (decimal 955)
@@ -527,12 +528,12 @@ cke/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Overfull \hbox (49.37871pt too wide) in paragraph at lines 143--153
+Overfull \hbox (49.37871pt too wide) in paragraph at lines 146--156
  [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 16
-7.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 17
+1.
 (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -541,232 +542,208 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 1577) in paragraph at lines 164--175
-\T1/ptm/m/n/10.95 (+20) lib-er-ate choice, since one in-ter-ven-tion re-sets
+Underfull \hbox (badness 1762) in paragraph at lines 168--180
+[]\T1/ptm/m/n/10.95 (+20) Context length is 512 to-kens. Po-si-tional
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 164--175
-\T1/ptm/m/n/10.95 (+20) the em-bed-ding layer and tied weights would
+Underfull \hbox (badness 1442) in paragraph at lines 168--180
+\T1/ptm/m/n/10.95 (+20) re-sets the em-bed-ding layer and tied weights
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 164--175
-\T1/ptm/m/n/10.95 (+20) change to the pre-dic-tion head. At-ten-tion is
+Underfull \hbox (badness 1715) in paragraph at lines 168--180
+\T1/ptm/m/n/10.95 (+20) would con-found an input-representation re-set
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--175
-\T1/pcr/m/n/10.95 F.scaled_dot_product_attention
+Underfull \hbox (badness 10000) in paragraph at lines 168--180
+\T1/ptm/m/n/10.95 (+20) is \T1/pcr/m/n/10.95 F.scaled_dot_product_attention\T1/
+ptm/m/n/10.95 (+20) ,
  []
 
 
-Underfull \hbox (badness 2689) in paragraph at lines 164--175
-\T1/ptm/m/n/10.95 (+20) au-to-cast, micro-batches of 8 $\OMS/cmsy/m/n/10.95 ^^B
-$ \T1/ptm/m/n/10.95 (+20) 512 to-kens
+Underfull \hbox (badness 1502) in paragraph at lines 168--180
+\T1/ptm/m/n/10.95 (+20) batches of 8 $\OMS/cmsy/m/n/10.95 ^^B$ \T1/ptm/m/n/10.9
+5 (+20) 512 to-kens with 4 gra-di-ent
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 164--175
-\T1/ptm/m/n/10.95 (+20) with 4 gra-di-ent ac-cu-mu-la-tion steps, AdamW
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [2]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+04.
 
-Underfull \hbox (badness 2035) in paragraph at lines 164--175
-\T1/ptm/m/n/10.95 (+20) and a peak learn-ing rate of 6e-4 with 300
- []
-
-[2]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-99.
- (C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+(C:\Users\wicke\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<../logs/figures/fig1_detect.pdf, id=152, 504.91875pt x 168.77052pt>
+[3]
+<../logs/figures/fig1_detect.pdf, id=165, 504.91875pt x 168.77052pt>
 File: ../logs/figures/fig1_detect.pdf Graphic file (type pdf)
 <use ../logs/figures/fig1_detect.pdf>
-Package pdftex.def Info: ../logs/figures/fig1_detect.pdf  used on input line 25
-5.
+Package pdftex.def Info: ../logs/figures/fig1_detect.pdf  used on input line 27
+2.
 (pdftex.def)             Requested size: 455.24411pt x 152.1676pt.
-
-[3]
-Underfull \vbox (badness 1028) has occurred while \output is active []
-
- [4 <../logs/figures/fig1_detect.pdf>]
-Underfull \hbox (badness 1082) in paragraph at lines 360--363
+ [4]
+Underfull \hbox (badness 1082) in paragraph at lines 380--383
 []\T1/ptm/b/n/10.95 (+20) Representational probe\T1/ptm/m/n/10.95 (+20) : delay
 -0 ver-sus
  []
 
-[5]
-<../logs/figures/fig2_reopen.pdf, id=258, 504.91875pt x 187.902pt>
+[5 <../logs/figures/fig1_detect.pdf>]
+<../logs/figures/fig2_reopen.pdf, id=266, 504.91875pt x 187.902pt>
 File: ../logs/figures/fig2_reopen.pdf Graphic file (type pdf)
 <use ../logs/figures/fig2_reopen.pdf>
-Package pdftex.def Info: ../logs/figures/fig2_reopen.pdf  used on input line 44
-5.
+Package pdftex.def Info: ../logs/figures/fig2_reopen.pdf  used on input line 48
+0.
 (pdftex.def)             Requested size: 455.24411pt x 169.417pt.
 
-Overfull \hbox (2.98044pt too wide) in paragraph at lines 475--476
+Underfull \hbox (badness 1009) in paragraph at lines 486--493
+\T1/ptm/m/n/10.95 (+20) dif-fer only in the in-ter-ven-tion ap-plied. The
+ []
+
+
+Overfull \hbox (2.98044pt too wide) in paragraph at lines 511--512
  []\T1/ptm/m/n/9 (-20) treated
  []
 
 
-Overfull \hbox (27.15562pt too wide) in paragraph at lines 475--476
+Overfull \hbox (27.15562pt too wide) in paragraph at lines 511--512
  \T1/ptm/m/n/9 (-20) (\T1/pcr/m/n/9 lr_shift\T1/ptm/m/n/9 (-20) )
  []
 
 
-Overfull \hbox (6.41154pt too wide) in paragraph at lines 477--478
+Overfull \hbox (6.41154pt too wide) in paragraph at lines 513--514
  []\T1/ptm/m/n/9 (-20) delayed
  []
 
 
-Overfull \hbox (3.80646pt too wide) in paragraph at lines 483--484
+Overfull \hbox (3.80646pt too wide) in paragraph at lines 519--520
  []\T1/ptm/m/n/9 (-20) margin
  []
 
 
-Overfull \hbox (3.80101pt too wide) in paragraph at lines 489--489
+Overfull \hbox (3.80101pt too wide) in paragraph at lines 525--525
  []|\T1/ptm/m/n/9 (-20) +0.055|
  []
 
 
-Overfull \hbox (3.23663pt too wide) in paragraph at lines 489--490
+Overfull \hbox (3.23663pt too wide) in paragraph at lines 525--526
  []|\T1/ptm/m/n/9 (-20) 0.0065|
  []
 
 
-Overfull \hbox (3.80101pt too wide) in paragraph at lines 490--490
+Overfull \hbox (3.80101pt too wide) in paragraph at lines 526--526
  []|\T1/ptm/m/n/9 (-20) +0.050|
  []
 
 
-Overfull \hbox (3.23663pt too wide) in paragraph at lines 490--491
+Overfull \hbox (3.23663pt too wide) in paragraph at lines 526--527
  []|\T1/ptm/m/n/9 (-20) 0.0027|
  []
 
-
-Underfull \hbox (badness 2050) in paragraph at lines 518--521
+[6]
+Underfull \hbox (badness 2050) in paragraph at lines 554--557
 []\T1/ptm/m/n/10.95 (+20) At \T1/ptm/b/n/10.95 (+20) 23M there is no breach\T1/
 ptm/m/n/10.95 (+20) : \T1/ptm/m/it/10.95 (+20) c $\OMS/cmsy/m/n/10.95 ^^@$ \T1/
 ptm/m/it/10.95 (+20) b \T1/ptm/m/n/10.95 (+20) =
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 518--521
+Underfull \hbox (badness 1622) in paragraph at lines 554--557
 \T1/ptm/m/n/10.95 (+20) a pre-registered gate of +1.0 (seed 1: \T1/ptm/m/it/10.
 95 (+20) b \T1/ptm/m/n/10.95 (+20) =
  []
 
-[6]
-Underfull \vbox (badness 5878) has occurred while \output is active []
+[7 <../logs/figures/fig2_reopen.pdf>]
+Overfull \hbox (12.18214pt too wide) in paragraph at lines 666--675
+ [][] 
+ []
 
- [7 <../logs/figures/fig2_reopen.pdf>]
-Underfull \hbox (badness 2245) in paragraph at lines 666--673
+[8]
+Underfull \hbox (badness 2245) in paragraph at lines 766--774
 []\T1/ptm/b/n/10.95 (+20) Single-head ac-ti-va-tion patch-ing \T1/ptm/m/n/10.95
  (+20) is flat:
  []
 
-
-Underfull \hbox (badness 2547) in paragraph at lines 666--673
-\T1/ptm/m/n/10.95 (+20) restora-tion ra-tio spans 0.591--0.792 (SD
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 673--676
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 774--777
 []\T1/ptm/b/n/10.95 (+20) Pruning-based lo-cal-iza-tion \T1/ptm/m/n/10.95 (+20)
  was pre-
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 673--676
-\T1/ptm/m/n/10.95 (+20) whose sign is a hy-per-pa-ram-e-ter can-not
- []
-
-
-Underfull \hbox (badness 1762) in paragraph at lines 678--682
+Underfull \hbox (badness 1762) in paragraph at lines 779--783
 []\T1/ptm/m/n/10.95 (+20) We there-fore re-port this clus-ter as \T1/ptm/b/n/10
 .95 (+20) single-
  []
 
-[8]
-Overfull \hbox (1.03125pt too wide) in paragraph at lines 705--706
+
+Overfull \hbox (1.03125pt too wide) in paragraph at lines 806--807
  []\T1/ptm/m/n/9 (-20) deficit
  []
 
 
-Overfull \hbox (5.76448pt too wide) in paragraph at lines 707--708
+Overfull \hbox (5.76448pt too wide) in paragraph at lines 808--809
  []\T1/ptm/m/n/9 (-20) transfer
  []
 
 
-Overfull \hbox (3.96841pt too wide) in paragraph at lines 709--710
+Overfull \hbox (3.96841pt too wide) in paragraph at lines 810--811
  []\T1/ptm/m/n/9 (-20) control
  []
 
 
-Overfull \hbox (15.63762pt too wide) in paragraph at lines 711--712
+Overfull \hbox (15.63762pt too wide) in paragraph at lines 812--813
  []\T1/ptm/m/n/9 (-20) Jaccard(A,
  []
 
 
-Overfull \hbox (13.62343pt too wide) in paragraph at lines 713--714
+Overfull \hbox (13.62343pt too wide) in paragraph at lines 814--815
 \T1/ptm/m/n/9 (-20) registered 
  []
 
 
-Overfull \hbox (0.89645pt too wide) in paragraph at lines 717--718
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 818--819
 []|\T1/ptm/m/n/9 (-20) mixed 
  []
 
 
-Overfull \hbox (0.89645pt too wide) in paragraph at lines 718--719
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 819--820
 []|\T1/ptm/m/n/9 (-20) mixed 
  []
 
 
-Overfull \hbox (0.89645pt too wide) in paragraph at lines 719--720
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 820--821
 []|\T1/ptm/m/n/9 (-20) mixed 
  []
 
 
-Overfull \hbox (0.89645pt too wide) in paragraph at lines 720--721
+Overfull \hbox (0.89645pt too wide) in paragraph at lines 821--822
 []|\T1/ptm/m/n/9 (-20) mixed 
  []
 
-[9]
-Overfull \hbox (0.8309pt too wide) in paragraph at lines 806--819
-\T1/ptm/m/n/10.95 (-20) --- while re-set-ting weights, the stan-dard rem-edy, p
-ro-
- []
+[10]
+Underfull \vbox (badness 3623) has occurred while \output is active []
 
-
-Underfull \hbox (badness 1221) in paragraph at lines 829--833
+ [11]
+Underfull \hbox (badness 1221) in paragraph at lines 936--940
 []\T1/ptm/b/n/10.95 (+20) Small-scale LM eval-u-a-tion. \T1/ptm/m/n/10.95 (+20)
  We use the
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
-[11]
-Underfull \hbox (badness 2409) in paragraph at lines 915--919
-\T1/ptm/b/n/10.95 (+20) #1 (syn-tax would show the \T1/ptm/b/it/10.95 (+20) str
-onger \T1/ptm/b/n/10.95 (+20) crit-i-
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 962--965
+[12] [13]
+Underfull \hbox (badness 1406) in paragraph at lines 1087--1090
 []\T1/ptm/b/n/10.95 (+20) The cir-cuit re-sults are single-method by
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 962--965
+Underfull \hbox (badness 1701) in paragraph at lines 1087--1090
 \T1/ptm/m/n/10.95 (+20) to have dy-namic range on the repair-versus-
  []
 
-(v1_arxiv.bbl [12]
+(v1_arxiv.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 97--104
 []\T1/ptm/m/n/10 (+20) Clare Lyle, Zeyu Zheng, Ev-genii Nik-ishin,
  []
@@ -786,112 +763,123 @@ Underfull \hbox (badness 1460) in paragraph at lines 97--104
 \T1/ptm/m/it/10 (+20) In-ter-na-tional Con-fer-ence on Ma-chine Learn-ing
  []
 
-
+[14]
 Underfull \hbox (badness 1147) in paragraph at lines 124--130
 []\T1/ptm/m/n/10 (+20) Alethea Power, Yuri Burda, Harri Ed-wards, Igor
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 995--998
-\T1/ptm/m/n/10.95 (+20) Pruning was re-jected by a
+Underfull \hbox (badness 3872) in paragraph at lines 1120--1125
+\T1/ptm/m/n/10.95 (+20) Ÿ5.1 re-ports prun-ing as the third of three
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 995--998
-\T1/ptm/m/n/10.95 (+20) pre-screen fixed in ad-vance
+Underfull \hbox (badness 3209) in paragraph at lines 1120--1125
+\T1/ptm/m/n/10.95 (+20) probes that can-not dis-crim-i-nate re-pair from
  []
 
 
-Overfull \hbox (58.38295pt too wide) in paragraph at lines 995--998
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1125
+\T1/ptm/m/n/10.95 (+20) re-or-ga-ni-za-tion on our con-trast. It was
+ []
+
+
+Underfull \hbox (badness 5504) in paragraph at lines 1120--1125
+\T1/ptm/m/n/10.95 (+20) re-jected by a pre-screen fixed in ad-vance
+ []
+
+
+Overfull \hbox (54.80957pt too wide) in paragraph at lines 1120--1125
 \T1/ptm/m/n/10.95 (-20) (\T1/pcr/m/n/10.95 notes/week8-pruning-feasibility-prer
-eg.md\T1/ptm/m/n/10.95 (-20) ),
+eg.md\T1/ptm/m/n/10.95 (-20) ,
  []
 
-[13]
-Overfull \hbox (0.5194pt too wide) in paragraph at lines 1063--1063
+
+Overfull \hbox (0.5194pt too wide) in paragraph at lines 1190--1190
  []|$\OMS/cmsy/m/n/9 ^^@$\T1/ptm/b/n/9 (-20) 0.944|
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1099
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 1232--1237
 []\T1/ptm/b/n/10.95 (+20) It was not pre-registered.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1099
+Underfull \hbox (badness 10000) in paragraph at lines 1232--1237
 \T1/ptm/m/n/10.95 (+20) The gen-uine pre-registration
  []
 
 
-Overfull \hbox (37.28967pt too wide) in paragraph at lines 1094--1099
+Overfull \hbox (37.28967pt too wide) in paragraph at lines 1232--1237
 \T1/ptm/m/n/10.95 (-20) (\T1/pcr/m/n/10.95 notes/week8-diagnosis-seed-scope.md\
 T1/ptm/m/n/10.95 (-20) ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1102
+Underfull \hbox (badness 10000) in paragraph at lines 1237--1240
 []\T1/ptm/b/n/10.95 (+20) It is a code-level de-fault
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1102
+Underfull \hbox (badness 10000) in paragraph at lines 1237--1240
 \T1/ptm/m/n/10.95 (+20) in-tro-duced with the tool
  []
 
 
-Overfull \hbox (79.7355pt too wide) in paragraph at lines 1099--1102
+Overfull \hbox (79.7355pt too wide) in paragraph at lines 1237--1240
 \T1/ptm/m/n/10.95 (-20) (\T1/pcr/m/n/10.95 scripts/week8_circuit_identity.py:27
 6-278\T1/ptm/m/n/10.95 (-20) ). 
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 1109--1112
+Underfull \hbox (badness 1635) in paragraph at lines 1247--1250
 []\T1/ptm/b/n/10.95 (+20) It was con-tra-dicted by the first triad
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 1109--1112
+Underfull \hbox (badness 2790) in paragraph at lines 1247--1250
 \T1/ptm/b/n/10.95 (+20) that tested it, and then for-mally de-
  []
 
 
-Overfull \hbox (6.48367pt too wide) in paragraph at lines 1109--1112
+Overfull \hbox (6.48367pt too wide) in paragraph at lines 1247--1250
 \T1/pcr/m/n/10.95 notes/week8-60M-seed2-prereg.md
  []
 
-[14] (v1_arxiv.aux)
+[16] (v1_arxiv.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `v1_arxiv.out' has not changed.
-(rerunfilecheck)             Checksum: A8C2D61AEB3BB9A277F2E0F79942B259;8976.
+(rerunfilecheck)             Checksum: A17A0E1514B603C7FD85F54957BD1D10;9764.
  ) 
 Here is how much of TeX's memory you used:
- 15015 strings out of 467871
- 238653 string characters out of 5418377
- 692130 words of memory out of 5000000
- 43135 multiletter control sequences out of 15000+600000
- 697583 words of font info for 420 fonts, out of 8000000 for 9000
+ 15051 strings out of 467871
+ 239122 string characters out of 5418377
+ 694266 words of memory out of 5000000
+ 43140 multiletter control sequences out of 15000+600000
+ 699371 words of font info for 437 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,13n,93p,1007b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,93p,1007b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmmi10.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi9.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmr10.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmr8.pfb><C:/Users/wicke/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/wicke/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/wicke/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/wicke/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/wicke/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/wicke/
-AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/wicke/
-AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/wicke
-/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/wicke
-/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on v1_arxiv.pdf (14 pages, 317987 bytes).
+/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/wicke/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/wicke/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/wicke/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/wic
+ke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/w
+icke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users
+/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users
+/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/User
+s/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/User
+s/wicke/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on v1_arxiv.pdf (16 pages, 340874 bytes).
 PDF statistics:
- 537 PDF objects out of 1000 (max. 8388607)
- 86 named destinations out of 1000 (max. 500000)
- 57107 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 560 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
+ 57123 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -59,6 +59,9 @@ def main() -> None:
                          "match what train_baseline trains so the supervisor "
                          "watches the right run_id")
     ap.add_argument("--run-suffix", default="")
+    # run_id-determining: the supervisor must reconstruct the SAME run_id the
+    # trainer will use, or it watches the wrong checkpoint dir
+    ap.add_argument("--lr-schedule", default=defaults.lr_schedule)
     args, passthrough = ap.parse_known_args()
 
     delay = args.delay_onset
@@ -70,6 +73,7 @@ def main() -> None:
         total_steps=args.total_steps, seed=args.seed,
         run_name=args.run_name, run_suffix=args.run_suffix,
         model_size_tag=args.model_size,
+        lr_schedule=args.lr_schedule,
     )
     ckpt_dir = CHECKPOINT_DIR / cfg.run_id
 
@@ -80,6 +84,7 @@ def main() -> None:
         "--seed", str(args.seed),
         "--run-name", args.run_name,
         "--model-size", args.model_size,
+        "--lr-schedule", args.lr_schedule,
         *(["--delay-onset", str(delay)] if delay is not None else []),
         *(["--run-suffix", args.run_suffix] if args.run_suffix else []),
         *passthrough,

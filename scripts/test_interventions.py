@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from reopen.config import ModelConfig, TrainConfig  # noqa: E402
 from reopen.interventions import (  # noqa: E402
     CramIntervention, EarlyBurstControl, FreezeIntervention,
-    LRSpikeIntervention, ResetIntervention, ShiftedLRWindow,
+    LRComponentWindow, LRSpikeIntervention, ResetIntervention, ShiftedLRWindow,
 )
 from reopen.model import GPT  # noqa: E402
 from reopen.schedule import MixedLoader, StreamSpec  # noqa: E402
@@ -157,13 +157,78 @@ def test_shifted_lr_window() -> None:
     print("shifted lr window OK")
 
 
+def test_lr_component_window() -> None:
+    """The 2x2 level/shape decomposition of the lr_shift window."""
+    AT, END, SRC = 50, 80, 0
+    n = END - AT
+
+    def window_lrs(**kw) -> list[float]:
+        tr = _tiny_trainer()
+        iv = LRComponentWindow(at_step=AT, end_step=END, source_start=SRC, **kw)
+        out = []
+        for step in range(1, 101):
+            iv(step, tr)
+            out.append(tr.lr_override if tr.lr_override is not None
+                       else lr_at_step(step, tr.cfg))
+        return out
+
+    cfg = _tiny_trainer().cfg
+    mean_early = sum(lr_at_step(SRC + t, cfg) for t in range(n)) / n
+    mean_late = sum(lr_at_step(AT + t, cfg) for t in range(n)) / n
+
+    # --- the anchoring identity: shape=source + level=early IS lr_shift ---
+    shift_tr = _tiny_trainer()
+    shift = ShiftedLRWindow(at_step=AT, end_step=END, source_start=SRC)
+    ref = []
+    for step in range(1, 101):
+        shift(step, shift_tr)
+        ref.append(shift_tr.lr_override if shift_tr.lr_override is not None
+                   else lr_at_step(step, shift_tr.cfg))
+    got = window_lrs(shape="source", level="early")
+    assert all(abs(a - b) < 1e-12 for a, b in zip(ref, got)), \
+        "shape=source/level=early must reproduce ShiftedLRWindow exactly"
+
+    # --- flat cells are constant inside the window, at the target level ---
+    flat_early = window_lrs(shape="flat", level="early")[AT - 1:END - 1]
+    flat_late = window_lrs(shape="flat", level="late")[AT - 1:END - 1]
+    assert len(set(round(v, 15) for v in flat_early)) == 1, "flat must be flat"
+    assert abs(flat_early[0] - mean_early) < 1e-12, "level=early -> early mean"
+    assert abs(flat_late[0] - mean_late) < 1e-12, "level=late -> late mean"
+
+    # --- every cell matches its target mean over the window ---------------
+    for shape in ("flat", "source"):
+        for level, target in (("early", mean_early), ("late", mean_late)):
+            w = window_lrs(shape=shape, level=level)[AT - 1:END - 1]
+            assert abs(sum(w) / n - target) < 1e-12, \
+                f"{shape}/{level} window mean must equal the {level} level"
+
+    # --- shape=source/level=late keeps the trajectory, drops the level ----
+    traj = window_lrs(shape="source", level="late")[AT - 1:END - 1]
+    early_seg = [lr_at_step(SRC + t, cfg) for t in range(n)]
+    k = mean_late / mean_early
+    assert all(abs(a - b * k) < 1e-12 for a, b in zip(traj, early_seg)), \
+        "shape-only arm must be the early segment rescaled to the late level"
+
+    # --- hands control back at end_step ----------------------------------
+    tr = _tiny_trainer()
+    iv = LRComponentWindow(at_step=AT, end_step=END, source_start=SRC,
+                           shape="flat", level="early")
+    for step in range(1, 101):
+        iv(step, tr)
+        if step == END:
+            assert tr.lr_override is None, "must hand back at end_step"
+    assert tr.cfg.intervention == "lr_flat_early"
+    print("lr component window (2x2 level/shape) OK")
+
+
 def test_replay_fire_markers() -> None:
     # effects living outside the checkpoint refire on resume replay;
     # effects captured by the checkpoint (weights) or recomputed per
     # in-window step (lr_override) must not
     expect = {CramIntervention: True, EarlyBurstControl: True,
               FreezeIntervention: True, ResetIntervention: False,
-              LRSpikeIntervention: False, ShiftedLRWindow: False}
+              LRSpikeIntervention: False, ShiftedLRWindow: False,
+              LRComponentWindow: False}
     for cls, flag in expect.items():
         assert getattr(cls, "replay_fire", False) is flag, cls.__name__
     print("replay_fire markers OK")
@@ -252,6 +317,7 @@ if __name__ == "__main__":
     test_freeze()
     test_cram()
     test_shifted_lr_window()
+    test_lr_component_window()
     test_replay_fire_markers()
     test_cram_replay_reconstruction()
     test_fork_config()

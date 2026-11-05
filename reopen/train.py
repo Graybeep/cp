@@ -46,12 +46,35 @@ class Trigger(Protocol):
 
 
 def lr_at_step(step: int, cfg: TrainConfig) -> float:
-    """Linear warmup then cosine decay to lr * min_lr_ratio."""
+    """LR at `step` under the run's schedule.
+
+    "cosine" (the locked baseline): linear warmup then cosine decay to
+    lr * min_lr_ratio.
+
+    "wsd" (warmup-stable-decay): linear warmup, then a CONSTANT plateau at
+    the peak LR, then a linear decay to the same floor over the final
+    `wsd_decay_frac` of training. Added to test whether the schedule
+    mechanism is specific to cosine's decay shape or general to decayed
+    schedules — under WSD the LR at a mid-training delay onset is still at
+    peak, so the two schedules make different predictions about the deficit.
+    Same peak, same floor, same warmup as cosine, so only the shape differs.
+    """
     if step < cfg.warmup_steps:
         return cfg.lr * (step + 1) / cfg.warmup_steps
+    floor = cfg.lr * cfg.min_lr_ratio
+
+    if cfg.lr_schedule == "wsd":
+        decay_steps = max(1, int(round(cfg.wsd_decay_frac * cfg.total_steps)))
+        decay_start = cfg.total_steps - decay_steps
+        if step < decay_start:
+            return cfg.lr
+        progress = min((step - decay_start) / decay_steps, 1.0)
+        return cfg.lr + (floor - cfg.lr) * progress
+
+    if cfg.lr_schedule != "cosine":
+        raise ValueError(f"unknown lr_schedule {cfg.lr_schedule!r}")
     progress = (step - cfg.warmup_steps) / max(1, cfg.total_steps - cfg.warmup_steps)
     progress = min(progress, 1.0)
-    floor = cfg.lr * cfg.min_lr_ratio
     return floor + 0.5 * (cfg.lr - floor) * (1 + math.cos(math.pi * progress))
 
 

@@ -1,0 +1,149 @@
+syntax_delay50_exp10_size60M_seed7_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.578
+  wh_vs_that_no_gap                             0.803
+  wh_vs_that_with_gap_long_distance             0.202
+  wh_vs_that_no_gap_long_distance               0.904
+  continuation interaction: local=0.691  long-distance=0.553   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed8_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.602
+  wh_vs_that_no_gap                             0.794
+  wh_vs_that_with_gap_long_distance             0.257
+  wh_vs_that_no_gap_long_distance               0.916
+  continuation interaction: local=0.698  long-distance=0.587   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed9_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.563
+  wh_vs_that_no_gap                             0.823
+  wh_vs_that_with_gap_long_distance             0.177
+  wh_vs_that_no_gap_long_distance               0.944
+  continuation interaction: local=0.693  long-distance=0.560   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed10_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.552
+  wh_vs_that_no_gap                             0.817
+  wh_vs_that_with_gap_long_distance             0.148
+  wh_vs_that_no_gap_long_distance               0.931
+  continuation interaction: local=0.684  long-distance=0.539   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed11_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.611
+  wh_vs_that_no_gap                             0.727
+  wh_vs_that_with_gap_long_distance             0.183
+  wh_vs_that_no_gap_long_distance               0.914
+  continuation interaction: local=0.669  long-distance=0.548   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed12_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.603
+  wh_vs_that_no_gap                             0.752
+  wh_vs_that_with_gap_long_distance             0.146
+  wh_vs_that_no_gap_long_distance               0.909
+  continuation interaction: local=0.677  long-distance=0.527   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed13_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.534
+  wh_vs_that_no_gap                             0.760
+  wh_vs_that_with_gap_long_distance             0.159
+  wh_vs_that_no_gap_long_distance               0.926
+  continuation interaction: local=0.647  long-distance=0.542   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed14_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.493
+  wh_vs_that_no_gap                             0.819
+  wh_vs_that_with_gap_long_distance             0.128
+  wh_vs_that_no_gap_long_distance               0.933
+  continuation interaction: local=0.656  long-distance=0.530   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed15_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.633
+  wh_vs_that_no_gap                             0.808
+  wh_vs_that_with_gap_long_distance             0.262
+  wh_vs_that_no_gap_long_distance               0.880
+  continuation interaction: local=0.721  long-distance=0.571   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed16_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.529
+  wh_vs_that_no_gap                             0.879
+  wh_vs_that_with_gap_long_distance             0.130
+  wh_vs_that_no_gap_long_distance               0.972
+  continuation interaction: local=0.704  long-distance=0.551   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed17_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.564
+  wh_vs_that_no_gap                             0.775
+  wh_vs_that_with_gap_long_distance             0.199
+  wh_vs_that_no_gap_long_distance               0.910
+  continuation interaction: local=0.669  long-distance=0.554   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed18_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.574
+  wh_vs_that_no_gap                             0.809
+  wh_vs_that_with_gap_long_distance             0.202
+  wh_vs_that_no_gap_long_distance               0.908
+  continuation interaction: local=0.692  long-distance=0.555   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed19_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.628
+  wh_vs_that_no_gap                             0.746
+  wh_vs_that_with_gap_long_distance             0.202
+  wh_vs_that_no_gap_long_distance               0.878
+  continuation interaction: local=0.687  long-distance=0.540   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed20_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.585
+  wh_vs_that_no_gap                             0.726
+  wh_vs_that_with_gap_long_distance             0.244
+  wh_vs_that_no_gap_long_distance               0.884
+  continuation interaction: local=0.655  long-distance=0.564   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed21_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.602
+  wh_vs_that_no_gap                             0.825
+  wh_vs_that_with_gap_long_distance             0.205
+  wh_vs_that_no_gap_long_distance               0.905
+  continuation interaction: local=0.714  long-distance=0.555   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed22_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.671
+  wh_vs_that_no_gap                             0.770
+  wh_vs_that_with_gap_long_distance             0.226
+  wh_vs_that_no_gap_long_distance               0.922
+  continuation interaction: local=0.721  long-distance=0.574   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed23_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.610
+  wh_vs_that_no_gap                             0.781
+  wh_vs_that_with_gap_long_distance             0.186
+  wh_vs_that_no_gap_long_distance               0.922
+  continuation interaction: local=0.696  long-distance=0.554   (chance/prior-only = 0.5)
+syntax_delay50_exp10_size60M_seed24_ratecollapse @ step 5000
+  wh_vs_that_with_gap                           0.585
+  wh_vs_that_no_gap                             0.745
+  wh_vs_that_with_gap_long_distance             0.211
+  wh_vs_that_no_gap_long_distance               0.891
+  continuation interaction: local=0.665  long-distance=0.551   (chance/prior-only = 0.5)
+==========================================================================
+60M SYNTAX RATE-COLLAPSE TEST — PRE-REGISTERED GATE
+  notes/rate-collapse-60M-preregistration.md
+==========================================================================
+
+delayed  n=24  mean=0.5528  sd=0.0138  min=0.527  max=0.587
+baseline n=24  mean=0.5518  sd=0.0131  min=0.534  max=0.582
+
+[PRIMARY] threshold 0.5593
+  delayed  P(high) = 6/24 = 0.250
+  baseline P(high) = 6/24 = 0.250
+  one-sided Fisher exact p = 0.6300
+
+[robustness] threshold 0.55
+  delayed  P(high) = 14/24 = 0.583
+  baseline P(high) = 12/24 = 0.500
+  one-sided Fisher exact p = 0.8074
+
+[EXCLUDED A PRIORI] threshold 0.57: delayed 4/24, baseline 2/24 — unpowered by construction (best case p = 0.2447), not tested
+
+[SECONDARY, threshold-free] Mann-Whitney U=303.0 one-sided p=0.6255
+  mean difference (delayed - baseline) = +0.0010 [95% CI -0.0064, +0.0087]
+
+Holm-corrected family (2 tests, pre-registered):
+  fisher_primary   raw p=0.6300  Holm p=1.0000  n.s.
+  mannwhitney      raw p=0.6255  Holm p=1.0000  n.s.
+
+==========================================================================
+VERDICT: NO RATE COLLAPSE DETECTED — and this is a BOUND, not a null.
+  Excluded: FULL collapse of the high mode (power 1.000).
+  NOT excluded: a HALF collapse (power 0.188; ~59 seeds/group
+    would be needed). Write as BOUNDED-NOT-EXCLUDED with that
+    bound stated.
+  Do NOT report this as a sixth route to the syntax null: under
+    the standing cross-method rule an underpowered probe that
+    agrees is not corroboration.
+  Ledger row 11b keeps ESTABLISHED (scoped); only its scope
+    sentence changes.
+==========================================================================
+
+wrote logs\rate_collapse\gate_result.json

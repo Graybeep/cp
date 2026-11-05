@@ -40,8 +40,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from reopen.checkpoint import checkpoint_path, load_checkpoint  # noqa: E402
 from reopen.config import CHECKPOINT_DIR, ModelConfig, TrainConfig  # noqa: E402
 from reopen.interventions import (  # noqa: E402
-    CramIntervention, FreezeIntervention, LRSpikeIntervention,
-    ResetIntervention, ShiftedLRWindow,
+    CramIntervention, FreezeIntervention, LRComponentWindow,
+    LRSpikeIntervention, ResetIntervention, ShiftedLRWindow,
 )
 from reopen.train import Trainer  # noqa: E402
 
@@ -107,6 +107,21 @@ def build_triggers(name: str, args, cfg: TrainConfig) -> tuple[list, str]:
             at_step=at, end_step=args.shift_until,
             source_start=args.shift_source_start)], \
             f"ivlrshift{args.shift_source_start}at{at}"
+    if name in ("lr_level_only", "lr_shape_only", "lr_flat_control"):
+        # 2x2 dissection of lr_shift into LEVEL and SHAPE (T1.4). The
+        # fourth cell of the design IS lr_shift itself (already n=3), so
+        # only three arms are launched here:
+        #   lr_level_only   flat  @ early level  — magnitude, no trajectory
+        #   lr_shape_only   early shape @ late level — trajectory, no magnitude
+        #   lr_flat_control flat  @ late level  — the shape-free baseline both
+        #                                          of the above are read against
+        shape, level = {"lr_level_only": ("flat", "early"),
+                        "lr_shape_only": ("source", "late"),
+                        "lr_flat_control": ("flat", "late")}[name]
+        return [LRComponentWindow(
+            at_step=at, end_step=args.shift_until, shape=shape, level=level,
+            source_start=args.shift_source_start)], \
+            f"iv{name.replace('_', '')}{at}"
     if name == "cram_lrshift":
         # Q1 disambiguation arm: cram's density boost UNDER the restored early
         # LR schedule. Separates "cram failed because dose was capped" from
@@ -134,7 +149,9 @@ def main() -> None:
                          "checkpoint shared by every intervention arm")
     ap.add_argument("--intervention", required=True,
                     choices=["reset", "spike", "reset_spike", "freeze",
-                             "cram", "lr_shift", "cram_lrshift"])
+                             "cram", "lr_shift", "cram_lrshift",
+                             "lr_level_only", "lr_shape_only",
+                             "lr_flat_control"])
     ap.add_argument("--iv-at", type=int, default=None,
                     help="step the intervention fires (default: fork+1)")
     ap.add_argument("--run-suffix", default="",
